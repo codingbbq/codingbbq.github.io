@@ -4,7 +4,7 @@ title:  "Why Jekyll!"
 date:   2019-02-18 12:10:42 +0530
 categories: jekyll update
 ---
-Coding BBQ is <u>yet another honest attempt</u> to log my thoughts online. I was active online earlier but that is a story for another time.
+Coding BBQ is <i>yet another honest attempt</i> to log my thoughts online. I was active online earlier but that is a story for another time.
 
 Why this blog?
 1. To Improve my thought process.
