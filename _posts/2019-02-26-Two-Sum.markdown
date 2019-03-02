@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Two Sum : Leetcode algorithm problem"
+date:   2019-02-18 12:10:42 +0530
+categories: algorithm
+---
+
+### Two Sum
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+```javascript
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+```
+
+The first approach that I could think of was `Brute force`. Which was to iterate through the array of integers and find the sum.
+Below is the javascript solution. 
+We iterate through each array element in a multi for loop and add the `ith` number with each `jth` number to see if it is equal to the target. If so, we return the `ith` and `jth` element.
+
+``` javascript
+ var twoSum = function(nums, target) {
+     let result = [];
+     for(let i = 0; i < nums.length; i++){
+       for(let j = i+1; j < nums.length; j++){
+         if(i != j && nums[i] + nums[j] == target){
+           result.push(i);
+           result.push(j);
+         }
+       }
+     }
+  
+   return result;
+ };
+
+ twoSum([12,7,9,1,2], 9);
+ ```
+
+Another approach mentioned on leetcode's solution was to use hash maps. Below is my attempt.
+However, below solution does not use a HashMap per say. I created a duplicate array using the map function so that the values can be serached from it.
+
+```javascript
+var twoSum = function(nums, target) {
+    let result = [];
+
+    // Create a duplicate array using the .map array function. 
+    //This will be used as a hash map to search for the number.
+    var numArray = nums.map((item) => {
+      return item;
+    });
+
+    for(let i = 0; i< nums.length; i++){
+      let complement = target - nums[i];
+      if(numArray.includes(complement) && numArray.indexOf(complement) != i){
+        result.push(i);
+        result.push(numArray.indexOf(complement));
+        return result;
+      }
+    }
+};
+
+ twoSum([3,3], 6);
+```
+
+Below solution is from one of the comments in leetcode. This solution actually uses HashMaps per say i.e it creates a object that stores the value and the key
+which is later searched for to get the desired result.
+
+```javascript
+
+var twoSum = function(nums, target) {
+    let sumDiff = {};
+    for(let i = 0; i < nums.length; ++i){
+      if(sumDiff[nums[i]] > -1){
+          return [sumDiff[nums[i]], i];
+      }
+      sumDiff[target - nums[i]] = i;
+    }
+    
+};
+
+twoSum([3,2,9], 5);
+```
