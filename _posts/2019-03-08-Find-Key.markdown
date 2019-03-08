@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Find the key for a value in an Object"
+categories: learning
+---
+
+### Find the key in an object
+
+Today, I encountered a very unique problem at work. 
+I was using a data grid which had array of objects. Let's call this data grid as `arrayOfData`. And the array index was being stored in another object
+with key as zero based index and value as the index of the original object, let's call it `indexObject`. 
+Also, I had to perform an operation on the data but based on the object `indexObject`. 
+
+I was getting index of the `arrayOfData` on an action and based on this data I had to get the keys of `indexObject`.
+Confusing, right? 
+
+Alright, long story short, I had to get the keys of an object based on the value.
+
+For example,
+
+```javascript
+let original = {
+  0 : 4,
+  1 : 2.
+  2 : 3,
+  3 : 0,
+  4 : 1
+}
+```
+
+Based on some action, I was getting,
+
+```javascript
+action = [4, 3, 1]
+```
+
+The requirement was to get all the keys from object `original` based on the values present in `action`.
+
+In short, I had to get the keys for certain values. Below is what I ended up doing 
+
+```javascript
+let requiredOutput = [];
+
+for(let i = 0; i<action.length; i++){
+  for(var obj in original){
+    if(original[obj] == action[i]){
+      requiredOutput.push(obj);
+    }
+  }
+}
+
+console.log(requiredOutput);
+
+```
+
+The `for(variable in object){ }` statement iterates over all non-symbol, enumerable properties of object.
+A `for..in` loop iterates over the properties of an object in an arbitrary order. As per MDN, the use of `for...in` is 
+when you want to work with the key value pair of an object, which for us, worked very well.
