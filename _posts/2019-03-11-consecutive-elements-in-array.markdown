@@ -37,7 +37,9 @@ for(var m = 0; m < selectedArray.length - 1; m++){
 
 ```
 
-The above solution worked great for me, however, I was wondering if there was any other solution to such problem. I came across this (hacker rank article)[https://www.geeksforgeeks.org/check-if-array-elements-are-consecutive/] with similar problem and an alternative solution.
+#### Consecutive array | Method 2
+
+The above solution worked great for me, however, I was wondering if there was any other solution to such problem. I came across this [hacker rank article](https://www.geeksforgeeks.org/check-if-array-elements-are-consecutive/) with similar problem and an alternative solution.
 
 1. Check if max - min + 1 = n
 where `max` is maximum element in array
