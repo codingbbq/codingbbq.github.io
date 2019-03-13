@@ -2,6 +2,7 @@
 layout: post
 title:  "Shift Elements up or down"
 categories: learning
+excerpt : The problem to solve here is to shift or move certain consecutive items in an array up or down by one position. Based on user's selection we move items up/down based on feasibility.
 ---
 
 ### Shift Elements up or down

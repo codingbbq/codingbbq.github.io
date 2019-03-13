@@ -2,6 +2,7 @@
 layout: post
 title:  "Find the key for a value in an Object"
 categories: learning
+excerpt : Given a value to look for in oject, the problem is to get its corresponding key. Long answer short, we need to use the `for .. in` operator in javascript.
 ---
 
 ### Find the key in an object

@@ -2,6 +2,7 @@
 layout: post
 title:  "Palindrome Number : Leetcode Algorithm Problem"
 categories: algorithm
+excerpt : In this challenge, I learned to convert a number into array of integers without type conversion.
 ---
 
 ### Palindrome Number

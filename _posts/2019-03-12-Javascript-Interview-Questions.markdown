@@ -2,6 +2,7 @@
 layout: post
 title:  "Javascript Interview Questions : Challenging `this`"
 categories: learning
+excerpt : Attempting to solve and figure out solution to some of the tricky and very interesting questions asked in Javascript interviews.
 ---
 
 ### Javascript interview questions

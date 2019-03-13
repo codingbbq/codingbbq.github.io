@@ -2,6 +2,7 @@
 layout: post
 title:  "Consecutive Elements in an Array"
 categories: learning
+excerpt : In this algorithm challenge, we find if given array of integers, all the items are consecutive. We assume that the array is sorted. Even though this problem looked straightforward, it turns out there are various other algorithms that help achieve the same output.
 ---
 
 ### Check if array elements are consecutive

@@ -3,6 +3,7 @@ layout: post
 title:  "Why Jekyll!"
 date:   2019-02-18 12:10:42 +0530
 categories: blog
+excerpt: Jekyll is fun. Amidst blogging, I also get to learn a lot of programming. CodingBBQ is my attempt to pen down my programming journey and what better platform than jekyll.
 ---
 Coding BBQ is <i>yet another honest attempt</i> to log my thoughts online. I was active online earlier but that is a story for another time.
 
