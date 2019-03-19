@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Beautiful Days at the Movies - Javascript algorithm problem"
-categories: learning
+categories: hackerrank
 excerpt : Found this problem on hackerrank and it seemed interesting. This problem required to implement for loop, reverse an Integer and also use javascript Math methods. While solving this problem, I learned and got my way through return statement, function chaining and modularising my code.
 ---
 

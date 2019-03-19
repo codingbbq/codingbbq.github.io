@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sock Merchant - Javascript algorithm problem"
-categories: learning
+categories: hackerrank
 excerpt : The Sock Merchant problem on hacker Rank was quite interesting. I got to use the javascript .map function and also used the hash map technique to store the frequency of the sock type. I spent around 35 minutes on this problem.
 ---
 

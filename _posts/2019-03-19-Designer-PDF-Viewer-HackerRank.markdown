@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Desinger PDF Viewer - Javascript algorithm problem"
-categories: learning
+categories: hackerrank
 excerpt : The "Designer PDF Viewer" problem on hacker Rank was interesting. I got to use the .reduce method of ES6 and also learn to use the Math.max method on an array.
 ---
 

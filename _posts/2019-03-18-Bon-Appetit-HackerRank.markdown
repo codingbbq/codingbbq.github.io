@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bon Appetit - Javascript algorithm problem"
-categories: learning
+categories: hackerrank
 excerpt : HackerRank has some simple yet interesting problems. Based on simple input parameters, we had to calculate the output. The fun was going through the problem story line.
 ---
 
