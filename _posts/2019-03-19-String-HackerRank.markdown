@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "String related Javascript algorithm problem"
+title:  "String related algorithm problem"
 categories: hackerrank
 excerpt : While working with strings, I always had encountered difficulty. So it was time to look at some of the string related problems.
 ---
@@ -34,13 +34,16 @@ console.log(camelcase("saveChangesInTheEditor"));
 
 ```
 
+---
+
 ### Pangram - HackerRank problem
 
 2. [Pangram problem](https://www.hackerrank.com/challenges/pangrams/problem)
 
-*A sentance is a Pangram if it contains every letter of the Alphabet.* 
+*A sentance is a Pangram if it contains every letter of the Alphabet.*
 I used below logic to get around the solution
-1. Remove all the white spaces from the sentence using the regular expression. (I had to google :|)
+
+1. Remove all the white spaces from the sentence using the regular expression. (I had to google)
 2. `split` the output string to form an array.
 3. Use the `.map` method and convert all the alphabets to lower case.
 4. We then run through the final array and search if the alphabet is present in the placeholder object.
@@ -65,7 +68,8 @@ function pangrams(s) {
       return eachAlphabet.toLowerCase();
     });
 
-    // Check if the alphabet is present in the placeholder object. If not, we insert into placeholder 
+    // Check if the alphabet is present in the placeholder object. 
+    // If not, we insert into placeholder 
     // object and then increment the count.
     pangramTest.map((eachTest) => {
       if(!alphabetArray.hasOwnProperty(eachTest)){
@@ -89,6 +93,8 @@ console.log(pangrams("We promptly judged antique ivory buckles for the next priz
 console.log(pangrams("We promptly judged antique ivory buckles for the prize"));
 
 ```
+
+---
 
 ### Weights uniform strings - HackerRank problem
 
@@ -115,7 +121,8 @@ function weightedUniformStrings(s, queries) {
     // For loop to traverse through each of the items
     for(var i = 0; i< s.length; i++){
         
-        // Get the char Code and subtract it from 96 so that a = 1, b = 2 etc. This will help avoid create any pre defined 
+        // Get the char Code and subtract it from 96 so that a = 1, b = 2 etc. 
+        //This will help avoid create any pre defined 
         // array with characters and corresponding codes
         code = s.charCodeAt(i) - 96;
       
@@ -127,12 +134,14 @@ function weightedUniformStrings(s, queries) {
           previousCount = 1;
         }
       
-        // Since we are in a for loop, the idea is to know if there were any repeated previous items, we can
+        // Since we are in a for loop, the idea is to know if 
+        // there were any repeated previous items, we can
         // then using basic maths to calculate the weights. See below example.
         calculatedWeights[previousItem * previousCount] = true;
     }
     
-    // We then check each input query with the object index, if it exists, then we print Yes
+    // We then check each input query with the object index, 
+    //if it exists, then we print Yes
     var results = []
     for(var j = 0; j< queries.length; j++){
       results.push(calculatedWeights[queries[j]] ? "Yes" : "No"); 
