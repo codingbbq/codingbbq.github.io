@@ -9,8 +9,8 @@ excerpt : Hackerrank has interesting challenges and today I utilized some time s
 
 [The problem can be found here](https://www.hackerrank.com/challenges/alternating-characters/problem)
 
-The problem is quite straightforward yet thought provoking. I was intrigued by the problem and a careful analysis showed that I the solution was quite simple. 
-I learned to break the problem down into smaller chuncks to lead to a simpler solution.
+The problem is quite straight forward yet thought provoking. I was intrigued by the problem and a careful analysis showed that the solution was simple. 
+I learned to break the problem down into smaller chunks to lead to a simpler solution.
 
 ```javascript
 
