@@ -5,7 +5,7 @@ categories: hackerrank
 excerpt : We continue the jounrney of improving problem solving abilities. The key to solving puzzles and problems effectivly is consistency. We may know the theoretical concepts and the paradigms, but we want to learn and practice each concept.
 ---
 
-### BMigratory Birds
+### Migratory Birds
 
 [Link to the problem](https://www.hackerrank.com/challenges/migratory-birds/problem)
 
@@ -233,7 +233,7 @@ console.log(icecreamParlor(295, [678, 227, 764, 37, 956, 982, 118,
 
 [Link to Problem](https://www.hackerrank.com/challenges/missing-numbers/problem)
 
-This was a very fun problem. I could figure out the logic howerver, I missed reading one important requirement i.e <i>Print each missing number once, even if it is missing multiple times.</i> because of which one of the Test Case failed. Unlike the last problem, I did not want to spend any heckos, so I read the entire problem again and fortunately I was able to figure out the issue.
+This was a fun to do problem. I could figure out the logic howerver, I missed reading one important requirement i.e <i>Print each missing number once, even if it is missing multiple times.</i> because of which one of the Test Case failed. Unlike the last problem, I did not want to spend any heckos, so I read the entire problem again and fortunately I was able to figure out the issue.
 
 After practicing the fundamentals, use of higher order javascript functions appear familiar and hence I again used `.reduce` in my algorithm.
 
