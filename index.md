@@ -41,4 +41,4 @@ Welcome to codingBBQ, my playground and abode for all my programming activities.
 
 ---
 <br />
-[Read all the articles](/articles/)
+[Read all the articles](/articles)
