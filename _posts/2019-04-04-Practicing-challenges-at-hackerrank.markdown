@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Continous challenges at Hackerrank"
+title:  "Practicing challenges at Hackerrank"
 categories: hackerrank
 excerpt : Its summer and the scrotching heat will not stop us from challeging ourselves to solve Hackerrrank problems.
 ---
