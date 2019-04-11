@@ -5,6 +5,8 @@ categories: Book
 excerpt: P. T. Burnum has aptly put this book "The art of money getting" and provided us with precise golden nuggets for us to reconsider how we value money. After reading the book, I realised that, it does not talk about how to earn money, but about how to get money and keep growing it. The author is prudent about how business is the only source of getting the money.
 ---
 
+![The art of Money Getting](/assets/images/The-art-of-Money-Getting.jpg){:class="img-fluid w-100"}
+
 Recently, when browsing hacker news, I came across this book [Golden Rules for Making Money by P. T. Barnum 1880](http://www.fourmilab.ch/etexts/www/barnum/moneygetting/moneygetting.html) and it was worth the read. Below are some of the key points that I found worth noting for my personal reference. 
 
 Considering that this book was written many years back, it is astounding that how every word holds true. 
