@@ -1,8 +1,6 @@
 ---
 layout: page
 ---
-{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
 
 {% assign post = site.posts.first %}
 <div class="col-md-8 p-lg-5 mx-auto my-5">
@@ -16,13 +14,11 @@ layout: page
     </p>
     <a class="btn btn-outline-secondary" href="{{ post.url | relative_url }}">Read more</a>
 </div>
-  
-{% assign rows = 6 | divided_by: 2.0 | ceil %}
-{% for i in (1..rows) %}
+
+{% for i in (1..3) %}
   {% assign offset = forloop.index0 | times: 2 %}
   <div class="row mb-4">
     {% for post in site.posts limit:2 offset:offset %}
-        {{ site.post.first }}
         <div class="col-sm-6">
             <div class="card">
                 <div class="card-body">
@@ -37,7 +33,7 @@ layout: page
                     <a href="{{ post.url | relative_url }}" class="btn btn-primary">Read more</a>
                 </div><!-- card-body -->
                 <div class="card-footer">
-                    <small class="text-muted">{{ post.date | date: date_format }}</small>
+                    <small class="text-muted">{{ post.date | date_to_long_string  }}</small>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Art of Money Getting - P. T. Burnum - 1880"
-categories: Book
+categories: book
 excerpt: P. T. Burnum has aptly put this book "The art of money getting" and provided us with precise golden nuggets for us to reconsider how we value money. After reading the book, I realised that, it does not talk about how to earn money, but about how to get money and keep growing it. The author is prudent about how business is the only source of getting the money.
 ---
 

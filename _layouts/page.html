@@ -2,18 +2,23 @@
 layout: default
 ---
 
-<div class="row my-4 p-4 shadow">
+<div class="container">
 
-    <article>
+    <div class="row my-4 p-4 shadow">
 
-        <header class="post-header">
-          <h1>{{ page.title | escape }}</h1>
-        </header>
-      
-        <div>
-          {{ content }}
-        </div>
-      
-    </article>
-
+        <article>
+    
+            <header class="post-header">
+              <h1>{{ page.title | escape }}</h1>
+            </header>
+          
+            <div>
+              {{ content }}
+            </div>
+          
+        </article>
+    
+    </div>
+    
 </div>
+

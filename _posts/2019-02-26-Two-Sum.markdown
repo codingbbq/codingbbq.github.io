@@ -2,7 +2,7 @@
 layout: post
 title:  "Two Sum : Leetcode algorithm problem"
 date:   2019-02-18 12:10:42 +0530
-categories: algorithm
+categories: hackerrank
 excerpt : The challenge in this leetcode problem was to figure out an optimized solution. Instead of traversing the entire array for a solution (using the brute force method), the best approach is to make use of Hash maps.
 ---
 

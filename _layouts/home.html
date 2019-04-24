@@ -10,8 +10,8 @@ layout: default
 
       <div class="card shadow w-100 my-3">
         <div class="card-body">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {%- assign date_format = "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date_to_long_string }}</span>
 
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">

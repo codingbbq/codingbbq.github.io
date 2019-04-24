@@ -2,7 +2,7 @@
 layout: post
 title:  "Plus One : Leetcode algorithm problem"
 date:   2019-03-11 16:10:42 +0530
-categories: algorithm
+categories: hackerrank
 excerpt : A leetcode algorithm problem to add one to an array of elements. In this problem, we learned to traverse the array from end, we also learned the use of ++ operator to append one before executing any other statement.
 ---
 

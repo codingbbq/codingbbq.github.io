@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">{{ page.category_title }}</h1>
+        <p class="lead text-muted">{{ page.category_description }}</p>
+    </div>
+</section>
+
+<div class="container">
+
+        <div class="row">
+        {% for post in site.categories[page.category_name] %}
+            <div class="card bg-light mb-3 w-100">
+                <div class="card-header">{{post.date | date_to_long_string }}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{post.title}}</h5>
+                    <p class="card-text">{{post.excerpt}}</p>
+                    <a class="card-link" href="{{ post.url }}">Read more</a>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+</div>
+
+
+
+    

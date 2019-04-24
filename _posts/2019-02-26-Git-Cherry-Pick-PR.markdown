@@ -2,7 +2,7 @@
 layout: post
 title:  "Git - Pull Request a Cherry Pick to a different branch in same repository"
 date:   2019-02-18 12:10:42 +0530
-categories: Github
+categories: learning
 excerpt : Git makes life of developer super productive. If we have to maintain two branches and sometimes we need the same code from one branch to be put in another branch, cherry-pick is your goto command.
 ---
 

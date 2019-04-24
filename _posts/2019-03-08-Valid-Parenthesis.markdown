@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Valid Parenthesis : Leetcode Algorithm Problem"
-categories: algorithm
+categories: hackerrank
 excerpt : This is by far the most interesting problem I saw on leetcode. Also the algorithm to solve such challenge was super easy to undrstand and at the same time it was also super easy to implement. 
 ---
 
