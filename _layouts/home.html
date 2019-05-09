@@ -1,35 +1,39 @@
 ---
 layout: default
 ---
+<div class="container">
 
-<div class="row">
+  <div class="row">
   
-  {%- if site.posts.size > 0 -%}
-    
-      {%- for post in site.posts -%}
-
-      <div class="card shadow w-100 my-3">
-        <div class="card-body">
-          {%- assign date_format = "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date_to_long_string }}</span>
-
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {% if post.excerpt %}
-            {{ post.excerpt }}
-            <div class="my-2"><a class="btn btn-outline-dark btn-sm" href="{{ post.url | relative_url }}">Read more</a></div>
-          {%- elsif site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+    {%- if site.posts.size > 0 -%}
+      
+        {%- for post in site.posts -%}
+  
+        <div class="card shadow w-100 my-3">
+          <div class="card-body">
+            {%- assign date_format = "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date_to_long_string }}</span>
+  
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {% if post.excerpt %}
+              {{ post.excerpt }}
+              <div class="my-2"><a class="btn btn-outline-dark btn-sm" href="{{ post.url | relative_url }}">Read more</a></div>
+            {%- elsif site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </div>
         </div>
-      </div>
-
-      {%- endfor -%}
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+  
+        {%- endfor -%}
+  
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+  
+  </div>
+  
 </div>
+
