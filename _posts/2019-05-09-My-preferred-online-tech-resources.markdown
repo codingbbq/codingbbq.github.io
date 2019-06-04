@@ -12,7 +12,7 @@ I started this blog to document my day to day learning. Surfing through this que
 #### Websites
 
 1. [Hacker News](https://news.ycombinator.com/) : 
-This is my go to resource for everything technology, startup and much much more. Instead of wasting time on news websites which are bloated with ads, hackernews is very subtle in its design and the content is ranked by the users. With Hacker news, I alwasys look for what is happening in the startup world along with inventions in the technology space. I skim through the headlines and if and only if I find anything interesting, I click through to read the complete article.
+This is my go to resource for everything technology, start-up and much much more. Instead of wasting time on news websites which are bloated with ads, HackerNews is very subtle in its design and the content is ranked by the users. With Hacker news, I always look for what is happening in the start-up world along with inventions in the technology space. I skim through the headlines and if and only if I find anything interesting, I click through to read the complete article.
 
 2. [Hacker Rank](https://www.hackerrank.com/), [Codewars](https://www.codewars.com/) : 
 These are not news per se, but coding competitive web apps that has challenges and we can code our way through to solve them. We earn points and ultimately climb the rank. Recently I started learning python, and what better coding platform than these apps. So I choose codewars and hackerrank. Not only does it have clear instructions on the problems, but its real-time evaluation and amazing gamification keeps me hooked.
@@ -20,18 +20,18 @@ These are not news per se, but coding competitive web apps that has challenges a
 Side note: The psychology of gamification is indeed worth studying. The idea of points and virtual rewards keeps the user hooked and coming back to the application frequently. I should learn more about gamification.
 
 3. [Reddit - Machine Learning](https://www.reddit.com/r/learnmachinelearning) : 
-I am not a huge fan of Reddit, as it has plathora of sub-reddits that keeps you engaging, eventually to realize that you've lost a lot of time. However, I once in a while make sure to check out this sub-reddit on machine learning. Recently, Machine learning has caught my attention and since I am already learning python, why not also learn about Data Science, Deep learning, Machine learning etc.
+I am not a huge fan of Reddit, as it has plethora of sub-reddit that keeps you engaging, eventually to realize that you've lost a lot of time. However, I once in a while make sure to check out this sub-reddit on machine learning. Recently, Machine learning has caught my attention and since I am already learning python, why not also learn about Data Science, Deep learning, Machine learning etc.
 
 4. [Stack Overflow](https://stackoverflow.com) : 
-If google is ocean, SO is the Sea of technical repository. It is the most famous and highly used programming Q&A webapp. I have asked a lot of questions over there and also tried answering a few. Stack Overflow is one of the first webapps where I truly enjoyed Gamification. It has an amazing rewarding system. Sometimes I browse through random questions on SO to improve my programming skills.
+If google is ocean, SO is the Sea of technical repository. It is the most famous and highly used programming Q&A web app. I have asked a lot of questions over there and also tried answering a few. Stack Overflow is one of the first web apps where I truly enjoyed Gamification. It has an amazing rewarding system. Sometimes I browse through random questions on SO to improve my programming skills.
 
-#### Youtube
+#### YouTube
 
-1. [Live music on youtube](https://www.youtube.com/watch?v=PPPLiCWllv8) : 
-While I am writing this post, I have my earphones plugged in to the live chilling music on youtube. I do not have any particular playlist but my preference is to listen to instrumental music such as FreeCodeCamp radio or the live jazz music. I've observed that this helps me improve my concentration and keeps me focused at work. I don't feel distracted. There are various channels such as meditation music, study music etc that are widely listened to.
+1. [Live music on YouTube](https://www.youtube.com/watch?v=PPPLiCWllv8) : 
+While I am writing this post, I have my earphones plugged in to the live chilling music on YouTube. I do not have any particular playlist but my preference is to listen to instrumental music such as FreeCodeCamp radio or the live jazz music. I've observed that this helps me improve my concentration and keeps me focused at work. I don't feel distracted. There are various channels such as meditation music, study music etc that are widely listened to.
 
-2. [Youtube Channels](https://www.youtube.com) : 
-I spend majority of my time watching programming channels on youtube. Youtube has been a great learning resource for me. The quality of content is amazing. I have subscribed to channels like
+2. [YouTube Channels](https://www.youtube.com) : 
+I spend majority of my time watching programming channels on YouTube. It has been a great learning resource for me. The quality of content is amazing. I have subscribed to channels like
 
 #### Programming
 - [FreeCodeCamp](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) :  For various programming tutorials
@@ -47,7 +47,7 @@ I like watching vloggers but there are some who I enjoy and don't miss any of th
 #### Gameplays
 I watch a lot of Gameplays and recently I've enjoyed streams from Shroud, Ninja for games like Fortnite and PUBG.
 
-I remember we did a presentation during our MBA course about how teams in corporate world should spend time playing multiplayer games like counter strike. I once enjoyed playing CS, but mind you, all this games really need a lot of patience and you need to invest a lot of time to practice. Apart from that, you need a good dedicated team that would communicate and stick a strategy. I think, playing such games can help improve communication in your team and also brings you as a team to strategise on ideas.
+I remember we did a presentation during our MBA course about how teams in corporate world should spend time playing multiplayer games like counter strike. I once enjoyed playing CS, but mind you, all this games really need a lot of patience and you need to invest a lot of time to practice. Apart from that, you need a good dedicated team that would communicate and stick a strategy. I think, playing such games can help improve communication in your team and also brings you as a team to strategize on ideas.
 
 #### Podcasts
 I have google podcasts downloaded on my phone and subscribed to some amazing podcasts. I usually listen to Cut the Crap podcast, the side hustle, HBR Ideacast, How I built this, Python, Machine Learning 101 etc. Podcasts are a good resources when you travel.

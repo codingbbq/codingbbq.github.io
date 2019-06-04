@@ -17,7 +17,7 @@ All of the advice mentioned in the book indirectly talks about how a man can est
 {: .bg-light .blockquote .text-right .p-4}
 
 
-This book is apt, precise and hits the bull's eye. I enjoyed reading the timely anecdotes for each of the golden nuggets mentioned. Reading through all advice that the author is trying to communicate, I could relate to its truthness even to this day. 
+This book is apt, precise and hits the bull's eye. I enjoyed reading the timely anecdotes for each of the golden nuggets mentioned. Reading through all advice that the author is trying to communicate, I could relate to its truthiness even to this day. 
 
 
 #### Select your Vocation which is most congenial to your taste.
@@ -35,20 +35,20 @@ You should always avoid running into debt. Debt robs a man of his self respect a
 > The old Quaker said to his farmer son, “John, never get trusted; but if thee gets trusted for anything, let it be for ‘manure,’ because that will help thee pay it back again.”
 {: .bg-light .blockquote .text-right .p-4}
 
-Mr. Beecher advised yound man to get in debt if they could in the purchase of a land. “If a young man,” he says, “will only get in debt for some land and then get married, these two things will keep him straight, or nothing will.”
+Mr. Beecher advised young man to get in debt if they could in the purchase of a land. “If a young man,” he says, “will only get in debt for some land and then get married, these two things will keep him straight, or nothing will.”
 
-> Money is in some respects like fire, it is an excellent servent but a terrible master.
+> Money is in some respects like fire, it is an excellent servant but a terrible master.
 {: .bg-light .blockquote .text-right .p-4}
 
 When you have it mastering you; when interest is constantly piling up against you, it will keep you down in the worst kind of slavery. But let money work for you, and you have the most devoted servant in the world.
 
 Do not let it work against you; if you do there is no chance for success in life so far as money is concerned.
 
-#### Perservere
+#### Persevere
 
 When a man is in right path, he must persevere.
 How many have almost reached the goal of their ambition, but, losing faith in themselves, have relaxed their energies, and the golden prize has been lost forever.
-If you hesitate, some bolder hand will stretch out before you and get the prize. Remember the proverb of Solomon: “He becometh poor that dealeth with a slack hand; but the hand of the diligent maketh rich.”
+If you hesitate, some bolder hand will stretch out before you and get the prize. Remember the proverb of Solomon: “He becometh poor that dealt with a slack hand; but the hand of the diligent makes rich.”
 
 #### Whatever you do, do it with all your might.
 
@@ -57,7 +57,7 @@ Work at it, if necessary, early and late, in season and out of season, not leavi
 > Whatever is worth doing at all, is worth doing well.
 {: .bg-light .blockquote .text-right .p-4}
 
-Many a man acquires a fortune by doing his business thoroughly, while his neighbor remains poor for life, because he only half does it. Ambition, energy, industry, perseverance, are indispensable requisites for success in business.
+Many a man acquires a fortune by doing his business thoroughly, while his neighbour remains poor for life, because he only half does it. Ambition, energy, industry, perseverance, are indispensable requisites for success in business.
 
 Do your part of the work, or you cannot succeed. 
 
@@ -75,11 +75,11 @@ The possession of a perfect knowledge of your business is an absolute necessity 
 
 #### Use the best tools.
 
-"Hands" are not worth a great deal without "Heads". Those men who have brains and experiances are therefore the most valuable.
+"Hands" are not worth a great deal without "Heads". Those men who have brains and experiences are therefore the most valuable.
 
 #### Don't get above your business
 
-There is no greater mistake than when a young man believes he will succeed with borrowed money. Money is good for nothing unless you know its value by experiance.Nine out of ten of the rich men of our country to-day, started out in life as poor boys, with determined wills, industry, perseverance, economy and good habits. They went on gradually, made their own money and saved it; and this is the best way to acquire a fortune.
+There is no greater mistake than when a young man believes he will succeed with borrowed money. Money is good for nothing unless you know its value by experience.Nine out of ten of the rich men of our country to-day, started out in life as poor boys, with determined wills, industry, perseverance, economy and good habits. They went on gradually, made their own money and saved it; and this is the best way to acquire a fortune.
 
 #### Learn something useful.
 
@@ -91,7 +91,7 @@ Many persons are always kept poor, because they are too visionary. Every project
 
 #### Do not scatter your powers.
 
-Engage in one kind of business and stick to it faithfully untill you succeed or until your experiances show that you should abondon it. A constant hammering on one nail will generally drive it home at last, so that it can be clinched. 
+Engage in one kind of business and stick to it faithfully until you succeed or until your experiences show that you should abandon it. A constant hammering on one nail will generally drive it home at last, so that it can be clinched. 
 
 #### Be systematic
 
@@ -134,6 +134,6 @@ It is more precious than diamonds or rubies.
 The inordinate love of money, no doubt, may be and is “the root of all evil,” but money itself, when properly used, is not only a “handy thing to have in the house,” but affords the gratification of blessing our race by enabling its possessor to enlarge the scope of human happiness and human influence. The desire for wealth is nearly universal, and none can say it is not laudable, provided the possessor of it accepts its responsibilities, and uses it as a friend to humanity.
 
 >"He that wants money, means, and content, is without three good friends." <br />
-_William Shakesphere_
+_William Shakespeare_
 {: .bg-light .blockquote .text-right .p-4}
 <i>The man who lacks money, employment, and happiness is without three good friends.</i>
