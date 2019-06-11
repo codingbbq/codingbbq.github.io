@@ -19,7 +19,7 @@ return [0, 1].
 ```
 
 The first approach that I could think of was `Brute force`. Which was to iterate through the array of integers and find the sum.
-Below is the javascript solution. 
+Below is the JavaScript solution. 
 We iterate through each array element in a multi for loop and add the `ith` number with each `jth` number to see if it is equal to the target. If so, we return the `ith` and `jth` element.
 
 ``` javascript

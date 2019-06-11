@@ -2,7 +2,7 @@
 layout: post
 title:  "Practicing challenges at Hackerrank"
 categories: hackerrank
-excerpt : Its summer and the scrotching heat will not stop us from challeging ourselves to solve Hackerrrank problems.
+excerpt : Its summer and the scorching heat will not stop us from challenging ourselves to solve Hackerrrank problems.
 ---
 
 ### Game of Thrones 1 - Hackerrank
@@ -43,7 +43,7 @@ d : 3
 
 Based on above test cases, we can conclude that, for a string to be palindrome, it should have *at most* ONE odd occurrence of a character, which means either zero or one odd occurrence of a character.
 
-Below is my attempt in javascript
+Below is my attempt in JavaScript
 
 ```javascript
 
@@ -97,7 +97,7 @@ console.log(gameOfThrones("cdefghmnopqrstuvw"));
 
 [Problem Statement](https://www.hackerrank.com/challenges/two-strings/problem)
 
-For this challenge I used the `indexOf` javascript method.
+For this challenge I used the `indexOf` JavaScript method.
 One caveat in my solution is, it does not give exact match. For example
 "Hello" and "World" has two substrings, i.e "l" and "o". However my function below also considers the second "l" from "Hello" and shows as a match, thus giving a total of 3 matches.
 

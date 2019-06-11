@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Javascript Interview Questions : Challenging `this`"
+title:  "JavaScript Interview Questions : Challenging `this`"
 categories: learning
-excerpt : Attempting to solve and figure out solution to some of the tricky and very interesting questions asked in Javascript interviews.
+excerpt : Attempting to solve and figure out solution to some of the tricky and very interesting questions asked in JavaScript interviews.
 ---
 
-### Javascript interview questions
+### JavaScript interview questions
 
-I found a print of Javascript questions usually asked in Interview and I had to test my own knowledge. Below is the breakup of each questions, my answer and then followed by the correct answer. The idea of this blog post is to be honest to myself and sincerly take the test. So let's get started.
+I found a print of JavaScript questions usually asked in Interview and I had to test my own knowledge. Below is the breakup of each questions, my answer and then followed by the correct answer. The idea of this blog post is to be honest to myself and sincerely take the test. So let's get started.
 
 ## What the code below will output to the console?
 
@@ -30,7 +30,7 @@ obj.func();
 
 ```
 #### My Solution:
-To start with `obj.func()` is being called. However there is a self executing function inside `func` function. If I have to think through, looks like self executing functions will be called first followed by the console.log insed the func function. It could even be otherwise. Also, it looks like assigning `this` to `self` is just to confuse. So the answer according to me should be
+To start with `obj.func()` is being called. However there is a self executing function inside `func` function. If I have to think through, looks like self executing functions will be called first followed by the console.log instead of the `func` function. It could even be otherwise. Also, it looks like assigning `this` to `self` is just to confuse. So the answer according to me should be
 
 ```
 "inner func : this.foo= bar"

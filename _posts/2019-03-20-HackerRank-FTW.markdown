@@ -49,7 +49,7 @@ However, now we used the ES5 `.reduce` method.
 
 Below is my attempted solution
 1. Used the ES6 array function
-2. We are setting the initial value to be 0 which is used as the value of literal total during the first callback execution
+2. We are setting the initial value to be 0 which is used as the value of literal total during the first call-back execution
 
 ```javascript
 
@@ -68,13 +68,13 @@ console.log(simpleArraySum([1,2,3,4,10,11]));
 ```
 
 Some points about `.reduce` that I learned today
-1. The reduce method reduces the array to a single value. It executes a callback function once for each element in an array.
-2. The callback function accepts arguments such as
-    1. accumulator - Accumulates the callback's return value
+1. The reduce method reduces the array to a single value. It executes a call-back function once for each element in an array.
+2. The call-back function accepts arguments such as
+    1. accumulator - Accumulates the call-back's return value
     2. currentValue - Current value of the array
     3. currentIndex - The array index of the current Value.
-    4. array (optional) - The array, reduce was called upoon.
-3. InitialValue - This is the value used as the first argument to the first call of the callback function. If no initial value is supplied than the first element of the array will be used.
+    4. array (optional) - The array, reduce was called upon.
+3. InitialValue - This is the value used as the first argument to the first call of the call-back function. If no initial value is supplied than the first element of the array will be used.
 4. We cannot call reduce method on an empty array without an initial value.
 
 ---
@@ -83,7 +83,7 @@ Some points about `.reduce` that I learned today
 
 [Compare the triplets problem](https://www.hackerrank.com/challenges/compare-the-triplets/problem)
 
-This was a straightforward problem. I wanted to see if we can use any of the javascript array functions like filter, every or map. Eventually I end up using the for loop to do the comparision.
+This was a straightforward problem. I wanted to see if we can use any of the JavaScript array functions like filter, every or map. Eventually I end up using the for loop to do the comparison.
 
 ```javascript
 
@@ -125,7 +125,7 @@ I had to google my way to figure out if it was possible and I learned about the 
 We can assign a possible big integer data type to a variable like below
 `let aBigSum = BigInt(Number.MAX_SAFE_INTEGER);`
 
-Also, I used the `reduce` javascript function in this problem.
+Also, I used the `reduce` JavaScript function in this problem.
 
 ```javascript
 
@@ -194,8 +194,8 @@ b[2][0] = 10
 This being straightforward, I want to use any of the ES6 methods while finding the count of positive, negative and zero in an array.
 Thus, `.reduce` to the rescue. I learned
 1. We can return any datatype when using reduce. In our example we are returning array.
-2. We need to do a return for each iteration of reduce callback function. In our example we return an array.
-3. We can modify the length of decimal value using the `toFixed(6)` method. Here, I want the output to be upto 6 decimal places.
+2. We need to do a return for each iteration of reduce call-back function. In our example we return an array.
+3. We can modify the length of decimal value using the `toFixed(6)` method. Here, I want the output to be up to 6 decimal places.
 
 
 

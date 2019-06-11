@@ -2,10 +2,10 @@
 layout: post
 title:  "Most preferred Online resources to keep me up to date"
 categories: essays
-excerpt: In this post I list down the most valuable resources that I visit almost regularly. Being in the technology domain, keeping myself upto date is need of the hour. Also, considering the ocean full of resources available, it is always overwhelming to choose the right knowledge repository and stick to it.
+excerpt: In this post I list down the most valuable resources that I visit almost regularly. Being in the technology domain, keeping myself up to date is need of the hour. Also, considering the ocean full of resources available, it is always overwhelming to choose the right knowledge repository and stick to it.
 ---
 
-I started this blog to document my day to day learning. Surfing through this quest, today's post is about all the resources that I browse regularly to keep me upto date in the field of technology. Internet is ocean full of knowledge and the content keeps getting added at an exponential speed. Many times it may be overwhelming, but having the right resources bookmarked, I can stay focused.
+I started this blog to document my day to day learning. Surfing through this quest, today's post is about all the resources that I browse regularly to keep me up to date in the field of technology. Internet is ocean full of knowledge and the content keeps getting added at an exponential speed. Many times it may be overwhelming, but having the right resources bookmarked, I can stay focused.
 
 ![Preferred Online Resources](/assets/images/Preferred-Online-Resources.jpg){:class="img-fluid w-100"}
 

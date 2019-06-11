@@ -11,7 +11,7 @@ excerpt : While working with strings, I always had encountered difficulty. So it
 
 In this problem I learned and used the regex (Regular Expressions). When converting any string to array, we use split and I 
 was surprised to learn that we can use our RegEx inside the split function as one of the parameter.
-The regEx is basically to check if there exists zero or one existance of a uppercase alphabet and then we split it to form an array.
+The regEx is basically to check if there exists zero or one existence of a uppercase alphabet and then we split it to form an array.
 Since the problem asks us only to get the length of string, we calculate that using the `.length` array method.
 
 Important point to note in the below Regular Expression is that we are using [Lookahead regular expression](https://coderwall.com/p/5c7kjq/lookahead-and-lookbehind-regex). 
@@ -40,7 +40,7 @@ console.log(camelcase("saveChangesInTheEditor"));
 
 2. [Pangram problem](https://www.hackerrank.com/challenges/pangrams/problem)
 
-*A sentance is a Pangram if it contains every letter of the Alphabet.*
+*A sentence is a Pangram if it contains every letter of the Alphabet.*
 I used below logic to get around the solution
 
 1. Remove all the white spaces from the sentence using the regular expression. (I had to google)
@@ -103,7 +103,7 @@ console.log(pangrams("We promptly judged antique ivory buckles for the prize"));
 
 Below is my attempted solution. I took help of the solutions posted in the discussion to understand how it was solved but then solved it 
 on my own later to understand the solution. This problem makes good use of the hash map methodology. The best part about the solution is that
-we are not utilizing time on how to destructure the strings, instead we are using simple basic configs to create a final output object.
+we are not utilizing time on how to de-structure the strings, instead we are using simple basic configs to create a final output object.
 
 ```javascript
 

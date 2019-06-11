@@ -2,7 +2,7 @@
 layout: post
 title:  "Challenging the limits - Fun solving Hackerrnk problems"
 categories: hackerrank
-excerpt : Happy Friday!!! Hackerrank has been a great resource for challenging problems and a good learning experiance. We try to push our rank to get the Gold badge by solving more problems. Let's get it
+excerpt : Happy Friday!!! Hackerrank has been a great resource for challenging problems and a good learning experience. We try to push our rank to get the Gold badge by solving more problems. Let's get it
 ---
 
 ### Repeated String - Hackerrank
@@ -75,7 +75,7 @@ console.log(repeatedString("a", 1000000000));
 
 ```
 
-### Jumping on the clounds - hackerrank
+### Jumping on the clouds - hackerrank
 
 [Problem statement](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem)
 
@@ -162,7 +162,7 @@ console.log(equalizeArray([37, 32, 97, 35, 76, 62]));
 
 [Problem statement](https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem)
 
-This was a good challenging problem. I used the `indexOf` javascript function. This function returns the first found index of the character being searched.
+This was a good challenging problem. I used the `indexOf` JavaScript function. This function returns the first found index of the character being searched.
 However, in our challenge, we wanted to check for incremental search of the string. For this we had to define the starting Index in the `indexOf` function.
 Also, since we changed the startIndex, we would always get the indices in incremental order. In case the character was not found we would get a -1.
 Based on above assumptions, we could print the correct output.

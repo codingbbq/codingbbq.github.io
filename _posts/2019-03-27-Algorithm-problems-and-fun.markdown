@@ -43,12 +43,12 @@ console.log(circularArrayRotation([1,2,3], 2, [0,1,2]));
 
 [Link to problem](https://www.hackerrank.com/challenges/permutation-equation/problem)
 
-Yet another interesting problem, but I could not understand the value behind this problem. It looked trivial to me. However, the best approach I could think of was to use a hashMap / Javascript object with key, value to store the required indices. 
+Yet another interesting problem, but I could not understand the value behind this problem. It looked trivial to me. However, the best approach I could think of was to use a hashMap / JavaScript object with key, value to store the required indices. 
 
 My approach was
 1. Get the max value from the given array, so we can loop through from 1 to max
-2. Store the indices as keys and values in a javascript object.
-3. Refer the javscript object to get the desired permution.
+2. Store the indices as keys and values in a JavaScript object.
+3. Refer the JavaScript object to get the desired permutation.
 
 ```javascript
 
@@ -80,9 +80,9 @@ console.log(permutationEquation([2,3,1]));
 ```
 
 
-### Sherlock and Squres
+### Sherlock and Squares
 
-[Problem statemet](https://www.hackerrank.com/challenges/sherlock-and-squares/problem)
+[Problem statement](https://www.hackerrank.com/challenges/sherlock-and-squares/problem)
 
 I used the brute force approach to find the count of perfect squares. See below solution. However, for couple of test cases, this solution timed out.
 Upon doing a google search, I learned about a formula that gives you the count.

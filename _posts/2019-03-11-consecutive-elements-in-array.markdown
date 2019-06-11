@@ -16,11 +16,11 @@ The above array `a` has consecutive integers and so it passes the requirement. H
 
 `let b = [1, 3, 4, 5]`
 
-My first and immediate go to solution was to interate over the array and find the difference of the item with the previous item.
-1. Sort the array in ascending order. Initially I used the javascript method .sort() directly on the array, i.e `array.sort()` however found that for
+My first and immediate go to solution was to iterate over the array and find the difference of the item with the previous item.
+1. Sort the array in ascending order. Initially I used the JavaScript method .sort() directly on the array, i.e `array.sort()` however found that for
 array such as `[1, 2, 3, 10]` the sorting would be string sorting i.e output would be `[1, 10, 2, 3]`. So, the solution was to sort each item with previous item based on condition.
 
-2. After sorting, iterate over the array and check if the next element is greater than the prevoious element by 1. Based on the condition we used, one point to take care was that the loop is run for a total length of array - 1 times.
+2. After sorting, iterate over the array and check if the next element is greater than the previous element by 1. Based on the condition we used, one point to take care was that the loop is run for a total length of array - 1 times.
 
 ```javascript
 
@@ -44,7 +44,7 @@ The above solution worked great for me, however, I was wondering if there was an
 
 1. Check if max - min + 1 = n
 where `max` is maximum element in array
-`min` is minimum elemet in array and 
+`min` is minimum element in array and 
 `n` is the number of elements in array.
 
 2. Check if all the elements are distinct. we can create a visited{} object. We can map the ith element of input array arr[] to visited object by using arr[i] as index in visited with value as 1.

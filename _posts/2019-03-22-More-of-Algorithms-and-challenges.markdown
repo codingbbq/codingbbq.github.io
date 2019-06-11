@@ -91,7 +91,7 @@ console.log(getMoneySpent([4], [5], 5));
 [The problem can be found here](https://www.hackerrank.com/challenges/cats-and-a-mouse/problem)
 
 Again, considering that the problem was quite simple, I could get the solution without any debugging and at one go.
-We used the `Math.abs(a-b)` javascript function comfortably here.
+We used the `Math.abs(a-b)` JavaScript function comfortably here.
 
 ```javascript
 
@@ -233,9 +233,9 @@ console.log(icecreamParlor(295, [678, 227, 764, 37, 956, 982, 118,
 
 [Link to Problem](https://www.hackerrank.com/challenges/missing-numbers/problem)
 
-This was a fun to do problem. I could figure out the logic howerver, I missed reading one important requirement i.e <i>Print each missing number once, even if it is missing multiple times.</i> because of which one of the Test Case failed. Unlike the last problem, I did not want to spend any heckos, so I read the entire problem again and fortunately I was able to figure out the issue.
+This was a fun to do problem. I could figure out the logic however, I missed reading one important requirement i.e <i>Print each missing number once, even if it is missing multiple times.</i> because of which one of the Test Case failed. Unlike the last problem, I did not want to spend any heckos, so I read the entire problem again and fortunately I was able to figure out the issue.
 
-After practicing the fundamentals, use of higher order javascript functions appear familiar and hence I again used `.reduce` in my algorithm.
+After practicing the fundamentals, use of higher order JavaScript functions appear familiar and hence I again used `.reduce` in my algorithm.
 
 ```javascript
 

@@ -9,7 +9,7 @@ excerpt : A leetcode algorithm problem to add one to an array of elements. In th
 ### Plus One
 
 This was a very easy problem to start with, and I took a direct approach, however, later realised that I need to keep my mind open think through the solution.
-This was a good learning experiance.
+This was a good learning experience.
 
 [Leetcode problem no. 66](https://leetcode.com/problems/plus-one/)
 
@@ -29,7 +29,7 @@ Explanation: The array represents the integer 4321.```
 
 So my approach was,
 1. Convert the array into String using .join method
-2. Use javascript methond parseInt to convert its type
+2. Use JavaScript method parseInt to convert its type
 3. Plus one
 4. Split the number back to array.
 
@@ -57,7 +57,7 @@ var plusOne = function(digits) {
 
 ```
 
-I was succesfful at solving this upto certain extent, however then I realized that the for any input with more that 10+ array items, parseInt may behave different.
+I was successful at solving this up to certain extent, however then I realized that the for any input with more that 10+ array items, parseInt may behave different.
 So I looked at the discussions and find a solution. At first the code looked confusing but later after putting debugger, I learned the true essence of it. 
 So for this problem, my attempt failed but I learned a lot by analysing the working code.
 
@@ -78,7 +78,7 @@ var plusOne = function(digits) {
 
 Code analysis
 
-1. Since we want to *Plus One*, we need to tranverse the array from last to first.
+1. Since we want to *Plus One*, we need to traverse the array from last to first.
 2. If you notice the `If statement`, we are incrementing the digits array, before comparing it with 9.
 3. If the digit is greater than 9, make it 0, else return digits.
 4. If the input is `[0]`, than it is taken care by using the array `unshift` operator and passing 1 to it.

@@ -10,7 +10,7 @@ excerpt : The "Designer PDF Viewer" problem on hacker Rank was interesting. I go
 You can find the problem [here](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem)
 
 Below is my attempted solution to the Designer PDF Viewer problem. In this problem, 
-I used the .map as well as .reduce array methods available in javascript. I found out about how we can use the Math.max method
+I used the .map as well as .reduce array methods available in JavaScript. I found out about how we can use the Math.max method
 to get the maximum value in an array of integers.
 
 ```javascript

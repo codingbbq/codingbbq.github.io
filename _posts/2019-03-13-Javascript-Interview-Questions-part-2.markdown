@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Javascript Interview Questions : Let the fun continue"
+title:  "JavaScript Interview Questions : Let the fun continue"
 categories: learning
 excerpt : Going through some of the tricky yet interesting questions asked in Front-End interviews. 
 ---
 
-### Javascript Fun Challenges
+### JavaScript Fun Challenges
 
-Continuing from when we were [Challenging `this`](https://codingbbq.github.io/learning/2019/03/12/Javascript-Interview-Questions.html), it is yet another fun excercise to learn more about javascript.
+Continuing from when we were [Challenging `this`](https://codingbbq.github.io/learning/2019/03/12/Javascript-Interview-Questions.html), it is yet another fun exercise to learn more about JavaScript.
 
 ## What will be the output of the following code?
 
@@ -31,7 +31,7 @@ Ok, again my analysis was incorrect. The output would be `0`. But why? So, I did
 
 Now since our function was passing a variable and we were trying to delete a variable, there was no effect. And hence, the console output was `0`.
 
-This was a tricky question and it needed proper javascript knowledge. I learned something fascinating today.
+This was a tricky question and it needed proper JavaScript knowledge. I learned something fascinating today.
 
 ---
 

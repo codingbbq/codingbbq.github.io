@@ -59,10 +59,10 @@ function caesarCipher(s, k) {
 
 [Problem statement](https://www.hackerrank.com/challenges/mars-exploration/problem)
 
-This too was a fun challenge. I used the `.reduce()` javascript method. Also considered that test case when the letters are jumbled and not just changed. For example, what would be the output when the letters are in sequence "SSO". Here it shoul be 2 because the last two characters are interchanged.
+This too was a fun challenge. I used the `.reduce()` JavaScript method. Also considered that test case when the letters are jumbled and not just changed. For example, what would be the output when the letters are in sequence "SSO". Here it should be 2 because the last two characters are interchanged.
 
-1. First we split the array in chuncks of 3, using the regular expression. (Found this on stackoverflow)
-2. We then traverse through each chunck and check the sequence. If it matches the required "SOS" sequence, we return 0 else the count of characters that are missed.
+1. First we split the array in chunks of 3, using the regular expression. (Found this on StackOverflow)
+2. We then traverse through each chunk and check the sequence. If it matches the required "SOS" sequence, we return 0 else the count of characters that are missed.
 
 After solving some of the challenges using .reduce, I was confident of using it here.
 
@@ -106,7 +106,7 @@ console.log(marsExploration("SSO"));
 [Problem statement](https://www.hackerrank.com/challenges/strong-password/problem)
 
 Unfortunately, I spent 10 hackos in this problem to figure out certain test fails, but it was worth the learning.
-I used Javascript regular expressions and learned quite a few concepts.
+I used JavaScript regular expressions and learned quite a few concepts.
 
 
 ```javascript

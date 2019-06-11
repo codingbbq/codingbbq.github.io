@@ -54,7 +54,7 @@ Thus, for eg,
 
 We can also use `Math.floor(8/5)` however the use of bitwise operator was interesting.
 
-Below is my attemplted solution
+Below is my attempted solution
 
 ```javascript
 
@@ -96,7 +96,7 @@ console.log(gradingStudents([73,67,38,33]));
 [The problem statement can be found here](https://www.hackerrank.com/challenges/apple-and-orange/problem)
 
 What did I learn?
-1. I could easily figure out when the use the javascript higher order array functions.
+1. I could easily figure out when the use the JavaScript higher order array functions.
 2. I used `.map` to get the distance count
 3. I used `.reduce` to get the sum of the apples/oranges which fall within the points
 4. I used the ternary operator successfully. Considering that I am not a big fan of them, using it today felt so comforting.
@@ -141,7 +141,7 @@ countApplesAndOranges(7,11,5, 15, [-2,2,1], [5, -6]);
 
 [The problem can be found here](https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem)
 
-1. We can push multiple elements in a javascript array. For eg.
+1. We can push multiple elements in a JavaScript array. For eg.
 `myArray.push(10, 2, 3)`
 
 ```javascript
@@ -178,7 +178,7 @@ console.log(breakingRecords([10, 5, 20, 20, 4, 5, 2, 25, 1]));
 
 ---
 
-### Birthday Chocalate
+### Birthday Chocolate
 
 [Problem statement](https://www.hackerrank.com/challenges/the-birthday-bar/problem)
 
@@ -220,7 +220,7 @@ console.log(birthday([4], 4, 1));
 
 [The problem can be found here](https://www.hackerrank.com/challenges/divisible-sum-pairs/problem)
 
-Again, a sumple solution, but it was quite clear when I solved it on a book.
+Again, a simple solution, but it was quite clear when I solved it on a book.
 
 ```javascript
 

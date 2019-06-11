@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Beautiful Days at the Movies - Javascript algorithm problem"
+title:  "Beautiful Days at the Movies - JavaScript algorithm problem"
 categories: hackerrank
-excerpt : Found this problem on hackerrank and it seemed interesting. This problem required to implement for loop, reverse an Integer and also use javascript Math methods. While solving this problem, I learned and got my way through return statement, function chaining and modularising my code.
+excerpt : Found this problem on hackerrank and it seemed interesting. This problem required to implement for loop, reverse an Integer and also use JavaScript Math methods. While solving this problem, I learned and got my way through return statement, function chaining and modularising my code.
 ---
 
 ### Beautiful days at the movies - HackerRank problem.

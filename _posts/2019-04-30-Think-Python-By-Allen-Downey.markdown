@@ -2,22 +2,22 @@
 layout: post
 title:  "Think Python - Allen Downey"
 categories: book
-excerpt: I wanted to learn python and what good book to get started then Think Python. I have been on and off with python for a long time, but this time I wanted to dedicate time reading a book, instead of watching a youtube video.
+excerpt: I wanted to learn python and what good book to get started then Think Python. I have been on and off with python for a long time, but this time I wanted to dedicate time reading a book, instead of watching a YouTube video.
 ---
 
-![Think Python](/assets/images/Think-Python.jpg){:class="rounded pr-3 float-left"} Reading this book [Think Python](http://greenteapress.com/thinkpython/thinkpython.pdf) was a good exposure to learning python. The book is very precise and the concepts are well explained. I have been reading about python on and off and watching many youtube tutorials, but this time, I wanted to read a book. Reading makes you deciplined and you yourself are responsible for being consistent. 
+![Think Python](/assets/images/Think-Python.jpg){:class="rounded pr-3 float-left"} Reading this book [Think Python](http://greenteapress.com/thinkpython/thinkpython.pdf) was a good exposure to learning python. The book is very precise and the concepts are well explained. I have been reading about python on and off and watching many YouTube tutorials, but this time, I wanted to read a book. Reading makes you disciplined and you yourself are responsible for being consistent. 
 
 Below are some of the important points taken from the book for my personal reference.
 
 ---
 
-Python is a high level langulage which needs to be converted to low level language for computer to understand.
+Python is a high level language which needs to be converted to low level language for computer to understand.
 
 Interpreters and Compilers are two kinds of programs that process a high level language to a low level language.
 
 Interpreter => Takes a high level program, processes it little at a time, performing computations
 
-Compiler => Takes a high level program, translates it completely before the program starts running. The high level program is called as the Source code and the translated program is called object code or executable. Once the program is compiled, you can execute it repeatadly without further translation.
+Compiler => Takes a high level program, translates it completely before the program starts running. The high level program is called as the Source code and the translated program is called object code or executable. Once the program is compiled, you can execute it repeatedly without further translation.
 
 Python programs are executed by Interpreter and there are two ways to use the interpreter, 1. Interactive mode and 2. Script mode.
 
@@ -89,7 +89,7 @@ if x < 0:
 
 #### Keyboard Input
 
-In python 3, we can use the input methond to accept inputs from user
+In python 3, we can use the input method to accept inputs from user
 
 ```python
 
@@ -100,7 +100,7 @@ name = input("What is your name?\n")
 #### Checking and verifying the type
 
 Python lets us use the "type()" method to find the type of particular literal.
-We can also verify the type using the `isinstance(6, int)` method which checks if 6 is of type integer and returns a boolean.
+We can also verify the type using the `isinstance(6, int)` method which checks if 6 is of type integer and returns a Boolean.
 
 ```python
 
@@ -140,7 +140,7 @@ TypeError: 'str' object does not support item assignment
 
 #### The in Operator
 
-The word in is a boolean operator that takes two strings and returns True if the first appears as a substring in the second.
+The word in is a Boolean operator that takes two strings and returns True if the first appears as a substring in the second.
 
 ```python
 
@@ -229,7 +229,7 @@ criterion.
 
 #### Dictionaries
 
-Dictionary is like list, but more general. In dictionary, the indices can be of any type unline in List where the indices are always integers.
+Dictionary is like list, but more general. In dictionary, the indices can be of any type unlike in List where the indices are always integers.
 The order of items in dictionary is unpredictable.
 
 ```python
@@ -245,7 +245,7 @@ print(d)
 
 ```
 
-You can use the len function to get the key-value pairs length. You can use the in operator on dictionary specifically only on keys, which returns boolean. The in operator does not work on the value. To see if certain value appears in the dictionary, we can use the values() method and then use the in operator.
+You can use the `len` function to get the key-value pairs length. You can use the in operator on dictionary specifically only on keys, which returns Boolean. The in operator does not work on the value. To see if certain value appears in the dictionary, we can use the values() method and then use the in operator.
 
 ```python
 
@@ -372,7 +372,7 @@ You can use a list of tuple to initialize a dictionary.
 
 ```
 
-Combining dict with zip yields a concise way to create a dictionary
+Combining `dict` with `zip` yields a concise way to create a dictionary
 
 ```python
 
@@ -394,7 +394,7 @@ Lists are more common than tuples, mostly because they are mutable. But there ar
 
 - In some contexts, like a return statement, it is syntactically simpler to create a tuple than a list. In other contexts, you might prefer a list.
 - If you want to use a sequence as a dictionary key, you have to use an immutable type like a tuple or string.
-- If you are passing a sequence as an argument to a function, using tuples reduces the potential for unexpected behavior due to aliasing.
+- If you are passing a sequence as an argument to a function, using tuples reduces the potential for unexpected behaviour due to aliasing.
 
 #### Formatters
 

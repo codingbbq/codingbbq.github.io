@@ -66,7 +66,7 @@ console.log(findMedian([0, 1, 2, 4, 6, 5, 3]));
 
 ```
 
-### Chocalate Feast | Hackerrank
+### Chocolate Feast | Hackerrank
 
 Another interesting problem, I decided to use the recursive function to calculate the output. This was yet another fun challenge.
 [Problem statement](https://www.hackerrank.com/challenges/chocolate-feast/problem)

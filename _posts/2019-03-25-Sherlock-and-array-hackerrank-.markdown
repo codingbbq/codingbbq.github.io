@@ -12,7 +12,7 @@ excerpt : This is an interesting problem besides the fact that it would give me 
 Self Analysis
 1. To solve this problem, I spent considerable more than expected time. 
 2. Did not solve for the test case [1,4,1] for which my Test Case 6 failed. I lost my nerve and spent hackos to get the test case data.
-3. I realized that with a lot of background noise, it is nearly impossible to concentrate on such problems. So I have been listening to instrumental playlists on youtube to keep me focused.
+3. I realized that with a lot of background noise, it is nearly impossible to concentrate on such problems. So I have been listening to instrumental playlists on YouTube to keep me focused.
 4. I feel happy that I motivated myself to solve this problem. Also this problem gave me a 4th star on the problem solving badge. So Yay!!!
 
 ```javascript

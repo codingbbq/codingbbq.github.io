@@ -12,7 +12,7 @@ excerpt : Continuing our quest and rank pushing along with learning every single
 In this problem, I learned about
 1. `.set` implementation ES6
 2. Used the spread operator (...)
-3. Got the array intersection using `.reduce`, `.filter` and `.includes` - I am still unsure how it behaves, I found this function definition on Stackoverflow.
+3. Got the array intersection using `.reduce`, `.filter` and `.includes` - I am still unsure how it behaves, I found this function definition on StackOverflow.
 
 ```javascript
 
@@ -69,11 +69,11 @@ console.log(beautifulBinaryString("0100101010"));
 ```
 ---
 
-### Super Reduced sring - Hackerrank
+### Super Reduced string - Hackerrank
 
 [Problem statement](https://www.hackerrank.com/challenges/reduced-string/problem)
 
-I took help of google to find an elelgant solution, but found the solution on hackerrank discussion forum
+I took help of google to find an elegant solution, but found the solution on hackerrank discussion forum
 
 
 ```javascript
@@ -105,7 +105,7 @@ console.log(superReducedString("aaabccddd"));
 ```
 ---
 
-### Palindrom Index - Hackerrank
+### Palindrome Index - Hackerrank
 
 [Problem statement](https://www.hackerrank.com/challenges/palindrome-index/problem)
 
@@ -234,7 +234,7 @@ console.log(anagram("xaxbbbxx"));
 
 ---
 
-### Makaing Anagrams - Hackerrank
+### Making Anagrams - Hackerrank
 
 [Problem statement](https://www.hackerrank.com/challenges/making-anagrams/problem)
 

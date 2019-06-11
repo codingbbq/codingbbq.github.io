@@ -40,7 +40,7 @@ arr = ["a", "b", "c", "d", "e"]
 
 ```
 
-#### Solution using the javascript splice method.
+#### Solution using the JavaScript splice method.
 
 Since the array is sorted and user will always select the consecutive elements, we can find the `i-1th` or `i+1th` element and then remove it from array.
 Then insert the removed element after the last element from the selected array.
