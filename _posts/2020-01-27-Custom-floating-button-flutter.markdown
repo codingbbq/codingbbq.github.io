@@ -52,3 +52,5 @@ class Bike extends StatelessWidget {
   }
 }
 ```
+
+![Flutter custom floating action button](/assets/images/custom_floating_action_btn.png){:class="img-fluid w-100"}
