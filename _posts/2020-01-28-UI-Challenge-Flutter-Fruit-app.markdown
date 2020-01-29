@@ -51,9 +51,7 @@ What I could not achieve or learn in depth
 
 ### Home page
 
-![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_1.png)
-
-![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_2.png)
+![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_1.png) ![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_2.png)
 
 ### Details Page
 
