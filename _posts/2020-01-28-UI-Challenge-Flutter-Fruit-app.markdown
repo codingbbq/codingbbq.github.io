@@ -25,7 +25,7 @@ The most difficult step was to delete all the boilerplate code of main.dart. The
 I started typing scaf.. and the editor would show its magic of intelligence and give me Scaffold and then I got my appBar and the body and so on and so forth. Within minutes I was building a mobile app on my own.
 
 
-## What I learned
+## What went well
 
 A lot. I had fun developing the app in flutter. I learned that
 - Everything in flutter is a widget.
@@ -44,21 +44,21 @@ For the cart
 - I learned about `MediaQuery.of(context).size.width` and found it very useful. We would not have to worry about the different size smartphones.
 - I added a simple Toaster or Notification widget and I enjoyed implementing that widget. Every time user added a fruit to their cart, the notification would be shown at the bottom of the screen.
 
-## Failures
+## What did not go well / Failures
 
 What I could not achieve or learn in depth
 - I could not get the links and the image cards working together. If user clicked on a fruit link the card should slide on to the view. I tried figuring out, but in vain. Also, I had set a time limit on getting this app completed and I had already passed that limit. So I changed the priority and let go with that functionality.
 
 ### Home page
 
-![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_1.png){:class="img-fluid w-80"}
+![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_1.png)
 
-![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_2.png){:class="img-fluid w-80"}
+![Meetup](/assets/images/001_Flutter_Fruit_App/home_page_2.png)
 
 ### Details Page
 
-![Meetup](/assets/images/001_Flutter_Fruit_App/details_page.png){:class="img-fluid w-80"}
+![Meetup](/assets/images/001_Flutter_Fruit_App/details_page.png)
 
 ### Add to Cart
 
-![Meetup](/assets/images/001_Flutter_Fruit_App/add_to_cart.png){:class="img-fluid w-80"}
+![Meetup](/assets/images/001_Flutter_Fruit_App/add_to_cart.png)
