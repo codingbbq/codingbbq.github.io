@@ -5,8 +5,6 @@ categories: learning
 excerpt :  "Recently, I have been reading and learning a lot of flutter and it was time I took up a challenge instead of following YouTube tutorials. Earlier I had religiously followed tutorials which really helped me get the required knowledge. Now it was time to shoot the get started bullet. I found this design on dribble, and immediately got into development."
 ---
 
-## Flutter UI challenge #001 - Fruit App
-
 Flutter is an amazing technology I enjoy. I had a dream of building mobile apps (Still it is a dream as I do not have any app) since the time of Android. I had tried several times to configure my computer so that I could start building an application. I even looked at JQuery Mobile and Cordova and Ionic because of my web dev background but the thrill of having a native application remained a dream. Until Flutter.
 
 By no means, I am a professional, but these tiny steps fulfill the void. I wasn't confident at first but then later realized that I had to take a plunge towards getting started. Watching numerous YouTube tutorials helped me a lot.

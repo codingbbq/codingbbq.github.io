@@ -5,8 +5,6 @@ categories: learning
 excerpt :  "Another challenge that I pursued in Flutter was the Mentors Social App. I found the design on dribble and loved it. Flutter is everything widgets and this new design had several new widgets I could learn and implement. I was looking forward to getting the bottom Navigation bar functional."
 ---
 
-## Flutter UI challenge #002 - Mentors Social App
-
 [Dribble](https://dribbble.com/shots/5601042-Startup-Mentors-Founders-Social-App-Day-329-365-Project365) of Original design
 
 [Flutter Code](https://github.com/codingbbq/mentors_social_app) on gitHub
