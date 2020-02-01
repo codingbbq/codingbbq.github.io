@@ -57,12 +57,12 @@ excerpt :  "The bike search app looked simple, and I was motivated to work on it
 
 ### Home Page
 
-<img src="./assets/images/bike_rental/01_selection.png" />       <img src="./assets/images/bike_rental/02_date_selection.png" />
+<img src="/assets/images/bike_rental/01_selection.png" />       <img src="/assets/images/bike_rental/02_date_selection.png" />
 
 ### Search
 
-<img src="./assets/images/bike_rental/03_search.png" />       <img src="./assets/images/bike_rental/04_filter_selection.png" />
+<img src="/assets/images/bike_rental/03_search.png" />       <img src="/assets/images/bike_rental/04_filter_selection.png" />
 
 ### Bike Details
 
-<img src="./assets/images/bike_rental/05_bike_details_1.png" />       <img src="./assets/images/bike_rental/05_bike_details_2.png" />
+<img src="/assets/images/bike_rental/05_bike_details_1.png" />       <img src="/assets/images/bike_rental/05_bike_details_2.png" />
