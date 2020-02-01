@@ -24,6 +24,8 @@ The most difficult step was to delete all the boilerplate code of main.dart. The
 
 I started typing scaf.. and the editor would show its magic of intelligence and give me Scaffold and then I got my appBar and the body and so on and so forth. Within minutes I was building a mobile app on my own.
 
+![Fruit App](/assets/images/001_Flutter_Fruit_App/001_Fruit_App.png){:class="img-fluid w-100"}
+
 
 ## What went well
 

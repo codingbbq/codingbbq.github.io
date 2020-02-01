@@ -17,6 +17,8 @@ excerpt :  "Another challenge that I pursued in Flutter was the Mentors Social A
 - The App Design had a different looking header for each page. So the `AppBar` widget had to be configured accordingly. For example, the updates page has a logo and all other pages show a title instead of logo. It was interesting to get it functional. I used `setState` via a `statefull` widget.
 - I learned about the `Stack` and `Positioned` widget and could relate them clearly with CSS `position` property.
 
+![Mentors Social App](/assets/images/mentors_social/002_Mentors_Social.png){:class="img-fluid w-100"}
+
 ### Custom dropdown
 
 - It was fun getting that custom looking dropdown with rounded borders and icons. I used a `Container` widget to get the desired look. Some of the properties I used were `padding`, `margin`, `BoxDecoration` etc. 
