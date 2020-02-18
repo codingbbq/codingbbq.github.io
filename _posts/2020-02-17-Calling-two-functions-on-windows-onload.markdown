@@ -68,17 +68,4 @@ window.onload = function(){
 
 ```
 
-
-- Create an empty object
-- Use this object to insert your key and value
-- Push the object into the desired array
-
-```javascript
-
-var tempObj = {};
-tempObj[ourKey] = ourValue;
-desiredArray.push(obj);
-
-```
-
 I found both the solutions on [StackOverflow](https://stackoverflow.com/questions/16683176/add-two-functions-to-window-onload)
