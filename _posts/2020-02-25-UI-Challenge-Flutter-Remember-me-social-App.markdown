@@ -13,6 +13,8 @@ excerpt :  "Remember me social app design looked amazing. However it was confusi
 This was a great learning experience. I learned about pageView widget and the use of controllers. For this project I implemented many new things such as created a Trello board to keep track of tasks etc. (BTW, by the end of the project completion, I lost track of it.)
 I took an effort to solve an issue first logically and by reading documents instead of directly depending on StackOverflow. I also realized that I get distracted quite often and loose focus, for which, I made it an attempt to work at least 15 minutes continuously. Not depending on google helped me.
 
+![Trello - Remember me social app - board](/assets/images/trello-remember-me-board.png){:class="img-fluid w-100"}
+
 ## What went well
 - Started by creating a Trello board for Remember me social app. I planned down all the tasks in advance and for most of the time kept a track of them. However towards the completion of the project, I lost track of the tasks. Identifying and writing down tasks at the beginning of the project was a good idea. I will follow this regularly.
 - During my first challenge with the fruit app, I was not able to sync the links and the pages. So I had left as it is. Also it looked overwhelming. Possibly my fear. For this challenge I had to implement it and it felt really good to get the pageView and the scrollView controllers working. I know the code is straightforward, but I was very anxious just thinking about implementing such, for the first time. So this definitely comes in my what-went-well section.
