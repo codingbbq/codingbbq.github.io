@@ -197,3 +197,75 @@ A quick start is composed of 3 steps
 - Reserve architecture for the deployment
 - AWS cloudFormation templates that automate and configure the deployment
 - A deployment guide explaining the architecture and implementation in detail
+
+### Organization and Accounts
+
+*Organization* allows you to centrally manage billing, control access, compliance, security and share resources across your AWS control. 
+
+*Root account user* is a single sign in identity that has complete access to all AWS services and resources in an account. Each account has a root account user. 
+
+*Organization unit* are group of AWS accounts within an organization which can also contain other organizational units - creating a hierarchy. 
+
+*Service control policies* give central control over the allowed permissions for all accounts in your organization, helping to ensure your accounts stay with your organization guidelines.
+
+### AWS Networking
+
+*Region* is a geographical location of your network.
+
+*Availability zones* is the data center of your AWS resources.
+
+*VPC* is logically isolated section of AWS cloud where you can launch AWS resources
+
+*Internet gateway* Enable access to internet
+
+*Route tables* determine where network traffic from your subnets are directed
+
+*NACL* acts as a firewall at the subnet level
+
+*Security groups* acts as a firewall at instance level
+
+*Subnets* a logical partition of an IP network into multiple, smaller network segments
+
+### Database services
+
+- *Dynamo DB* : NoSQL key/value database
+
+- *Document DB* : NoSQL document DB that is MongoDB compatible.
+
+- *RDS* : Relational DB service that supports multiple engines - MySQL, Postgres, MariaDB, Oracle, MSSQL, Aurora
+
+- *Neptune* : Managed graph DB
+
+- *Redshift* : Columnar DB, Petabyte warehouse
+
+- *Elastic Cache* : Redis or Memcached DB
+
+
+### Provisioning Services
+
+- *Elastic Beanstalk* : Service for deploying and scaling web application and services developed with java, php, node.js, python, ruby, go and docker.
+
+- *Ops Works* : Configuration management service that provides managerial instances of chef and puppet
+
+- *CloudFormation* : Infrastructure as code, JSON and YAML
+
+- *AWS Quickstart* :  Pre made packages that can launch and configure your AWS computer, n/w, storage and other services.
+
+- *AWS Marketplace* : A digital catalogue of thousands of software listings from independent software vendors you can use to find, buy, test and deploy software.
+
+
+### Computing services
+
+- *EC2* : Elastic cloud computing, highly configurable server eg, CPU, Memory, N/W, OS
+
+- *ECS* : Elastic container service, docker as a service, highly scalable, high performance container orchestration that supports docker container, pay for EC2 instances.
+
+- *Fargate* : Microservices where you don't think about infrastructure. Pay per task.
+
+- *EKS* : Kubernetes as a service, easy to deploy, manage and scale containerized applications using Kubernetes.
+
+- *Lambda serverless function* : Run code without provisioning or managing servers. You only pay for compute time you consume.
+
+- *Elastic beanstalk* orchestrates various AWS services, including EC2, S3, simple notification service (SNS), CloudWatch, Auto Scaling and Elastic load balancers.
+
+- *AWS Batch* : Plans, schedules and execute your batch computing workloads across the full range of AWS compute services and features, such as Amazon EC2 and spot instances.
