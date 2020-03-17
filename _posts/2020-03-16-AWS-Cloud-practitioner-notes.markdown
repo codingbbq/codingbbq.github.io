@@ -105,11 +105,95 @@ Eg. Fed RAMP high baseline, DOJ's criminal justice info system security policy. 
 On demand is for application where the workload is for short term, spikey or unpredictable. When you have a new application for development or you want to run an experiment.
 
 - **Reserved upto 75% off** (Best long term) : Steady state or predictable usage. Commit to EC2 over a 1 or 3 year term. Can resell unused reserved instances.
-Designed for application that have a steady state, predictable usage or require reserved capacity. Reduced pricing is based on term and class offering and payment options.
-
-  - Cannot change RI attributes
+Designed for application that have a steady state, predictable usage or require reserved capacity. Reduced pricing is based on term and class offering and payment options. Cannot change RI attributes. Commit to a 1 Year or 3 Year contract. The longer the term, the greater savings. You reserve instances for specific time periods. Eg. Once a week for a few hours. RI's can be shared between multiple accounts within an organization.
 
 - **Spot upto 90%** (Biggest savings) : Required spare computing capacity. Flexible start and end times. Can handle interruptions. Usually for non critical background jobs.
+AWS has unused compute capacity that they want to maximize the utility of their idle servers. It's like when a hotel offers discount for to fill vacant suits.
+Spit instance provide discount 90% compared to on-demand. Spot instance can be terminated if the computing capacity is needed by on-demand customers.
+Designed for applications that have flexible start and end times or applications that are only feasible at very low compute costs.
 
+*AWS Batch* is an easy and convenient way to use spot pricing.
+
+*Termination condition* - Instances can be terminated by AWS at anytime.
 
 - **Dedicated** (Most expensive) : Dedicated servers, can be on demand or reserved. When you need a guarantee of isolated hardware. Usually for enterprise requirements.
+Designed to meet regulatory requirements. When you have strict server bound licensing that won't support multi tenancy or cloud deployments.
+
+*Multi tenant* : When multiple customers are running workload on the same hardware. Virtual isolation separates customers.
+
+*Single tenant* : When single customers has dedicated hardware. Physical isolation separates customers.
+
+The dedicated model is offered in both on-demand and Reserved. Enterprises and large organizations may have security concerns or obligations against sharing the same hardware with other AWS customers. Hence such modal suits them.
+
+### The Free services
+Many AWS services do not incur a cost. Eg. IAM which is used to create user, groups, roles etc. There are other services which are free but in turn provision other services that cost money. Eg. Auto scaling, CloudFormation, Elastic Beanstalk, Amplify. 
+
+
+### AWS support plans
+
+*Basic Plan* : It is the default plan when create an account. Email support only for billing and account. 
+
+*Developer Plan* : Tech support via Email. It cost $20 USD per month. It does not include third party systems.
+
+*Business Plan* : Tech support via chat, phone. 24/7. It supports third party and cost $100 USD per month. 
+
+*Enterprise Plan* : It is $15,000 per month with 2 dedicated resources and response within 15 minutes. 
+
+The basic and Developer plans include 7 Trusted Advisor checks whereas the Business and Enterprise plan have all the AWS Trusted advisor checks.
+
+
+### AWS Marketplace
+Curated digital catalogue with thousands of software listings from independent software vendors. If the product is charged, it becomes part of your AWS bill and once you pay, AWS marketplace pays the provider. Products can be offered as 
+- Amazon Machine Images (AMI)
+- AWS CloudFormation templates
+- Software as a Service offerings
+- Web ACL
+- AWS WAF Rules
+
+### AWS Trusted advisor
+- Advises you on security, saving money, performance, service limits and fault tolerance. Think of it like an automated checklist of practices on AWS.
+
+### Cost optimization
+- Amazon EC2 reserved instance optimization
+- Low utilization of Amazon EC2 instance
+- Idle load balancers
+- Unassociated Elastic IP Addresses
+
+### Consolidated Billing
+This means that you get one bill for all your accounts. In an organization you will have a AWS master a/c using which you will create multiple member a/c. AWS provides a consolidated billing and payment method across multiple AWS accounts into one bill. For billing, AWS treats all the a/c in an organization as if they were one a/c. You can designate one master account that pays the charges of all the other member a/c. Consolidated billing is offered at no additional cost. With consolidated billing, the more you use, the more you save.
+
+### AWS Cost explorer
+The AWS cost explorer lets you visualize, understand and manage AWS costs and usage over time. Default reports help you gain insight into your cost drivers and usage trends.
+
+### AWS Budgets
+Plan your service usage, service cost and instance reservations. First 2 budgets are free of charge. Each budget is $0.02 per day ~ $0.60 per month and there is a 20,000 budget limit.
+AWS Budget give you the ability to setup alerts if you exceed or are approaching your defined budget.
+You can create cost, usage reservation budget. The budgets can be tracked at monthly, Quarterly or yearly levels with customization of start and end dates. AWS alerts support EC2, RDS, Redshift and ElasticCache reservations.
+
+### TCO Calculator
+- Total cost of ownership (TCO) allows you to estimate how much you would save when moving to AWS from on-premise. TCO provides a detailed set of reports that can be used in an executive presentations.
+
+### AWS Landing zones
+Helps enterprises quickly setup a secure, AWS multi account. Provides you with a baseline environment to get started with a multi account architecture.
+
+### AWS Account Vending machine (AVM)
+Automatically provision and configure new accounts via service catalog template. Uses single-sign-on (SSO) for managing and accessing accounts.
+
+### Resource groups and Tagging
+*Tags* are words on phrases that act as metadata for organizing your AWS resources.
+
+*Resource groups* are collection of resources that share one or more tags
+
+Resource groups can display details about a group of resource based on
+- Metrics
+- Alarms
+- Configuration settings
+
+## AWS Quick starts
+- Pre-built templates by AWS and AWS partners to help and deploy popular stacks on AWS.
+- Reduce hundreds of manual procedure into just a few steps
+
+A quick start is composed of 3 steps
+- Reserve architecture for the deployment
+- AWS cloudFormation templates that automate and configure the deployment
+- A deployment guide explaining the architecture and implementation in detail
