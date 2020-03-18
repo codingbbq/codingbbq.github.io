@@ -341,3 +341,89 @@ A quick start is composed of 3 steps
 - *CloudWatch alarms* : Triggers notifications based on metrics
 
 - *CloudWatch dashboard* : Create visualization based on metrics
+
+
+### Know your initialisms
+
+- IAM : Identity and Access Management
+- S3 : Simple storage service
+- SWF : Simple workflow service
+- SNS : Simple Notification service
+- SQS : Simple queue service
+- SES : Simple Email service
+- SSM : Simple systems manager
+- RDS : Relational database service
+- VPC : Virtual private cloud
+- VPN : Virtual private network
+- CFN : Cloud Formation
+- WAF : Web application firewall
+- MQ : Amazon Active MQ
+- ASG : Auto scaling groups
+- TAM : Technical Account manager
+- ELB : Elastic load balancer
+- ALB : Application load balancer
+- NLB : Network load balancer
+- EC2 : Elastic cloud compute
+- ECS : Elastic cloud service
+- ECR : Elastic container repository
+- EBS : Elastic block storage
+- EFS : Elastic file storage
+- EMR : Elastic map reduce
+- EB : Elastic beanstalk
+- ES : Elastic search
+- EKS : Elastic Kubernetes service
+- MKS :  Managed Kafka service
+- IOT : Internet of things
+- RI : Reserved instances
+
+### Shared responsibility Modal
+
+Customers are responsible for security in cloud. It is the responsibility of customers to ensure their data is secure by creating and managing proper accounts through IAM, ensure data encryption etc.
+AWS will be responsible for DB, networking, AZ, Regions and Hardware etc.
+
+### AWS Compliance program
+
+A set of internal policies and procedures of a company to comply with laws, rules and regulations or to uphold business reputations
+
+### AWS Artifact
+
+No cost, self service portal for on-demand access to AWS compliance reports. On Demand access to AWS security artifact reports and select online agreements
+
+### AMAZON Inspector
+
+How do we prove that the EC2 instance is harden?
+
+*Hardening* : The act of eliminating as many security risks as possible
+
+AWS inspector runs a security benchmark against specific EC2 instance
+
+Can perform both network and HOST assessment. Popular benchmark is CIS or center for internet security which has 699 checks.
+
+### AWS WAF
+Web application firewall protects your web app from common web exploits. WAF can be attached to ether cloudFront or an application load balancer.
+
+### AWS Shield
+is a managed DDoS (Distributed Denial of Service). A malicious attempt to disrupt normal traffic by flooding a website a large amount of fake traffic. All AWS customers benefit from the automatic protections of AWS shield standard at no additional charge.
+When you route your traffic through Route53 or CloudFront you are using AWS shield standard.
+
+### Penetration testing
+Authorized simulated cyberattack on a computer system, performed to evaluate the security of the system. We can perform PenTesting on AWS. PenTesting is permitted on EC2, ELB, RDS, API gateways, Aurora etc. PenTesting is prohibited on DoS, DDoS, Port forwarding, protocol flooding.
+
+### Guard duty
+
+*What is IDS/IPS?*
+Intrusion detection system/ Intrusion protection system, a device or software application that monitors a network or systems for malicious activity or policy violation. Guard duty is a threat detection service that continuously monitors for malicious suspicious and unauthorized behavior. It uses machine learning to analyze AWS logs
+- CloudTrail logs
+- VPC flow logs
+- DNS logs
+
+### KMS - Key Management Service
+A managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. KMS is multi-tenant HSM (Hardware security module)
+Many AWS services are integrated to use KMS to encrypt your data with simple checkbox
+KMS uses envelop encryption
+
+*Envelop encryption*: When you encrypt your data, your data is protected but you have to protect your encryption key. When you encrypt your data key with a master key as an additional layer of security.
+
+### Amazon Macie
+
+Macie is a fully managed service that continuously monitors S3 data access activity for anomalies and generates detailed alerts when it detects risk of unauthorized access or inadvertent leaks.
