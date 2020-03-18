@@ -269,3 +269,75 @@ A quick start is composed of 3 steps
 - *Elastic beanstalk* orchestrates various AWS services, including EC2, S3, simple notification service (SNS), CloudWatch, Auto Scaling and Elastic load balancers.
 
 - *AWS Batch* : Plans, schedules and execute your batch computing workloads across the full range of AWS compute services and features, such as Amazon EC2 and spot instances.
+
+
+### Storage services
+
+- *S3* : Simple storage service - object storage
+
+- *S3 Glacier* : Low cost storage for archiving and long term backup
+
+- *Storage gateway* : Hybrid cloud storage with local caching
+
+- *EBS* : Elastic block storage - Hard drive in cloud that you attach to a EC2 instance
+
+- *EFS* : Elastic file storage - File storage mountable to multiple EC2 instance at the same time
+
+- *Snowball* : Physically migrate lots of data via a computer suitcase 50-80 TB
+
+- *Snowball edge* : Better snowball 100TB
+
+- *Snowmobile* : Ships a container pulled by a semi trailer truck 100PB
+
+
+### Business centric services
+
+- *Amazon Connect* : Call center, cloud based call center service you can setup in just few clicks
+
+- *Workspaces* : Virtual remote desktop for windows/Linux in just few minutes
+
+- *Workdocs* : Content creations and collaboration services
+
+- *Chime* : AWS platform for online meeting and video conferencing
+
+- *Workmail* : Managed business email
+
+- *Pinpoint* : Marketing campaign system, for email, sms, push and voice messages
+
+- *SES* : Simple email service
+
+- *Quicksight* : Business intelligence service
+
+
+### Enterprise integration
+
+- *Going hybrid* : Bringing on-premise and AWS network together
+
+- *Direct connect* : Dedicated gigabit network connection from your premises to AWS
+
+- *VPN* : Establish a secure connection to your AWS network
+
+- *Storage gateway* : A hybrid storage service that enables your on-premise application to use AWS cloud storage. You can use this for backup and archiving. disaster recovery, cloud data processing, storage tiering and migration.
+
+- *Active directory* : The AWS directory service for Microsoft Active Directory also known as AWS managed Microsoft AD - enables your directory workloads and AWS resources to use managed Active Directory in the AWS cloud.
+
+
+### Logging services
+
+- *CloudTrail* : Logs all API calls (SDK, CLI) between AWS services
+  eg. Answers to questions like, Who created this bucket?
+    - Detect developer configuration
+    - Detect malicious actors
+    - Automate response
+
+- *CloudWatch* : Collection of multiple services
+
+- *CloudWatch logs* : Performance date about AWS service eg CPU utilization, memory, network in app logs etc
+
+- *CloudWatch metrics* : Represents a time ordered set of data points
+
+- *CloudWatch events* : Trigger an event based on a condition eg. every hour take snapshot of server
+
+- *CloudWatch alarms* : Triggers notifications based on metrics
+
+- *CloudWatch dashboard* : Create visualization based on metrics
