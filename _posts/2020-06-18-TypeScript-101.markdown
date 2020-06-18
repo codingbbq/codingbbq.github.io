@@ -1,0 +1,426 @@
+---
+layout: post
+title:  "TypeScript 101"
+categories: learning
+excerpt : This post has my notes about TypeScript which I leaned by following tutorials on YouTube.
+---
+
+# TypeScript 101
+
+Even though I have been developing for sometime in Angular, I wanted to read about TypeScript to check from my ToDo list. I found this short video tutorials by "The Net Ninja" on TypeScript and I would highly recommend them. The videos are to the point and can be a quick refresher. Check out "[TypeScript Tutorials by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)"
+
+- TypeScript is a superset of JavaScript. It uses strict type so less error prone
+- Support modern features like arrow functions, let, const etc.
+- TypeScript includes extra features like generics, interfaces etc.
+
+```jsx
+npm install -g typescript
+```
+
+- Fundamental difference between TypeScript and JavaScript is the use of strict types. We can change the value of a variable, but we cannot change the type.
+- In a function, we can define the type of the parameter by passing a type
+
+```jsx
+const circle = (diameter: number) => {
+	return diameter * Math.PI;
+}
+```
+
+### Array
+
+- Strict and Mixed array.
+- If we declare an array with items of type string, then we can only push, update the array with items of type string.
+- So, TypeScript infers a type when we initialize a value. For example
+
+```jsx
+let names = ['John', 'Jane']; // An array with items of type String.
+names.push(20); // This will show an error saying that type does not match.
+
+// So TypeScript infers the type based on the initialization.
+```
+
+### Explicit Types
+
+```jsx
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+
+// Array of Strings
+let names: string[] = [];
+
+// Union types
+let uid: string|number;
+uid = 123;
+uid = 'AB1123';
+
+let mixed: (string|number)[] = [];
+mixed.push('Hello') // Fine.
+mixed.push(20) // Fine.
+mixed.pussh(true) // Error
+
+// Objects
+let mixedObj: object;
+mixedObj = { name : 'ninja'. age: 30 };
+
+// Below is object definition with its type
+let mixedTwo: {
+	name: string,
+	age: number,
+	beltColor: string
+}
+
+// Assigning values
+mixedTwo = {
+	name: 'Mario',
+	age: 20,
+	beltColor: 'black'
+};
+```
+
+### Function Type
+
+```jsx
+let greet: Function;
+
+greet = () => {
+	console.log("Hello again");
+}
+```
+
+Passing optional parameters in a function definition
+
+```jsx
+const add = (a: number, b: number, c?: number) => {
+	console.log(a + b);
+}
+```
+
+Passing default value to a parameter
+
+```jsx
+const add = (a: number | string = 10) {
+	console.log(a);
+}
+```
+
+Return type of a function
+
+```jsx
+// Below function returns a value which should be of type number
+const minus = (a: number, b: number): number => {
+	return a - b;
+}
+
+// Below funtion returns a void
+const add = (a: string): void => {
+	console.log(a);
+}
+```
+
+### Type Aliases
+
+Sometimes using union and object types can cause a lengthy code. See example below
+
+```jsx
+const greet = (user: { name: string, uid: string | number}) => {
+	console.log(`${user.name} says hello`);
+}
+```
+
+In  above case, we could create our own type aliases to make the code robust.
+
+```jsx
+type StringOrNum = string | number;
+type objWithName = { name: string, uid: StringOrNum } 
+
+const greet = (user: objWithName) => {
+	console.log(`${user.name} says hello`);
+}
+```
+
+### Function Signature
+
+```jsx
+// Below is function signature which takes in two parameters of type string and returns void
+let greet: (a: string, b: string) => void;
+
+greet = (name: string, greeting: string) => {
+	console.log(`${name} ${greeting}`);
+}
+```
+
+```jsx
+let calc: (a: number, b:number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+	if(action === 'add'){
+		return numOne + numTwo;
+	}else {
+		return numOne - numTwo;
+	}
+}
+```
+
+```jsx
+let logDetails: (obj: { name: string, age: number}) => void;
+
+type person = { name: string, age: number };
+
+logDetails = (ninja: person) =>{
+	console.log(`${ninja.name} is ${ninja.age} years old`);
+}
+
+```
+
+### DOM and TypeCasting
+
+```jsx
+const anchor = document.querySelector('a');
+console.log(anchor.href);
+```
+
+ The above code will show a typescript error that href is not available. To fix this, we either check if `anchor` is available or using ! we tell the IDE that anchor is available.
+
+```jsx
+// Using !
+const anchor = document.querySelector('a')!;
+console.log(anchor.href);
+
+// we can also check for anchor
+const anchor = document.querySelector('a');
+if(anchor) {
+	console.log(anchor.href);
+}
+```
+
+// TypeCasting
+
+Let's say you are using querySelector to grab some html via a class which in turn has a form. However typescript will not understand this. So we can use typecasting.
+
+```jsx
+const form = document.querySelector('.new-item-form') as HTMLFormElement;
+console.log(form.children);
+
+// inputs
+const type = document.querySelector('#type') as HTMLSelectElement;
+const details = document.querySelector('#details') as HTMLInputElement;
+```
+
+//  Using event listener
+
+```jsx
+form.addEventListener('submit', (e: Event) => {
+	e.preventDefault();
+
+	console.log(
+		type.value,
+		amount.valueAsNumber
+	);
+});
+
+// In above code, valueAsNumber converts the value to a number.
+```
+
+### Class
+
+A blueprint for an object.
+
+ 
+
+```jsx
+class Invoice {
+	client: string;
+	details: string;
+	amount: number;
+
+	constructor(c: string, d: string, a: number) {
+		this.client = c;
+		this.details = d;
+		this.amount = a;
+	}
+
+	format() {
+		return `${this.client} owes ${this.amount} for ${this.details}`;
+	}
+}
+
+const invOne = new Invoice('mario', 'Website work', 250);
+const invTwo = new Invoice('luigi', 'Website work', 300);
+
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+
+```
+
+### Access modifiers in a Class - Using Public, Private and ReadOnly
+
+In above class, can access all the properties from outside the class as well. Thus all the properties are **public** which is the default behavior.
+
+If a property is made **private** it cannot be accessed from outside the class.
+
+The property **readonly** allows to only read the property from inside the class and outside the class.
+
+### Modules
+
+Import/Export from different files using ES6 Modules
+
+We need to add a type attribute when we call the script in our html file like below
+
+```jsx
+<script type="module" src="app.js"></script>
+```
+
+We can break our code systematically in different files and then export them to be used by any other file. To export, below is the syntac.
+
+```jsx
+export class Invoice {
+	...
+	...
+}
+```
+
+To import this file
+
+```jsx
+import { Invoice } from "./path/to/Invoice.js";
+```
+
+### Interface
+
+Enforce a certain structure for to an object or class. 
+
+```jsx
+interface IsPerson {
+	name: string,
+	age: number;
+	speak(a: string): void;
+	spend(a: number): number;
+}
+
+const me: IsPerson = {
+	name: 'John',
+	age: 30,
+	speak(text: string): void {
+		console.log(text);
+	},
+	spend(amount: number): number {
+		console.log(amount);
+		return amount;
+	}
+}
+```
+
+Using an Interface to a class.
+
+```jsx
+export class Invoice implements hasFormatter {
+	...
+	...
+}
+```
+
+with the help of "implements" keyword, we can use an Interface on a class. Now, the class should have all the properties/functions that are in the interface.
+
+### Generics
+
+Allows creating reusable block of code which can be used with different types
+
+Example
+
+Lets say we want to attach a random ID property to an object. We will create a function that takes in the original object, attaches a random ID property to it (using the object destructuring) and returns the new Object.
+
+```jsx
+const addUID = (obj: object) => {
+	let uid = Math.floor(Math.random() * 100);
+	return { ..obj, uid };
+}
+
+let record = addUID({name: 'John', age: 30});
+
+// Below code will show a typescript error
+console.log(record.name);
+```
+
+The problem with above code is that if we want to access the new obj properties like name and age, typescript would throw an error, because the new object only knows about uid. 
+
+To overcome above situation, we use generics. 
+
+```jsx
+const addUID = <T>(obj: T) => {
+	let uid = Math.floor(Math.random() * 100);
+	return { ..obj, uid };
+}
+
+let record = addUID({name: 'John', age: 30});
+
+// Below code will work fine
+console.log(record.name);
+
+// However, now the function can expect any type of data. So for example
+let recordOne = addUID('john doe');
+
+// The above parameter is invalid as it is a string. However TypeScipt does not show any error.
+```
+
+We can make the function robust by extending the generic type to a more specific type as per our requirement. See below
+
+```jsx
+const addUID = <T extends object>(obj: T) => {
+	let uid = Math.floor(Math.random() * 100);
+	return {..obj, uid };
+}
+```
+
+### Using Generics with Interface
+
+```jsx
+interface Resource<T> {
+	uid: number;
+	resourceName: string;
+	data: T;
+};
+
+const first: Resource<object> = {
+	uid: 1,
+	resourceName: 'John';
+	data: { age: 30, amount: 200 }
+};
+
+const seconds: Resource<String[]> = {
+	uid: 2,
+	resourceName: 'Jane',
+	data: ['Milk', 'Bread']
+};
+```
+
+### Enum
+
+Enum are list of constants. Usually a small set of predefined values that we need to use. For example, we need to set the user role in db where 0 ⇒ Admin, 1 ⇒ Publisher, 2 ⇒ Reviewer etc.  Instead of always remembering what is the role type, we can use enum to clearly identify. See below
+
+```jsx
+enum roleType { ADMIN, PUBLISHER, REVIEWER };
+
+const data = {
+	name: 'John',
+	role: roleType.ADMIN,
+	age : 30
+}
+```
+
+Enum are zero indexed.
+
+### Tuple
+
+Allows to express an array with a mixed type especially when types are known.  For example, if you have an array which will always have 3 elements as below
+
+```jsx
+// We could have tuple with types as
+let x: [string, string, number];
+// So we definately know that the first two elements are of type string
+// and the last element is of type number.
+
+x = ['John', 'Doe', 250];
+
+```
