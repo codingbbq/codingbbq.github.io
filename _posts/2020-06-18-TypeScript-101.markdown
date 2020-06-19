@@ -5,7 +5,7 @@ categories: learning
 excerpt : This post has my notes about TypeScript which I leaned by following tutorials on YouTube.
 ---
 
-# TypeScript 101
+# TypeScript 101 - Notes
 
 Even though I have been developing for sometime in Angular, I wanted to read about TypeScript to check from my ToDo list. I found this short video tutorials by "The Net Ninja" on TypeScript and I would highly recommend them. The videos are to the point and can be a quick refresher. Check out "[TypeScript Tutorials by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)"
 
