@@ -17,7 +17,7 @@ I usually avoid reading Forward, however, for this book it was exceptional. It c
 
 A reunion in Chicago led to an interesting question circling around Change.  Everyone was trying to cope with the unexpected changes that were happening to them in recent years. And most admitted that they did not know a god way to handle them.
 
-![Who moved my cheese](/assets/images/book/who-moved-my-cheese.png){:class="img-fluid w-100"}
+![Who moved my cheese](/assets/images/book/who-moved-my-cheese.png){:class="img-fluid"}
 
 The book proceeds to explain how to handle change in work as well as in personal life by telling a story "Who moved my cheese?"
 
