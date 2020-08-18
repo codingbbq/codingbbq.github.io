@@ -4,9 +4,6 @@ title:  "Who moved my cheese - Dr Spencer Johnson"
 categories: book
 excerpt: This was a book recommended to my by a colleague at work. I have had a love hate relationship with the books earlier. There was a time when I would read a lot of books, during my school days when I finished Famous five by Enid Blyton in a day. I would discover books in the huge public library that we had and then I would hide them deep in the shelves in another section so that I could later come and rent it. That was the kind of love I had for books. Later, when I discovered sitcoms, unknowingly I lost the habit of reading. I again got back to reading but it was intermittent. To restart this habit, I choose to read this tiny book "Who moved my Cheese - By Dr. Spencer Johnson". This book is about how to deal with change at your work and in your life.
 ---
-
-# Who moved my cheese by Dr Spencer Johnson
-
 This was a book recommended to my by a colleague at work. I have had a love hate relationship with the books earlier. There was a time when I would read a lot of books, during my school days when I finished Famous five by Enid Blyton in a day. I would discover books in the huge public library that we had and then I would hide them deep in the shelves in another section so that I could later come and rent it. That was the kind of love I had for books. Later, when I discovered sitcoms, unknowingly I lost the habit of reading. I again got back to reading but it was intermittent. 
 
 To restart this habit, I choose to read this tiny book "Who moved my Cheese - By Dr. Spencer Johnson". This book is about how to deal with change at your work and in your life.
