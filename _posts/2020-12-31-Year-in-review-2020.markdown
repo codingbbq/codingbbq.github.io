@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "2020 - Year in review!!!"
+categories: essays
+excerpt: At the beginning of the year 2020, I had decided that I would spend at least couple of hours a week to write down one blog post. It never happened. I could not keep up to the simple challenge that I had set for myself. However, I wanted to take some time out of today to backtrack and write down 'what went well'/'what did not go well'.
+---
+
+Today, the last day of the calendar year 2020. This year has  been the most uncertain year ever and so has it brought learnings for any individual.
+I for one particularly want to backtrack and look at the things that went well and so also look at my failures.
+
+## What went well
+With Covid-19, it was WFH from almost everyone. It meant that we could same a ton of commute time and concentrate more on being productive.
+
+### Trello board for planning my ideas
+I created a Trello board for working on some of my ideas. As a rule of thumb, it is always better to write down things that excite you so that you can time travel and come back to. I loved using Trello since its inception and so this year I thought I would keep up with a board to plan things. 
+
+### Love for Flutter
+I always wanted to work on mobile applications. With the new Google Flutter framework, I was so excited and it was the best framework I have used. I did not create any end to end apps as of now but I started by following many YouTube series related to Flutter and I could code along with the instructor. So that gave me confidence.
+
+### Following YouTube tutorials
+As mentioned in the above point, I loved watching and following YouTube series, so most of my year (maximum screen time) was spent watching and learning from the free Videos that great educators had created. I was very cautious of not getting distracted by other YouTube recommendations. I also extensively used "Do not recommend this channel" and "Not interested" feature of YouTube. For eg. I would watch game streams a lot at the beginning of the year and soon realized that it was a waste of time.
+
+### Starting a YouTube channel
+Yes, I started streaming Flutter. Initially I had confined to following YouTube tutorials when learning Flutter but then it was obvious that I would keep getting new Tutorials and it is not feasible to follow all the tutorials. Even though I would learn a lot, It was not actually learning. I had to experience and create apps myself.
+To begin with, I spent some time on Dribble and selected few UI designs for mobile apps. I then started working on them and I enjoyed the process. I wasn't sure if the folder structure I used were appropriate or not, but I was beginning to create my own recipe of creating mobile apps. 
+
+- While I was working on the UI, I had this tendency to get distracted. This meant a task that would take about 1hr would elongate to couple of hours and I had no tracking of it. 
+- I started streaming. Streaming from single laptop allowed me to stay concentrated towards my goals.
+- Streaming allowed me to take quick decisions. For eg. If I spent a lot of time just researching, it meant that my streaming was pointless. So I had to decide whether I really want to work on that feature or settle with an alternative. 
+- Streaming kept me accountable. I had to pick a particular time during the day to stream. Also, I wanted to really understand how things worked with streaming so this allowed me to experiment.
+
+### Advent of Code, LeetCode etc.
+I was addicted to HackerRank and LeetCode for couple of months in the year 2019. The mere joy of solving a programming puzzle and getting your answer accepted was the only motivation. Towards the end of the year, I continued solving couple of problems a day. I fell in love with Advent of Code and so started solving the problems from 2015. So far this year, I have solved 12 problems and while most of my solutions are brute force approach, it kept me engaging. I was timing everything and even though for many occassions I spent a lot more time than expected, I was aware about it. 
+ 
+- CodeForces is the next thing I want to target.
+- I plan to solve and work on timed challenges going forward. I will certainly do that.
+
+### What I learned this year?
+- Angular
+- Bootstrap
+- Python - To solve all the programming challenges
+- Flutter and in turn Dart
+
+### 1000 Words a day
+While I was not publicly blogging my thoughts and this blog was dead for almost 6+ months, I had taken up the challenge of writing 1k words a day. After watching productivity videos from a famous YouTuber Ali Abdaal, I was inspired to start using Notion and write 1k words per day. 
+The Idea was to write down any and every thought that came in my mind. It was an  exercise I really enjoyed during the start of the day or towards the end of the day. It has been almost of 6 months that I have maintained these logs, even though they are not 1k words but few hundred words now. 
+
+## What did not go Well?
+It boils down to "Consistency" and "Discipline". 
+I was constantly distracted and I could feel that I had wasted a lot of time. I was trying to do a lot of things and the mere anxiety of not able to achieve complete 100% of any particular task led huge distractions. 
+I strived for perfectionism and in the end could not get anything done. Also, if I had timed something and If I could not achieve it, the negative effect would compound.
+
+## New year resolutions?
+I am in love with all the things that I have considered doing in 2020. I just want to stick with it. 
+The obsession of doing all things in one day has certainly been exhausting. However if I plan my schedule and keep a google calendar for everything, It will definitely help me. 
+
+Instead of working on hobby projects, I want to be working on products.
+
+- Convert this blog to use gatsby
+- Work on an end-to-end flutter application
+- Work on CodeForces challenges/LeetCode, HackerRank etc and improve my python skills.
+- I wish to revive this blog and spend more time posting my thoughts. 
+
+---
+
+WISHING EVERYONE A HAPPY NEW YEAR 2020
+
+---
+
+[YouTube](https://www.youtube.com/channel/UCcxqwN9AGUNd3C9bNmvVlhw/featured)
+[GitHub](https://github.com/codingbbq)
