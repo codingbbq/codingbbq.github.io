@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcodingbbq_github_io=self.webpackChunkcodingbbq_github_io||[]).push([[3655],{1798:i=>{i.exports=JSON.parse('{"label":"minimalism","permalink":"/blog/tags/minimalism","allTagsPath":"/blog/tags","count":1}')}}]);

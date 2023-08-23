@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcodingbbq_github_io=self.webpackChunkcodingbbq_github_io||[]).push([[5686],{2886:a=>{a.exports=JSON.parse('{"label":"learnings","permalink":"/blog/tags/learnings","allTagsPath":"/blog/tags","count":3}')}}]);
