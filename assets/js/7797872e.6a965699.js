@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcodingbbq_github_io=self.webpackChunkcodingbbq_github_io||[]).push([[1957],{5461:o=>{o.exports=JSON.parse('{"permalink":"/blog/tags/software","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
