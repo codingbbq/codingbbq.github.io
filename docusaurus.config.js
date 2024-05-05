@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'From Code to Charcoal: Crafting Exceptional Full Stack Solutions by Day, and Savoring BBQ Perfection by Night.',
-  tagline: 'Reflections of a Front-End Developer\'s Journey',
+  title: 'Hi, I am Idrish laxmidhar.',
+  tagline: 'Sr. Software Engineer, a blogger, and a tech enthusiast.',
 
   // Set the production url of your site here
   url: 'https://codingbbq.github.io',
