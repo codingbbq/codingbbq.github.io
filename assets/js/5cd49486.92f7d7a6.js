@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcodingbbq_github_io=self.webpackChunkcodingbbq_github_io||[]).push([[2730],{9441:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/personal","page":1,"postsPerPage":10,"totalPages":2,"totalCount":11,"nextPage":"/blog/tags/personal/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
