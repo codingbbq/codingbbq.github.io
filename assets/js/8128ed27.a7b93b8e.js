@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcodingbbq_github_io=self.webpackChunkcodingbbq_github_io||[]).push([[3958],{590:a=>{a.exports=JSON.parse('{"label":"software","permalink":"/blog/tags/software","allTagsPath":"/blog/tags","count":5}')}}]);
