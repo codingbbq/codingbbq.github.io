@@ -70,12 +70,12 @@ const config = {
         },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Learnings',
-          // },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Learnings',
+          },
           {
             href: 'https://github.com/codingbbq',
             label: 'GitHub',
