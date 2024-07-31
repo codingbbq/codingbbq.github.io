@@ -63,7 +63,7 @@ What to write? Where to write?
 
 - **Blog** : Maintaining an online log (blog) is beneficial. Writing helps you pen down your thoughts in a clear and concise manner. This means that you will be able to communicate better. In your job, you will be constantly writing emails, attending scrum meetings and writing requirement documents. Your habit of writing blog will help you better communicate your thoughts to the readers/managers/colleagues.
 
-- **Where to Blog?** : You can use blogger, WordPress etc blogging services, but I would insists on using Jekyll instead. I have an article on this blog about [why I choose to use Jekyll]({% post_url 2019-02-18-Why-Jekyll %}) as my blogging software. As long as you write consistently, it does not matter what blogging platform you are using. 
+- **Where to Blog?** : You can use blogger, WordPress etc blogging services, but I would insists on using Jekyll instead. As long as you write consistently, it does not matter what blogging platform you are using. 
 
 - **What to Blog?** : Blog your thoughts. Everything. I was inspired by the movie "The Social Network", when Mark Z. blogs about how he wishes to divert his mind and that he needs an idea. [Remember](https://www.youtube.com/watch?v=BPazh2kDdvA)? P.S : I am not promoting that you write about your girlfriend, but you get the gist. 
 
@@ -78,8 +78,7 @@ Some industry experts would say that, it is always better to write about topics 
 
 I have to quote [Steve Yegge](http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html) on the use of keyboard here. He summarises the importance of using keyboard bull's eye.
 
-> "I can't understand why professional programmers out there allow themselves to have a career without teaching themselves to type. It doesn't make any sense. It's like being, I dunno, an actor without knowing how to put your clothes on. It's showing up to the game unprepared. It's coming to a meeting without your slides. Going to class without your homework. Swimming in the Olympics wearing a pair of Eddie Bauer Adventurer Shorts."
-{: .bg-light .blockquote .text-right .p-4}
+"I can't understand why professional programmers out there allow themselves to have a career without teaching themselves to type. It doesn't make any sense. It's like being, I dunno, an actor without knowing how to put your clothes on. It's showing up to the game unprepared. It's coming to a meeting without your slides. Going to class without your homework. Swimming in the Olympics wearing a pair of Eddie Bauer Adventurer Shorts."
 
 There are many games, that improve your typing skills. I encourage that you play once in a while those games.
 
