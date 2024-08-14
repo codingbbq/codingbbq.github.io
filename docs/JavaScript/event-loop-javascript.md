@@ -49,3 +49,37 @@ Here, the Promise callback will be executed before the setTimeout callback, even
 - JavaScript's Event Loop allows it to handle asynchronous operations effectively within its single-threaded environment.
 - The Call Stack executes synchronous code, while the Event Loop manages the execution of asynchronous code from the Message Queue and Microtask Queue.
 - Thus ensuring a smooth and responsive experience in JavaScript applications.
+
+
+# Passing Delay of `0` milliseconds to `setTimeout` will make it synchronous?
+
+**In JavaScript, if you pass a delay of 0 milliseconds to the setTimeout function, will the callback function execute immediately after the current line of code, effectively making it synchronous?**
+
+```js
+console.log(1);
+console.log(2);
+setTimeout(() => console.log(3), 0);
+console.log(4);
+console.log(5);
+console.log(6);
+```
+
+In above code, it may appear that all the lines of code are executed synchronous because the `setTimeout` has `0` milliseconds as delay.
+However, that is not the case. The `setTimeout` is sent to the Web API, which in turn enqueues the callback to the Message Queue. 
+Irrepective of the delay time in setTimout, unless the Call Stack is empty, the Event Loop will not put the item from Message queue to the Call stack. So "how much ever time it requires" for call stack to empty, Event Loop will continously check Call Stack before the task is dequeued from the Message queue and pushed to the Call Stack.
+
+Because of above, the delay of `0` milliseconds does not mean that the `setTimeout` function will behave like synchronous code.
+
+So the above code will execute as follows
+
+```js
+1
+2
+4
+5
+6
+3
+```
+
+
+
