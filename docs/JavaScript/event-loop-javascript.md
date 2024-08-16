@@ -1,4 +1,4 @@
-# Explain Even Loop In JavaScript
+# Event Loop In JavaScript
 
 JavaScript is single-threaded, meaning it executes code **synchronously**, one line at a time. To handle asynchronous tasks while maintaining this single-threaded nature, JavaScript uses a runtime model that involves the Call Stack, Message Queue, Microtask Queue, and Event Loop.
 
@@ -45,13 +45,13 @@ Promise.resolve().then(() => console.log('Promise'));
 
 Here, the Promise callback will be executed before the setTimeout callback, even though the setTimeout has a delay of 0 milliseconds.
 
-### Summary
+## Summary
 - JavaScript's Event Loop allows it to handle asynchronous operations effectively within its single-threaded environment.
 - The Call Stack executes synchronous code, while the Event Loop manages the execution of asynchronous code from the Message Queue and Microtask Queue.
 - Thus ensuring a smooth and responsive experience in JavaScript applications.
 
 
-# Passing Delay of `0` milliseconds to `setTimeout` will make it synchronous?
+## Passing Delay of `0` milliseconds to `setTimeout` will make it synchronous?
 
 **In JavaScript, if you pass a delay of 0 milliseconds to the setTimeout function, will the callback function execute immediately after the current line of code, effectively making it synchronous?**
 
