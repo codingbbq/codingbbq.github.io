@@ -53,4 +53,74 @@
 
 ---
 
+#### Q. Which design strategy ensures your website is always available?
+- Disposability
+- Elasticity
+- Scalability
+- Redundancy
+
+**Redundancy** (Having multiple copies of something, so if one fails other copy continues to ensure that your website is always available)
+
+---
+
+#### Q. Which of the following data transfers is free in AWS?
+- Data across AWS regions
+- Data from the internet into an AWS region
+- Data within an AWS Region across Availability Zones
+- Data from an AWS region to the internet
+
+**Data from the internet int an AWS region**
+
+---
+
+#### Q. Which CAF (Cloud adoption framework) phase first demonstrates business value ?
+- Launch
+- Scale
+- Envision
+- Align
+
+**Launch**
+
+---
+
+#### Q. Which AWS resources access option would allow a web server instnace to pull data from a database ?
+- API
+- IaC
+- CLI
+- SDK
+
+**API**
+
+---
+
+#### Q. What can a developer do with an access key?
+- Administrative access to adjust other user accounts from CLI
+- Programmatic access to te root user account from the Management console
+- Administrative access to Organization accounts from the Management console
+- Permissioned access to the developer's account from a CLI
+
+**Permissioned access to the developer's account from a CLI**
+
+---
+
+#### Q. Which cloud deployment model is most often the result of a temporary transitional phase ?
+- Public cloud
+- Multi - cloud
+- Community cloud
+- Hybrid cloud
+
+**Hybrid cloud**
+
+---
+
+#### Q. Which cloud connectivity option offers the highest security?
+- Client VPN
+- Public internet
+- Direct connect
+- Site-to-site VPN
+
+**Direct connect** (Direct connect does not have built in encryption)
+
+---
+
 
