@@ -123,4 +123,33 @@
 
 ---
 
+#### Q. A company needs an inexpensive way to avoid having a single point of failure in their server cluster. Which of the following is the least expensive option to meet this requirement?
+- Spread the cluster across multiple Regions
+- Spread the cluster across multiple AZs
+- Spread the cluster across multiple racks
+- Spread the cluster across multiple hosts
+
+**Spread the cluster across multiple AZs**
+
+--- 
+
+#### Q. Whcih service should you use to publish software update files while minimizing download time for users throughout the world?
+- Wavelength
+- CloudFront
+- Global Accelerator
+- Outposts
+
+**cloudFront** 
+
+---
+
+#### Q. A social media company wants to get user traffic onto AWS's private infrastructure as quickly as possible. Which service will meet this needs?
+- Wavelength
+- CloudFront
+- Global Accelerator
+- Outposts
+
+**Global Accelerator**
+
+---
 
