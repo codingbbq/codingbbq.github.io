@@ -66,7 +66,7 @@ Eg. ngClass, ngStyle, ngModel
 
 #### Q. What is the `<ng-template>` directive?
 The `<ng-template>` directive is used to define a block of code that can be reused or rendered multiple times inside the document.
-By placing a reference variable inside the <ng-template>, you can access its content.
+By placing a reference variable inside the `<ng-template>`, you can access its content.
 
 ```
 <div *ngIf="isLoggedIn; else loginTemplate">
