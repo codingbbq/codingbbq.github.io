@@ -299,3 +299,51 @@ Dirty becomes true when user interacts with the control and modifies its value. 
 Pristine stays true till the control has not been interacted with - by the user. Its value remains unchanged since it was initialized or loaded. It indicates the control is in its original state i.e unchanged state.
 
 
+#### Q. What are Route Guards in Angular ?
+Route gurads in Angular are a way to hide or protect the application's routes from unwanted/unauthorized access. It works like a security mechanism that checks if the user is allowed to access a certain route or not.
+Route guards can be used for
+- Authentication: Preventing unauthorized users from accessing protected routes.
+- Authorization: Allowing access based on user roles or permissions.
+- Data Retrieval: Fetching necessary data before a route is activated.
+- Confirmation: Asking users for confirmation before leaving a route.
+
+##### Types of Route Guards
+Angular provides several built-in route guard interfaces, each serving different purposes:
+- CanActivate:<br />
+Determines if a route can be activated. It is commonly used for authentication checks.
+Example use case: Preventing an anonymous user from accessing a profile page.
+
+- CanActivateChild:<br />
+Similar to CanActivate, but specifically for child routes. It checks if child routes can be activated.
+Example use case: Ensuring only authorized users can access child routes of an admin panel.
+
+- CanDeactivate:<br />
+Determines if a route can be deactivated. This is useful for prompting users to save changes before navigating away.
+Example use case: Asking users to confirm leaving a form with unsaved changes.
+
+- CanLoad:<br />
+Checks if a module can be loaded lazily. It is invoked before loading the module associated with the route.
+Example use case: Preventing the loading of a feature module if the user is not authorized.
+
+- Resolve:<br />
+Pre-fetches data before activating a route. This ensures that necessary data is available when the component loads.
+Example use case: Loading user data before navigating to the user profile page.
+
+- CanMatch (introduced in Angular 14):<br />
+Determines if the router should activate the route based on certain conditions.
+Example use case: Validating parameters before allowing navigation to a specific route.
+
+##### What is the use of `@defer` block? Why do we need deferable views in the components?
+The deferable views or the @defer block is a very powerful tool used for lazy loading or preloading or even loading the components after certain action is triggered like button click. In this case the implementation of the deferable views can be considered beneficial - as the heavy components that are not needed at initial stage, gets deferred from the main bundle - increasing the initial loading time of the application.
+
+Only the standalone components, directives and pipes can be deferred using the @defer block.
+
+##### What is state management ?
+- It defines how the application stores data, modifies it and reacts to the changes in it.
+- It acts as a single source of truth
+- No other version of data is present anywhere in the application
+
+##### What is the difference between Eager Loading and Lazy Loading ?
+- Eager Loading - If the module is loaded during the loading of the application in the browser, it is known as Eager loading.
+
+- Lazy Loading - If the module is loaded on demand then it is known as lazy loading. It helps application to load faster because it will not need to download the modules which are not required at that moment.
