@@ -1,3 +1,5 @@
+### Angular Questions and Answers
+
 ## Q. What is component based architecture ?
 - A component is an user interface which can be reused
 - Components communicate with each other
