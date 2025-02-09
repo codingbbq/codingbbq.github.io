@@ -2,10 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codingbbq.github.io/blog</id>
     <title>Hi, I am Idrish laxmidhar. Blog</title>
-    <updated>2024-07-01T00:00:00.000Z</updated>
+    <updated>2025-02-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codingbbq.github.io/blog"/>
     <subtitle>Hi, I am Idrish laxmidhar. Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[The four principles of Great design by Robin Williams]]></title>
+        <id>https://codingbbq.github.io/blog/great-design</id>
+        <link href="https://codingbbq.github.io/blog/great-design"/>
+        <updated>2025-02-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What started as a curiosity turned into a desirable hobby. After having discovered Canva in 2022, I started taking insipiration from various designs in Canva and Pinterest and created simple graphics for Watsapp Status and Instagram. Having this on hands experience, it helped me understand how to make something attractive and eye catching within a limited space and with limited use of words.]]></summary>
+        <content type="html"><![CDATA[<p>What started as a curiosity turned into a desirable hobby. After having discovered Canva in 2022, I started taking insipiration from various designs in Canva and Pinterest and created simple graphics for Watsapp Status and Instagram. Having this on hands experience, it helped me understand how to make something attractive and eye catching within a limited space and with limited use of words.</p>
+<p>I enjoy spending hours on canva, but at the same time, I have gained creative and valuable skills while doing it on hands.</p>
+<p>I came across this course from Robin Williams about principles of Great design and it surely benefited me from my existing knowledge. The course is well structured and here are some of the important points taken from the course.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-principle-of-proximity">The principle of Proximity<a class="hash-link" aria-label="Direct link to The principle of Proximity" title="Direct link to The principle of Proximity" href="https://codingbbq.github.io/blog/great-design#the-principle-of-proximity">​</a></h2>
+<p>Group related items together. Physical closeness implies a relationship.
+Proximity does not mean that everything is close together - it means elements that are intellectually connected should be visually connected.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-principle-of-alignment">The principle of Alignment<a class="hash-link" aria-label="Direct link to The principle of Alignment" title="Direct link to The principle of Alignment" href="https://codingbbq.github.io/blog/great-design#the-principle-of-alignment">​</a></h2>
+<p>Nothing should be placed on the page arbitrarily. Even item should have a visual connection with something else on the page.</p>
+<ul>
+<li>In life as well as in Design, alignment has a purpose.</li>
+<li>Clean alignment can improve the communication of any piece of work. It presents a more professional appearance.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-principle-of-repetition">The principle of Repetition<a class="hash-link" aria-label="Direct link to The principle of Repetition" title="Direct link to The principle of Repetition" href="https://codingbbq.github.io/blog/great-design#the-principle-of-repetition">​</a></h2>
+<p>Repeat some element of the design throughout the entire piece. This is a critical unifying factor.</p>
+<ul>
+<li>You already create consistency in your design work. Take elements of that consistency and push it - emphasize the consistency so it becomes a repetitive and unifying element of design.</li>
+<li>Repetition helps to clarify information and provide structure.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-principle-of-contrast">The principle of Contrast<a class="hash-link" aria-label="Direct link to The principle of Contrast" title="Direct link to The principle of Contrast" href="https://codingbbq.github.io/blog/great-design#the-principle-of-contrast">​</a></h2>
+<p>Contrast is what draws a reader's eye to the page in the first place. Contrast also provides clarity of information.</p>
+<ul>
+<li>One effect of contrast is that it pulls the reader's eye into the information, and one result is clearer communication.</li>
+<li>Use contrast to clarify information as well as make the page more attractive.</li>
+</ul>]]></content>
+        <category label="personal" term="personal"/>
+        <category label="software" term="software"/>
+        <category label="learning" term="learning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Deciphering Polyfill.io Service vs. Polyfill.js]]></title>
         <id>https://codingbbq.github.io/blog/polyfill.js</id>
