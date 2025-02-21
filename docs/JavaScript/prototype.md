@@ -149,3 +149,85 @@ Object.defineProperty(obj, 'a', {
 console.log(obj.propertyIsEnumerable('a')); // false
 ```
 
+## What is instantiation pattern in JavaScript?
+- The instantiation pattern is a way to create new objects from a shared prototype object.
+- It is a way to implement inheritance in JavaScript.
+- There are 5 types of instantiation patterns in Javascript
+    - Functional Instantiation
+    - Functional Instantiation with Shared Methods
+    - Prototypal Instantiation
+    - Pseudo-Classical Instantiation
+    - ES6 Class Instantiation
+
+## What are the limitations of Arrow functions?
+- Arrow functions do not have their own `this` value. They inherit the `this` value from the enclosing lexical context.
+- Arrow functions cannot be used as constructors. They do not have a `prototype` property.
+- Arrow functions do not have their own `arguments` object. You can use the `arguments` object from the enclosing lexical context.
+- Arrow functions cannot be used with the `new` keyword. They do not have a `[[Construct]]` internal method.
+- Arrow functions cannot be used as generators and do not support the yield keyword.
+
+## What is the difference between `__proto__` and `[[prototype]]`?
+- `__proto__` is a getter/setter property that allows you to get or set the prototype of an object.
+- `[[prototype]]` is an internal property that points to the prototype object of an object.
+- `__proto__` is a non-standard property that is not part of the ECMAScript specification. It is supported by most modern browsers.
+- `[[prototype]]` is an internal property that is used by the JavaScript engine to implement inheritance.
+- `__proto__` is a property that is defined on the object itself.
+- `[[prototype]]` is an internal property that is not accessible from JavaScript code.
+
+## What is recommended way for `__proto__`?
+- The `__proto__` property is considered outdated and should not be used in production code.
+- It is recommended to use the `Object.setPrototypeOf()` method or the `Object.getPrototypeOf()` method to get the prototype of an object.
+
+## To create an Object with a given prototype you should use ?
+- The recommended way to create an object with a given prototype is to use the `Object.create()` method.
+    ### Using `Object.create()`
+    ```javascript
+    const proto = {
+        greet() {
+            console.log('Hello!');
+        }
+    };
+
+    const obj = Object.create(proto);
+    obj.greet(); // Output: Hello!
+    ```
+
+- You can also use the constructor function pattern or the class syntax to create objects with a given prototype.
+    ### Using Constructor Function
+    ```javascript
+    function MyObject() {}
+    MyObject.prototype.greet = function() {
+        console.log('Hello!');
+    };
+
+    const obj = new MyObject();
+    obj.greet(); // Output: Hello!
+    ```
+    ### Using ES6 Class
+    ```javascript
+    class MyObject {
+        greet() {
+            console.log('Hello!');
+        }
+    }
+    const obj = new MyObject();
+    obj.greet(); // Output: Hello!
+    ```
+
+## `.prototype` has constructor property by default.
+- When you create a function in JavaScript, it automatically gets a `prototype` property.
+- The `prototype` property is an object that has a `constructor` property by default.
+- The `constructor` property points back to the function that created the object.
+- The `constructor` property is used to create new instances of the object.
+
+## What is the difference between `prototype` and `[[Prototype]]`?
+- `[[Prototype]]` is an internal property of an object that points to its prototype object. It is used to define an objects properties and methods.
+- If an object's property is not found, the JS engine will look at its `[[Prototype]]` object and so on up the chain, eventually until it reaches `null`.
+- The `.prototype` property is used to assign the `[[prototype]]` to an object when 'new' is used.
+
+## Important points
+- Almost every function has `.prototype` property.
+- Since functions are also objects, they have a `[[prototype]]` property that points to the `Function.prototype` object.
+- The `.prototype` is an object (by default) and is used to set the `[[prototype]]` of an object created with the `new` keyword.
+- The `Doctor.prototype` sets the `[[prototype]]` of new Doctor when `new Doctor()` is used.
+- The `.prototype` is only useful when used on constructor functions.
