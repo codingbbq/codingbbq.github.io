@@ -153,3 +153,62 @@
 
 ---
 
+#### Q. Which configuration option in EC2 determines how much RAM the instance gets?
+- Storage
+- AMI
+- Tag
+- Type
+
+**Type**
+
+---
+
+#### Q. A company's stateless data processing workload frequently leaves EC2 capacity unused. Which EC2 pricing option would fix the problem?
+- Spot
+- Reserved
+- On-Demand
+- Dedicated
+
+**Spot**
+
+---
+
+#### Q. Where are container images stored for creating new container clusters?
+- Repositroy
+- EC2 instance store
+- Marketplace
+- Kubernetes
+
+**Repository**
+
+---
+
+#### Q. When to use serverless?
+- Just build your code
+- Only pay when your code runs
+- Run code closer to user
+- Inherently scalable
+- Update to code, not to server
+
+**All of above**
+
+---
+
+#### Q. When NOT to use serverless?
+- Troubleshooting troubles
+- Long run limitations (Lamda functions can run upto 15 minutes)
+- Cold starts
+- Security concerns
+- Legacy conversions
+
+**All of above**
+
+---
+
+#### Q. Which of the following configurations most determines how much it costs to run a Lamda function?
+- Trigger source
+- Memory
+- Destination target
+- Tag
+
+**Memory**
