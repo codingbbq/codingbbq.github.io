@@ -212,3 +212,73 @@
 - Tag
 
 **Memory**
+
+---
+
+#### Q. Which type of scaling would increase the size of the instance's resources?
+- Scale up
+- Scale down
+- Scale in
+- Scale out
+
+**Scale up**
+
+---
+
+#### Q. With which of the following services can automatic scaling of hosts NOT be handled using auto-scaling policies set by the customer?
+- EC2 spot fleets
+- EC2 ASGs
+- RDS tables
+- DynamoDB throughput
+
+**RDS tables**
+
+---
+
+#### Q. When setting up a Database migration in AWS, which service do you start with?
+- RDS
+- SCT
+- DMS
+- SQL
+
+**DMS (Database Migration service)**
+
+---
+
+#### Q. Which database service is optimized to handle OLAP workloads but does not handle OLTP workloads?
+- RDS
+- RedShift
+- Aurora
+- DMS
+
+**RedShift (RDS and Aurora can also be used for OLAP as well as OLTP)**
+
+---
+
+#### Q. To ge the most automation built into your database deployment make sure to use _______
+- RDS
+- Aurora
+- EC2
+- MySQL
+
+**Aurora**
+
+---
+
+#### Q. Which task is AWS responsibility when using RDS?
+- Adding data to database
+- Controlling database access
+- Placing DB instance in a VPC
+- Patching DB instance's OS
+
+**Patching DB instance's OS**
+
+---
+
+#### Q. Which AWS service is designed around non-relational key-value pairs?
+- RedShift
+- Aurora
+- DynamoDB
+- RDS
+
+**DynamoDB**
