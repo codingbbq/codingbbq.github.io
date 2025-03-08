@@ -282,3 +282,46 @@
 - RDS
 
 **DynamoDB**
+
+---
+
+#### Q. You've setup a new website on EC2 instance. What AWS service can you use to publish your new website address so customers can find you?
+- EC2
+- Route 53
+- VPC
+- API Gateway
+
+**Route 53**
+
+---
+
+#### Q. Which of the following group is logically the smallest?
+- Availability zone
+- Region
+- Subnet
+- VPC
+
+**Subnet**
+
+---
+
+#### Q. What kind of resources does NACL protect?
+- VPC
+- EC2 instance
+- S3 bucket
+- Subnet
+
+**Subnet**
+
+---
+
+#### Q. Which two services or features can be used to configure protections on virual network interface?
+- NACL
+- WAF
+- Firewall manager
+- Security group
+
+**Firewall manager & Security group**
+
+---
+
