@@ -325,3 +325,52 @@
 
 ---
 
+#### Q. Which service helps reduce latency for users sending information to a server?
+- Cloudfront
+- Global Accelerator
+- Origin Shield
+- Cloudfront Functions
+
+**Global Accelerator**
+
+---
+
+#### Q. What kind of storage is cloud-native by design?
+- File system storage
+- Object storage
+- Offline storage
+- Block storage
+
+**Object storage**
+
+---
+
+#### Q. What kind of items are saved inside S3 bucket?
+- Blocks
+- Folders
+- Object
+- Volumes
+
+**Object**
+
+---
+
+#### Q. Which storage could serve as a boot device for Linux EC2 instances?
+- FSx for windows
+- EFS
+- FSx for OpenZFS
+- EBS
+
+**EBS (Elastic Boot Store)**
+
+---
+
+#### Q. Which service is required to enable encryption of EBS volumes?
+- ELB
+- KMS
+- EC2
+- S3
+
+**KMS (Key management service)**
+
+---
