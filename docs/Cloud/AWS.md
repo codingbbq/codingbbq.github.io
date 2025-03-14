@@ -374,3 +374,55 @@
 **KMS (Key management service)**
 
 ---
+
+#### Q. Which process directly provides high availability of a service?
+- Lifecycle management
+- Automatic archival
+- Disaster recovery
+- Backup
+
+**Disaster recovery**
+
+---
+
+#### Q. Which of these is most likely a critical component of DR design?
+- AMI
+- ARN
+- DDOS
+- NACL
+
+**AMI (Amazon Machine Image)**
+
+---
+
+#### Q. Which S3 storage tier would emphasize low cost over durability?
+- Glacier Archive
+- Intelligent tiering
+- Standard
+- One zone-IA
+
+**One zone-IA**
+
+---
+
+#### Q. Which AWS service helps Alexa's voice sound personable?
+- Lex
+- Polly
+- Comprehend
+- Rekognition
+
+**Polly**
+
+---
+
+#### Q. What service is used to run ETL (Extract, Transform and Load) jobs?
+- Glue
+- Kinesis Data streams
+- QuickSight
+- Athena
+
+**Glue**
+
+---
+
+
