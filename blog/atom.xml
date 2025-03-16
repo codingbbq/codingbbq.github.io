@@ -2,10 +2,151 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codingbbq.github.io/blog</id>
     <title>Hi, I am Idrish laxmidhar. Blog</title>
-    <updated>2025-02-05T00:00:00.000Z</updated>
+    <updated>2025-03-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codingbbq.github.io/blog"/>
     <subtitle>Hi, I am Idrish laxmidhar. Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[AI concepts for Tech Professionals]]></title>
+        <id>https://codingbbq.github.io/blog/ai-tech-professionals</id>
+        <link href="https://codingbbq.github.io/blog/ai-tech-professionals"/>
+        <updated>2025-03-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Artificial Intelligence]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="artificial-intelligence">Artificial Intelligence<a href="https://codingbbq.github.io/blog/ai-tech-professionals#artificial-intelligence" class="hash-link" aria-label="Direct link to Artificial Intelligence" title="Direct link to Artificial Intelligence">​</a></h2>
+<p>AI is a vast field focused on creating intelligent systems that can perform tasks usually requiring human intelligence, such as perception, reasoning, and decision-making. It encompasses a range of techniques and approaches, including machine learning, deep learning, and generative AI.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="machine-learning-ml">Machine Learning (ML)<a href="https://codingbbq.github.io/blog/ai-tech-professionals#machine-learning-ml" class="hash-link" aria-label="Direct link to Machine Learning (ML)" title="Direct link to Machine Learning (ML)">​</a></h2>
+<p>ML is a subset of AI focused on developing methods that enable machines to learn from data and enhance their performance on specific tasks. It is commonly considered the simplest form of AI.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="neural-networks">Neural Networks<a href="https://codingbbq.github.io/blog/ai-tech-professionals#neural-networks" class="hash-link" aria-label="Direct link to Neural Networks" title="Direct link to Neural Networks">​</a></h2>
+<p>A neural network is a computational model inspired by the human brain, consisting of interconnected layers of nodes or neurons that process and transform data through learned patterns and weights. It is commonly used in machine learning to recognize complex patterns, make predictions and solve tasks by training on large datasets.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="deep-learning">Deep Learning<a href="https://codingbbq.github.io/blog/ai-tech-professionals#deep-learning" class="hash-link" aria-label="Direct link to Deep Learning" title="Direct link to Deep Learning">​</a></h2>
+<p>Deep learning is subset of machine learning that utilizes multi-layered neural networks to automatically learn and extract features from large datasets. These deep network can model complex patterns and perform tasks such as image and speech recognition with high accuracy by heirarchically processing data through multiple layers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="computer-visiion">Computer visiion<a href="https://codingbbq.github.io/blog/ai-tech-professionals#computer-visiion" class="hash-link" aria-label="Direct link to Computer visiion" title="Direct link to Computer visiion">​</a></h2>
+<p>Computer vision is a field of artificial intelligence that enables computers to interpret and understand visual information from the world, such as images and videos. It involves the use of algorithms and models to analyze and make decisions based on visual data, often mimicking human visual perception and cognition.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="natural-language-processing-nlp">Natural Language processing (NLP)<a href="https://codingbbq.github.io/blog/ai-tech-professionals#natural-language-processing-nlp" class="hash-link" aria-label="Direct link to Natural Language processing (NLP)" title="Direct link to Natural Language processing (NLP)">​</a></h2>
+<p>Natural langulage processing (NLP) is a branch of artificial intelligence that allows computers to understand and interact with human language. It involves tasks like translating text, analyzing sentiment, and summarizing information by processing and interpreting language data.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-model">AI Model<a href="https://codingbbq.github.io/blog/ai-tech-professionals#ai-model" class="hash-link" aria-label="Direct link to AI Model" title="Direct link to AI Model">​</a></h2>
+<p>An AI model is a computational algorithm trained on data to perform specific tasks, such as classifiction, prediction, or pattern recognition. It learns from examples in training data, adjusting its parameters to improve its accuracy, and then applies this learned knowledge to make informed decisions or predictions on new, unseen data.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ml-algorithm">ML Algorithm<a href="https://codingbbq.github.io/blog/ai-tech-professionals#ml-algorithm" class="hash-link" aria-label="Direct link to ML Algorithm" title="Direct link to ML Algorithm">​</a></h2>
+<p>An ML Algorithm is a set of procedueres used to analayze data and make predictions or decisions based on patterns and insights. It adjusts its approach by learning from data, improving its accuracy over time through iteravtive training.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-model-training">AI Model Training<a href="https://codingbbq.github.io/blog/ai-tech-professionals#ai-model-training" class="hash-link" aria-label="Direct link to AI Model Training" title="Direct link to AI Model Training">​</a></h2>
+<p>AI model training is the process of teaching a model to make accurate predictions or decisions by feeding it large amounts of data, adjusting its parameters through iterative learning, and optimizing its performance based on feedback and error rates.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-inferencing">AI inferencing<a href="https://codingbbq.github.io/blog/ai-tech-professionals#ai-inferencing" class="hash-link" aria-label="Direct link to AI inferencing" title="Direct link to AI inferencing">​</a></h2>
+<p>AI inferencing is the process of applying a trained AI model to new data to generate predictions or decisions based on the patterns and knowledge it has learned. It involves using the model's learned parameters to analyze the input and produce outputs in real-time or on-demand.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="model-fairness">Model fairness<a href="https://codingbbq.github.io/blog/ai-tech-professionals#model-fairness" class="hash-link" aria-label="Direct link to Model fairness" title="Direct link to Model fairness">​</a></h2>
+<p>AI model fairness refers to the principle of ensuring that a model's predictions or decisions do not disproportionately disadvantage or bias any particular group or individual, promoting equitble outcomes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="model-fit">Model fit<a href="https://codingbbq.github.io/blog/ai-tech-professionals#model-fit" class="hash-link" aria-label="Direct link to Model fit" title="Direct link to Model fit">​</a></h2>
+<p>Model fit describes how well a model's predictions match the actual data it was trained on, indicating its accuracy and effectiveness in capturing the underlying patterns.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="large-language-model-llm">Large Language Model (LLM)<a href="https://codingbbq.github.io/blog/ai-tech-professionals#large-language-model-llm" class="hash-link" aria-label="Direct link to Large Language Model (LLM)" title="Direct link to Large Language Model (LLM)">​</a></h2>
+<p>A Large language model (LLM) is an AI model designed to understand and generate human-like text based on vast amounts of data. It uses advanced algorithms to process and respond to language, enabling tasks like text generation, translation, and question-answering.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="machine-learning-workflow">Machine Learning Workflow<a href="https://codingbbq.github.io/blog/ai-tech-professionals#machine-learning-workflow" class="hash-link" aria-label="Direct link to Machine Learning Workflow" title="Direct link to Machine Learning Workflow">​</a></h2>
+<ul>
+<li>Identifying appropriate data is one of the most important aspects of ML workflow.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="labeled-data">Labeled Data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#labeled-data" class="hash-link" aria-label="Direct link to Labeled Data" title="Direct link to Labeled Data">​</a></h4>
+<p>Labeled data in AI refers to data that has been annotated with specific tags or categories, providing a reference for training models. This annoated information helps the model learn to identify patterns and make accurate predictions based on the labeled examples.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="unlabeled-data">Unlabeled Data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#unlabeled-data" class="hash-link" aria-label="Direct link to Unlabeled Data" title="Direct link to Unlabeled Data">​</a></h4>
+<p>Unlabled data in AI refers to data that lacks predefined tags or categories, meaning it has not been annoated with specific information. This type of data is often used in unsupervised leanring, where models identify patterns and structures without predefined labels.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tabular-data">Tabular data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#tabular-data" class="hash-link" aria-label="Direct link to Tabular data" title="Direct link to Tabular data">​</a></h4>
+<p>Tabular data in AI is structured information organized in rows and columns, resembling a spredsheet or database table. Each row typically represents a single record or observation, while each column contains specific attributes or features, making it easy to analyze and process for machine learning tasks.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="time-series-data">Time-Series data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#time-series-data" class="hash-link" aria-label="Direct link to Time-Series data" title="Direct link to Time-Series data">​</a></h4>
+<p>Time-series data in AI consists of observations collected sequentially over time, ofter at regular intervals. this type of data is used to analyze trends, patterns, and seasonal variations, making it valuable for tasks such as forecasting and anamoly detection. This data is oftern submitted by IoT devices.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="image-data">Image data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#image-data" class="hash-link" aria-label="Direct link to Image data" title="Direct link to Image data">​</a></h4>
+<p>Image data in AI refers to visual information represented as pixel matrics, capturing various features such as colors, shapes, and textures. This type of data is commonly used in computer vision tasks, including image classification, object detection, and facial recognition.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="strucured-text-data">Strucured text data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#strucured-text-data" class="hash-link" aria-label="Direct link to Strucured text data" title="Direct link to Strucured text data">​</a></h4>
+<p>Structured text data in AI refers to text that is organized in a predefined format, often with specific fields and tags, making it easy to analyze and process. Examples include data from forms, databases, or CSV files, where each entry has a consistent structure that facilitates tasks like information extraction and analysis.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="unstructured-text-data">Unstructured text data<a href="https://codingbbq.github.io/blog/ai-tech-professionals#unstructured-text-data" class="hash-link" aria-label="Direct link to Unstructured text data" title="Direct link to Unstructured text data">​</a></h4>
+<p>Unstructured text data in AI refers to free-form text taht lacks a predefined structure, such as documents, social media posts, or emails. This type of data is more challenging to analyze, as it requires natural language processing techniques to extract insights, indentify patterns, and derive meaning from the content.</p>
+<hr>
+<ul>
+<li>Select the ML Algorithm</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="linear-regression">Linear Regression<a href="https://codingbbq.github.io/blog/ai-tech-professionals#linear-regression" class="hash-link" aria-label="Direct link to Linear Regression" title="Direct link to Linear Regression">​</a></h4>
+<p>Modeling between a dependent variable and multiple independent variables
+Eg. Predict housing prices based on size, location and number of bedrooms.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="logistic-regression">Logistic Regression<a href="https://codingbbq.github.io/blog/ai-tech-professionals#logistic-regression" class="hash-link" aria-label="Direct link to Logistic Regression" title="Direct link to Logistic Regression">​</a></h4>
+<p>Binary classification predicting the probability of an event occuring.
+Eg. Email spam classification</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="k-nearest-neighbors-knn">K-Nearest Neighbors (KNN)<a href="https://codingbbq.github.io/blog/ai-tech-professionals#k-nearest-neighbors-knn" class="hash-link" aria-label="Direct link to K-Nearest Neighbors (KNN)" title="Direct link to K-Nearest Neighbors (KNN)">​</a></h4>
+<p>Classification of data points based on classification of neighbors.
+Eg. Product recommendation based on user preferences.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="principal-component-analysis-pca">Principal component Analysis (PCA)<a href="https://codingbbq.github.io/blog/ai-tech-professionals#principal-component-analysis-pca" class="hash-link" aria-label="Direct link to Principal component Analysis (PCA)" title="Direct link to Principal component Analysis (PCA)">​</a></h4>
+<p>Condensing data while retaining the most important features
+Eg. facial recognition</p>
+<hr>
+<ul>
+<li>Train the model on the data</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="supervised-learning">Supervised Learning<a href="https://codingbbq.github.io/blog/ai-tech-professionals#supervised-learning" class="hash-link" aria-label="Direct link to Supervised Learning" title="Direct link to Supervised Learning">​</a></h4>
+<p>Supervises learning is a machine learning approach where a model is trained on labeled data, using input-output pairs to learn the relationship between them. The model makes predictions on new, unseen data by applying the patterns it has learned from the training examples.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="unsupervised-learning">Unsupervised learning<a href="https://codingbbq.github.io/blog/ai-tech-professionals#unsupervised-learning" class="hash-link" aria-label="Direct link to Unsupervised learning" title="Direct link to Unsupervised learning">​</a></h4>
+<p>Unsupervised learning is a machine learning approach where a model is trained on unlabled data, aiming to identify patterns, structures, or groupings within the data without predefined output categories. It is commonly used for tasks such as clustering, dimensionality reduction, and anomaly detection, helping to uncover hidden relationships in  the data.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="reinforcement-learning">Reinforcement Learning<a href="https://codingbbq.github.io/blog/ai-tech-professionals#reinforcement-learning" class="hash-link" aria-label="Direct link to Reinforcement Learning" title="Direct link to Reinforcement Learning">​</a></h4>
+<p>Reinforcement learning is a machine learning approach where an agent learns to make decisions by interacting with an environment, receiving feedback in the form of rewards or penalties. The agent aims to maximize cumulative rewards over time by exploring different actions and learning from the consequences of its choices.</p>
+<ul>
+<li>Evaluate Model performance. Perform a series of tests to validate whether the model generates usable output</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="batch-inferencing">Batch inferencing<a href="https://codingbbq.github.io/blog/ai-tech-professionals#batch-inferencing" class="hash-link" aria-label="Direct link to Batch inferencing" title="Direct link to Batch inferencing">​</a></h4>
+<p>Batch inferencing is the process of making predictions or decisions on a large set of data at once, rather than individually processing each data point. This approach allows for efficient and scalable analysis by handling multiple inputs in a single operation. Batch inferencing is used when accuracy is more important than speed of response.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="real-time-inferencing">Real time inferencing<a href="https://codingbbq.github.io/blog/ai-tech-professionals#real-time-inferencing" class="hash-link" aria-label="Direct link to Real time inferencing" title="Direct link to Real time inferencing">​</a></h4>
+<p>Real-time inferencing is the process of making predictions or decisions on data instantly as it is received, enabling immediate responses. This approach is crucial for applications requiring quick, dynamic interaction, such as live video analysis or online recommendation systems. Self-driving cars use real-time inferencing while in motion.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="real-world-examples-of-ai-applications">Real World Examples of AI applications<a href="https://codingbbq.github.io/blog/ai-tech-professionals#real-world-examples-of-ai-applications" class="hash-link" aria-label="Direct link to Real World Examples of AI applications" title="Direct link to Real World Examples of AI applications">​</a></h2>
+<ul>
+<li>
+<p>Computer Vision
+Autonomous vehicles utilize computer vision to interpret and navigate their environment. They rely on a combination of sensors, cameras, and AI algorithms to perceive  the world around them.</p>
+</li>
+<li>
+<p>NLP Speech recognition
+Virtual assistants leverage NLP and speech recognition to understand and respond to user queries in natural language. They allow for hands-free operation of devices, providing users with a seamless interaction experience.</p>
+</li>
+<li>
+<p>Recommendation systems
+E-commerce platforms employ recommendation systems to provide personalized shopping experiences for users. These systems analyze user behavior and preferences to suggest products that are most likely to be purchases.</p>
+</li>
+<li>
+<p>Fraud detection
+Financial institutions, including banks and credit card companies, employ fraud detection systems to identify and prevent fraudulent transactions in real-time. These systems use ML algorithms to analyze transaction data and flag suspicious activities.</p>
+</li>
+<li>
+<p>Forecasting
+In supply chain management, accurate demand forecasting is crucial for ensuring products are available to meet customer demand while minimizing excess inventory costs. Companies use AI to analyze historical sales data and predict future demand.</p>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction-to-rag">Introduction to RAG<a href="https://codingbbq.github.io/blog/ai-tech-professionals#introduction-to-rag" class="hash-link" aria-label="Direct link to Introduction to RAG" title="Direct link to Introduction to RAG">​</a></h2>
+<ul>
+<li>Retrieval Augmented Generation - The process of augmenting LLM output by referencing a knowledge base that is outside the context of the LLM training sources</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="knowledge-base-option">knowledge base option<a href="https://codingbbq.github.io/blog/ai-tech-professionals#knowledge-base-option" class="hash-link" aria-label="Direct link to knowledge base option" title="Direct link to knowledge base option">​</a></h4>
+<ul>
+<li>
+<p>Traditional Database or Indexing Syatem
+Use a traditional database or an indexing system like Elasticsearch. Here, the documents are indexed based on keywords or phrases. the retreval process invovles searching these indices to identify documents that match the query terms, which can then be sent to the LLM for generating responses.</p>
+</li>
+<li>
+<p>Vector Database
+In this method, structured or unstructured data are split into chunks, then embedded into vectors using a model (often a transformer-based encoder). These vectors are then stored in a vecotr database that supports efficient similarity search. When a prompt is submitted, this database is searched first, using a vecotr representing the query. It then retrives the most relevant documents based on vector similarity, and adds this data to the prompt.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rag-benefits">RAG Benefits<a href="https://codingbbq.github.io/blog/ai-tech-professionals#rag-benefits" class="hash-link" aria-label="Direct link to RAG Benefits" title="Direct link to RAG Benefits">​</a></h4>
+<ul>
+<li>Enhanced factuality and accuracy</li>
+<li>LLM contextual relevance</li>
+<li>Improved handling of specific verticals</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="rag-challenges">RAG Challenges<a href="https://codingbbq.github.io/blog/ai-tech-professionals#rag-challenges" class="hash-link" aria-label="Direct link to RAG Challenges" title="Direct link to RAG Challenges">​</a></h4>
+<ul>
+<li>Pipeline complexity</li>
+<li>Latency issues</li>
+<li>Dependence on the quality of the Retrieval set</li>
+<li>Resource Requirements</li>
+<li>Difficulty in Tuning and maintenance</li>
+</ul>]]></content>
+        <category label="AI" term="AI"/>
+        <category label="upskilling" term="upskilling"/>
+        <category label="learning" term="learning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The four principles of Great design by Robin Williams]]></title>
         <id>https://codingbbq.github.io/blog/great-design</id>
