@@ -144,6 +144,52 @@ In this method, structured or unstructured data are split into chunks, then embe
 <li>Dependence on the quality of the Retrieval set</li>
 <li>Resource Requirements</li>
 <li>Difficulty in Tuning and maintenance</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-do-you-understand-if-an-ai-model-is-delivering-business-objectives-">How do you understand if an AI model is delivering business objectives ?<a href="https://codingbbq.github.io/blog/ai-tech-professionals#how-do-you-understand-if-an-ai-model-is-delivering-business-objectives-" class="hash-link" aria-label="Direct link to How do you understand if an AI model is delivering business objectives ?" title="Direct link to How do you understand if an AI model is delivering business objectives ?">​</a></h2>
+<p>Below are key considerations</p>
+<ul>
+<li>Alignement with Business Objectives - Ensure that the model addresses specific goals.</li>
+<li>Performance metrics - Define KPIs to measure effectiveness</li>
+<li>User Feedback - collect qualitative insights from end users.</li>
+<li>Integration and Usability - Evaluate how well the model integrates into existing workflows</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generative-ai">Generative AI<a href="https://codingbbq.github.io/blog/ai-tech-professionals#generative-ai" class="hash-link" aria-label="Direct link to Generative AI" title="Direct link to Generative AI">​</a></h2>
+<ul>
+<li>
+<p>Transformer-based LLMs are models that can understand and generate human-like text. They are trained on text data various sources, and learn patterns and relationships between words and phrases.</p>
+</li>
+<li>
+<p>Tokens - Units of text that the model processes individually. It represents a fragment of the input text, which can be a word, subword, characters, or even punctuation mark depending on the specific tokenization method used by the model.</p>
+</li>
+<li>
+<p>Chunking - The practice of breaking down a large text input or output into smaller, more manageable pieces for procesessing. Chunk size (tokens) is an important parameter when creating a vector database.</p>
+</li>
+<li>
+<p>Vectors - A mathematical representation of data (word, sentence or document) as a series of numerical values organized in a specific order. This representation captures various features or dimensions of the data, enabling the calculation of relationship or similarities.</p>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="foundation-model-types-for-generative-ai">Foundation Model Types for Generative AI<a href="https://codingbbq.github.io/blog/ai-tech-professionals#foundation-model-types-for-generative-ai" class="hash-link" aria-label="Direct link to Foundation Model Types for Generative AI" title="Direct link to Foundation Model Types for Generative AI">​</a></h4>
+<ul>
+<li>
+<p>A Large Language Model (LLM) is an AI model designed to understand and generate human-like text based on vast amounts of data. It uses advanced algorithms to process and respond to language, enabling tasks like text generation, translation and question-answering</p>
+</li>
+<li>
+<p>Diffusion Models start with noise or random data, and gradually add information until a recognizable pattern is obtained. This is often applied to image generation but can also be used for text or audio genreation.</p>
+</li>
+<li>
+<p>Multimodal models are foundation models which have been trained on multiple media types. These media types can include text, audio, video, and images. The models can both interpret and generate these media types.</p>
+</li>
+<li>
+<p>Generative Adversarial Networkds (GANs) - This model consists of two neural networks which compete with each other. One generates content, and the other attempts to differentiate that generated content from real data. the competition continues until the generated content and real data are indistinguishable from each other.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="generative-ai-capabilities">Generative AI capabilities<a href="https://codingbbq.github.io/blog/ai-tech-professionals#generative-ai-capabilities" class="hash-link" aria-label="Direct link to Generative AI capabilities" title="Direct link to Generative AI capabilities">​</a></h2>
+<ul>
+<li>
+<p>Adaptability - Generative AI excels in adapting to diverse tasks and problem domains, making it useful across a wide range of industries. It can seamlessly switch between languge, visual, and data-centric applications without needed extensive reconfiguration. This flexibility helps organizations leverage AI to tackle varied challenges with a single adaptable system.</p>
+</li>
+<li></li>
 </ul>]]></content:encoded>
             <category>AI</category>
             <category>upskilling</category>
