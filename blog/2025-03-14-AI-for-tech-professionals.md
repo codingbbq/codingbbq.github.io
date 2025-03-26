@@ -147,3 +147,34 @@ In this method, structured or unstructured data are split into chunks, then embe
 - Resource Requirements
 - Difficulty in Tuning and maintenance
 
+## How do you understand if an AI model is delivering business objectives ?
+Below are key considerations
+- Alignement with Business Objectives - Ensure that the model addresses specific goals.
+- Performance metrics - Define KPIs to measure effectiveness
+- User Feedback - collect qualitative insights from end users.
+- Integration and Usability - Evaluate how well the model integrates into existing workflows
+
+---
+
+## Generative AI
+- Transformer-based LLMs are models that can understand and generate human-like text. They are trained on text data various sources, and learn patterns and relationships between words and phrases.
+
+- Tokens - Units of text that the model processes individually. It represents a fragment of the input text, which can be a word, subword, characters, or even punctuation mark depending on the specific tokenization method used by the model.
+
+- Chunking - The practice of breaking down a large text input or output into smaller, more manageable pieces for procesessing. Chunk size (tokens) is an important parameter when creating a vector database.
+
+- Vectors - A mathematical representation of data (word, sentence or document) as a series of numerical values organized in a specific order. This representation captures various features or dimensions of the data, enabling the calculation of relationship or similarities.
+
+#### Foundation Model Types for Generative AI
+- A Large Language Model (LLM) is an AI model designed to understand and generate human-like text based on vast amounts of data. It uses advanced algorithms to process and respond to language, enabling tasks like text generation, translation and question-answering
+
+- Diffusion Models start with noise or random data, and gradually add information until a recognizable pattern is obtained. This is often applied to image generation but can also be used for text or audio genreation.
+
+- Multimodal models are foundation models which have been trained on multiple media types. These media types can include text, audio, video, and images. The models can both interpret and generate these media types.
+
+- Generative Adversarial Networkds (GANs) - This model consists of two neural networks which compete with each other. One generates content, and the other attempts to differentiate that generated content from real data. the competition continues until the generated content and real data are indistinguishable from each other.
+
+## Generative AI capabilities
+- Adaptability - Generative AI excels in adapting to diverse tasks and problem domains, making it useful across a wide range of industries. It can seamlessly switch between languge, visual, and data-centric applications without needed extensive reconfiguration. This flexibility helps organizations leverage AI to tackle varied challenges with a single adaptable system.
+
+- 
