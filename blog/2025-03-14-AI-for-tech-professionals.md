@@ -174,7 +174,43 @@ Below are key considerations
 
 - Generative Adversarial Networkds (GANs) - This model consists of two neural networks which compete with each other. One generates content, and the other attempts to differentiate that generated content from real data. the competition continues until the generated content and real data are indistinguishable from each other.
 
-## Generative AI capabilities
+## Generative AI Advantages
 - Adaptability - Generative AI excels in adapting to diverse tasks and problem domains, making it useful across a wide range of industries. It can seamlessly switch between languge, visual, and data-centric applications without needed extensive reconfiguration. This flexibility helps organizations leverage AI to tackle varied challenges with a single adaptable system.
 
-- 
+- Responsiveness - Generative AI models can rapidly produce outputs and insights in real-time, enabling swift responses to use queries and changing requirements. Their ability to process information and generate relevant content makes them suitable for interactive applications, such as chatbots and customer support. This responsiveness enhances user experience by providing instant and contextually appropriate answers.
+
+- Simplicity - Generative AI models often simplify complex workflows by automating content generation and decision-making processes. They reduce the need for manual intervention or domain-specific coding, making AI-driven solutions more accessible to non-technical users. As a result, businesses can deploy sophisticated solutions with minimal setup and oversight.
+
+- Creativity and Exploration - Generative AI opens up new avenues for creativity by suggesting novel ideas, designs, or content based on learned patterns. It can assist with brainstorming, creative writing, and design prototyping, providing users with unexpected and innovative options. This capability helps push the boundaries of traditional problem-solving and artistic creation.
+
+- Data Efficiency - Many generative AI models are designed to learn effectively from relatively small datasets through pre-training and fine-tuning techniques. This data efficiency reduces the dependency on massive labeled datasets, lowering costs and effort associated with data preparation. It also allows models to generate meaningful outputs even in data-sparse environments.
+
+## Generative AI DisAdvantages
+- Regulatory Violations - Generative AI models can inadvertently generate content that violets regulatory guidelines, such as producing misleading financial advice or content that doesn't comply with advertising standards. Organizations using these models may face complaince challenges, especially in highly regulated industries like healthcare and finance. this risk underscores the need for strict oversight and adherence to legal requirements when deploying AI systems.
+
+- Social Risks - Generative AI can be used to create deepfakes disinformation, or biased content, potentially amplifying harmful social impacts. Such outputs can erode trust, manipulate public opinion, or contribute to social polarization. The misuse of generative AI for malicious purpose poses significant ethical and societtal concerns that require careful mitigation strategies.
+
+- Data Security and Privacy Concerns - Generative AI models often require access to sensitive datasets, raising risks of data leakage or unintended exposure of personal information. If improperly handled, these models may inadvertently reveal private data points from training data. Ensuring data security and maintaining user privacy is a critical challenge when deploying generative models, especially in sensitive applications.
+
+- Toxicity - Generative models can sometimes produce toxic or harmful content, such as offensive language or inappropriate suggestions, if they are not carefully monitored. This issue is often due to biases or toxic patterns present in the training data. It necessitates rigorous content moderation and filtering techniques to prevent harmful outputs in public-facing applications.
+
+- Hallucinations - Generative AI may produce outputs that are factually incorrect or completely fabricated, known as "hallucinations". This problem is particularly challenging when using AI for tasks requiring high accuracy, such as generating technical documentation or answering factual questions. Hallucinations can undermine trust and reliability, making it difficult to use generative AI in mission-critical scenarios.
+
+- Nondeterminism - Generative AI models can produce different outputs even when given the same input, due to their probabilistic nature. This nondeterminism complicates tasks that require consistency, such as legal document generation or standardized communication. It also makes debugging and validating AI-generated outputs more complex, limiting their applicability in certain use cases.
+
+---
+
+## Model Selection Decision Tree
+What content are you trying to generate?
+- Text
+- Image
+- Audio
+- Video
+- Multimodal
+
+Other model consideration
+- Performance and latency
+- Customization
+- Constraints and Resource
+- GRC (Governance Risk and Compliance)
+
