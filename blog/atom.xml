@@ -237,6 +237,21 @@ In this method, structured or unstructured data are split into chunks, then embe
 <li>Customization</li>
 <li>Constraints and Resource</li>
 <li>GRC (Governance Risk and Compliance)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-prompt-engineering">What is Prompt Engineering?<a href="https://codingbbq.github.io/blog/ai-tech-professionals#what-is-prompt-engineering" class="hash-link" aria-label="Direct link to What is Prompt Engineering?" title="Direct link to What is Prompt Engineering?">​</a></h2>
+<p>The process of desiging and refining input prompts to optimize the performance of AI models.
+Enhances the quality of responses, guides model behavior, and can lead to more accurate results.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="key-components-of-prompt-engineering">Key components of Prompt Engineering<a href="https://codingbbq.github.io/blog/ai-tech-professionals#key-components-of-prompt-engineering" class="hash-link" aria-label="Direct link to Key components of Prompt Engineering" title="Direct link to Key components of Prompt Engineering">​</a></h4>
+<ul>
+<li>Context - Information surrounding the prompt that helps the model understand the scenario</li>
+<li>Instruction - The specific tasks or question being posed to the model.</li>
+<li>Negative Prompts - Instructions that specify what the model should avoid or exclude in its response.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ml-development-lifecycle">ML Development Lifecycle<a href="https://codingbbq.github.io/blog/ai-tech-professionals#ml-development-lifecycle" class="hash-link" aria-label="Direct link to ML Development Lifecycle" title="Direct link to ML Development Lifecycle">​</a></h2>
+<ul>
+<li>Business Goal - Objectively measure business value of the outcomes against the defined business gola. Is ML the appropriate technology choice to solve the problem statement?</li>
 </ul>]]></content>
         <category label="AI" term="AI"/>
         <category label="upskilling" term="upskilling"/>
