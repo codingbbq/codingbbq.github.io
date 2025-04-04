@@ -214,3 +214,19 @@ Other model consideration
 - Constraints and Resource
 - GRC (Governance Risk and Compliance)
 
+---
+
+## What is Prompt Engineering?
+The process of desiging and refining input prompts to optimize the performance of AI models.
+Enhances the quality of responses, guides model behavior, and can lead to more accurate results.
+
+#### Key components of Prompt Engineering
+- Context - Information surrounding the prompt that helps the model understand the scenario
+- Instruction - The specific tasks or question being posed to the model.
+- Negative Prompts - Instructions that specify what the model should avoid or exclude in its response.
+
+---
+
+## ML Development Lifecycle
+- Business Goal - Objectively measure business value of the outcomes against the defined business gola. Is ML the appropriate technology choice to solve the problem statement?
+
