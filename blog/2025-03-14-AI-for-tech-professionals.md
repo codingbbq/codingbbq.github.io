@@ -228,5 +228,37 @@ Enhances the quality of responses, guides model behavior, and can lead to more a
 ---
 
 ## ML Development Lifecycle
-- Business Goal - Objectively measure business value of the outcomes against the defined business gola. Is ML the appropriate technology choice to solve the problem statement?
+1. Business Goal - Objectively measure business value of the outcomes against the defined business gola. Is ML the appropriate technology choice to solve the problem statement?
 
+- **Business Goal Definition Workflow**
+- Business consideration
+- Frame the ML problem
+- Determine the optimization objective
+- Review data requirements
+- Cost and performance optimization
+- Production consideration
+
+2. ML problem framing Definition
+Define what is observed and what should be predicted. Identify dependent and/or independent variables. Define inputs and outputs.
+
+3. Collect Data
+- Data labeling
+- Ingest (streaming, batch)
+- Data aggregation
+
+4. Data pre-processing workflow
+- Clean
+- Partition
+- Scale
+- Unbalance, Balance
+- Augment
+
+5. Feature Engineering tasks (Features are inputs to ML models used during training and inference)
+- Feature selection: The process of selecting a subset of extracted features. This is the subset that is relevant and contributes to minimizing the error rate of a trained model.
+- Feature transformation - Steps for replacing missing features or fetaures that are not valid.
+- Feature Creation - The creation of new features from existing data to help with better predictions
+- Feature Extraction - The process of reducing the data to be processed using dimensionality reduction techniques.
+
+6. Train, tune and evaluate: The process of training a machine learning model involves providing the algorithm with training data to learn from.
+
+7. Hyperparameters are settings that can control the beahvior of the ML algorithm. Hyperparameter tuning, or optimization, is the process of choosing the optimal hyperparameters for an algorithm.
