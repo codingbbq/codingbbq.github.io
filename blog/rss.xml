@@ -252,9 +252,59 @@ Enhances the quality of responses, guides model behavior, and can lead to more a
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="ml-development-lifecycle">ML Development Lifecycle<a href="https://codingbbq.github.io/blog/ai-tech-professionals#ml-development-lifecycle" class="hash-link" aria-label="Direct link to ML Development Lifecycle" title="Direct link to ML Development Lifecycle">​</a></h2>
-<ul>
+<ol>
 <li>Business Goal - Objectively measure business value of the outcomes against the defined business gola. Is ML the appropriate technology choice to solve the problem statement?</li>
-</ul>]]></content:encoded>
+</ol>
+<ul>
+<li><strong>Business Goal Definition Workflow</strong></li>
+<li>Business consideration</li>
+<li>Frame the ML problem</li>
+<li>Determine the optimization objective</li>
+<li>Review data requirements</li>
+<li>Cost and performance optimization</li>
+<li>Production consideration</li>
+</ul>
+<ol start="2">
+<li>
+<p>ML problem framing Definition
+Define what is observed and what should be predicted. Identify dependent and/or independent variables. Define inputs and outputs.</p>
+</li>
+<li>
+<p>Collect Data</p>
+</li>
+</ol>
+<ul>
+<li>Data labeling</li>
+<li>Ingest (streaming, batch)</li>
+<li>Data aggregation</li>
+</ul>
+<ol start="4">
+<li>Data pre-processing workflow</li>
+</ol>
+<ul>
+<li>Clean</li>
+<li>Partition</li>
+<li>Scale</li>
+<li>Unbalance, Balance</li>
+<li>Augment</li>
+</ul>
+<ol start="5">
+<li>Feature Engineering tasks (Features are inputs to ML models used during training and inference)</li>
+</ol>
+<ul>
+<li>Feature selection: The process of selecting a subset of extracted features. This is the subset that is relevant and contributes to minimizing the error rate of a trained model.</li>
+<li>Feature transformation - Steps for replacing missing features or fetaures that are not valid.</li>
+<li>Feature Creation - The creation of new features from existing data to help with better predictions</li>
+<li>Feature Extraction - The process of reducing the data to be processed using dimensionality reduction techniques.</li>
+</ul>
+<ol start="6">
+<li>
+<p>Train, tune and evaluate: The process of training a machine learning model involves providing the algorithm with training data to learn from.</p>
+</li>
+<li>
+<p>Hyperparameters are settings that can control the beahvior of the ML algorithm. Hyperparameter tuning, or optimization, is the process of choosing the optimal hyperparameters for an algorithm.</p>
+</li>
+</ol>]]></content:encoded>
             <category>AI</category>
             <category>upskilling</category>
             <category>learning</category>
