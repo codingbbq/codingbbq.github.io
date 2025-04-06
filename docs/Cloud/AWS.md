@@ -425,4 +425,42 @@
 
 ---
 
+#### Q. Which service can provide a way for AWS services to message a human administrator?
+- Step Functions
+- Kinesis
+- SQS (Simple Queue Service)
+- SNS (Simple Notification Service)
 
+**SNS (Simple Notification Service)**
+
+---
+
+#### Q. A school needs to provide virtual desktops to their students. Students should be ableto sae files across sessions, but each session should sart with a fresh instance. Which service meets theses requirements with the least administrative overhead?
+- EC2
+- Connect
+- AppStream 2.0
+- WorkSpaces Web
+
+**AppStream 2.0**
+
+---
+
+#### Q. Which service actually puts your code on, say, an EC2 instance to make your app available to your users?
+- CodeArtifact
+- CodeBuild
+- CodeCommit
+- CodeDeploy
+
+**CodeDeploy**
+
+---
+
+#### Q. A company needs to give query access to app users without requiring users to understand anything of the backend structure. Which service will meet this need?
+- Amplify (Dev can focus on frontend, while backend control is given easily)
+- AppSync (connects the application to datasources so that users can query)
+- Cognito (Managing user authentication for customers)
+- Device Farm (Is testing devices)
+
+**AppSync**
+
+---
