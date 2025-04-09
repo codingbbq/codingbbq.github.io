@@ -464,3 +464,13 @@
 **AppSync**
 
 ---
+
+#### Q. What service will allow a company to share consistantly designed environment template with their developers for testing and manage access control for these templates with the least amount of administrative effort?
+- CloudFormation
+- Service Catalog
+- Elastic Beanstalk
+- Launch Wizard
+
+**Service Catalog**
+
+--- 
