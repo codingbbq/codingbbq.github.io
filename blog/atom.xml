@@ -2,10 +2,182 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://codingbbq.github.io/blog</id>
     <title>Hi, I am Idrish laxmidhar. Blog</title>
-    <updated>2025-03-14T00:00:00.000Z</updated>
+    <updated>2025-05-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://codingbbq.github.io/blog"/>
     <subtitle>Hi, I am Idrish laxmidhar. Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Angular Design Patterns and Best Practices]]></title>
+        <id>https://codingbbq.github.io/blog/angular-design-patterns</id>
+        <link href="https://codingbbq.github.io/blog/angular-design-patterns"/>
+        <updated>2025-05-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Angular Design Patterns and Best Practices]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="angular-design-patterns-and-best-practices">Angular Design Patterns and Best Practices<a href="https://codingbbq.github.io/blog/angular-design-patterns#angular-design-patterns-and-best-practices" class="hash-link" aria-label="Direct link to Angular Design Patterns and Best Practices" title="Direct link to Angular Design Patterns and Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-choose-angular-">Why choose Angular ?<a href="https://codingbbq.github.io/blog/angular-design-patterns#why-choose-angular-" class="hash-link" aria-label="Direct link to Why choose Angular ?" title="Direct link to Why choose Angular ?">​</a></h3>
+<ol>
+<li>Batteries Included</li>
+</ol>
+<ul>
+<li>Angular development team has already made serveral decisions for you.</li>
+</ul>
+<ol start="2">
+<li>Google Support</li>
+</ol>
+<ul>
+<li>Angular is backed by Google, which means it has a large community and a lot of resources available.</li>
+</ul>
+<ol start="3">
+<li>Community</li>
+</ol>
+<ul>
+<li>Angular has a large community of developers who are willing to help you with any questions you may have.</li>
+</ul>
+<ol start="4">
+<li>Tooling</li>
+</ol>
+<ul>
+<li>Eg. Angular CLI, Testing</li>
+</ul>
+<ol start="5">
+<li>Typescript</li>
+</ol>
+<ul>
+<li>TypeScript is a superset of the JavaScript language that adds type checking and other features to the language, ensuring a better developer experience and security for web development.</li>
+</ul>
+<ol start="6">
+<li>RxJS</li>
+</ol>
+<ul>
+<li>Library for reactive programming using Observables, which makes it easier to work with asynchronous data streams.</li>
+<li>RxJS also provides mechanism for state management, which is a common requirement in modern web applications.</li>
+</ul>
+<ol start="7">
+<li>Webpack</li>
+</ol>
+<ul>
+<li>Webpack is a very powerful and versatile bundler, and it is thanks to it that the framework manages to make some interesting optimizations such as tree shaking and lazy loading of bundles</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="organising-your-application-">Organising your application ?<a href="https://codingbbq.github.io/blog/angular-design-patterns#organising-your-application-" class="hash-link" aria-label="Direct link to Organising your application ?" title="Direct link to Organising your application ?">​</a></h3>
+<p>The basis for organizing your application is the Angular module.
+An Angular module is a typescript class marked with decorator @NgModule that contains the metadata</p>
+<ul>
+<li>declarations: components, directives, and pipes that belong to this module</li>
+<li>providers: In this attribute, we can register the classes we want to inject using Angular's dependency injector system, normally used for services</li>
+<li>imports: other modules that this module depends on. We should not import components or services.</li>
+<li>exports: components, directives, and pipes that can be used in the templates of components in other modules</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="modules-type">Modules Type<a href="https://codingbbq.github.io/blog/angular-design-patterns#modules-type" class="hash-link" aria-label="Direct link to Modules Type" title="Direct link to Modules Type">​</a></h4>
+<ul>
+<li>Business Domain Module: For example, a module for user management or product management.</li>
+<li>Component Module: The purpose of this module is to group directive components and pipes that will be reused by business domain components and even other components.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="avoiding-anti-patterns---single-module-app">Avoiding anti-patterns - Single Module App<a href="https://codingbbq.github.io/blog/angular-design-patterns#avoiding-anti-patterns---single-module-app" class="hash-link" aria-label="Direct link to Avoiding anti-patterns - Single Module App" title="Direct link to Avoiding anti-patterns - Single Module App">​</a></h3>
+<p>The problems with Single Module applications</p>
+<ul>
+<li>Disorganized folder structure</li>
+<li>Bundle size and Build time optimizations are not effective</li>
+<li>Components maintainability and update issues</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="shared-module-pattern">Shared Module Pattern<a href="https://codingbbq.github.io/blog/angular-design-patterns#shared-module-pattern" class="hash-link" aria-label="Direct link to Shared Module Pattern" title="Direct link to Shared Module Pattern">​</a></h3>
+<ul>
+<li>Eg. HttpModule</li>
+<li>SharedModule is a module that contains components, directives, and pipes that will be used in multiple modules.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improving-the-size-of-your-app---lazy-loading">Improving the size of your app - Lazy loading<a href="https://codingbbq.github.io/blog/angular-design-patterns#improving-the-size-of-your-app---lazy-loading" class="hash-link" aria-label="Direct link to Improving the size of your app - Lazy loading" title="Direct link to Improving the size of your app - Lazy loading">​</a></h3>
+<ul>
+<li>Lazy loading is a technique that allows you to load modules only when they are needed, rather than loading them all at once when the application starts.</li>
+<li>This can significantly reduce the initial load time of your application and improve performance.</li>
+<li>To implement lazy loading, you can use the <code>loadChildren</code> property in the route configuration of your application.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="communication-between-components---inputs-and-outputs">Communication between components - inputs and outputs.<a href="https://codingbbq.github.io/blog/angular-design-patterns#communication-between-components---inputs-and-outputs" class="hash-link" aria-label="Direct link to Communication between components - inputs and outputs." title="Direct link to Communication between components - inputs and outputs.">​</a></h3>
+<ul>
+<li>Inputs and outputs are used to pass data between components.</li>
+<li>Inputs are used to pass data from a parent component to a child component, while outputs are used to pass data from a child component to a parent component.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="advantages-of-trackby-attribute">Advantages of TrackBy attribute<a href="https://codingbbq.github.io/blog/angular-design-patterns#advantages-of-trackby-attribute" class="hash-link" aria-label="Direct link to Advantages of TrackBy attribute" title="Direct link to Advantages of TrackBy attribute">​</a></h3>
+<ul>
+<li>TrackBy is an Angular directive that allows you to optimize the performance of your application by reducing the number of DOM manipulations.</li>
+<li>It is used in conjunction with the <code>*ngFor</code> directive to track the identity of items in a list.</li>
+<li>By using TrackBy, Angular can identify which items have changed, been added, or removed from the list, and only update those items in the DOM.</li>
+<li>Enables animations when removing and adding items from the collection</li>
+<li>Retains any DOM-specific UI state, such as focus and text selection, when the collection changes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="communication-between-components-using-services">Communication between components using services<a href="https://codingbbq.github.io/blog/angular-design-patterns#communication-between-components-using-services" class="hash-link" aria-label="Direct link to Communication between components using services" title="Direct link to Communication between components using services">​</a></h3>
+<ul>
+<li>A characteristics of Angular services is that by default, every service instantiated by the dependency injection mechanism has the same reference; that is, a new object is not created, but reused.</li>
+<li>Dependency injection mechanism implements the Singleton pattern, which means that only one instance of the service is created and shared across the application.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forms-in-angular">Forms in Angular<a href="https://codingbbq.github.io/blog/angular-design-patterns#forms-in-angular" class="hash-link" aria-label="Direct link to Forms in Angular" title="Direct link to Forms in Angular">​</a></h3>
+<ul>
+<li>Template Driven Forms: These are forms that are defined in the template and are more suitable for simple forms. They are easier to set up and require less code. They require the <code>FormsModule</code> to be imported in the module.</li>
+<li>Reactive Forms: These are forms that are defined in the component class and are more suitable for complex forms. They provide more control over the form and allow for more advanced validation. They require the <code>ReactiveFormsModule</code> to be imported in the module.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="injecting-services">Injecting services<a href="https://codingbbq.github.io/blog/angular-design-patterns#injecting-services" class="hash-link" aria-label="Direct link to Injecting services" title="Direct link to Injecting services">​</a></h3>
+<ul>
+<li>Services can be injected into components, directives, and other services using the <code>@Injectable</code> decorator.</li>
+<li>In Angular, the inject() function and the constructor-based dependency injection are two ways to inject services, but they differ in how and when they are used.</li>
+</ul>
+<ol>
+<li>constructor-based dependency injection</li>
+</ol>
+<ul>
+<li>Services are injected into a component, directive or another serivce via the constructor</li>
+<li>The dependency is resolved and injected when the class is instantiated.</li>
+</ul>
+<ol start="2">
+<li><code>inject()</code> function</li>
+</ol>
+<ul>
+<li>The inject() function is a way to inject dependencies at runtime, allowing for more flexibility and dynamic behavior.</li>
+<li>It can be used in places where constructor injection is not possible, such as in a factory function or a standalone component.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="interceptor-design-pattern">Interceptor design pattern<a href="https://codingbbq.github.io/blog/angular-design-patterns#interceptor-design-pattern" class="hash-link" aria-label="Direct link to Interceptor design pattern" title="Direct link to Interceptor design pattern">​</a></h3>
+<ul>
+<li>An interceptor is a service that can intercept HTTP requests and responses, allowing you to modify them before they are sent or received.</li>
+<li>Attaching the token to the request with an interceptor</li>
+<li>Changing the request route</li>
+<li>Creating a loader</li>
+<li>Notifying success</li>
+<li>Measuring the performance of a request</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reactivity-with-rxjs">Reactivity with RxJS<a href="https://codingbbq.github.io/blog/angular-design-patterns#reactivity-with-rxjs" class="hash-link" aria-label="Direct link to Reactivity with RxJS" title="Direct link to Reactivity with RxJS">​</a></h3>
+<ul>
+<li>One of the most difficult tasks is dealing with the asynchronous nature of web applications.</li>
+</ul>
+<ol>
+<li>Observables : We use observables for asynchronous processing that does not return a value but a collection of values that can be distributed over time as events.</li>
+</ol>]]></content>
+        <category label="upskilling" term="upskilling"/>
+        <category label="learning" term="learning"/>
+        <category label="book-reading" term="book-reading"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Modern Automated AI Agents]]></title>
+        <id>https://codingbbq.github.io/blog/automated-ai-agents</id>
+        <link href="https://codingbbq.github.io/blog/automated-ai-agents"/>
+        <updated>2025-04-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What are AI Agents?]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-are-ai-agents">What are AI Agents?<a href="https://codingbbq.github.io/blog/automated-ai-agents#what-are-ai-agents" class="hash-link" aria-label="Direct link to What are AI Agents?" title="Direct link to What are AI Agents?">​</a></h2>
+<p>AI agents are (semi) autonomous systems that interact with environments, make decisions, and perform tasks on behalf of users.</p>
+<ul>
+<li>Autonomy: Can perform tasks without continous human intervention</li>
+<li>Decision-making: Use data to analyze and choose actions</li>
+<li>Adaptation: Learn and improve over time with feedback</li>
+</ul>
+<p>Eg. ChatGPT is an Agent on top of an LLM (like GPT-4o)</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="agents-vs-lllms">Agents vs LLLMs<a href="https://codingbbq.github.io/blog/automated-ai-agents#agents-vs-lllms" class="hash-link" aria-label="Direct link to Agents vs LLLMs" title="Direct link to Agents vs LLLMs">​</a></h4>
+<p>Agent - Perform specific tasks and makes decisions based on its environemnt
+LLMs - Focuse on understanding and generating human-like text</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="why-ai-agents-might-be-essential">Why AI Agents might be Essential<a href="https://codingbbq.github.io/blog/automated-ai-agents#why-ai-agents-might-be-essential" class="hash-link" aria-label="Direct link to Why AI Agents might be Essential" title="Direct link to Why AI Agents might be Essential">​</a></h4>
+<ul>
+<li>Automate repetitive tasks, freeing up human resources for more complex activities</li>
+<li>Hande dynamicand real-time environments like finance or customer service</li>
+<li>Tailor user experience based on individual preferences</li>
+</ul>]]></content>
+        <category label="AI" term="AI"/>
+        <category label="upskilling" term="upskilling"/>
+        <category label="learning" term="learning"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI concepts for Tech Professionals]]></title>
         <id>https://codingbbq.github.io/blog/ai-tech-professionals</id>
