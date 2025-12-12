@@ -4,10 +4,124 @@
         <title>Hi, I am Idrish laxmidhar. Blog</title>
         <link>https://codingbbq.github.io/blog</link>
         <description>Hi, I am Idrish laxmidhar. Blog</description>
-        <lastBuildDate>Tue, 13 May 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 12 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Empty Chunks in Angular 19: A Technical Deep Dive]]></title>
+            <link>https://codingbbq.github.io/blog/empty-chunk-issue</link>
+            <guid>https://codingbbq.github.io/blog/empty-chunk-issue</guid>
+            <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Recently in our main application built with Angular 19, we encountered a perplexing issue: after deploying to a WebLogic server, certain functionalities on the UI broke completely without any error messages. Below is the technical deep dive into how we diagnosed and resolved the issue, which revolved around unexpected empty chunk files generated during the Angular build process.]]></description>
+            <content:encoded><![CDATA[<p>Recently in our main application built with Angular 19, we encountered a perplexing issue: after deploying to a WebLogic server, certain functionalities on the UI broke completely without any error messages. Below is the technical deep dive into how we diagnosed and resolved the issue, which revolved around unexpected empty chunk files generated during the Angular build process.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction--when-the-error-first-appeared">Introduction — When the Error First Appeared<a href="https://codingbbq.github.io/blog/empty-chunk-issue#introduction--when-the-error-first-appeared" class="hash-link" aria-label="Direct link to Introduction — When the Error First Appeared" title="Direct link to Introduction — When the Error First Appeared">​</a></h2>
+<p>Some of the functionalities on the UI broke completely. There was no console errors or warnings. The angular production build was successful without any errors, yet the deployed frontend failed immediately.</p>
+<p>This was specific to Weblogic server. The application worked fine on any other server like Tomcat, websphere etc.</p>
+<p>This led us into a detailed debugging journey across build pipelines, server configurations, and module graphs.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="investigating-weblogic-content-type-issues">Investigating WebLogic Content-Type Issues<a href="https://codingbbq.github.io/blog/empty-chunk-issue#investigating-weblogic-content-type-issues" class="hash-link" aria-label="Direct link to Investigating WebLogic Content-Type Issues" title="Direct link to Investigating WebLogic Content-Type Issues">​</a></h2>
+<p>By comparing the working and non working environments, we suspected that it is weblogic which was not setting the Content-Type in case of .js files.</p>
+<p>Chrome DevTools has this amazing feature of overriding response headers. We used this feature to set the Content-Type header for .js files to <code>application/javascript</code> on the WebLogic server responses. After reloading the page, everything worked as expected.</p>
+<p>So we thought that the issue was with WebLogic not setting correct Content-Type for .js files.
+We then thought that forcing explicit MIME types to set headers for .js files should work.</p>
+<p>However, it did not solve the issue.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-0-byte-discovery--manually-eliminating-suspects">The 0-Byte Discovery — Manually Eliminating Suspects<a href="https://codingbbq.github.io/blog/empty-chunk-issue#the-0-byte-discovery--manually-eliminating-suspects" class="hash-link" aria-label="Direct link to The 0-Byte Discovery — Manually Eliminating Suspects" title="Direct link to The 0-Byte Discovery — Manually Eliminating Suspects">​</a></h2>
+<p>Further debugging and close observation, we discovered that there was a 0 byte size .js file which was getting downloaded.
+Once we saw the chunk size was <strong>0 bytes</strong>, the suspicion shifted to unused or incorrectly split modules.</p>
+<p>We began manual testing:</p>
+<p>With Chrome DevTools giving us the option of "Override Content", we could edit the angular generated main.js file from which we removed the import of that 0 byte sized chunk.js file.
+Running this change, everything worked as expected.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="finding-the-root-cause--using-statsjson">Finding the Root Cause — Using stats.json<a href="https://codingbbq.github.io/blog/empty-chunk-issue#finding-the-root-cause--using-statsjson" class="hash-link" aria-label="Direct link to Finding the Root Cause — Using stats.json" title="Direct link to Finding the Root Cause — Using stats.json">​</a></h2>
+<p>To find out why this 0 byte chunk was created, we generated build statistics:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ng build --configuration production --stats-json</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Inside <code>stats.json</code>, we found this entry:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">"chunk-F5X5MWHG.js": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "imports": [],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "exports": [],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "inputs": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    "node_modules/@angular/material/fesm2022/tooltip.mjs": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      "bytesInOutput": 0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "bytes": 0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="interpretation">Interpretation<a href="https://codingbbq.github.io/blog/empty-chunk-issue#interpretation" class="hash-link" aria-label="Direct link to Interpretation" title="Direct link to Interpretation">​</a></h3>
+<ul>
+<li><code>"inputs"</code> indicates the chunk <strong>originated</strong> from <code>tooltip.mjs</code></li>
+<li><code>"bytesInOutput": 0</code> means <strong>tree-shaking removed all code</strong></li>
+<li><code>"bytes": 0</code> means the emitted chunk is literally empty</li>
+</ul>
+<p>This confirmed the root cause:<br>
+<strong>Unused Angular Material imports can generate empty chunks after tree-shaking.</strong></p>
+<p>From stats.json file it was clear that the module from <strong>Angular Material</strong> — specifically: <code>@angular/material/tooltip</code> — was responsible.</p>
+<p>We imported <code>MatTooltipModule</code> but <strong>never actually used any tooltip</strong> in templates.</p>
+<p>Angular’s tree-shaking eliminated the module’s code entirely, yet Webpack still generated a placeholder chunk for it — resulting in a <strong>0-byte JS file</strong>, which WebLogic refused to handle cleanly.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="confirming-our-analysis">Confirming our analysis<a href="https://codingbbq.github.io/blog/empty-chunk-issue#confirming-our-analysis" class="hash-link" aria-label="Direct link to Confirming our analysis" title="Direct link to Confirming our analysis">​</a></h3>
+<ol>
+<li>Remove a suspicious import</li>
+<li>Rebuild the project</li>
+<li>Check whether the empty chunk disappeared</li>
+</ol>
+<p>After removing the unused module, angular production build did not generate this empty chunk and everything worked as expected on the weblogic server.</p>
+<hr>
+<h1>Why This Happens — The Webpack Explanation</h1>
+<p>Angular CLI uses Webpack under the hood.</p>
+<p>Webpack performs:</p>
+<ul>
+<li><strong>Tree-shaking</strong> (eliminating unused code)</li>
+<li><strong>Module graph evaluation</strong></li>
+<li><strong>Chunk splitting</strong></li>
+</ul>
+<p>According to Webpack documentation:</p>
+<ul>
+<li>Unused imports are removed entirely</li>
+<li>But chunk boundaries are determined <em>before</em> tree-shaking</li>
+<li>Therefore, if an imported module becomes empty, Webpack may still emit an empty chunk file</li>
+</ul>
+<p>Sources confirming this behavior:</p>
+<ul>
+<li>Webpack Tree Shaking Guide<br>
+<a href="https://webpack.js.org/guides/tree-shaking/" target="_blank" rel="noopener noreferrer">https://webpack.js.org/guides/tree-shaking/</a></li>
+<li>Webpack Optimization Documentation<br>
+<a href="https://webpack.js.org/configuration/optimization/#optimizationremoveemptychunks" target="_blank" rel="noopener noreferrer">https://webpack.js.org/configuration/optimization/#optimizationremoveemptychunks</a></li>
+<li>Angular CLI issue discussing empty chunks<br>
+<a href="https://github.com/angular/angular-cli/issues/8865" target="_blank" rel="noopener noreferrer">https://github.com/angular/angular-cli/issues/8865</a></li>
+</ul>
+<p>This is expected behavior in highly optimized builds — but problematic when servers (like WebLogic) cannot handle empty files.</p>
+<hr>
+<h1>Solution — Eliminating Empty Chunks Safely</h1>
+<p>There are two main approaches.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-remove-unused-imports-best-fix">1. Remove Unused Imports (Best Fix)<a href="https://codingbbq.github.io/blog/empty-chunk-issue#1-remove-unused-imports-best-fix" class="hash-link" aria-label="Direct link to 1. Remove Unused Imports (Best Fix)" title="Direct link to 1. Remove Unused Imports (Best Fix)">​</a></h2>
+<p>If you imported:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">import</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> MatTooltipModule </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">from</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">'@angular/material/tooltip'</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>…but are not actually using tooltip anywhere:</p>
+<p>👉 <strong>Remove this import.</strong></p>
+<p>This prevents Webpack from generating the chunk entirely.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-enable-or-enforce-removeemptychunks">2. Enable or Enforce removeEmptyChunks<a href="https://codingbbq.github.io/blog/empty-chunk-issue#2-enable-or-enforce-removeemptychunks" class="hash-link" aria-label="Direct link to 2. Enable or Enforce removeEmptyChunks" title="Direct link to 2. Enable or Enforce removeEmptyChunks">​</a></h2>
+<p>Webpack has a built-in optimization:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">"optimization": {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  "removeEmptyChunks": true</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Angular CLI enables some of these features internally, but depending on the build graph, empty chunks may still slip through.</p>
+<p>This ensures empty chunks are dropped before writing to the output.</p>
+<hr>
+<h1>Conclusion</h1>
+<p>The empty chunk issue turned out to be a perfect example of how:</p>
+<ul>
+<li>Tree-shaking</li>
+<li>Lazy loading</li>
+<li>Module splitting</li>
+<li>Server behavior</li>
+<li>And unused imports</li>
+</ul>
+<p>all intersect in modern frontend pipelines.</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>Unused Angular Material imports (like MatTooltipModule) can produce empty chunks</strong></li>
+<li><strong>stats.json is the fastest way to trace chunk origins</strong></li>
+<li><strong>Webpack's <code>removeEmptyChunks</code> optimization prevents empty files from being emitted</strong></li>
+<li><strong>Servers like WebLogic may fail when serving zero-byte JS files</strong></li>
+</ul>
+<p>Understanding the underlying build system is essential — because sometimes the issue isn’t in your code or your server, but in the subtle behavior of the bundler connecting the two.</p>
+<hr>]]></content:encoded>
+            <category>devTools</category>
+            <category>learning</category>
+            <category>Angular</category>
+        </item>
         <item>
             <title><![CDATA[Angular Design Patterns and Best Practices]]></title>
             <link>https://codingbbq.github.io/blog/angular-design-patterns</link>
