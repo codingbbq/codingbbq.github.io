@@ -1,7 +1,7 @@
 ---
 slug: empty-chunk-issue
 title: "Empty Chunks in Angular 19: A Technical Deep Dive"
-tags: devTools, learning, Angular]
+tags: [devTools, learning, Angular]
 ---
 
 # Empty Chunks in Angular 19: A Technical Deep Dive
