@@ -159,3 +159,79 @@ Amazon Certified AI Practitioner
 - An AI coding assitant
 
 **An AI coding assitant**
+
+---
+
+### Q16. You are trying to recognize handwritten digits. How do neural network function for this use case?
+
+- Neural networks function like a decision tree algorithm and will create a set of rules
+- Neural networks will create a series of linear regression to identify numbers
+- Neural networks will create serveral layers of internconnected nodes that will identify patterns in data
+- Neural networks will create a database based on numbers and their pixel data
+
+**Neural networks will create serveral layers of internconnected nodes that will identify patterns in data**
+
+---
+
+### Q17. You are building a robot that learns how to cut vegetables. You are rewarding it for parallels and fine cuts. You want the actions to be safe and efficient. Which machine learning approach do you recommend?
+
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+- Self-supervised Learning
+
+**Reinforcement Learning**
+
+---
+
+### Q18. When a model is neither underfitting nor overfitting, it will have…
+
+- low bias and low variance
+- high bias and low variance
+
+**low bias and high variance**  
+
+---
+
+### Q19. Which AI application is used to automatically extract structured data from various types of documents, such as invoices, contracts, and forms?
+
+- Computer Vision
+- Facial Recognition
+- Fruad Detection
+- Intelligent Document Processing (IDP)
+
+**Intelligent Document Processing (IDP)**
+
+---
+
+### Q20. You are building a model to predict the sale price of used cars, based on several attributes such as the brand, total number of kilometers, year of construction, etc… Which machine learning technique is appropriate for this task?
+
+- Clustering
+- Dimensionality Reduction
+- Regression
+- Classification
+
+**Regression**
+
+---
+
+### Q21. What is the goal of feature engineering in the machine learning lifecycle?
+
+- To transform data and create variables for the model
+- To collect and clean data
+- To calculate the model performance
+- To maintain the desired level of performance
+
+**To transform data and create variables for the model**
+
+---
+
+### Q22. A company develops a machine learning model to predict stock prices. The model performs well on the training data but poorly on new, unseen data. Which option describes the fit of the model?
+
+- It underfits
+- It has low variance
+- It overfits
+- It has high bias
+
+**It overfits**
+
