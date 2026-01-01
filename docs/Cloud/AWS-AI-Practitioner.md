@@ -330,3 +330,66 @@ Amazon Certified AI Practitioner
 
 **Amazon Augmented AI (A2I)**
 
+---
+
+### Q32. You have collected data from various parts of your company and built a compelling case to solve a business problem with an ML model. Which service allows you to build, train and deploy machine learning models in one place?
+
+- Amazon SageMaker
+- Amazon Bedrock
+- Amazon Lex
+- Amazon Q Developer Studio
+
+**Amazon SageMaker**
+
+---
+
+### Q33. Which SageMaker service allows you to visualize bias and increase visibility into the model’s behavior?
+- Amazon SageMaker Data Wrangler
+- Amazon SageMaker JumpStart
+- Amazon Augmented AI (A2I)
+- Amazon SageMaker Clarify
+
+**Amazon SageMaker Clarify**
+
+---
+
+### Q34. Which service enables you to provide better transparency for your models by documenting the risk and rating of the model, as well as custom information?
+
+- AWS AI Service Cards
+- Amazon SageMaker Clarify
+- Amazon SageMaker Role Manager
+- Amazon SageMaker Model Cards
+
+**Amazon SageMaker Model Cards**
+
+---
+
+### Q35. Your company does not have access to dedicated data scientists and would like to start creating machine-learning models using a no-code solution. Which service do you recommend?
+
+- Amazon SageMaker Canvas
+- Amazon SageMaker JumpStart
+- Amazon SageMaker Data Wrangler
+- Amazon SageMaker Feature Store
+
+**Amazon SageMaker Canvas**
+
+---
+
+### Q36. Your company is implementing a solution to predict the weather and would like to start with already-existing ML models and later customize them. What do you recommend?
+
+- Amazon Bedrock
+- Amazon SageMaker JumpStart
+- Amazon SageMaker Canvas
+- Amazon SageMaker Ground Truth
+
+**Amazon SageMaker JumpStart**
+
+---
+
+### Q37. You have created a model that analyzes video frames from tennis games and generates predictions about who will win each point as players play. What sort of model deployment do you need?
+
+- Asynchronous
+- Real-time inference
+- Batch transform
+
+**Real-time inference**
