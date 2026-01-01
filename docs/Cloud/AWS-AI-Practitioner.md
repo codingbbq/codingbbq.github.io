@@ -393,3 +393,105 @@ Amazon Certified AI Practitioner
 - Batch transform
 
 **Real-time inference**
+
+---
+
+### Q38. What isn’t a capability of Gen AI?
+
+- Personalization
+- Scalability
+- Determinism
+- Simplicity
+
+**Determinism**
+
+---
+
+### Q39. What is Responsible AI?
+
+- The security and compliance guidelines that are within the AWS shared Responsiblity framework
+- Enhance your business by adding creativity, productivity and connectivity
+- Mitigating potential risks and negative outcomes that can emanate from an AI system.
+- Responsible AI refers to standards of upholding responsible practices that are exclusively needed for generative AI systems.
+
+**Mitigating potential risks and negative outcomes that can emanate from an AI system.**
+
+---
+
+### Q40. Which of the following is NOT a challenge associated with responsible AI?
+
+- Data Security
+- Scalability
+- Toxicity
+- Hillucination
+
+**Scalability**
+
+---
+
+### Q41. Which of the following helps with processes that define, implement, and enforce compliance?
+
+- Veracity and robustness
+- Privacy and Security
+- Governance
+- Fairness
+
+**Governance**
+
+---
+
+### Q42. A model is making decisions about who can obtain loans based on several criteria. They are worried about bias, and they need to understand how the model is making decisions. Which core dimension of responsible AI is relevant in this case?
+
+- Transparency
+- Veracity and Robustness
+- Safety and Security
+- Explainability
+
+**Explainability**
+
+---
+
+### Q43. Where can you find information about the responsible AI practices that AWS has implemented for their AI services?
+
+- AWS Marketplace
+- AWS AI Service Cards
+- AWS Skill Builder
+- AWS Artifacts
+
+**AWS AI Service Cards**
+
+---
+
+### Q44. How would you define interpretability for a model?
+
+- A model where you can influence the predictions and behavior by changing aspects of the training data
+- A model that avoids causing harm in its interactions with the world
+- A model that provides transparency into a system so a human can explain the model's output
+- A model that can xplain its decision in human language by using generative AI
+
+**A model that provides transparency into a system so a human can explain the model's output**
+
+---
+
+### Q45. Which HCD (Human Centered Design) principle should an organization use to help decision-makers prevent mistakes in stressful or high-pressure environments?
+
+- Design for amplified decision-making
+- Design for environmental decision-making
+- Design for unbiased decision-making
+- Design for human and AI learning
+
+**Design for amplified decision-making**
+
+---
+
+### Q46. A Gen AI chat outputs sensitive PII data from its training data into responses. What risk is this illustrating?
+
+- Jailbreaking
+- Prompt leaking
+- Exposure
+- Hijacking
+
+**Exposure**
+
+---
+
