@@ -235,3 +235,98 @@ Amazon Certified AI Practitioner
 
 **It overfits**
 
+---
+
+### Q23. You should use Amazon Transcribe to turn text into lifelike speech using deep learning.
+
+- True
+- False
+
+**False** (Amazon Transcribe is used to convert speech to text; Amazon Polly is used for text to speech)
+
+---
+
+### Q24. A company would like to implement a chatbot that will convert speech to text and recognize the cusomer's intent to provide relevant responses. Which AWS service should they use?
+
+- Amazon Lex
+- Transcribe
+- Rekognition
+- Connect
+
+**Amazon Lex**
+
+---
+
+### Q25. You would like to find objects, people, text, or scenes in images and videos. What AWS service should you use?
+
+- Rekognition
+- Polly
+- Kendra
+- Lex
+
+**Rekognition**
+
+---
+
+### Q26. A start-up would like to rapidly create customized user experiences. Which AWS service can help?
+
+- Personalize
+- Kendra
+- Connect
+
+**Personalize**
+
+---
+
+### Q27. A research team would like to group articles by topics using Natural Language Processing (NLP). Which service should they use?
+
+- Comprehend
+- Translate
+- Lex
+- Rekognition
+
+**Comprehend**
+
+---
+
+### Q28. A company would like to convert its documents into different languages, with natural and accurate wording. What should they use?
+
+- Trasncribe
+- Polly
+- Translate
+- WordTranslator
+
+**Translate**
+
+---
+
+### Q29. Which AWS service makes it easy to convert speech-to-text?
+
+- Amazon Polly
+- Connect
+- Translate
+- Transcribe
+
+**Transcribe**
+
+---
+
+### Q30. Which of the following services is a document search service powered by machine learning?
+- Amazon Kendra
+- Amazon Lex
+- Amazon Comprehend
+- Polly
+
+**Amazon Kendra**
+
+---
+
+### Q31. Which AWS service enables human reviews of ML predictions?
+
+- Amazon SageMaker JumpStart
+- Amazon Kendra
+- Amazon Augmented AI (A2I)
+- AWS DeepRacer
+
+**Amazon Augmented AI (A2I)**
+
