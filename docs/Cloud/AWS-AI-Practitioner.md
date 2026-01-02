@@ -495,3 +495,341 @@ Amazon Certified AI Practitioner
 
 ---
 
+### Q47. What is a proper definition of IAM Roles?
+
+- An IAM entity that defines a set of permissions for making AWS service requests, that will be used by AWS services
+- IAM users in multiple groups
+- Permissions assigned to Users to perform actions
+
+**An IAM entity that defines a set of permissions for making AWS service requests, that will be used by AWS services**
+
+---
+
+### Q48. Which answer is INCORRECT regarding IAM Users?
+
+- IAM Users can belong to multiple groups
+- IAM Users don't have to belong to a group
+- IAM users can have policies assigned to them
+- IAM users access AWS with the root account credentials
+
+**IAM users access AWS with the root account credentials**
+
+---
+
+### Q49. Which of the following is an IAM best practice?
+
+- Don't use the root user account
+- Create serveral users for a physical person
+- Share credentials so a colleague can perform a task for you
+
+**Don't use the root user account**
+
+---
+
+### Q50. What are IAM Policies?
+
+- AWS services performable actions
+- JSON documents to define Users, Groups or Roles permissions
+- Rules to set up a password for IAM users
+
+**JSON documents to define Users, Groups or Roles permissions**
+
+--- 
+
+### Q51. Which of the following services can you use to discover and protect your sensitive data in AWS?
+
+- Macie
+- Artifacts
+- Inspector
+
+**Macie**
+
+---
+
+### Q52. Where can you find on-demand access to AWS compliance documentation and AWS agreements?
+
+- Inspector
+- Artifacts
+- Config
+- Macie
+
+**Artifacts**
+
+---
+
+### Q53. You want to record configurations and changes over time. Which service allows you to do this?
+
+- AWS Config
+- Inspector
+- Lambda
+- Macie
+
+**AWS Config**
+
+---
+
+### Q54. Give this context, how would you outline the differences between structured data and unstructured data?
+
+A retail company is developing machine learning models to analyze customer behavior and optimize inventory management. The data science team is working with both structured data as well as unstructured data and needs to understand how these two types of data differ in terms of how they are processed and used in machine learning models. Understanding this key difference will help the team select the right algorithms and preprocessing methods. Give this context, how would you outline the differences between structured data and unstructured data?
+
+- Structured data includes data like text, images, and videos, whereas unstructured data is limited to numerical data only
+- Structured data is used exclusively for training machine learning models, whereas unstructured data is used solely for storing information without any analytical purpose
+- Structured data is typically freeform text that lacks any specific format, whereas unstructured data is organized in a tabular format with rows and columns
+- Structured data is organized in a predefined manner, often in rows and columns, making it easy to search and analyze, while unstructured data lacks a specific format and includes data like text, images, and videos
+
+**Structured data is organized in a predefined manner, often in rows and columns, making it easy to search and analyze, while unstructured data lacks a specific format and includes data like text, images, and videos**
+
+---
+
+### Q55. What solution or approach would you recommend for implementing fully managed support for a RAG workflow in Amazon Bedrock?
+
+A legal research firm is seeking to implement a cutting-edge AI solution that can generate detailed responses to complex legal queries by retrieving relevant information from their extensive database of legal documents. The company wants to use Amazon Bedrock to deploy a fully managed solution that supports an end-to-end Retrieval Augmented Generation (RAG) workflow, ensuring that the AI can pull contextually accurate information and generate high-quality answers efficiently. What solution or approach would you recommend for implementing fully managed support for a RAG workflow in Amazon Bedrock?
+
+- Continued pretraining in Amazon Bedrock
+- Watermark detection for Amazon Bedrock
+- Knowledge Bases for Amazon Bedrock
+- Guardrails for Amazon Bedrock
+
+**Knowledge Bases for Amazon Bedrock**
+
+---
+
+### Q56. Which of the following best describes the Amazon SageMaker Canvas ML tool?
+
+- Gives the ability to use machine learning to generate predictions without the need to write any code
+- The fastest and easiest way to prepare tabular and image data for machine learning
+- Explains how input features contribute to the model predictions during model development and inference
+- Provides one-click, end-to-end solutions for many common machine learning use cases
+
+**Gives the ability to use machine learning to generate predictions without the need to write any code**
+
+---
+
+### Q57. What is this term called?
+
+A healthcare company has deployed a machine learning model using Amazon SageMaker to predict patient health outcomes based on various clinical parameters. A data analyst at the company inputs new patient data, such as age, blood pressure, and cholesterol levels, into the SageMaker model to receive a prediction on the likelihood of a cardiovascular event. The analyst needs to understand the specific term for this process, where the trained model uses its learned patterns to provide a prediction or output based on new input data. What is this term called?
+
+- This process is referred to as validation, here the model uses its trained parameters to generate a prediction or output based on new input data provided by the user
+- This process is called inference, where the model uses its trained parameters to generate a prediction or output based on new input data provided by the user
+- This process is called testing, which involves assessing the model's final performance on an unseen dataset after training is complete to estimate its generalization ability to predict an output
+- This process is known as training, which involves using labeled data to adjust the model's parameters so it can generate a prediction or output based on new input data provided by the user
+
+**This process is called inference, where the model uses its trained parameters to generate a prediction or output based on new input data provided by the user**
+
+---
+
+### Q58. Which AWS services would you recommend for developing LLM-based solutions in this environment?
+
+As a developer specializing in Large Language Models (LLMs) at a technology company, you have been tasked with migrating the company’s AI infrastructure to AWS Cloud to support the development of LLM-based solutions for various applications, such as natural language processing, text generation, and chatbots. The company is looking for AWS services that offer robust support for training, deploying, and managing LLMs while ensuring scalability, security, and integration with other cloud services. Which AWS services would you recommend for developing LLM-based solutions in this environment? (Select two)
+
+- AWS Inferentia
+- AWS Trainium
+- Amazon Q
+- Amazon Bedrock
+- Amazon SageMaker JumpStart
+
+**Amazon Bedrock**
+**Amazon SageMaker JumpStart**
+
+---
+
+### Q59. A healthcare company is developing a machine learning model to predict patient outcomes based on medical data. 
+
+To ensure the model generalizes well, the company needs to understand the balance between underfitting and overfitting and how to address these issues. Which of the following would you identify as correct regarding underfitting and overfitting in machine learning?
+
+- Underfit models experience high bias, whereas, overfit models experience low variance
+- Underfit models experience low bias, whereas, overfit models experience high variance
+- Underfit models experience high bias, whereas, overfit models experience high variance
+- Underfit models experience low bias, whereas, overfit models experience low variance
+
+**Underfit models experience high bias, whereas, overfit models experience high variance**
+
+(Your model is underfitting the training data when the model performs poorly on the training data. This is because the model is unable to capture the relationship between the input examples (often called X) and the target values (often called Y). Your model is overfitting your training data when you see that the model performs well on the training data but does not perform well on the evaluation data. This is because the model is memorizing the data it has seen and is unable to generalize to unseen examples.
+
+Underfit models experience high bias — they give inaccurate results for both the training data and test set. On the other hand, overfit models experience high variance - they give accurate results for the training set but not for the test set. More model training results in less bias but variance can increase. Data scientists aim to find the sweet spot between underfitting and overfitting when fitting a model. A well-fitted model can quickly establish the dominant trend for seen and unseen data sets.)
+
+---
+
+### Q60. Which of the following are correct statements regarding the AWS Global Infrastructure? (Select two)
+
+- Each Availability Zone (AZ) consists of one or more discrete data centers
+- Each AWS Region consists of two or more Edge Locations
+- Each Availability Zone (AZ) consists of two or more discrete data centers
+- Each AWS Region consists of a minimum of three Availability Zones (AZ)
+
+**Each Availability Zone (AZ) consists of one or more discrete data centers**
+**Each AWS Region consists of a minimum of three Availability Zones (AZ)**
+
+---
+
+### Q61. Which of the following summarizes the capabilities of a multimodal model?
+
+A retail company is exploring advanced AI solutions to enhance customer experience by integrating both visual and textual data for tasks such as product recommendations, automated image tagging, and customer support. The team is considering using multimodal models, which can process and understand multiple types of input data, but they need a clear understanding of how these models work and their key advantages. To help make an informed decision, the company wants to clarify the capabilities of multimodal models. Which of the following summarizes the capabilities of a multimodal model?
+
+- A multimodal model can accept a mix of input types such as audio/text, however, it can only create a single type of output
+- A multimodal model can accept only a single type of input and it can only create a single type of output
+- A multimodal model can accept a mix of input types such as audio/text and create a mix of output types such as video/image
+- A multimodal model can accept only a single type of input, however, it can create a mix of output types such as video/image
+
+**A multimodal model can accept a mix of input types such as audio/text and create a mix of output types such as video/image**
+
+---
+
+### Q62. Which of the following represents the best option for the given use case?
+
+A retail company is embarking on a machine learning project to enhance customer segmentation and personalize marketing campaigns. As the data science team begins planning the implementation, the team wants to identify the primary challenges in machine learning implementation. Understanding these challenges will help the team anticipate potential roadblocks and develop strategies to overcome them. Which of the following represents the best option for the given use case?
+
+- Difficulty in collecting and preparing high-quality data for training models
+- Limited applications of machine learning in real-world scenarios
+- Lack of available machine learning algorithms
+- Insufficient computational power to run basic machine learning models
+
+**Difficulty in collecting and preparing high-quality data for training models**
+
+---
+
+### Q63. Which of the following generative AI techniques are used in the Amazon Q Business web application workflow?
+
+A company is exploring Amazon Q to streamline its internal business processes through automation and generative AI capabilities. The team is particularly interested in understanding how Amazon Q integrates generative AI techniques within its web application workflow to enhance tasks such as automating report generation, creating summaries, and analyzing large datasets. They want to know which specific generative AI techniques are employed in Amazon Q to achieve these outcomes. Which of the following generative AI techniques are used in the Amazon Q Business web application workflow? (Select two)
+
+- Generative adversarial network (GAN)
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- Diffusion Models
+
+**Large Language Models (LLMs)**
+**Retrieval-Augmented Generation (RAG)**
+
+---
+
+### Q64. Which AWS services/tools can be used to implement Responsible AI practices?
+
+A healthcare technology company is developing AI-driven applications to assist doctors in diagnosing diseases. As part of its commitment to ethical standards, the company wants to ensure that its AI models are fair, transparent, and free from bias. To achieve this, the data science team is exploring AWS services and tools that can help implement Responsible AI practices, as understanding which AWS services support these practices is critical for the company’s AI development strategy. Which AWS services/tools can be used to implement Responsible AI practices? (Select two)
+
+- Amazon SageMaker Model Monitor
+- Amazon Inspector
+- Amazon SageMaker Clarify
+- AWS Audit Manager
+- Amazon SageMaker JumpStart
+
+**Amazon SageMaker Model Monitor**
+**Amazon SageMaker Clarify**
+
+---
+
+### Q65. Given this context, which of the following would you recommend as the correct sequence of steps in the machine learning process?
+
+A healthcare company is implementing a machine learning solution to predict patient outcomes and improve treatment plans. The data science team is working to structure their workflow effectively, ensuring that they follow the correct steps in the machine learning process. Understanding the proper sequence of these steps will help the team streamline their project and ensure a successful implementation. Given this context, which of the following would you recommend as the correct sequence of steps in the machine learning process?
+
+- Model training, Data collection, Data preprocessing, Model evaluation
+- Data collection, Data preprocessing, Model training, Model evaluation
+- Data preprocessing, Model evaluation, Model training, Data collection
+- Model evaluation, Model training, Data collection, Data preprocessing
+
+**Data collection, Data preprocessing, Model training, Model evaluation**
+
+---
+
+### Q66. In the context of the shared responsibility model for AWS cloud services, which of the following best describes the division of responsibilities between the customer and AWS?
+
+- AWS handles all security aspects including data encryption, user access management, and application security, while the customer only needs to manage their virtual machines
+- AWS is responsible for configuring and managing the security settings of the customer's applications, while the customer is responsible for the underlying hardware infrastructure
+- AWS is responsible for the security "of" the cloud, including infrastructure, hardware, and software, while the customer is responsible for security "in" the cloud, including data, applications, and access management
+- Customers are responsible for ensuring the physical security of data centers, while AWS is responsible for monitoring network traffic and managing user identities
+
+**AWS is responsible for the security "of" the cloud, including infrastructure, hardware, and software, while the customer is responsible for security "in" the cloud, including data, applications, and access management**
+
+---
+
+### Q67. A financial services company is exploring Amazon Bedrock to streamline its AI development for
+
+use cases such as fraud detection, personalized customer service, and automated reporting. The company is particularly interested in understanding the key features and benefits of Amazon Bedrock, including its ability to simplify access to powerful foundation models, support customizations, and integrate with existing AWS services. To make an informed decision, the company needs to identify which of the following accurately applies to Amazon Bedrock and its capabilities? (Select two)
+
+- You can use a customized model in the Provisioned Throughput or On-Demand mode
+- You can use a customized model only in the Provisioned Throughput mode
+- You can use the On-Demand mode only with time-based term commitments
+- Larger models are cheaper to use than smaller models
+- Smaller models are cheaper to use than larger models
+
+**You can use a customized model in the Provisioned Throughput or On-Demand mode**
+**Smaller models are cheaper to use than larger models**
+
+---
+
+### Q68. Which of the following is correct regarding Foundation Models (FMs) in the context of generative AI?
+
+A healthcare company is evaluating the use of Foundation Models (FMs) in generative AI to automate tasks such as medical report generation, data analysis, and personalized patient communications. The company's data science team wants to better understand the key features and benefits of Foundation Models, particularly how they can be applied to various tasks with minimal fine-tuning and customization. To ensure they choose the right model for their needs, the team is seeking to clarify the essential characteristics of FMs in generative AI.
+
+- FMs use labeled training data sets for supervised learning
+- FMs use unlabeled training data sets for self-supervised learning
+- FMs use labeled training data sets for self-supervised learning
+- FMs use unlabeled training data sets for supervised learning
+
+**FMs use unlabeled training data sets for self-supervised learning**
+
+---
+
+### Q69. The marketing department at a media company wants to leverage Amazon Bedrock for making creative scripts for an upcoming ad campaign. What do you recommend?
+
+- Use lower Temperature to get more creative responses for the same prompt on Amazon Bedrock
+- Use higher Temperature to get more creative responses for the same prompt on Amazon Bedrock
+- Use lower Top-P to get more creative responses for the same prompt on Amazon Bedrock
+- Use higher Top-P to get more creative responses for the same prompt on Amazon Bedrock
+
+**Use higher Temperature to get more creative responses for the same prompt on Amazon Bedrock**
+
+---
+
+### Q70. Which of the following techniques is used by Foundation Models to create labels from input data?
+
+A healthcare analytics company is exploring the use of Foundation Models to automate the process of labeling vast amounts of medical data, such as patient records and clinical notes, to enhance its machine learning models for diagnosis and treatment recommendations. The company wants to understand the specific techniques that Foundation Models use to generate labels from raw input data, helping streamline the data annotation process without requiring extensive manual effort.
+
+- Self-supervised learning
+- Unsupervised learning
+- Supervised learning
+- Reinforcement learning
+
+**Self-supervised learning**
+
+---
+
+### Q71. How would you differentiate between overfitting and underfitting in the context of machine learning?
+
+A retail company is building a machine learning model to forecast demand for its products, but the data science team is facing challenges in balancing model complexity and accuracy. They are trying to avoid overfitting as well as underfitting, since understanding the differences between these two issues is crucial for optimizing the model's performance on both historical and unseen data.
+
+- Overfitting and underfitting both refer to a model performing equally well on both the training data and new, unseen data
+- Overfitting occurs when a model is too simple to capture the underlying patterns in the data, while underfitting occurs when a model is too complex and captures noise rather than the actual patterns
+- Overfitting is desirable as it ensures the model captures all nuances in the training data, while underfitting is desirable as it ensures the model generalizes well to new data
+- Overfitting occurs when a model performs well on the training data but poorly on new, unseen data, while underfitting occurs when a model performs poorly on both the training data and new, unseen data
+
+**Overfitting occurs when a model performs well on the training data but poorly on new, unseen data, while underfitting occurs when a model performs poorly on both the training data and new, unseen data**
+
+---
+
+### Q72. Match the following Amazon SageMaker services to the respective use cases:
+
+A) SageMaker Data Wrangler
+B) SageMaker Canvas
+C) SageMaker Ground Truth
+
+1) Harnessing human input across the ML lifecycle to improve the accuracy and relevancy of models
+2) Offers 300+ pre-configured data transformations to prepare data for ML
+3) No-code service with an intuitive, point-and-click interface
+
+**A-2, B-3, C-1**
+
+---
+
+### Q73. A financial services company is exploring machine learning to automate credit scoring and fraud detection.
+
+The leadership team, new to this technology, needs to understand the core concept behind machine learning. Gaining clarity on this central idea will help them decide how to best apply machine learning to their business operations. The company has tasked you, as an AI Practitioner, to convey the central idea behind machine learning to the leadership team. What do you recommend?
+
+- Machine learning only functions effectively when data is manually labeled and categorized by humans
+- Machine learning involves training algorithms on large datasets to identify patterns and make predictions or decisions based on new data
+- Machine learning works by using predefined rules to generate outcomes without the need for data input
+- Machine learning is primarily based on hardware configurations and does not rely on software algorithms or data analysis
+
+**Machine learning involves training algorithms on large datasets to identify patterns and make predictions or decisions based on new data**
+
+
+
