@@ -64,10 +64,6 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Coding BBQ',
-        logo: {
-          alt: 'Coding BBQ',
-          src: 'img/logo.png',
-        },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
           {

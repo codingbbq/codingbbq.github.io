@@ -1,3 +1,38 @@
+.heroIntro {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+.wave {
+  font-size: 1.2em;
+}
+.heroMainTitle {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.accent {
+  color: #7c3aed;
+  background: linear-gradient(90deg, #7c3aed 60%, #4f46e5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.heroMainTitleLine {
+  color: #222;
+}
+.heroSubtitle {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
@@ -9,6 +44,156 @@
   position: relative;
   overflow: hidden;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  color: #fff;
+}
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  background: none;
+  color: #222;
+}
+.heroCard {
+  margin: 2rem auto 0 auto;
+  max-width: 800px;
+  border-radius: 18px;
+  border: 6px solid;
+  border-image: linear-gradient(90deg, #ff512f 0%, #185a9d 100%) 1;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(44,83,100,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.heroColBio {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.heroBio {
+  font-size: 1.08rem;
+  color: #222;
+  text-align: left;
+  margin: 0;
+}
+.heroColSkills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.skillsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #185a9d;
+  margin-bottom: 0.7rem;
+}
+.skillsTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skillTag {
+  background: linear-gradient(90deg, #ff512f 0%, #185a9d 100%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.35rem 1rem;
+  margin-bottom: 0.3rem;
+  box-shadow: 0 1px 4px rgba(44,83,100,0.10);
+}
+
+/* Hero Title & Subtitle */
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f9fafc;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #cfd8dc;
+}
+
+.summaryBox {
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  box-shadow: 0 2px 16px rgba(44,83,100,0.15);
+}
+
+/* Section Titles */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #2c5364;
+}
+
+/* Showcase Section */
+.showcaseSection {
+  padding: 3rem 0;
+  background: #f9fafc;
+}
+
+/* Features Section */
+.features {
+  padding: 3rem 0 2rem 0;
+  background: #fff;
+}
+
+.featuresHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #185a9d;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.featureCol {
+  display: flex;
+  align-items: stretch;
+}
+
+.featureContent {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,83,100,0.10);
+  padding: 2rem 1.5rem;
+  margin: 0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featureTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #185a9d;
+  margin-bottom: 1rem;
+}
+
+.featureDesc {
+  font-size: 1rem;
+  color: #222;
 }
 
 @media screen and (max-width: 996px) {

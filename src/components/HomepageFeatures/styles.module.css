@@ -1,8 +1,61 @@
+/* Section container */
 .features {
+  padding: 3rem 0 2rem 0;
+  background: #fff;
+}
+.featuresHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #185a9d;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.featuresGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+.featureCol {
+  display: flex;
+  align-items: stretch;
+}
+.featureCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44,83,100,0.10);
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  transition: box-shadow 0.2s;
+}
+.featureCard:hover {
+  box-shadow: 0 8px 32px rgba(44,83,100,0.18);
+}
+.featureArt {
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  justify-content: center;
+  height: 80px;
+}
+.featureTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #185a9d;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.featureDesc {
+  font-size: 1rem;
+  color: #222;
+  text-align: center;
 }
 
 .featureSvg {
