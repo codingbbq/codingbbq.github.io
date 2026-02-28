@@ -5,27 +5,55 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-font-family-base: 'Space Grotesk', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --ifm-color-primary: #0aa6b4;
+  --ifm-color-primary-dark: #09929c;
+  --ifm-color-primary-darker: #077c84;
+  --ifm-color-primary-darkest: #065e64;
+  --ifm-color-primary-light: #12becc;
+  --ifm-color-primary-lighter: #2dc7d3;
+  --ifm-color-primary-lightest: #55d5dd;
+  --ifm-heading-color: #051b2c;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(10, 166, 180, 0.12);
+  --site-surface: #f0f7f7;
+  --site-accent: #143c5a;
+  --site-muted: #5b6b73;
+  --site-card: #ffffff;
+  --site-card-muted: #f7fcfc;
+  --site-border: rgba(5, 27, 44, 0.08);
+  --site-shadow: rgba(5, 27, 44, 0.08);
+  --site-text: #0f1f2a;
+  --cta-primary-text: #03121e;
+  --cta-secondary-border: rgba(20, 60, 90, 0.15);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #5fe9f4;
+  --ifm-color-primary-dark: #32dbe8;
+  --ifm-color-primary-darker: #1cc4d2;
+  --ifm-color-primary-darkest: #13808a;
+  --ifm-color-primary-light: #86f1f8;
+  --ifm-color-primary-lighter: #a9f6fb;
+  --ifm-color-primary-lightest: #d4fbfd;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.35);
+  --site-surface: #020a11;
+  --site-accent: #e5f3ff;
+  --site-muted: #9fb8c8;
+  --site-card: #0b1824;
+  --site-card-muted: #102330;
+  --site-border: rgba(229, 243, 255, 0.12);
+  --site-shadow: rgba(0, 0, 0, 0.45);
+  --site-text: #d7e9f5;
+  --cta-primary-text: #021a21;
+  --cta-secondary-border: rgba(229, 243, 255, 0.25);
 }
 
+body {
+  background: var(--site-surface);
+  color: var(--site-text);
+}
