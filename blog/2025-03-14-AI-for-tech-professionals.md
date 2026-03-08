@@ -19,6 +19,8 @@ Deep learning is subset of machine learning that utilizes multi-layered neural n
 ## Computer visiion
 Computer vision is a field of artificial intelligence that enables computers to interpret and understand visual information from the world, such as images and videos. It involves the use of algorithms and models to analyze and make decisions based on visual data, often mimicking human visual perception and cognition.
 
+<!-- truncate -->
+
 ## Natural Language processing (NLP)
 Natural langulage processing (NLP) is a branch of artificial intelligence that allows computers to understand and interact with human language. It involves tasks like translating text, analyzing sentiment, and summarizing information by processing and interpreting language data.
 

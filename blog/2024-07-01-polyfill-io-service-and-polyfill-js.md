@@ -16,6 +16,8 @@ News recently surfaced about the polyfill.io service injecting malicious code in
 
 According to MDN, a polyfill is a code snippet, typically JavaScript on the web, that provides modern functionality on older browsers lacking native support. For instance, if you want to use the latest JavaScript APIs like array `filter` or `map`—supported by Chrome but not IE7—you'd need a polyfill to ensure seamless functionality.
 
+<!-- truncate -->
+
 ## The Role of CDNs
 
 A Content Delivery Network (CDN) is a system of interconnected servers that accelerate webpage loading for data-heavy applications. Commonly used static assets like jQuery, AngularJS, React, and Bootstrap.css reside on CDNs. Web applications can directly use these assets, saving on network and storage costs while enhancing application performance.

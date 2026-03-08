@@ -29,6 +29,8 @@ tags: [upskilling, learning, book-reading]
 7) Webpack
 - Webpack is a very powerful and versatile bundler, and it is thanks to it that the framework manages to make some interesting optimizations such as tree shaking and lazy loading of bundles
 
+<!-- truncate -->
+
 ### Organising your application ?
 The basis for organizing your application is the Angular module.
 An Angular module is a typescript class marked with decorator @NgModule that contains the metadata 

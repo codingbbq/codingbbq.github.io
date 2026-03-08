@@ -16,6 +16,8 @@ This was specific to Weblogic server. The application worked fine on any other s
 
 This led us into a detailed debugging journey across build pipelines, server configurations, and module graphs.
 
+<!-- truncate -->
+
 ---
 
 ## Investigating WebLogic Content-Type Issues

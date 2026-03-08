@@ -26,6 +26,8 @@ So, this huge product had AngularJS as a low hanging fruit, used only for one si
 
 However, security fixes to AngularJS library were patched whenever available. 
 
+<!-- truncate -->
+
 ### Transition from AngularJS to Vanilla JavaScript
 
 Fast forward to today, and our feature remains, but the landscape has shifted.  AngularJS is officially deprecated and so we had to reevaluate our choice.

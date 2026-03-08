@@ -30,6 +30,8 @@ There is always the scope for improvement. I enjoyed creating Pull Requests to t
 - Removing inline styles
 - Separating the JS from HTML code
 
+<!-- truncate -->
+
 ## 4) Documentation
 
 Complex software such as these that are evolved over 15 years of time have a lot of scope for documentation. Adding new comments is easy, but improving existing comments / documentation requires thorough understanding of the code. 

@@ -22,6 +22,8 @@ The accumulation of tech debt prompted a thorough review of the codebase to iden
 - Elimination of support for outdated browsers.
 - Streamlining of build scripts to remove unnecessary generated files.
 
+<!-- truncate -->
+
 ## Motivational Quotes
 I came across a tweet from Elon Musk that resonated deeply with me: "Far better to delete code than add it." This philosophy encapsulates the essence of efficient software development. While striving for 100% optimized and performant code from day one may seem ideal, the reality is that codebases evolve over time, accumulating unnecessary complexities and redundancies.
 

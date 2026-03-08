@@ -15,6 +15,8 @@ I came across this course from Robin Williams about principles of Great design a
 Group related items together. Physical closeness implies a relationship.
 Proximity does not mean that everything is close together - it means elements that are intellectually connected should be visually connected.
 
+<!-- truncate -->
+
 ## The principle of Alignment
 Nothing should be placed on the page arbitrarily. Even item should have a visual connection with something else on the page.
 - In life as well as in Design, alignment has a purpose.

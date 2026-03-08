@@ -31,6 +31,8 @@ A UX Expert would design a flow of the web app considering the end user in mind.
 
 In our scenario of developing a digital product i.e. a Web application,  UX exert needs to primarily take care of two things
 
+<!-- truncate -->
+
 - **The user flow**
     
     **For eg. Think of eCommerce app that let’s you buy books.** 
