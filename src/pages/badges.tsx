@@ -60,6 +60,15 @@ const stats = [
 
 const showcasedSkills = uniqueSkills.slice(0, 20);
 
+const CalendarIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect x="3" y="4.5" width="18" height="16" rx="2.5" />
+    <line x1="8" y1="2.5" x2="8" y2="6" />
+    <line x1="16" y1="2.5" x2="16" y2="6" />
+    <line x1="3" y1="10" x2="21" y2="10" />
+  </svg>
+);
+
 const formatDate = (value?: string | null) => {
   if (!value) {
     return null;
@@ -77,21 +86,25 @@ function BadgeCard({badge}: {badge: Badge}) {
 
   return (
     <article className={styles.badgeCard}>
-      {issuedDate && <span className={styles.badgeDate}>{issuedDate}</span>}
+      {issuedDate && (
+        <span className={styles.badgeDate}>
+          <CalendarIcon />
+          {issuedDate}
+        </span>
+      )}
       <div className={styles.badgeTop}>
-        <div className={styles.badgeIcon}>
+        <div className={styles.badgeImageShell}>
           {badge.imageUrl ? (
             <img src={badge.imageUrl} alt={`${badge.name ?? 'Credential'} badge`} loading="lazy" />
           ) : (
-            <span aria-hidden="true">{badge.name?.charAt(0) ?? '?'}</span>
+            <span>{badge.name ?? 'Badge'}</span>
           )}
         </div>
-        <div>
+        <div className={styles.badgeTitleBlock}>
           {badge.issuer?.name && <p className={styles.badgeIssuer}>{badge.issuer.name}</p>}
           <h3 className={styles.badgeTitleText}>{badge.name ?? 'Unnamed badge'}</h3>
         </div>
       </div>
-      {badge.description && <p className={styles.badgeDescription}>{badge.description}</p>}
       {skills.length > 0 && (
         <div>
           <p className={styles.badgeTagsLabel}>Skills covered</p>

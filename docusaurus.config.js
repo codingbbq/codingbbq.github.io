@@ -72,13 +72,12 @@ const config = {
             position: 'left',
             label: 'Learnings',
           },
-          {to: '/badges', label: 'Badges', position: 'left'},
+          {to: '/badges', label: 'Badges / Certifications', position: 'left'},
           {
             href: 'https://github.com/codingbbq',
             label: 'GitHub',
             position: 'right',
-          },
-          
+          }
         ],
       },
       footer: {
