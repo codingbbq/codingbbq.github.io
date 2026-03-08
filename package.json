@@ -13,7 +13,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "live": "GIT_USER=codingbbq npm run deploy"
+    "live": "GIT_USER=codingbbq npm run deploy",
+    "fetch:badges": "node scripts/fetchCredlyBadges.js"
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",

@@ -4,6 +4,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "esModuleInterop" : true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "types": ["@docusaurus/module-type-aliases"],
+    "lib": ["dom", "es2021"]
   }
 }
