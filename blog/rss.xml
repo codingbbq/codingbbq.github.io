@@ -4,10 +4,151 @@
         <title>Hi, I am Idrish laxmidhar. Blog</title>
         <link>https://codingbbq.github.io/blog</link>
         <description>Hi, I am Idrish laxmidhar. Blog</description>
-        <lastBuildDate>Fri, 12 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 26 Jul 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[AI Driven SDLC: My notes on the book]]></title>
+            <link>https://codingbbq.github.io/blog/book-review</link>
+            <guid>https://codingbbq.github.io/blog/book-review</guid>
+            <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[What started as vibe coding is not become Agentic Engineering]]></description>
+            <content:encoded><![CDATA[<p>What started as vibe coding is not become Agentic Engineering</p>
+<p>Read the book: <a href="https://drive.google.com/file/d/1IR7CddF_2FyQo_PdfBNTaEA50EGiVt2r/view" target="_blank" rel="noopener noreferrer">AI Driven SDLC</a></p>
+<p>Instead of viewing AI as a coding assistant (e.g., autocomplete or code generation), the authors propose that software engineering is evolving toward Agentic Engineering, where developers collaborate with AI agents that can perform end-to-end engineering tasks. The challenge is no longer how to prompt an LLM, but how to design systems, workflows, and guardrails that allow AI to build reliable software.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-is-contributing-across-the-sdlc">AI is contributing across the SDLC<a href="https://codingbbq.github.io/blog/book-review#ai-is-contributing-across-the-sdlc" class="hash-link" aria-label="Direct link to AI is contributing across the SDLC" title="Direct link to AI is contributing across the SDLC">​</a></h2>
+<p>The traditional software development lifecycle (SDLC) consists of several phases, including requirements gathering, design, implementation, testing, deployment, and maintenance. AI is now contributing across all these phases:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="requirements">Requirements<a href="https://codingbbq.github.io/blog/book-review#requirements" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements">​</a></h3>
+<p>Instead of manually writing requirement documents,</p>
+<p>AI can:</p>
+<ul>
+<li>analyse product ideas</li>
+<li>generate user stories</li>
+<li>identify edge cases</li>
+<li>propose acceptance criteria</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design--architecture">Design &amp; Architecture<a href="https://codingbbq.github.io/blog/book-review#design--architecture" class="hash-link" aria-label="Direct link to Design &amp; Architecture" title="Direct link to Design &amp; Architecture">​</a></h3>
+<p>AI can help:</p>
+<ul>
+<li>create architecture diagrams</li>
+<li>compare design patterns</li>
+<li>evaluate trade-offs</li>
+<li>identify scalability concerns</li>
+</ul>
+<p>The architect still makes the final decision.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation">Implementation<a href="https://codingbbq.github.io/blog/book-review#implementation" class="hash-link" aria-label="Direct link to Implementation" title="Direct link to Implementation">​</a></h3>
+<p>This is the most familiar use case today.</p>
+<p>AI assists by:</p>
+<ul>
+<li>generating code</li>
+<li>refactoring</li>
+<li>creating APIs</li>
+<li>writing documentation</li>
+<li>migrating frameworks</li>
+</ul>
+<p>This is what most people currently associate with "AI coding."</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testing--qa">Testing &amp; QA<a href="https://codingbbq.github.io/blog/book-review#testing--qa" class="hash-link" aria-label="Direct link to Testing &amp; QA" title="Direct link to Testing &amp; QA">​</a></h3>
+<p>Rather than writing tests manually,</p>
+<p>AI can:</p>
+<ul>
+<li>generate unit tests</li>
+<li>generate integration tests</li>
+<li>identify edge cases</li>
+<li>create regression suites</li>
+<li>identify missing scenarios</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="code-review">Code Review<a href="https://codingbbq.github.io/blog/book-review#code-review" class="hash-link" aria-label="Direct link to Code Review" title="Direct link to Code Review">​</a></h3>
+<p>Instead of reviewing syntax,</p>
+<p>AI can:</p>
+<ul>
+<li>detect bugs</li>
+<li>identify code smells</li>
+<li>suggest improvements</li>
+<li>highlight security issues</li>
+</ul>
+<p>Developers spend more time reviewing intent than formatting.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deployment">Deployment<a href="https://codingbbq.github.io/blog/book-review#deployment" class="hash-link" aria-label="Direct link to Deployment" title="Direct link to Deployment">​</a></h3>
+<p>AI increasingly helps with:</p>
+<ul>
+<li>CI/CD pipelines</li>
+<li>release strategies</li>
+<li>rollback planning</li>
+<li>infrastructure changes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="maintenance">Maintenance<a href="https://codingbbq.github.io/blog/book-review#maintenance" class="hash-link" aria-label="Direct link to Maintenance" title="Direct link to Maintenance">​</a></h3>
+<p>AI assists by:</p>
+<ul>
+<li>debugging production issues</li>
+<li>root cause analysis</li>
+<li>documentation</li>
+<li>dependency upgrades</li>
+<li>technical debt reduction</li>
+</ul>
+<p>The book suggests that every phase of SDLC becomes increasingly AI-assisted.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="harness-engineering">Harness Engineering<a href="https://codingbbq.github.io/blog/book-review#harness-engineering" class="hash-link" aria-label="Direct link to Harness Engineering" title="Direct link to Harness Engineering">​</a></h2>
+<p>The authors argue that writing prompts isn't enough. We need to build AI Harness around the Model.</p>
+<p>Agent = Model + Harness</p>
+<p>A raw model is not an agent. It becomes one once a harness gives it state, tool execution,
+feedback loops, and enforceable constraints.</p>
+<p>The harness includes:</p>
+<ul>
+<li>tools</li>
+<li>workflows</li>
+<li>documentation</li>
+<li>context</li>
+<li>coding standards</li>
+<li>memory</li>
+<li>permissions</li>
+<li>testing</li>
+<li>observability</li>
+<li>feedback loops</li>
+<li>guardrails</li>
+</ul>
+<p>Think of the LLM as the engine.</p>
+<p>The harness is everything surrounding the engine that makes it useful in production.</p>
+<p>Without a good harness:</p>
+<ul>
+<li>AI hallucinates</li>
+<li>loses context</li>
+<li>makes inconsistent decisions</li>
+</ul>
+<p>With a good harness:</p>
+<ul>
+<li>AI behaves more like an experienced teammate.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-80-problem">The 80% Problem<a href="https://codingbbq.github.io/blog/book-review#the-80-problem" class="hash-link" aria-label="Direct link to The 80% Problem" title="Direct link to The 80% Problem">​</a></h2>
+<p>AI is excellent at getting much of the way to a solution quickly.</p>
+<p>However, the remaining work often requires:</p>
+<ul>
+<li>business context</li>
+<li>domain expertise</li>
+<li>architectural judgment</li>
+<li>handling edge cases</li>
+<li>performance tuning</li>
+<li>security considerations</li>
+</ul>
+<p>The final stretch still relies heavily on experienced engineers.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="skills-developers-should-build">Skills Developers Should Build<a href="https://codingbbq.github.io/blog/book-review#skills-developers-should-build" class="hash-link" aria-label="Direct link to Skills Developers Should Build" title="Direct link to Skills Developers Should Build">​</a></h2>
+<p>The book argues that future engineers should invest less in memorising syntax and more in higher-level engineering capabilities, including:</p>
+<ul>
+<li>Systems thinking</li>
+<li>Architecture and design</li>
+<li>Product thinking</li>
+<li>Communication</li>
+<li>Problem decomposition</li>
+<li>Reviewing AI-generated work</li>
+<li>Building reliable AI workflows</li>
+<li>Understanding AI limitations</li>
+</ul>
+<p>These skills become increasingly valuable as AI takes on more routine implementation.</p>]]></content:encoded>
+            <category>book</category>
+            <category>learning</category>
+            <category>AI</category>
+        </item>
         <item>
             <title><![CDATA[Empty Chunks in Angular 19: A Technical Deep Dive]]></title>
             <link>https://codingbbq.github.io/blog/empty-chunk-issue</link>
