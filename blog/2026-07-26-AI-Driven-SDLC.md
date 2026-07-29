@@ -6,7 +6,7 @@ tags: [book, learning, AI]
 
 # AI Driven SDLC: My notes on the book
 
-What started as vibe coding is not become Agentic Engineering
+What started as vibe coding is now become Agentic Engineering
 
 Read the book: [AI Driven SDLC](https://drive.google.com/file/d/1IR7CddF_2FyQo_PdfBNTaEA50EGiVt2r/view)
 

@@ -831,5 +831,204 @@ The leadership team, new to this technology, needs to understand the core concep
 
 **Machine learning involves training algorithms on large datasets to identify patterns and make predictions or decisions based on new data**
 
+---
 
+### Q74. A company wants to develop a system that can accurately recognize and classify handwritten digits from images. Which of the following options best describes the use of neural networks for this task?
 
+- Neural networks are a type of decision tree algorithm that can be trained on image data to create a set of rules for classifying handwritten digits.
+- Neural networks are a form of linear regression that can be used to map pixel values from images to corresponding digit labels.
+- Neural networks are a type of deep learning model inspired by the structure and function of the human brain. They consist of interconnected nodes that can learn to recognize patterns in data, such as images of handwritten digits.
+- Neural networks are a type of database system that can store and retrieve images of handwritten digits based on their pixel values and associated labels.
+
+**Neural networks are a type of deep learning model inspired by the structure and function of the human brain. They consist of interconnected nodes that can learn to recognize patterns in data, such as images of handwritten digits.**
+
+---
+
+### Q75. A company is developing an artificial intelligence (AI) system to control a self-driving car. The system learns through trial-and-error interactions with the driving environment, receiving rewards for safe and efficient actions. Which machine learning (ML) approach is being used in this scenario?
+
+- Supervised learning
+- Unsupervised learning
+- Reinforcement learning
+- Self-supervised learning
+
+**Reinforcement learning**
+
+---
+
+### Q76. A company is developing a large language model (LLM) for natural language processing tasks, such as text generation, summarization, and question answering.Which of the following best describes the role of embeddings, in the context of LLMs?
+
+- Embeddings are numerical representations of words or tokens, where semantically similar words have similar vector representations.
+- Embeddings are the preprocessing techniques used to clean and tokenize the text data before feeding it into the LLM for training or inference.
+- Embeddings are the ensemble methods used to combine multiple LLMs to improve the overall performance and robustness of the system.
+- Embeddings are the linguistic rules and grammar patterns extracted from the text data to aid the LLM in understanding and generating language.
+
+**Embeddings are numerical representations of words or tokens, where semantically similar words have similar vector representations.**
+
+---
+
+### Q77. A company has pre-trained a large language model on a vast corpus of text data. They want to adapt this pre-trained model to perform specific tasks such as sentiment analysis and document summarization. Which of the following best describes the process of fine-tuning?
+
+- Fine-tuning involves training the pre-trained language model from scratch.
+- Fine-tuning refers to the process of further training the pre-trained language model on labeled data for the specific tasks.
+- Fine-tuning is a technique used to preprocess and clean the task-specific data before feeding it into the pre-trained language model.
+- Fine-tuning is an ensemble method that combines the pre-trained language model with task-specific models to improve the overall performance.
+
+**Fine-tuning is an ensemble method that combines the pre-trained language model with task-specific models to improve the overall performance.**
+
+---
+
+### Q78. A team is tasked with choosing a generative artificial intelligence (AI) model that can recognize and interpret different forms of input data, such as text, images, and audio. Which of the following model architectures is best suited for this task?
+
+- Large Language Model (LLM)
+- Multimodal Model
+- Diffusion Model
+- Foundation Model (FM)
+
+**Multimodal Model**
+
+--- 
+
+### Q79. A company has a large collection of customer support emails and chat transcripts. They want to analyze the sentiment expressed in these messages and identify common issues or topics discussed by their customers. Which AWS service would be most appropriate for this task?
+
+- Amazon Transcribe
+- Amazon Comprehend
+- Amazon Polly
+- Amazon Kendra
+
+**Amazon Comprehend**
+
+---
+
+### Q80. A retail company has accumulated a large volume of customer transaction data, including purchase history, product preferences, and demographic information. The company wants to use this data to build machine learning models that can provide personalized product recommendations to customers and improve their overall shopping experience. Which AWS service would be most suitable for the retail company to build, train, and deploy machine learning models for personalized product recommendations?
+
+- Amazon SageMaker AI
+- Amazon Bedrock
+- Amazon Lex
+- Amazon Q Developer
+
+**Amazon SageMaker AI**
+
+---
+
+### Q81. Which artificial intelligence (AI) application is used to automatically extract unstructured data from various types of documents, such as invoices, contracts, and forms?
+
+- Computer Vision
+- Facial Recognition
+- Intelligent Document Processing (IDP)
+- Fraud Detection
+
+**Intelligent Document Processing (IDP)**
+
+--- 
+
+### Q82. A manufacturing company produces a wide range of industrial equipment. Which scenario would be a suitable application of artificial intelligence and machine learning (AI/ML) technology?
+
+- Implementing a centralized database to store product specifications and manuals.
+- Using computer vision and machine learning algorithms to automate quality control inspections on the production line.
+- Providing employees with training seminars on the latest manufacturing techniques and safety protocols.
+- Outsourcing the manufacturing of certain components to third-party suppliers to reduce costs.
+
+**Using computer vision and machine learning algorithms to automate quality control inspections on the production line.**
+
+---
+
+### Q83. A data engineer is working on a project to predict the sale price of houses based on various features such as square footage, number of bedrooms, location, and age of the property. Which machine learning technique would be appropriate for this task?
+
+- Clustering
+- Dimensionality Reduction
+- Regression
+- Classification
+
+**Regression**
+
+---
+
+### Q84. What are some of the capabilities of generative artificial intelligence (generative AI) systems in business applications? (Select THREE.)
+
+- Personalization
+- Scalability
+- Conversion rate
+- Simplicity
+- Accuracy
+- Cross-domain performance
+
+**Personalization, Scalability, Simplicity**
+
+---
+
+### Q85. A product manager works for a company that uses a generative AI application for content creation. They have noticed that the model often produces different outputs each time it runs with the same input data. What is the challenge this company is encountering?
+
+- Nondeterminism
+- Toxicity
+- Social risks
+- Hallucinations
+
+**Nondeterminism**
+
+--- 
+
+### Q86. A data engineer is analyzing the performance of a generative AI system used for customer support in a software company. Which business metric would be most appropriate for assessing the system’s effectiveness?
+
+- Cross-domain performance
+- Customer satisfaction
+- Conversion rate
+- Average revenue per user (ARPU)
+
+**Customer satisfaction**
+
+---
+
+### Q87. Responsible artificial intelligence (AI) should be incorporated in all phases of the development lifecycle of an AI system. Which choice best describes responsible AI?
+
+- Responsible AI refers the security and compliance that are shared responsibilities between AWS and the customer. 
+- Responsible AI refers to the standards that uphold responsible practices and mitigate potential risks and negative outcomes of an AI application. 
+- Responsible AI refers to the ability to create AI systems that add creativity, productivity, and connectivity to your business.
+- Responsible AI refers to standards of upholding responsible practices that are exclusively needed for generative AI systems.
+
+**Responsible AI refers to the standards that uphold responsible practices and mitigate potential risks and negative outcomes of an AI application.**
+
+---
+
+### Q88. A developer is training a model for a new artificial intelligence (AI) system. The developer wants to be sure that the model is not underfitting the data or overfitting the data. How should the model be trained on the data?
+
+- With low bias and high variance
+- With low bias and low variance
+- With high bias and high variance
+- With high bias and low variance
+
+**With low bias and low variance**
+
+---
+
+### Q89. A company is researching how it might benefit from using generative artificial intelligence (generative AI). At the same time, they are very concerned about the generative AI challenges that need to be addressed. Which options are challenges of responsible artificial intelligence (AI)? (Select TWO.)
+
+- Enterprise risk
+- Toxicity
+- Intellectual property
+- Large language models (LLMs)
+- Unsupervised learning
+
+**Toxicity**
+**Intellectual property**
+
+---
+
+### Q90. A company is increasing their use of artificial intelligence (AI) and wants to implement processes to help ensure that they define, implement, and enforce compliance. Which core dimension of responsible AI should they consider? 
+
+- Governance
+- Veracity and robustness
+- Privacy and security
+- Fairness
+
+**Governance**
+
+---
+
+### Q91. A government is using a machine learning (ML) model to identify people who qualify for government programs and services. Officials are concerned about the impact on human rights. They need a method to determine how the model performed its analysis. Which core dimension of responsible AI should they consider? 
+
+- Transparency
+- Veracity and robustness
+- Safety
+- Explainability
+
+**Explainability**
