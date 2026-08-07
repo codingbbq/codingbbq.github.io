@@ -1032,3 +1032,135 @@ The leadership team, new to this technology, needs to understand the core concep
 - Explainability
 
 **Explainability**
+
+---
+
+### Q92. A machine learning (ML) scientist is building an ML model for loan applications at a bank by using Amazon SageMaker AI. They want to mitigate bias in the data and increase visibility into model behavior. Which AWS service or feature helps to meet these needs?
+
+- Amazon Comprehend
+- Amazon SageMaker JumpStart
+- Amazon Augmented AI (Amazon A2I)
+- Amazon SageMaker AI Clarify
+
+**Amazon SageMaker AI Clarify**
+
+---
+
+### Q93. A team is beginning to work with generative artificial intelligence (generative AI) and is concerned about implementing responsible AI. They want to use AWS AI tools and want to understand how to implement them responsibly. Which tool is available to help the team make those decisions? 
+
+- Responsible Use of Machine Learning whitepaper
+- AWS Marketplace
+- AWS AI Service Cards
+- AWS Machine Learning University
+
+**AWS AI Service Cards**
+AI Service Cards are a form of documentation on responsible AI. They provide teams with a single place to find information on the intended use cases and limitations, responsible AI design choices, and deployment and performance optimization best practices for AWS AI services.
+
+---
+
+### Q94. Monitoring is important to maintain high-quality machine learning (ML) models and help ensure accurate predictions. Which AWS services or features help with monitoring and human review? (Select TWO.)
+
+- Amazon SageMaker JumpStart
+- Amazon SageMaker Model Monitor
+- Amazon Augmented AI (Amazon A2I)
+- Amazon SageMaker AI Clarify
+- Amazon Bedrock
+
+**Amazon SageMaker Model Monitor**
+**Amazon Augmented AI (Amazon A2I)**
+
+---
+
+### Q95. A developer has been asked to build an artificial intelligence (AI) application that will be used to help a research team in their work. What should the developer ask the research team to do so that the best model can be selected for the AI application?
+
+- Define the use case of the application broadly
+- Define the use case of the application narrowly
+- Define the governance policies for the application
+- Define which teams will be monitoring the model
+
+**Define the use case of the application narrowly**
+
+---
+
+### Q96. A lending agency is using an artificial intelligence (AI) system so that customers can apply for a loan in Wyoming. However, the development team has tested the model and noticed that there is a bias against loan applicants that have lived in Wyoming for less than 10 years. The development team's research revealed that there is not a lot of data sample available for these groups of people. What could the development team do to reduce the bias against applicants who have lived in Wyoming for less than 10 years?
+
+- Use more inclusive data 
+- Preprocess the data
+- Augment the data 
+- Conduct regular audits on the data
+
+**Augment the data**
+Data augmentation can be used to generate new instances of underrepresented groups. This can help to balance the dataset and prevent biases towards more represented groups. Because there are not a lot of samples for the people who have lived in Wyoming for less than 10 years, using more inclusive data is not an option. All the data for this group that is available is already used. Preprocessing data and conducting regular audits won't help in this situation either.
+
+---
+
+### Q97. An organization is in the beginning stages of building an application that will use generative artificial intelligence (generative AI) technologies. The development team wants to use the best model for the application’s use case. But with the large selection of large language models (LLMs), the development team is not sure which model to select. Also, the application will be public facing, and the team is concerned about the potential of generating harmful content. Which AWS solutions should the team use to address these concerns? (Select TWO).
+
+- Amazon SageMaker Model Dashboard
+- Model Evaluation on Amazon Bedrock
+- Amazon Augmented AI (Amazon A2I)
+- Amazon SageMaker Data Wrangler
+- Guardrails for Amazon Bedrock
+
+**Amazon SageMaker Model Dashboard**
+**Model Evaluation on Amazon Bedrock**
+
+---
+
+### Q98. A developer is considering the pros and cons of developing an AI system with a transparent and explainable model compared to using a black box model. What are the benefits that might convince the developer to use a transparent and explainable model? (Select TWO.)
+
+- They are cheaper to develop and maintain.
+- They are easier to debug and optimize for improvements.
+- They are less complex to develop.
+- They are opaque and keep model information secure. 
+- They can help to build trust.
+
+**They are easier to debug and optimize for improvements.**
+**They can help to build trust.**
+
+---
+
+### Q99. A developer is in the planning stage of a healthcare AI system. The system needs to be developed with a model that offers transparency and explainability. Which AWS solution should the developer consider to make the AWS service explainable? 
+
+- AWS AI Service Cards
+- AWS HealthScribe
+- Amazon SageMaker Autopilot 
+- Amazon SageMaker Data Wrangler
+
+**Amazon SageMaker Autopilot**
+
+--- 
+
+### Q100. A developer is planning on building and training a model for a loan application AI system. To satisfy the need for transparency, the developer needs to catalog details such as the intended use and risk rating of the model, training details and metrics, and custom information. Which AWS solution should the developer consider to make the AWS service to provide transparency for this model?
+
+- AWS AI Service Cards
+- Amazon SageMaker AI Clarify
+- Amazon SageMaker Role Manager
+- Amazon SageMaker Model Cards
+
+**Amazon SageMaker Model Cards**
+
+---
+
+### Q101. A developer is building an AI application. A specific requirement is that the model must be interpretable. Which statement best describes interpretability in a model?
+
+- A model that you can influence the predictions and behavior by changing aspects of the training data
+- A model that avoids causing harm in its interactions with the world
+- A model that provides transparency into a system so a human can explain the model’s output based on the weights and features
+- A model that uses model agnostic methods to explain the behavior of the model in human terms
+
+**A model that provides transparency into a system so a human can explain the model’s output based on the weights and features**
+
+---
+
+### Q102. An organization is concerned about decision-makers making errors in high-stakes situations because of stressful or high-pressure environments. They want to design their AI system to help mitigate errors in these situations with technology. Which design principle should the organization implement to help mitigate potential errors because of stressful or high-pressure environments?
+
+- Design for environmental decision-making 
+- Design for amplified decision-making
+- Design for unbiased decision-making
+- Design for human and AI learning
+
+**Design for amplified decision-making**
+Design for amplified decision-making is a design principle that supports decision-makers in making decisions carefully in high-pressure environments by using technology.
+The design for unbiased decision-making principle focuses on reducing bias. 
+The design for human and AI learning focuses on creating better AI systems. 
