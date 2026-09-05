@@ -1246,3 +1246,42 @@ MLOps is a set of practices and principles that aims to manage the entire lifecy
 
 **Latency**
 For a real-time translation application on mobile devices, latency is a critical factor because the model has to provide translations with minimal delay to ensure a smooth user experience.
+
+---
+
+### Q108. You are working on developing an intelligent question-answering system for a company's internal knowledge base. The system must provide accurate and relevant answers to employees' queries by using the extensive information available in the knowledge base. Which business application of Retrieval Augmented Generation (RAG) would be the most suitable in this scenario?
+
+- Generating high-quality content, such as articles, reports, or summaries
+- Building intelligent question-answering systems grounded in company-specific knowledge
+- Expanding and enriching existing knowledge bases with new information
+- Training a large language model on the knowledge base
+
+**Building intelligent question-answering systems grounded in company-specific knowledge**
+RAG is an approach that combines retrieval from a knowledge base with natural language generation. This makes it well suited for building intelligent question-answering systems grounded in company-specific data, where answers must be accurate, relevant, and specific to the organization's content rather than relying on general training knowledge.
+
+---
+
+### Q109. You are working on a project that requires customizing a large language model for a specific domain, such as legal or medical. The model must be highly accurate and tailored to the domain-specific terminology and knowledge. Which approach would provide the best trade-off between cost and performance for this scenario?
+
+- In-context learning
+- Retrieval Augmented Generation (RAG)
+- Pre-training
+- Fine-tuning
+
+**Fine-tuning**
+Fine-tuning a pre-trained language model on domain-specific data is generally the most cost-effective approach for customizing the model to a specific domain while maintaining high performance. It uses the knowledge and capabilities of the pre-trained model and fine-tunes it on the target domain data, which is less computationally expensive than pre-training from scratch.
+
+---
+
+### Q110. You are developing a large-scale data processing pipeline that involves multiple steps, such as data ingestion, cleaning, transformation, and analysis. Each step requires different computational resources and dependencies. What would be the most important role of agents to ensure efficient and reliable completion of this multi-step task?
+
+- Reporting and logging 
+- Task coordination 
+- Scalability and concurrency
+- Integration and communications
+
+**Task coordination**
+Although other roles like reporting, scalability, and integration are important, task coordination is the most critical role of agents in this scenario to ensure the seamless implementation of the multi-step data processing pipeline.
+
+---
+
