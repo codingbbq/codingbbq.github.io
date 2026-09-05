@@ -1285,3 +1285,27 @@ Although other roles like reporting, scalability, and integration are important,
 
 ---
 
+### Q111. You are developing a state-of-the-art natural language processing (NLP) model for text summarization. Which evaluation method would be most appropriate to ensure the model's performance and quality?
+
+- Automated testing
+- Using benchmark datasets
+- Code review
+- Human evaluation
+
+**Human evaluation**
+For complex NLP tasks like text summarization, human evaluation is the most appropriate method to assess the quality and performance of the model. Human evaluators can provide subjective judgments on the coherence, fluency, and overall quality of the generated summaries, which is difficult to capture through automated metrics alone.
+
+---
+
+### Q112. You are developing a text summarization system, and you need to evaluate the quality of the generated summaries. Which metric would be most suitable for assessing the performance of your system?
+
+- Bilingual Evaluation Understudy (BLEU)
+- BERTScore
+- Recall-Oriented Understudy for Gisting Evaluation (ROUGE)
+- Perplexity
+
+**Recall-Oriented Understudy for Gisting Evaluation (ROUGE)**
+BLEU is primarily used for evaluating machine translation systems. BERTScore is a metric for assessing the semantic similarity between two sentences. Perplexity is a metric for evaluating language models, but is not directly applicable to text summarization tasks.
+
+---
+
