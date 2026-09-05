@@ -1234,3 +1234,15 @@ Real-time inference is ideal for inference workloads where you have real-time, i
 
 **MLOps is a set of practices that aims to manage the end-to-end lifecycle of machine learning (ML) systems, including development, deployment, monitoring, and maintenance.**
 MLOps is a set of practices and principles that aims to manage the entire lifecycle of machine learning systems, from model development and training to deployment, monitoring, and maintenance. It provides a structured approach to streamlining the ML workflow, ensuring reliability, scalability, and reproducibility.
+
+---
+
+### Q107. A developer is creating a real-time translation application for mobile devices. Which criterion would be most important when selecting a pre-trained model for this task?
+
+- Model size
+- Model complexity
+- Latency
+- Customization
+
+**Latency**
+For a real-time translation application on mobile devices, latency is a critical factor because the model has to provide translations with minimal delay to ensure a smooth user experience.
