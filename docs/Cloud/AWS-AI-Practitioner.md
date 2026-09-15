@@ -1309,3 +1309,146 @@ BLEU is primarily used for evaluating machine translation systems. BERTScore is 
 
 ---
 
+### Q113. A company wants an LLM to answer questions using its frequently changing internal policy documents. It wants answers grounded in the latest documents and does not want to retrain the model whenever a policy changes. Which approach is best?
+
+- Retrieval-Augmented Generation (RAG)
+- Fine-tuning the foundation model
+- Pre-training a new foundation model
+- Increasing the model's temperature
+
+**Retrieval-Augmented Generation (RAG)**
+
+The precise mental model is: a retriever searches the company’s document store, relevant passages are added to the prompt as context, and the foundation model generates an answer from that context. When policies change, you update or re-index the knowledge base rather than retrain the model.
+
+- RAG: best for current, private, factual knowledge; can provide source citations; reduces—but does not eliminate—hallucinations.
+- Fine-tuning: best for changing a model’s behavior, style, format, or performance on a specialized task; it is not the normal solution for frequently changing facts.
+- Temperature: controls randomness/creativity, not access to knowledge.
+
+One nuance: RAG does not mean the model independently “browses” the documents. The application or managed service retrieves relevant content and supplies it to the model during inference.
+
+---
+
+### Q114. A team wants a customer-support assistant that can retrieve answers from a private knowledge base, invoke an internal order-status API, and apply content-safety filters. Which Amazon Bedrock capability combination is most appropriate?
+
+- Model evaluation + fine-tuning + temperature control
+- SageMaker Canvas + Amazon Comprehend + Amazon EC2
+- Knowledge Bases + Agents + Guardrails
+- Amazon S3 + AWS Lambda only
+
+**Knowledge Bases + Agents + Guardrails**
+
+Knowledge Bases: retrieve relevant private documents for grounded responses.
+Agents: orchestrate multi-step tasks and invoke APIs or other actions.
+Guardrails: apply configurable safety and topic controls to model inputs and outputs.
+
+---
+
+### Q115. A model achieves 99% accuracy on its training data but only 72% on unseen validation data. Which two actions are reasonable ways to reduce the problem? Select all that apply.
+Choose two or more
+
+- Add regularization
+- Collect more representative training data
+- train for many more epochs
+- use a more complex model
+
+**Add regularization**
+**Collect more representative training data**
+
+A large training–validation gap indicates overfitting: the model has learned the training examples too specifically and generalizes poorly.
+
+Regularization: discourages excessive model complexity.
+More representative data: helps the model learn broader patterns.
+More epochs: usually makes overfitting worse because the model gets more opportunity to memorize the training set.
+More complexity: usually increases overfitting risk.
+Current correction targets are clear: service-selection wording, precision vs. recall, and recognizing overfitting. Next we’ll cover AWS security and shared responsibility, another high-confidence scoring area.
+
+---
+
+### Q116. A company uses Amazon Bedrock to process customer prompts. Which responsibility remains with the customer?
+
+- Securing the AWS data-center facilities
+- Patching the underlying managed model infrastructure
+- Configuring IAM permissions and protecting customer data
+- Replacing failed physical host hardware
+
+**Configuring IAM permissions and protecting customer data**
+
+Under the **AWS shared responsibility model**:
+
+- **AWS** secures the cloud: physical facilities, hardware, and the underlying managed-service infrastructure.
+- **You** secure what you put in the cloud: IAM policies, data access, application permissions, configuration, and how prompts and outputs are handled.
+
+---
+
+### Q117. Which two practices are most appropriate for reducing unsupported answers in a generative-AI application? Select both.
+
+- Ground responses in retrieved, authoritative documents
+- Add validation or human review for high-impact outputs
+- Increase temperature substantially
+- Allow the model to use any available data without filtering
+
+**Ground responses in retrieved, authoritative documents**
+**Add validation or human review for high-impact outputs**
+
+**Grounding** supplies evidence from authoritative sources, while **validation or human review** adds a safety check for consequential outputs. Higher temperature generally increases variation and can make unsupported answers more likely; unrestricted data can introduce irrelevant, biased, or sensitive content.
+
+---
+
+### Q118. A team converts product descriptions into numerical vectors and uses similarity search to find semantically related products. What do those vectors represent?
+
+- Semantic representations of data in a numerical vector space
+- Encrypted copies of the original documents
+- The probability that each token is the next token
+- The model's final generated response
+
+**Semantic representations of data in a numerical vector space**
+
+**Embeddings** are numerical vector representations that capture semantic relationships. Similar meanings tend to be close together in vector space, which is why embedding models are central to semantic search and RAG:
+
+1. Split documents into chunks.
+2. Convert chunks into embeddings.
+3. Store them in a vector-capable index.
+4. Embed the user’s question.
+5. Retrieve the nearest relevant chunks.
+6. Pass those chunks to the foundation model as context.
+
+Do not confuse an **embedding model**—used to represent and retrieve information—with a **generative foundation model**, which produces text, images, or other output.
+
+---
+
+### Q119. A business wants to automatically extract printed text, tables, and form fields from scanned invoices. Which AWS service is the best fit?
+
+- Amazon Textract
+- Amazon Rekognition
+- Amazon Transcribe
+- Amazon Comprehend
+
+**Amazon Textract**
+Extracts text, handwriting, tables, and structured form data from scanned documents and images.
+
+Quick service map worth memorizing:
+
+- **Textract:** documents, OCR, tables, forms
+- **Rekognition:** image and video analysis
+- **Transcribe:** speech to text
+- **Translate:** language translation
+- **Comprehend:** NLP such as sentiment, entities, topics, and PII detection
+- **Polly:** text to speech
+- **Lex:** conversational chatbots using voice or text
+
+---
+
+### Q220. A team needs a generative-AI assistant for a simple, high-volume classification task. The business prioritizes low latency and low cost over maximum reasoning capability. What should the team generally do first?
+
+- Select the largest available model to maximize capability
+- Select a smaller, lower-cost model and validate its quality for the task
+- Train a new foundation model from scratch
+- Increase temperature to reduce latency
+
+**Select a smaller, lower-cost model and validate its quality for the task**
+
+Model choice is a **business tradeoff**, not “the biggest model always wins.” Start with the smallest model that can meet the quality requirement, then evaluate it on representative data. Consider accuracy, latency, throughput, availability, context-window needs, and token cost before moving to a larger model.
+
+Also remember: **temperature affects output randomness, not latency**. A lower temperature may make responses more consistent, but model size, workload, and service capacity are the main latency considerations.
+
+---
