@@ -1807,3 +1807,179 @@ Which capability is the best fit? Choose the best AWS capability.
 
 ---
 
+### Q.241. A company has a **steady, predictable, high-volume** production workload for one foundation model. It needs consistent throughput and wants more predictable serving costs than per-request pricing.
+Which option is generally the best fit?
+Choose the most appropriate Amazon Bedrock pricing/throughput option.
+
+
+- Amazon Bedrock Provisioned Throughput
+- Amazon Bedrock on-demand inference only
+- Amazon S3 Intelligent-Tiering
+- Amazon SageMaker Ground Truth
+
+**Amazon Bedrock Provisioned Throughput**
+
+For a steady, predictable, high-volume workload, the better fit is Amazon Bedrock Provisioned Throughput. It provides reserved model capacity and more predictable throughput/cost characteristics.
+
+On-demand inference: flexible and useful for variable or low-to-moderate workloads.
+Provisioned Throughput: better when utilization is consistently high and predictable, though the commitment must be justified economically.
+
+
+---
+
+
+### Q.242. A team has thousands of unlabeled images and needs a managed workflow for human annotation, worker instructions, quality controls, and labeled training data.
+Which AWS capability is the best fit?
+
+- Amazon SageMaker Ground Truth
+- Amazon Bedrock Knowledge Bases
+- Amazon Bedrock Guardrails
+- Amazon Macie
+
+**SageMaker Ground Truth** supports human labeling workflows for creating training datasets. Do not confuse it with:
+
+- Bedrock Knowledge Bases: retrieve information for an application
+- Bedrock Guardrails: constrain model inputs/outputs
+- Macie: discover sensitive data in S3
+
+
+---
+
+
+### Q.243. A document-processing application sends only low-confidence predictions to human reviewers while automatically accepting high-confidence predictions. The goal is to improve operational decisions without manually reviewing every item. Which AWS capability is the best fit?
+
+- Amazon Augmented AI (Amazon A2I)
+- Amazon SageMaker Ground Truth
+- Amazon Bedrock Knowledge Bases
+- AWS CloudTrail
+
+**Amazon Augmented AI (Amazon A2I)** is for human review of model predictions in an operational workflow, often triggered by confidence thresholds. SageMaker Ground Truth is primarily for creating labeled datasets before or during model development.
+
+
+--- 
+
+
+### Q.244. Which two statements correctly describe reinforcement learning?
+
+- An agent learns actions or a policy from rewards and penalties received from an environment
+- The agent balances exploration of actions with exploitation of known good actions
+- It requires every training example to have a human-provided correct label
+- It is primarily a method for clustering unlabeled observations
+
+**An agent learns actions or a policy from rewards and penalties received from an environment**
+
+
+---
+
+
+### Q.245. A retailer has customer purchase histories but no predefined customer segments or target labels. It wants to discover naturally occurring groups for marketing analysis.
+Which technique is most appropriate?
+
+- Clustering
+- Supervised classification
+- Reinforcement learning
+- Regression
+
+**Clustering** : discovers groups without target labels.
+Regression: predicts a continuous numeric value, such as revenue, demand, or price.
+Classification: predicts a category, such as fraud/not fraud or churn/no churn.
+Reinforcement learning: learns actions through rewards from an environment.
+A fast exam rule: “discover groups” = clustering; “predict a number” = regression; “predict a class” = classification.
+
+
+---
+
+
+### Q.246. Which two tasks are supervised-learning problems because they use known target outcomes during training?
+
+- Predict whether a transaction is fraudulent using historical fraud labels
+- Discover customer groups without predefined labels
+- Predict a house’s sale price from historical examples with known prices
+- Train an agent by giving rewards for actions in an environment
+
+
+**Predict whether a transaction is fraudulent using historical fraud labels**
+**Predict a house’s sale price from historical examples with known prices**
+
+The two supervised tasks are:
+
+Fraud prediction with historical fraud labels
+House-price prediction with known historical prices
+The customer-group task is unsupervised clustering because there are no target labels. The reward-based agent is reinforcement learning, which learns from feedback rather than fixed labeled examples.
+
+
+---
+
+
+### Q.247. A hiring model has acceptable overall accuracy, but its false-negative rate is much higher for one demographic group than for others.
+Which two actions are most appropriate?
+
+- Measure relevant poerformance and error metrics separately for each group
+- Investigate data quality, representation, labels, and potential sources of bias
+- Rely only on overall accuracy because it is acceptable
+- Remove the group attribute and assume fairness is guarantted
+
+**Measure relevant poerformance and error metrics separately for each group**
+**Investigate data quality, representation, labels, and potential sources of bias**
+
+Overall accuracy can hide unequal harm. Evaluate relevant metrics by subgroup, investigate representation and label quality, and consider mitigation such as improving data coverage, rebalancing, revisiting labels, or adjusting the model and decision process. Simply removing the demographic field does not guarantee fairness because other features can act as proxies.
+
+
+---
+
+
+### Q.248. A support assistant only needs the issue category from customer transcripts. The transcripts contain names, email addresses, and account numbers.
+Which two design choices best reduce privacy risk?
+
+- Send only the information necessary for issue classification
+- Detect and redact or tokenize sensitive identifiers before model processing
+- Send the complete transcript because more context is always safer
+- Place raw account numbers in a shared public prompt template
+
+Data minimization and redaction/tokenization reduce the amount of sensitive information exposed to the model and to downstream systems. Encryption and IAM still matter, but they do not make it appropriate to send unnecessary raw PII in the first place.
+
+---
+
+### Q.249. A customer-service agent must check a live order-status system and then explain the result to the customer. The model should decide when to call the order-status operation, but the application must control the actual API execution.
+What is the most appropriate Bedrock design?
+
+- Define an Agent action group backed by a controlled Lambda function or API
+- Put the order database contents into the model’s pre-training data
+- Use Amazon Macie to execute the order-status API
+- Increase temperature so the model can access the live system
+
+**Define an Agent action group backed by a controlled Lambda function or API**
+
+An Agent action group describes the operation and routes execution through a controlled integration such as Lambda. This keeps the model’s planning separate from the application’s permissions and business logic; apply least privilege and validate parameters before performing sensitive actions.
+
+
+---
+
+
+### Q.250. A regulated lender must provide understandable reasons for automated application decisions and allow auditors to inspect how the system reaches those decisions.
+Which responsible-AI concern and response best fit?
+
+- Explainability and transparency; use interpretable methods or explanation techniques with documented decision logic
+- Availability; deploy the model across more regions
+- Tokenization; convert all inputs into embeddings
+- Temperature control; make outputs more random
+
+**Explainability and transparency; use interpretable methods or explanation techniques with documented decision logic**
+
+
+---
+
+
+### Q.251. A deployed SageMaker model must be monitored for data-quality problems, model-quality degradation, bias, and changes in explainability-related behavior.
+Which capability is the best fit?
+
+- Amazon Bedrock Knowledge Bases
+- Amazon SageMaker Ground Truth
+- Amazon SageMaker Model Monitor
+- AWS CloudTrail
+
+**Amazon SageMaker Model Monitor** is designed for monitoring deployed models, including data quality and model-quality signals, with related bias and explainability monitoring capabilities. Ground Truth creates labels; CloudTrail audits API calls.
+
+
+---
+
