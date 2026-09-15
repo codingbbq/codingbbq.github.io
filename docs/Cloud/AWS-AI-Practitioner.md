@@ -1452,3 +1452,358 @@ Model choice is a **business tradeoff**, not “the biggest model always wins.�
 Also remember: **temperature affects output randomness, not latency**. A lower temperature may make responses more consistent, but model size, workload, and service capacity are the main latency considerations.
 
 ---
+
+### Q221. A bank is evaluating an AI model used in loan decisions. Which two practices support responsible AI? Select both.
+
+- Evaluate performance across relevant demographic groups
+- Keep human review for high-impact or disputed decisions
+- Use only overall accuracy and ignore subgroup results
+- Remove audit logs so decisions cannot be traced
+
+
+**Evaluate performance across relevant demographic groups**
+**Keep human review for high-impact or disputed decisions**
+
+- **Subgroup evaluation** can reveal bias or performance disparities hidden by overall averages.
+- **Human oversight** is especially important for high-impact decisions such as lending, employment, healthcare, and eligibility.
+
+Auditability is also valuable: logs, explanations, and documented evaluation results help investigate and govern model behavior. “High overall accuracy” alone is not enough.
+
+
+---
+
+
+### Q222. A fraud model performed well at launch, but its performance drops months later as customer behavior and transaction patterns change. What is the most appropriate response?
+
+
+- Monitor for data or concept drift and retrain or update the model with recent representative data
+- Increase temperature during inference
+- Delete the validation dataset
+- Use a larger foundation model without investigating the data change
+
+**Monitor for data or concept drift and retrain or update the model with recent representative data**
+
+- **Data drift:** the input distribution changes.
+- **Concept drift:** the relationship between inputs and the target changes.
+- **Model monitoring:** detects performance or distribution changes after deployment.
+- **Retraining:** may restore performance, but only after investigating the cause and using representative, governed data.
+
+
+---
+
+
+### Q223. A security team needs to determine which identity invoked an AWS API and who changed an IAM policy. Which service is the primary choice?
+
+- AWS CloudTrail
+- Amazon CloudWatch
+- AWS Key Management Service (AWS KMS)
+- Amazon Macie
+
+**AWS CloudTrail** records API activity and helps answer “who did what, when, and from where?” Keep these distinctions straight:
+
+- **CloudTrail:** API activity and audit history
+- **CloudWatch:** metrics, logs, alarms, and operational monitoring
+- **AWS KMS:** create and control encryption keys
+- **Amazon Macie:** discover and help protect sensitive data in Amazon S3
+
+
+---
+
+
+### Q224. A company wants to control the encryption keys used to protect AI application data stored in AWS. Which AWS service is designed to create and manage those cryptographic keys?
+
+- AWS Key Management Service (AWS KMS)
+- AWS CloudTrail
+- AWS IAM
+- Amazon Macie
+
+**AWS KMS** creates and manages encryption keys and integrates with AWS services for encryption at rest. Remember that KMS manages the keys; it does not replace **IAM**, which controls who is allowed to use those keys or access the encrypted resources.
+
+
+---
+
+
+### Q225. A RAG assistant retrieves a document containing hidden instructions telling the model to ignore its system rules and reveal confidential data. What is this primarily an example of?
+
+- Indirect prompt injection
+- Overfitting
+- Data drift
+- Tokenization
+
+**Indirect prompt injection**. The malicious instruction came from retrieved content rather than directly from the user.
+
+Useful mitigations include treating retrieved documents as **untrusted data**, keeping system instructions separate and higher priority, restricting tool permissions with least-privilege IAM, filtering retrieved content, and validating outputs before taking sensitive actions. A RAG system improves factual grounding, but it does not automatically make retrieved content safe.
+
+
+---
+
+
+### Q226. Which two controls best reduce the risk that malicious instructions in retrieved documents cause an AI agent to take unsafe actions? Select both.
+
+- Give the agent least-privilege permissions and limit high-risk tools
+- Treat retrieved documents as untrusted data and validate outputs
+- Allow retrieved documents to override system instructions
+- Increase temperature to make the model more creative
+
+**Give the agent least-privilege permissions and limit high-risk tools**
+**Treat retrieved documents as untrusted data and validate outputs**
+
+- **Least privilege** limits the damage if an agent is manipulated.
+- **Treating retrieved text as untrusted** prevents documents from silently becoming instructions.
+- **Output and action validation** adds a second check before sensitive operations.
+
+
+---
+
+
+### Q227. A spam filter is being tuned for an email provider whose biggest problem is legitimate emails being incorrectly sent to spam. Which metric should the team prioritize?
+
+- Precision
+- Recall
+- Mean squared error
+- Inference throughput
+
+**Precision**
+
+Here the costly error is **false positive**: a legitimate email is incorrectly labeled as spam. Precision asks:
+> Of everything the filter labeled spam, how much really was spam?
+
+Higher precision means fewer legitimate emails are trapped. Use **recall** when missing a true positive is the costly error—for example, failing to detect fraud or a dangerous medical condition.
+
+| Priority | Metric |
+|---|---|
+| Avoid false positives | Precision |
+| Avoid false negatives | Recall |
+
+
+---
+
+
+### Q228. A model has poor performance on both its training data and validation data. Which diagnosis and response are most appropriate?
+
+- Underfitting; try a more expressive model or better features
+- Overfitting; add regularization and reduce model complexity
+- Data leakage; remove the validation set
+- Concept drift; increase temperature
+
+**Underfitting; try a more expressive model or better features**
+
+- **Underfitting:** the model cannot capture the pattern well, so performance is poor on **both training and validation data**. Causes can include an overly simple model, weak features, insufficient training, or under-representative data.
+- **Overfitting:** the model performs well on training data but poorly on unseen validation/test data because it learned the training examples too specifically.
+
+So the key test is the **training-versus-validation gap**, not whether the training data itself is “poor.”
+
+
+---
+
+
+### Q229. A data-science team has a labeled dataset and needs full control over training jobs, algorithms, hyperparameters, and deployment of a custom ML model. Which AWS service is the better fit?
+
+
+- Amazon SageMaker AI
+- Amazon Bedrock
+- Amazon Comprehend
+- Amazon Textract
+
+**Amazon SageMaker AI** is the better fit when the requirement is custom model training with control over algorithms, hyperparameters, training jobs, endpoints, and the ML lifecycle.
+
+Exam nuance: Bedrock can support some model customization, but if the scenario emphasizes **training control, custom algorithms, infrastructure, or end-to-end ML operations**, choose SageMaker AI. If it emphasizes **consuming a pre-trained foundation model through a managed generative-AI API**, choose Bedrock.
+
+
+---
+
+
+### Q230. A high-volume application performs a simple text classification task. Quality tests show that a smaller model is sufficient. Which two changes are most likely to reduce cost and latency? Select both.
+
+- Use the smaller model that meets the quality target
+- Limit unnecessary output length
+- Swith to the largest available model
+- Add unrelated context to every prompt
+
+**Use the smaller model that meets the quality target**
+**Limit unnecessary output length**
+
+Cost and latency are driven partly by model size and the number of tokens processed/generated. Use the smallest model that passes evaluation, keep prompts focused, and constrain unnecessary output—while preserving enough context for quality.
+
+Also watch for a common tradeoff: **more context can improve grounding but increase cost, latency, and noise**. Retrieval should return relevant chunks, not the entire document collection.
+
+
+---
+
+
+### Q231. A RAG application fails because the retrieved documents plus the user prompt exceed the foundation model’s maximum context window. What is the best first response?
+
+- Retrieve fewer relevant chunks or summarize/chunk the context before sending it
+- Increase temperature
+- Use CloudTrail to enlarge the context window
+- Fine-tune the model on all documents automatically
+
+**Retrieve fewer relevant chunks or summarize/chunk the context before sending it**
+
+
+---
+
+
+### Q232. A RAG application fails because the retrieved documents plus the user prompt exceed the foundation model’s maximum context window. What is the best first response?
+
+- Retrieve fewer relevant chunks or summarize/chunk the context before sending it
+- Increase temperature
+- Use CloudTrail to enlarge the context window
+- Fine-tune the model on all documents automatically
+
+**Retrieve fewer relevant chunks or summarize/chunk the context before sending it**
+
+A **context window** is the maximum number of tokens the model can process for the prompt and generated response. When it is exceeded, reduce the input:
+
+- Retrieve fewer, more relevant chunks.
+- Chunk documents appropriately.
+- Summarize long material.
+- Remove repeated instructions or irrelevant history.
+
+
+---
+
+
+### Q233. A prompt contains three input-and-ideal-output examples before asking the model to classify a new customer message. What is this technique called?
+
+- Few-shot prompting
+- Zero-shot prompting
+- Model pre-training
+- Reinforcement learning
+
+**Few-shot prompting** provides examples to demonstrate the desired task and output format.
+
+Remember:
+
+- **Zero-shot:** no examples; only instructions.
+- **One-shot:** one example.
+- **Few-shot:** several examples.
+- **Fine-tuning:** changes model parameters through training; it is not just adding examples to a prompt.
+
+
+---
+
+
+### Q234. A security team wants to discover personally identifiable information and other sensitive data stored in Amazon S3. Which AWS service is designed for this purpose?
+
+- Amazon Macie
+- AWS CloudTrail
+- AWS KMS
+- Amazon Rekognition
+
+**Amazon Macie**
+
+Amazon Macie: discovers sensitive data such as PII in Amazon S3
+AWS KMS: creates and manages encryption keys
+AWS CloudTrail: records API activity for auditing
+Amazon Rekognition: analyzes images and video
+
+
+---
+
+
+### Q235. A retailer wants to score **50 million product-demand records every night**. Results are needed by 6 a.m.; no interactive user is waiting for a response. The retailer wants to minimize infrastructure cost and avoid maintaining an always-on endpoint.
+Which approach is most appropriate?
+
+- Use a real-time SageMaker AI endpoint
+- Run a batch inference job with SageMaker AI Batch Transform
+- Use an Amazon Bedrock Agent for each record
+- Invoke a synchronous Lambda function for every record
+
+**Run a batch inference job with SageMaker AI Batch Transform**
+
+Use **SageMaker AI Batch Transform** for large, non-interactive workloads. It avoids an always-on endpoint and is more cost-appropriate when latency is not a user requirement. Real-time endpoints are for low-latency predictions; Bedrock Agents are for tool-using generative workflows, not bulk tabular scoring.
+
+
+---
+
+
+### Q236. A credit-risk model scores 99% on validation data but performs poorly after deployment. Investigation shows one training feature records whether a borrower entered collections **after** the loan decision was made.
+Which two conclusions are correct?
+
+- The model has target leakage/data leakage
+- A time-aware validation split and removal of post-decision features can help
+- Lowering inference temperature should solve the problem
+- This is necessarily ordinary overfitting and nothing else
+
+**The model has target leakage/data leakage**
+**A time-aware validation split and removal of post-decision features can help**
+
+This is **target leakage**: the feature contains information that would not be available at prediction time. The model appears excellent because validation accidentally lets it see the future. Remove post-decision features and use a time-aware split that mirrors production.
+
+
+---
+
+
+### Q237. A fraud classifier’s threshold is lowered so that it flags more transactions for review. What will generally happen, assuming other factors remain constant?
+Choose the most likely effect of lowering the classification threshold.
+
+
+- Recall tends to increase while precision tends to decrease
+- Precision and recall both always increase
+- Recall tends to decrease while precision tends to increase
+- Neither precision nor recall can change
+
+**Recall tends to increase while precision tends to decrease**
+
+Lowering the threshold makes the classifier label more cases as positive. That usually captures more true positives (**higher recall**) but also admits more false positives (**lower precision**). The exact tradeoff depends on the data, but that is the expected exam relationship.
+
+
+---
+
+
+### Q238. A team uses the same test set to choose hyperparameters repeatedly and then reports performance on that test set. What is the main problem?
+Choose the best explanation.
+
+- The test set has effectively influenced model selection, so its reported score may be optimistically biased
+- The test set makes the model underfit because it is never used for training
+- The test set automatically causes data encryption failures
+- The test set can only be used for unsupervised learning
+
+**The test set has effectively influenced model selection, so its reported score may be optimistically biased**
+
+The test set should remain untouched until final evaluation. If it repeatedly influences hyperparameter or model choices, it is no longer an unbiased estimate of generalization; the score can be overly optimistic. Use training data for fitting, validation data for tuning, and a held-out test set for final assessment.
+
+
+---
+
+
+### Q239. A RAG application gives poor answers because the retrieved passages are mostly irrelevant to the user’s question. The foundation model itself performs well when given the correct passage.
+What should the team improve first? Choose the best first intervention.
+
+- Improve document chunking, embeddings, indexing, or retrieval ranking
+- Fine-tune the foundation model before examining retrieval
+- Increase temperature substantially
+- Add more irrelevant documents to the prompt
+
+
+**Improve document chunking, embeddings, indexing, or retrieval ranking**
+
+This is a **retrieval-quality problem**, not primarily a generation problem. In RAG, debug the pipeline in order:
+
+1. document parsing and chunking,
+2. embedding quality,
+3. indexing,
+4. retrieval ranking and filtering,
+5. prompt assembly,
+6. generation and output validation.
+
+Fine-tuning a model cannot compensate for consistently missing the relevant evidence.
+
+
+---
+
+
+### Q240. A team wants to compare several foundation models for a summarization task using a representative prompt dataset, quality metrics, and cost/latency measurements before selecting one for production.
+Which capability is the best fit? Choose the best AWS capability.
+
+- Amazon Bedrock model evaluation
+- Amazon Bedrock Guardrails
+- Amazon Bedrock Agents
+- AWS CloudTrail
+
+**Amazon Bedrock model evaluation**
+
+
+---
+
