@@ -1983,3 +1983,145 @@ Which capability is the best fit?
 
 ---
 
+### Q.252. A team needs to version trained models, store metadata and evaluation results, track approval status, and require approval before deploying a model to production.
+Which SageMaker capability is the best fit?
+
+- SageMaker Feature Store
+- Amazon Bedrock Guardrails
+- SageMaker Data Wrangler
+- SageMaker Model Registry
+
+**SageMaker Model Registry** supports model versions, metadata, evaluation information, approval workflows, and controlled promotion to production.
+
+
+---
+
+
+### Q.253. A fraud system calculates customer features during training and also needs to retrieve those same features in real time during prediction. The team wants a centralized feature repository to reduce training-serving skew. Which capability is the best fit?
+
+- SageMaker Model Registry
+- SageMaker Feature Store
+- Amazon Bedrock Agents
+- Amazon Macie
+
+**SageMaker Feature Store** helps centralize and reuse features for training and inference, reducing training-serving skew—the problem where features are calculated differently in development and production.
+
+
+---
+
+
+### Q.254. A user submits a question to a RAG application. Which sequence best describes the request flow?
+
+- Generate an answer → embed the answer → retrieve documents → display the answer
+- Retrieve all documents → fine-tune the model → generate embeddings → answer the user
+- Embed the user query → retrieve relevant chunks → add them to the prompt → generate the answer
+- Tokenize the user query → train a new foundation model → retrieve labels → generate the answer
+
+**Embed the user query → retrieve relevant chunks → add them to the prompt → generate the answer**
+
+The RAG sequence is:
+Embed the user’s query.
+Retrieve the most relevant chunks.
+Add those chunks to the prompt.
+Generate the grounded answer.
+
+
+---
+
+
+### Q.255. A team wants to examine bias in datasets and model predictions, compare performance across groups, and understand which input features influence predictions.
+Which AWS capability is the best fit?
+
+- SageMaker Model Registry
+- SageMaker Feature Store
+- Amazon Bedrock Guardrails
+- SageMaker Clarify
+
+**SageMaker Clarify** supports bias detection and explainability analysis. It complements—not replaces—human judgment and governance; a fairness metric or feature attribution is evidence for investigation, not proof that a model is safe.
+
+
+---
+
+
+### Q.256. A business analyst has tabular data and wants to build, evaluate, and use a predictive model without writing code or managing training infrastructure.
+Which AWS capability is the best fit?
+
+- Amazon Bedrock Agents
+- SageMaker Canvas
+- SageMaker Ground Truth
+- Amazon Macie
+
+**SageMaker Canvas**
+
+- SageMaker Canvas: no-code or low-code model building and predictions, especially for business analysts and tabular data.
+- Bedrock Agents: generative-AI agents that reason over tasks and call tools.
+- Ground Truth: create labeled datasets.
+- Macie: discover sensitive data in S3.
+
+
+---
+
+
+### Q.257. A company wants to analyze customer comments for sentiment, named entities, key phrases, and language without building its own NLP model.
+Which AWS service is the best fit?
+
+- Amazon Polly
+- Amazon Comprehend
+- Amazon Transcribe
+- Amazon Rekognition
+
+**Amazon Comprehend** provides managed NLP capabilities such as sentiment, entities, key phrases, language detection, classification, and PII detection. Polly converts text to speech; Transcribe converts speech to text; Rekognition analyzes images and video.
+
+
+---
+
+
+### Q.258. A company updates policy documents in an Amazon S3 data source used by a Bedrock Knowledge Base. The application should use the new policies without retraining the foundation model.
+What should the team do?
+
+- Fine-tune the foundation model on every policy update
+- Register a new SageMaker model version
+- Change the temperature parameter
+- Synchronize or re-ingest the Knowledge Base data source so embeddings and index entries are refreshed
+
+**Synchronize or re-ingest the Knowledge Base data source so embeddings and index entries are refreshed**
+
+A Knowledge Base update requires refreshing the data source so documents are parsed, embedded, and reflected in the retrieval index. RAG keeps knowledge current through ingestion and retrieval; it does not require retraining the foundation model for every document change.
+
+
+---
+
+
+### Q.259. A model’s behavior becomes unreliable after a third party contributes a dataset. An audit finds that some training examples were deliberately mislabeled to make the model fail on a particular trigger pattern.
+What is this threat, and which mitigation is appropriate?
+
+- It is ordinary model drift caused by changing production data
+- It is training-data poisioning or data poisoning
+- Increase temperature to make the model robust
+- Validate data provenance, labels, quality, and integrity before training
+
+**It is training-data poisioning or data poisoning**
+**Validate data provenance, labels, quality, and integrity before training**
+
+This is training-data poisoning. The key controls are trusted data provenance, validation of labels and content, quality checks, access controls for training data, and monitoring for suspicious contributions.
+
+
+---
+
+
+### Q.260. An attacker queries a prediction API and uses the model’s confidence responses to determine whether a particular person’s medical record was included in the training dataset.
+What type of attack is this?
+
+- Data poisoning
+- Indirect prompt injection
+- Membership inference
+- Concept drift
+
+Membership inference: determine whether a particular record was in the training data.
+Model inversion: infer or reconstruct sensitive characteristics from model outputs.
+Data poisoning: corrupt the training data.
+Indirect prompt injection: manipulate an application through retrieved or external content.
+
+
+---
+
