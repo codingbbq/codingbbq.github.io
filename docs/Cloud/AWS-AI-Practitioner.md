@@ -2125,3 +2125,482 @@ Indirect prompt injection: manipulate an application through retrieved or extern
 
 ---
 
+
+### Q.261. An attacker repeatedly queries a model and uses its outputs to reconstruct sensitive attributes about people represented in the training data, even though the original records are not returned directly.
+Which attack is the closest match?
+
+- Membership inference
+- Data poisoning
+- Model inversion
+- Prompt injection
+
+**Model inversion**
+
+Membership inference: was a specific record included?
+Model inversion: infer sensitive features or reconstruct information about training examples from model behavior.
+Data poisoning: malicious training examples.
+Prompt injection: malicious instructions influencing an application.
+
+
+---
+
+
+### Q.262. A RAG assistant produces fluent answers, but the team needs to measure whether each answer is actually supported by the retrieved passages rather than invented by the model.
+Which evaluation concept is most relevant?
+
+- Token count only
+- Groundedness or faithfulness of the generated answer to the retrieved evidence
+- Network throughput
+- Training loss of the embedding model
+
+**Groundedness or faithfulness of the generated answer to the retrieved evidence**
+Groundedness/faithfulness asks whether the output is supported by the supplied evidence. This is distinct from fluency: a response can sound excellent while still being unsupported. In a RAG system, evaluate retrieval quality and answer groundedness separately.
+
+
+---
+
+
+### Q.263. A team evaluates automatically generated summaries against human-written reference summaries and wants a lexical-overlap metric commonly used for summarization.
+Which metric is the best fit?
+
+- Accuracy
+- ROUGE
+- Mean absolute error
+- Silhouette score
+
+**ROUGE**
+ROUGE: commonly used for summarization by comparing generated text with reference text, often using n-gram or sequence overlap.
+Silhouette score: evaluates how well points fit their assigned clusters in unsupervised clustering.
+Accuracy: classification correctness.
+Mean absolute error: average absolute error for numeric prediction.
+
+
+---
+
+
+### Q.264. A team groups unlabeled customers into clusters and wants to measure whether each customer is more similar to its own cluster than to neighboring clusters.
+Which metric is most appropriate?
+
+- ROUGE
+- Silhouette score
+- Recall
+- BLEU
+
+**Silhouette score**
+A higher silhouette score generally indicates that points are close to their own cluster and far from neighboring clusters. It is an unsupervised-clustering metric, not a text-generation metric.
+
+
+---
+
+
+### Q.265. A model predicts delivery times. Large errors are especially costly, so the team wants an error metric that penalizes large errors more heavily than small errors.
+Which metric is most appropriate?
+
+- Mean absolute error (MAE)
+- Accuracy
+- Root mean squared error (RMSE)
+- Silhouette score
+
+**Root mean squared error (RMSE)**
+RMSE squares each error before averaging and taking the square root, so large errors contribute disproportionately. MAE treats each absolute error linearly and is less sensitive to outliers.
+
+
+---
+
+
+### Q.266. A fraud dataset is highly imbalanced, and the team wants one metric that balances precision and recall rather than being dominated by the large number of legitimate transactions.
+Which metric is most appropriate?
+
+- Overall accuracy
+- Mean squared error
+- Silhouette score
+- F1 score
+
+**F1 score**
+F1 is the harmonic mean of precision and recall, so it is useful when both false positives and false negatives matter and class imbalance makes raw accuracy misleading.
+
+MSE/RMSE/MAE: regression metrics for numeric predictions.
+F1: classification metric balancing precision and recall.
+Silhouette: clustering metric.
+
+
+---
+
+
+### Q.267. A fraud model produces a score for each transaction. The team wants to evaluate how well it ranks fraud above legitimate transactions across many possible classification thresholds, before choosing one operating threshold. Which metric is most appropriate?
+
+- MAE
+- AUC-ROC
+- ROUGE
+- Silhouette score
+
+**AUC-ROC** summarizes ranking performance across classification thresholds. It is useful before selecting a specific threshold, while precision, recall, and F1 describe performance at a chosen threshold.
+
+
+---
+
+
+### Q.268. A knowledge base contains both natural-language policies and exact identifiers such as product SKUs, ticket numbers, and error codes. Users ask questions using both paraphrases and exact identifiers.
+Which retrieval strategy is most appropriate?
+
+- Use only vector similarity search and remove all identifiers
+- Use only random document sampling
+- Use hybrid retrieval combining semantic vector search with keyword or lexical search
+- Fine-tune the model on the documents and disable retrieval
+
+**Use hybrid retrieval combining semantic vector search with keyword or lexical search**
+Semantic similarity: paraphrases and conceptually related language
+Lexical matching: exact SKUs, ticket IDs, error codes, and named entities
+This is often stronger than relying on only one retrieval method.
+
+
+---
+
+
+### Q.269. A Bedrock application needs to invoke one approved foundation model and read documents from one specific S3 prefix. Which permission design best follows least privilege?
+
+- Attach AdministratorAccess so the application cannot be blocked
+- Use a dedicated IAM role with only the required model-invocation action and scoped S3 read access
+- Put a long-lived AWS access key in the application prompt
+- Make the S3 bucket public and allow every model to access it
+
+**Use a dedicated IAM role with only the required model-invocation action and scoped S3 read access**
+A dedicated role with narrowly scoped actions and resources is the correct least-privilege design. Also prefer temporary role credentials over long-lived access keys, and separate permissions for reading data, invoking models, and performing administrative operations.
+
+
+---
+
+
+### Q.270. A data analyst wants a visual interface to import, transform, combine, and analyze datasets before model training, with minimal coding.
+Which SageMaker capability is the best fit?
+
+- SageMaker Model Registry
+- SageMaker Feature Store
+- SageMaker Data Wrangler
+- SageMaker Model Monitor
+
+**SageMaker Data Wrangler** is for visual data preparation and transformation. It is different from Feature Store, which manages reusable features for training and inference.
+
+
+---
+
+
+### Q.271. A team wants to automate a repeatable workflow containing data processing, model training, evaluation, conditional approval, and deployment.
+Which SageMaker capability is the best fit?
+
+- SageMaker Model Monitor
+- Amazon Bedrock Agents
+- SageMaker Feature Store
+- SageMaker Pipelines
+
+**SageMaker Pipelines** orchestrates repeatable ML workflows and can include processing, training, evaluation, approval conditions, and deployment steps.
+
+
+---
+
+
+### Q.272. A team has a labeled tabular dataset and wants AWS to automatically try suitable algorithms and configurations, generate candidate models, and help select a model without manually designing the full training workflow.
+Which capability is the best fit?
+
+- SageMaker Model Monitor
+- SageMaker Autopilot
+- Amazon Bedrock Knowledge Bases
+- SageMaker Ground Truth
+
+
+**SageMaker Autopilot** automates much of the model-development process for labeled tabular data, including candidate generation and algorithm/configuration selection. It does not remove the need for data quality checks, evaluation, governance, or production monitoring.
+
+
+---
+
+
+### Q.273. A developer wants to browse pretrained models and solution templates, test them quickly, and deploy a selected model through SageMaker with minimal initial setup.
+Which capability is the best fit?
+
+- SageMaker Data Wrangler
+- Amazon Bedrock Guardrails
+- SageMaker JumpStart
+- SageMaker Model Registry
+
+**SageMaker JumpStart** provides access to pretrained models, solution templates, and quick-start deployment paths. It is distinct from Bedrock: JumpStart is oriented toward selecting and deploying models through the SageMaker ecosystem, while Bedrock is a managed API platform for using foundation models and building GenAI applications.
+
+
+---
+
+
+### Q.274. Which two statements are accurate risks or limitations that a production GenAI application must address?
+
+- A larger model guarantees factual correctness and eliminates bias
+- A model can produce fluent but unsupported or incorrect information
+- Setting temperature to zero guarantees factual correctness
+- Prompts or retrieved content can expose sensitive data or enable prompt-injection risks without controls
+
+
+**A model can produce fluent but unsupported or incorrect information**
+**Prompts or retrieved content can expose sensitive data or enable prompt-injection risks without controls**
+
+
+---
+
+
+### Q.275. A fraud model’s input distribution changes because customers adopt new payment methods. However, the relationship between the input features and the fraud label remains stable.
+What is this primarily an example of?
+
+- Concept drift
+- Target leakage
+- Data drift
+- Overfitting
+
+**Data drift**
+Data drift: the input distribution changes.
+Concept drift: the relationship between inputs and the target changes.
+Target leakage: future or unavailable information enters training.
+Overfitting: the model memorizes training patterns and generalizes poorly.
+
+
+---
+
+
+### Q.276. A fraud model receives the same types of transaction features as before, but criminals change tactics and the relationship between those features and fraud outcomes changes.
+What is this primarily an example of?
+
+- Data drift
+- Training-serving skew
+- Concept drift
+- Data poisoning
+
+**Concept drift** means the mapping from inputs to outcomes has changed, even if the input fields themselves look similar. Monitoring must compare both data distributions and model outcomes where labels become available.
+
+
+---
+
+
+### Q.277. Which design most directly reduces the risk that a feature is calculated differently during training and online inference?
+
+- Create separate, independently maintained transformations for training and production
+- Centralize feature definitions and transformations for consistent offline and online use
+- Remove validation so the pipeline runs faster
+- Increase model temperature during inference
+
+**Centralize feature definitions and transformations for consistent offline and online use**
+Centralizing transformations and feature definitions helps ensure the same logic is used offline and online. This is one reason feature-management systems and reusable preprocessing pipelines are valuable.
+
+
+---
+
+
+### Q.278. A company has a stable, specialized classification task and thousands of high-quality labeled examples. Prompting alone is not accurate enough. The task does not depend on frequently changing external documents.
+Which approach is most appropriate to consider?
+
+- RAG over frequently changing documents
+- Fine-tuning a suitable foundation model with the labeled examples
+- Increasing temperature to improve classification accuracy
+- Pre-training a new foundation model from scratch
+
+**Fine-tuning a suitable foundation model with the labeled examples**
+Fine-tuning is appropriate when the task and desired behavior are stable, you have representative labeled examples, and the main problem is task performance or behavior—not access to changing facts.
+
+
+---
+
+
+### Q.279. A customer-support application must analyze a photograph of a damaged product together with the customer’s written description and produce a response.
+What should the team select?
+
+- A text-only foundation model
+- A multimodal foundation model that accepts image and text inputs
+- An embedding model used only for vector similarity search
+- A speech-to-text model
+
+**A multimodal foundation model that accepts image and text inputs**
+A multimodal foundation model is needed when the model must directly interpret multiple input types such as images and text. An embedding model alone represents content for retrieval; it does not necessarily generate the customer response.
+
+
+---
+
+
+### Q.280. A streaming service wants to recommend movies for each user based on viewing history, ratings, and item interactions. The team wants a managed recommendation capability rather than building the recommendation algorithm from scratch. Which AWS service is the best fit?
+
+- Amazon Forecast
+- Amazon Personalize
+- Amazon Rekognition
+- Amazon Textract
+
+**Amazon Personalize** is designed for individualized recommendations based on user, item, and interaction data.
+
+
+---
+
+
+### Q.281. A retailer wants to predict weekly product demand for each store using historical sales, seasonality, and related time-dependent variables. Which AWS service is the best fit?
+
+- Amazon Personalize
+- Amazon Comprehend
+- Amazon Macie
+- Amazon Forecast
+
+**Amazon Forecast** is designed for time-series forecasting such as demand, inventory, capacity, and resource planning.
+
+
+---
+
+
+### Q.282. A company wants to analyze recorded call-center audio and identify the sentiment of each conversation. Which two services would form the most appropriate basic pipeline?
+
+- Amazon Polly
+- Amazon Transcribe
+- Amazon Rekognition
+- Amazon Comprehand
+
+
+**Amazon Transcribe**
+**Amazon Comprehand**
+
+The pipeline is:
+
+Amazon Transcribe converts call audio to text.
+Amazon Comprehend analyzes sentiment and other linguistic signals.
+Polly goes in the opposite direction—text to speech—and Rekognition analyzes images/video.
+
+
+---
+
+
+### Q.283. A finance team wants to process scanned invoices, extract line items and totals, then generate a plain-language explanation of unusual charges. Which two services are the most appropriate core components?
+
+- Amazon Rekognition
+- Amazon Bedrock
+- Amazon Transcribe
+- Amazon Textract
+
+**Amazon Bedrock**
+**Amazon Textract**
+
+Textract: extracts invoice text, tables, and form fields.
+Bedrock: generates the natural-language explanation of unusual charges.
+Rekognition: analyzes image/video content such as objects, faces, labels, and scenes; it is not the general service for document extraction or explanation generation.
+
+
+---
+
+
+### Q.284. A company wants to transcribe recorded support calls and then generate concise summaries with follow-up action items. Which two services are the best core components?
+
+- Amazon Transcribe
+- Amazon Rekognition
+- Amazon Bedrock
+- Amazon Macie
+
+**Amazon Transcribe**
+**Amazon Bedrock**
+
+Use Transcribe to convert audio to text and Bedrock to summarize, extract actions, or generate a structured response from the transcript.
+
+
+---
+
+
+### Q.285. A Bedrock Agent can call an internal refund API. The organization wants to prevent the agent from issuing unauthorized refunds or sending arbitrary parameters to the API. Which two controls are most important?
+
+- Give the agent’s role broad administrator permissions
+- Validate action-group parameters and enforce business rules in the application
+- Use least-privilege IAM permissions for the tool and underlying resources
+- Increase temperature so the agent reasons more creatively-
+
+**Validate action-group parameters and enforce business rules in the application**
+**Use least-privilege IAM permissions for the tool and underlying resources**
+
+Agent safety needs both layers:
+
+IAM least privilege: limits what the agent is technically allowed to call.
+Application-side validation: checks amounts, identities, authorization, and business rules before executing the action.
+Guardrails can help with model content, but they are not a substitute for authorization controls around real-world actions.
+
+
+---
+
+
+### Q.286. A company wants to block unsafe topics, filter harmful model responses, and detect or mask sensitive information in a Bedrock application. The requirement is about model content, not which AWS resources the caller can access. Which capability is the best fit?
+
+- AWS IAM policies
+- Amazon Bedrock Guardrails
+- AWS KMS key policies
+- AWS CloudTrail
+
+**Amazon Bedrock Guardrails**
+Bedrock Guardrails address model content controls such as denied topics, harmful content filtering, sensitive-information handling, and input/output policy enforcement. IAM controls who can access resources; KMS controls encryption keys; CloudTrail records API activity.
+
+
+---
+
+
+### Q.287. A security team needs to:
+1 Discover sensitive data stored in Amazon S3.
+2 Control the encryption keys used to protect that data.
+Which two AWS services should it use?
+
+- Amazon Macie
+- AWS Cloudtrail
+- Amazon Comprehand
+- AWS KMS
+
+**Amazon Macie**
+**Amazon KMS**
+Amazon Macie: discovers sensitive data in S3.
+AWS KMS: creates and controls encryption keys.
+CloudTrail: audits API activity.
+Comprehend: analyzes text, including PII detection in supported NLP workflows.
+
+
+---
+
+
+### Q.288. A team wants to protect prompts and model responses while they travel between an application and an AWS service over the network. Which control is most directly relevant?
+
+- AWS KMS encryption at rest
+- Amazon Macie discovery
+- TLS/HTTPS encryption in transit
+- AWS CloudTrail logging
+
+**TLS/HTTPS protects data in transit**. KMS is primarily about key management and encryption at rest, while CloudTrail provides audit records rather than encryption.
+
+
+---
+
+
+### Q.289. A team wants to send a copy of live production requests to a new model for evaluation, but the new model’s predictions must not affect customer decisions yet. Which deployment strategy best fits?
+
+- Immediately replace the production model
+- Shadow deployment that mirrors traffic without serving the new model’s outputs
+- Delete the old model before testing the new one
+- Fine-tune the new model using production decisions as labels
+
+**Shadow deployment that mirrors traffic without serving the new model’s outputs**
+A shadow deployment observes real traffic without exposing the candidate model’s decisions to users or downstream systems. It is useful for comparing behavior safely before a live rollout.
+
+
+---
+
+
+### Q.290. A team wants to route 5% of real user traffic to a new model, monitor errors and business metrics, and increase traffic gradually if results are acceptable. Which rollout strategy best fits?
+
+- Full replacement deployment
+- Offline batch evaluation only
+- Shadow deployment with no live users receiving the candidate output
+- Canary deployment with gradual traffic increase
+
+**Canary deployment with gradual traffic increase**
+A canary deployment gradually exposes real users to the new model, with monitoring and rollback criteria. A shadow deployment does not expose users to the candidate output.
+
+
+---
+
+
+### Q.291. A product team randomly assigns users to either Model A or Model B and compares conversion rate and user satisfaction between the two groups. What is this evaluation approach?
+
+- Shadow deployment
+- A/B testing
+- Data poisoning
+- Batch inference
+
+**A/B testing**
