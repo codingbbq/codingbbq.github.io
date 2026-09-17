@@ -1,5 +1,40 @@
 Amazon Certified AI Practitioner
 
+### Service matching
+
+- **Amazon Bedrock:** use foundation models through managed APIs; RAG, Agents, Knowledge Bases, Guardrails
+- **Amazon SageMaker AI:** build, train, tune, deploy, and manage custom ML models
+- **Amazon Textract:** OCR, documents, tables, and forms
+- **Amazon Rekognition:** image and video analysis
+- **Amazon Transcribe:** speech to text
+- **Amazon Translate:** language translation
+- **Amazon Comprehend:** NLP, sentiment, entities, topics, and PII detection
+- **Amazon Polly:** text to speech
+- **Amazon Lex:** conversational bots
+- **Amazon Macie:** sensitive-data discovery in S3
+- **AWS KMS:** encryption-key management
+- **AWS CloudTrail:** API audit trail
+- **Amazon CloudWatch:** metrics, logs, alarms, and monitoring
+- **AWS IAM:** identities, permissions, and least privilege
+
+### High-yield distinctions
+
+- **RAG:** retrieve current/private knowledge and place it in the prompt.
+- **Fine-tuning:** change model behavior, style, or task performance.
+- **Pre-training:** train a foundation model from massive datasets.
+- **Embeddings:** numerical semantic representations used for similarity search.
+- **Temperature:** controls randomness, not factual accuracy or latency.
+- **Context window:** maximum tokens the model can process; reduce or summarize input when exceeded.
+- **Few-shot prompting:** include several examples in the prompt.
+- **Precision:** reduce false positives.
+- **Recall:** reduce false negatives.
+- **Overfitting:** strong training performance, weak validation performance.
+- **Underfitting:** weak performance on both training and validation data.
+- **Data drift:** input data distribution changes after deployment.
+- **Indirect prompt injection:** malicious instructions hidden in retrieved content.
+
+---
+
 ### Q1. What is fine-tuning used for ?
 
 - Train a model from scratch
