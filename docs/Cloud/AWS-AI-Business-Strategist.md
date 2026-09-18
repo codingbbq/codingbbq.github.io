@@ -1,4 +1,4 @@
-- AWS AI Business Strategist
+AWS AI Business Strategist
 
 ### Q.1. The CDO's deadline is Friday. A vendor proposal lands in your inbox the same week and contains the following sentence: "Our system runs inference in real time on each new transaction to produce a fraud score." Which two AI concepts does the vendor's sentence reference, and how would you translate them for the CDO?
 
@@ -6,8 +6,9 @@
 - B. Algorithm and model: the underlying recipe and the trained system
 - C. Training and algorithm: the process that produced the model and the recipe behind it
 - D. Model and training: the trained system and the process that built it
- 
-A) Inference is the model making a decision on new data, and the fraud score is the prediction it produces. Recognizing the pair lets you translate the line for a non-technical audience: "The system applies what it has already learned to score every new transaction as it happens."
+
+**Inference and prediction: the model making a decision on new data, and the fraud score it produces** 
+Inference is the model making a decision on new data, and the fraud score is the prediction it produces. Recognizing the pair lets you translate the line for a non-technical audience: "The system applies what it has already learned to score every new transaction as it happens."
 
 
 ---
@@ -20,7 +21,8 @@ A) Inference is the model making a decision on new data, and the fraud score is 
 - C. System X is generative AI; System Y is rules-based automation
 - D. Both System X and System Y are generative AI
  
-B) A fixed lookup table is rules someone wrote, which is automation, not AI. A model that learns patterns from historical data is machine learning. Neither system generates new content, so generative AI does not apply. Calling System X "AI" in the briefing would lump automation in with the company's actual ML work and inflate the picture for the board.
+**System X is rules-based automation; System Y is machine learning**
+A fixed lookup table is rules someone wrote, which is automation, not AI. A model that learns patterns from historical data is machine learning. Neither system generates new content, so generative AI does not apply. Calling System X "AI" in the briefing would lump automation in with the company's actual ML work and inflate the picture for the board.
 
 
 ---
@@ -33,7 +35,8 @@ B) A fixed lookup table is rules someone wrote, which is automation, not AI. A m
 - C. Semi-structured data; the AI can use the existing fields without any further processing
 - D. Structured data; recordings convert automatically to rows and columns at intake
  
-B) Audio recordings have no fixed schema, which makes them unstructured. Extracting value from unstructured data requires processing. In this case, transcription and analysis of the language inside the calls. That processing is the budget and time investment to plan for before scoping the AI work itself.
+**Unstructured data; extracting themes will require processing the audio or the transcripts before the AI can act on it**
+Audio recordings have no fixed schema, which makes them unstructured. Extracting value from unstructured data requires processing. In this case, transcription and analysis of the language inside the calls. That processing is the budget and time investment to plan for before scoping the AI work itself.
 
 
 ---
@@ -46,7 +49,8 @@ B) Audio recordings have no fixed schema, which makes them unstructured. Extract
 - C. The model will refuse to make predictions for the under-represented regions on its own
 - D. The model will automatically detect and correct the imbalance at inference time
  
-A) The model will be confident about the over-represented region and unreliable on the others
+**The model will be confident about the over-represented region and unreliable on the others**
+The model will be confident about the over-represented region and unreliable on the others
 Biased samples produce confident predictions where the model has seen many examples and unreliable predictions where it has not. The risk is silent: the model still produces an answer, but the answer is wrong for the under-represented segments. The right framing for the CDO is that the over-represented region's accuracy will mask the failure on the others until a customer or a regulator notices.
 
 
@@ -59,8 +63,9 @@ Biased samples produce confident predictions where the model has seen many examp
 - B. Use only the oldest two years of data; older data is more stable and better understood at this point
 - C. Reject the proposal entirely; any change in source systems makes the training data unusable
 - D. Use only the most recent two years; older data depends on a feature the company no longer collects
- 
-D. Use only the most recent two years; older data depends on a feature the company no longer collects
+
+**Use only the most recent two years; older data depends on a feature the company no longer collects** 
+Use only the most recent two years; older data depends on a feature the company no longer collects
 Training data should reflect inputs the model will see in production. Tickets from a retired platform will not be available at inference time, so a model trained on them depends on a feature the company cannot supply going forward. Tell the vendor to scope the model to the two recent years on the new platform and to flag the recency caveat in the design.
 
 
@@ -74,7 +79,8 @@ Training data should reflect inputs the model will see in production. Tickets fr
 - C. The vendor's AI platform is guaranteed to be safe, bias-free, and ready for any use case
 - D. The vendor is using marketing jargon and the citation can be ignored as vendor noise
  
-B. The vendor has self-declared alignment; the buyer should ask what specifically is aligned and whether an independent audit has happened
+**The vendor has self-declared alignment; the buyer should ask what specifically is aligned and whether an independent audit has happened**
+The vendor has self-declared alignment; the buyer should ask what specifically is aligned and whether an independent audit has happened
 Alignment means a self-declared mapping of internal practices to the standard. It is a meaningful signal that warrants follow-up questions about specifics, evidence, and whether an independent audit has happened. The CEO's strongest questions test the claim without assuming either the best or the worst: which 42001 clauses are you implementing, are you self-aligned or independently certified, when was your last internal review, and where in your documentation can our team see the mapping?
 
 
@@ -218,3 +224,195 @@ A prediction is the actual output a model produces: the recommendation, the scor
 
 **Semi-structured data, because fixed attributes sit alongside free-text content**
 Semi-structured data has some structure but not a fixed schema across all records, and product catalog entries with structured attributes plus narrative descriptions are the module's example of it. The classification matters because the free-text half will need processing before AI can use it, while the attribute half is ready to work with.
+
+
+---
+
+
+### Q.17. You sit down with the prompts the VP Marketing forwarded. The marketing manager wrote this one: "Write something good about our new winter coat for the website." The output is generic and off-brand. The team is asking you which revision actually fixes it. Which revision applies the most prompt engineering principles correctly, and what would you tell the team?
+
+- A. "Write something better about our new winter coat for the website" (the same prompt with one different adjective)
+- B. "Write a 100-word product description for the AnyCompany Retail AnyProduct-1 winter coat for women's cold-weather travel. Brand voice: approachable, modern, trend-aware. Format: 2 sentences of feature, 1 sentence of feel, 1 sentence of value."
+- C. "Write product descriptions for all of our winter coats. Make sure they are short, persuasive, brand-appropriate, accurate, scannable, accessible, professional, and friendly across the catalog."
+- D. "Try again with the winter coat description and improve it for our website" (the same prompt rephrased)
+
+**"Write a 100-word product description for the AnyCompany Retail AnyProduct-1 winter coat for women's cold-weather travel. Brand voice: approachable, modern, trend-aware. Format: 2 sentences of feature, 1 sentence of feel, 1 sentence of value."**
+The revision applies all four principles. Clarity (one task, named product). Specificity (length, audience). Context (brand voice). Structured output (sentence-by-sentence format). The tool now has what it needs to produce on-brand output.
+
+
+---
+
+
+### Q.18. The team is using the tool to write personalized emails. Each prompt includes the customer's full 18-month purchase history. The marketing writers report that the AI sometimes "forgets" the most recent purchases and references items from over a year ago. The VP Marketing wants an explanation by Friday, before deciding on the vendor's larger-context-window upgrade. What is the most likely explanation, and what does it tell you about whether the upgrade is the right fix?
+
+- A. The history exceeds the context window, and recent items get pushed out as more is added
+- B. The model is malfunctioning and needs to be retrained on the latest production data
+- C. The history exceeds the context window, and only the earliest information remains in view
+- D. The AI is hallucinating randomly; this behavior is unrelated to prompt size or input length
+
+**The history exceeds the context window, and recent items get pushed out as more is added**
+When inputs exceed the context window, the earliest information falls out of view. The model writes from whatever survives. The cheaper fix is to send a summary of older purchases plus full detail on recent ones, not a larger window. Test that fix before approving the upgrade. Buying the upgrade locks in three times the per-prompt cost without confirming the existing window was being used well.
+
+
+---
+
+### Q.19. The vendor's two proposals land on your desk. Customer service wants a chatbot that answers questions about AnyCompany Retail's specific products, return policies, and store hours. The information changes weekly. The Director of CX wants your input before the kickoff meeting Monday. Which adaptation technique is the best fit for the customer service chatbot, and why?
+
+- A. Fine-tuning, because the chatbot needs to learn the company's customer service style and tone
+- B. Fine-tuning, because customer service answers require consistent vocabulary across the team
+- C. RAG, because the answers need to be grounded in company-specific information that changes weekly
+- D. Neither, because the off-the-shelf tool can produce the answers if the prompts are written well
+
+**RAG, because the answers need to be grounded in company-specific information that changes weekly**
+RAG fits when answers need to be grounded in company-specific information that changes regularly. The library is updated as policies and products change; the model stays the same. Fine-tuning would have to be retrained for every weekly update, which is expensive and slow. A useful question for the vendor: "How often does the retrieval library need to be updated, and who owns that update process?" That exposes operational reality before the contract is signed.
+
+
+---
+
+### Q.20.A team wants an assistant that answers customer questions from the current returns policy and does so in the company's established brand voice. Which approach addresses both needs?
+
+- A. Fine-tuning alone, because a retrained model absorbs both the voice and the policy
+- B. Fine-tuning combined with retrieval-augmented generation, because the gaps differ
+- C. Neither technique, because grounding and voice requirements conflict with each other
+- D. Retrieval-augmented generation alone, because the policy library governs both needs
+
+**Fine-tuning combined with retrieval-augmented generation, because the gaps differ**
+The two techniques are not exclusive, and a common production pattern pairs a fine-tuned voice model with a retrieval-connected reference library so the system writes on brand and answers from current information. Two distinct gaps, information and voice, call for the technique that closes each.
+
+---
+
+
+### Q.21. A pilot prompt template pastes a customer's complete two-year support history into every request. For the most active customers, the tool writes summaries that leave out part of the history while reading as though nothing were missing. Which explanation fits the pattern?
+
+- A. The tool has been trained on outdated support records and needs to be retrained
+- B. The tool ranks each contact record by importance and reports only the significant ones
+- C. The model is producing random errors that have no relationship to the prompt length
+- D. The prompt sends more than the window holds, so some history never arrives
+
+**The prompt sends more than the window holds, so some history never arrives**
+The context window is the limit on how much the model can hold at once, covering both the prompt and the response. When a prompt sends more than the window holds, part of what was sent does not reach the model, and the output still reads as complete. Which part gets left out depends on the tool, so the reliable move is to send less per prompt and spot-check the output against what was actually sent.
+
+---
+
+
+### Q.22. A writer needs copy that matches a structure and rhythm the brand has used successfully before, and describing the voice in adjectives has produced inconsistent results. Two prompts are under consideration. Prompt 1: "Write a product description for the hiking jacket in our usual brand voice, which is warm and confident." Prompt 2: "Here are two descriptions that match our brand voice: [example 1] [example 2]. Write one for the hiking jacket in the same voice." Which prompt is stronger, and why?
+
+- A. Prompt 1, because naming the voice attributes directly states the requirement
+- B. Prompt 2, because a longer prompt gives the tool more total instruction
+- C. Prompt 1, because a shorter prompt leaves the tool more room to write
+- D. Prompt 2, because concrete examples convey structure that adjectives cannot
+
+**Prompt 2, because concrete examples convey structure that adjectives cannot**
+Prompt 2 supplies examples so the tool can match the pattern, which is the right move when a task has a style or structure the tool needs to learn from the team's own work. Adjectives such as "warm and confident" mean different things to different readers, and the examples carry rhythm and sentence shape that no adjective conveys. The outcome is copy closer to brand on the first pass and less rewriting.
+
+
+---
+
+
+### Q.23. A vendor offers a model tier with a context window four times larger than the current one at three times the per-prompt cost, presenting it as the fix for inconsistent output. The team's prompts currently send each customer's full purchase history. What should the product manager verify before deciding?
+
+- A. Whether the larger window is available at a discount for a longer contract term
+- B. Whether a competing vendor offers a comparable window at a lower price point
+- C. Whether the current prompts can be trimmed so the existing window is sufficient
+- D. Whether the larger window also improves the accuracy of the model's writing
+
+**Whether the current prompts can be trimmed so the existing window is sufficient**
+Most context-window problems can be solved upstream of the model by sending less per prompt, such as summarizing older history and sending recent items in full. Testing the cheaper fix first establishes whether the existing window was being used well, which is the question the upgrade decision actually rests on. Published research on long inputs found that models with much larger windows were no better at using the information inside them, so the upgrade may not deliver what the pitch promises.
+
+
+---
+
+
+### Q.24. Two writers submit prompts for the same email campaign task. Prompt 1: "Write five subject lines for the spring sale email that will get a high open rate from our best customers." Prompt 2: "Write five subject lines for the spring sale email to loyalty members. Each under 45 characters. Mention the discount. Avoid exclamation points." Which prompt is stronger, and why?
+
+- A. Prompt 2, because it sets concrete constraints the tool is able to honor
+- B. Prompt 2, because requesting five variations gives the writer more options
+- C. Prompt 1, because describing customers as the best ones signals a premium tone
+- D. Prompt 1, because naming the open-rate goal focuses the tool on business results
+
+**Prompt 2, because it sets concrete constraints the tool is able to honor**
+Prompt 2 replaces an outcome the tool cannot observe with limits it can actually apply: a character count, a required element, and a punctuation rule. Specificity narrows the range of possible outputs, so the writer gets five usable lines instead of five generic ones. The business payoff is subject lines that fit the send template without manual trimming.
+
+
+---
+
+
+### Q.25. A vendor proposes fine-tuning a model on AnyCompany Retail's archive of past marketing copy so that output matches the brand voice by default. Which consideration should the product manager raise before the proposal advances?
+
+- A. Fine-tuning requires the brand voice to change frequently to justify the investment
+- B. Fine-tuning cannot influence writing style, so the proposal addresses the wrong problem
+- C. Fine-tuning retrains the model on proprietary content, which raises data-governance questions
+- D. Fine-tuning eliminates the need for prompt engineering across the marketing team
+
+**Fine-tuning retrains the model on proprietary content, which raises data-governance questions**
+Because fine-tuning retrains a model on proprietary company content, it carries data-governance and security implications that the security organization needs to weigh. Raising it as a data-handling decision rather than only a quality upgrade puts that review before the vendor commitment instead of after it.
+
+
+---
+
+
+### Q.26. A writer is deciding between two prompts for the same product page. Prompt 1: "Write a description for the wool throw blanket, then write five subject lines for the campaign email, and suggest a headline for the landing page." Prompt 2: "Write a description for the wool throw blanket for the home goods page. Audience: shoppers furnishing a first apartment. Format: three sentences." Which prompt is stronger, and why?
+
+- A. Prompt 1, because the tool can keep the campaign consistent across all three pieces
+- B. Prompt 1, because handling three related deliverables at once saves the writer time
+- C. Prompt 2, because a single task with context and format produces reliable output
+- D. Prompt 2, because a three-sentence limit is the strictest constraint available
+
+**Prompt 2, because a single task with context and format produces reliable output**
+Clarity means one task per prompt, and Prompt 2 pairs that single task with an audience and an output shape. Prompt 1 carries three tasks, so the tool splits its attention and tends to serve one well and the others poorly. Writing three focused prompts takes marginally longer and produces output the team can actually ship.
+
+
+---
+
+
+### Q.27. A marketing writer submits this prompt to the pilot tool: "Write a nice description of our new travel duffel bag." The output is bland and reads like generic retail copy. Which revision applies the prompt engineering principles most completely?
+
+- A. "Write a 90-word travel duffel description for business travelers. Voice: approachable. Format: two feature sentences, then one value sentence."
+- B. "Write a description of our new travel duffel bag, and make sure it performs well against competitor product pages."
+- C. "Write a description of the travel duffel that is short, persuasive, on-brand, accurate, friendly, scannable, and professional."
+- D. "Write a nice, polished, appealing description of our new travel duffel bag for the website."
+
+**"Write a 90-word travel duffel description for business travelers. Voice: approachable. Format: two feature sentences, then one value sentence."**
+The revision applies all four principles at once: clarity in a single named task, specificity in the word count and audience, context in the stated voice, and structured output in the sentence-by-sentence shape. The business outcome is copy the writer can ship with light editing, which is the difference between the pilot saving time and merely relocating it.
+
+
+---
+
+
+### Q.28. Two prompts in the pilot contain nearly the same number of characters, but one consistently costs more to run. That prompt is dense with product SKUs, customer identifiers, and brand names. Which explanation accounts for the cost difference?
+
+- A. Identifiers require the tool to look up records in company systems
+- B. Longer words take proportionally more processing time to generate output
+- C. Character count determines cost, so the difference indicates a billing error
+- D. Identifiers and uncommon terms break into more tokens than common words
+
+**Identifiers and uncommon terms break into more tokens than common words**
+A token is a chunk of text the model processes as a unit, and while common short words are usually one token each, brand names, identifiers, and uncommon terms often split into several. Two prompts of the same visible length can therefore carry different token counts and different costs. Recognizing this helps a team see where prompt cost accumulates.
+
+
+---
+
+
+### Q.29. The store operations team wants an internal assistant that answers employee questions about current store procedures. The procedures are revised most months. Which adaptation technique fits, and why?
+
+- A. Fine-tuning, because procedural language requires specialized internal vocabulary
+- B. Neither technique, because stronger prompts can supply the procedures as needed
+- C. Fine-tuning, because employees expect a consistent internal communication style
+- D. Retrieval-augmented generation, because answers must reflect frequently revised information
+
+**Retrieval-augmented generation, because answers must reflect frequently revised information**
+Retrieval-augmented generation fits when answers need to be grounded in company-specific information that changes frequently. Updating the system means updating the library, so a revised procedure goes in and the next query reflects it without retraining. That operational difference is what makes it the right shape for monthly revisions.
+
+
+---
+
+
+### Q.30. A second vendor pitches an "AI-powered invoice processing system" the same week the customer service vendor is pitching its agent platform. The current invoice system matches invoices to purchase orders by following a fixed set of rules. The vast majority of invoices match cleanly. Most exceptions follow predictable patterns. The Director of Operations asks whether this is a good AI use case before the proposal goes any further. Based on the four task characteristics, which evaluation is strongest, and what would you tell the Director of Operations?
+
+- A. Yes; AI will improve accuracy on this task because it learns patterns from historical invoice data
+- B. Yes; AI is the modern best practice and the existing rule-based system is outdated by today's standards
+- C. No; predictability is high, data is structured, and decision variability is low, so rules fit this task
+- D. No; AI cannot reliably process invoices because the input format varies too much across vendors
+
+**No; predictability is high, data is structured, and decision variability is low, so rules fit this task**
+All four characteristics point to rules as the right fit. Predictability is high. Data is structured. Decision variability is low. The cost of an unpredictable AI failure is higher than the cost of a predictable rules failure. Replacing a working rules system with AI here adds cost without value. Tell the Director of Operations the vendor is over-claiming and recommend keeping the existing engine.
