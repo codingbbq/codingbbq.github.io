@@ -472,3 +472,142 @@ Customer browsing patterns have shifted, which is data drift. The model is opera
 
 **Blocked for personal-account use of sensitive data; place the enterprise version under evaluation with alternatives**
 The personal-account pattern is not acceptable for sensitive data, but the underlying use case is real. The framework's job is selectivity: block the unsafe pattern, evaluate the enterprise version that has appropriate data terms, and communicate both with alternatives. Employees comply when they understand what is available. The same logic applies across the rest of the CISO's flagged tools: block what fails review, evaluate what may fit, and name approved alternatives so the workforce does not move to harder-to-monitor tools.
+
+
+---
+
+
+### Q.35. A vendor proposes replacing AnyCompany Retail's gift card balance lookup with an AI system. The current process accepts a card number and returns the remaining balance, and it resolves nearly every request without review. Which evaluation is strongest?
+
+
+- A. AI fits, because customer-facing processes benefit from more adaptive systems
+- B. Rules fit, because the lookup volume is too high for an AI system to handle
+- C. AI fits, because the system would learn from lookup patterns over time
+- D. Rules fit, because the same input always requires the same output
+
+**Rules fit, because the same input always requires the same output**
+Predictability is the deciding characteristic. A card number always maps to one correct balance, so there is no judgment for a model to learn and no variability for it to accommodate. Telling the vendor the existing process stays in place protects a system that already works, and a working rules-based system is an asset rather than a problem to solve.
+
+
+---
+
+
+### Q.36. A vendor proposes a system in which one agent gathers competitor pricing, a second gathers customer reviews, and a third gathers social media mentions, all at the same time, with results combined into a single report. Which multi-agent pattern does this describe?
+
+A. Sequential handoff, because three agents contribute to one combined result
+B. Sequential handoff, because each agent gathers a different category of input
+C. Parallel processing, because independent sub-tasks run at the same time
+D. Supervisor-worker, because a coordinating step assembles the final report
+
+**Parallel processing, because independent sub-tasks run at the same time**
+Parallel processing has multiple agents working on different sub-tasks simultaneously with their results combined at the end, and it fits when sub-tasks are independent and time matters. Market research of exactly this shape is the module's example. Recognizing the pattern gives a buyer the vocabulary to ask what happens when one of the three streams fails.
+
+
+---
+
+
+### Q.37. A vendor demonstrates a system that receives a shipping complaint, decides on its own to check the carrier tracking system, then queries the order database, then issues a replacement order, and finally notifies the customer. Which pair of capabilities identifies this as an agent?
+
+A. Tool use and agent-to-agent communication, because the system reaches several systems
+B. Autonomy and tool use, because it chooses steps and acts on systems
+C. Agent-to-agent communication and orchestration, because the system completes four steps
+D. Autonomy and orchestration, because the system sequences its work without a supervisor
+
+**Autonomy and tool use, because it chooses steps and acts on systems**
+Autonomy and tool use are the two capabilities that establish whether a system is an agent at all. Autonomy means deciding the next step inside the perceive, reason, and act loop rather than waiting for a person to run each one, and tool use means reaching into real systems to look things up and take action. Both are visible in this demonstration.
+
+
+---
+
+
+### Q.38. AnyCompany Retail wants to route incoming customer messages by reading the free-text body to determine whether the sender is reporting a defect, asking a question, or expressing frustration. Message wording varies widely. Which approach fits, and why?
+
+A. Rules, because message routing is a well-established automated business process
+B. Neither, because interpreting customer sentiment is outside the reach of current AI
+C. AI, because the decision depends on unstructured text, not fixed fields
+D. Rules, because a keyword list can be expanded whenever new phrasings appear
+
+**AI, because the decision depends on unstructured text, not fixed fields**
+Data complexity points to AI here. Reading free-text to judge whether a customer is reporting a defect, asking a question, or expressing frustration depends on unstructured language rather than a small set of structured fields, and AI handles that better than rules. The operational benefit is fewer misrouted messages in the cases where wording does not match any keyword anyone anticipated.
+
+---
+
+
+### Q.39. A vendor claims its platform uses AI to process supplier contracts. When the CX operations lead asks how the system decides, the vendor answers that it relies on proprietary algorithms trained on industry data. What does that response indicate?
+
+A. The vendor is dodging, because sound vendors describe their training data concretely
+B. The vendor has confirmed the platform is rules-based automation rather than AI
+C. The vendor has confirmed the platform learns continuously from every contract processed
+D. The vendor is protecting legitimate intellectual property and the claim needs no follow-up
+
+**The vendor is dodging, because sound vendors describe their training data concretely**
+"Proprietary algorithms" and "trained on industry data" are the answers the module flags as evasions, because vendors with sound systems can describe what their system learns from in concrete terms. The practical move is to press for specifics before the proposal advances, since buyers who accept the vague answer risk paying AI prices for software that may be mostly rules.
+
+---
+
+
+### Q.40. A department has been using an unapproved AI transcription tool for internal meetings for several months. Security review has not begun, and the department reports real productivity gains. Which classification and governance action fit best?
+
+A. Approved, with usage guidelines issued to the department already using it
+B. Blocked, with enforcement applied and the productivity benefit set aside
+C. Under evaluation, with a scoped pilot, data restrictions, and a deadline
+D. Under evaluation, with the department continuing current use until review concludes
+
+**Under evaluation, with a scoped pilot, data restrictions, and a deadline**
+A tool in the review process belongs under evaluation, where a pilot may run under controlled conditions with limited scope, a defined timeline, and explicit data restrictions. The deadline matters, because tools that sit under evaluation for many months are in limbo rather than under review. This keeps the productivity gain visible to reviewers while bounding the exposure.
+
+
+---
+
+
+### Q.41. A fraud detection model at AnyCompany Retail begins missing fraudulent transactions it would previously have caught. The transaction data arriving looks similar in shape to the training data, but the tactics fraudsters use have changed. Which category of drift describes this?
+
+A. Concept drift, because the relationship between inputs and the right output has changed
+B. Data drift, because the transactions reaching the model have changed
+C. No drift, because the model and the shape of its input data are both unchanged
+D. Performance drift, because the model catches fewer fraudulent transactions than before
+
+**Concept drift, because the relationship between inputs and the right output has changed**
+Concept drift occurs when the relationship between inputs and the correct output changes. The same transaction that was legitimate under old fraud patterns may be fraudulent under new ones, so the data shape holds steady while the right answer moves. Distinguishing this from data drift matters because it points to retraining on data reflecting current fraud patterns.
+
+
+---
+
+
+### Q.42. A proposal describes a system that scores each incoming order for fraud risk and passes the score to a human reviewer for a decision. The vendor calls it an AI agent. How should the CX operations lead classify it?
+
+A. A generative AI tool, because the system produces an output for every order
+B. A predictive model, because the system outputs a score without taking action
+C. An AI agent, because the system participates in a multi-step review workflow
+D. An AI agent, because the system evaluates each order independently
+
+**A predictive model, because the system outputs a score without taking action**
+A predictive model outputs a score or classification and does not act on systems, which is exactly what this system does. Tool use, the capability of reaching into real systems to take action, is missing, and a human makes the decision. Naming the shape correctly matters because a predictive model's cost, governance, and failure modes differ from an agent's.
+
+
+---
+
+
+### Q.43. A leadership team is preparing to launch an AI recommendation system and asks what monitoring should be established. Which recommendation reflects the module's guidance?
+
+A. Track outcome metrics, and investigate whenever the engineering team raises a concern
+B. Define thresholds and a response plan before launch, tracking metrics immediately
+C. Monitor infrastructure availability closely, since model accuracy stays stable once trained
+D. Review the system after the first quarter, once enough production data has accumulated
+
+**Define thresholds and a response plan before launch, tracking metrics immediately**
+Thresholds should be defined in advance rather than invented when a metric slips, and a response plan should specify what happens when monitoring catches a problem, whether that is retraining, rolling back, pausing, or paging someone. Building this at launch is inexpensive, while explaining a silent failure after the fact is not.
+
+
+---
+
+
+### Q.44. A framework was published a year ago with a list of approved AI tools. Since then, several vendors have changed their data retention terms, and no classification has been revisited. Which weakness does this reveal?
+
+A. The framework lacks named owners, so no one is accountable for the next step
+B. The framework lacks a re-review cadence, so classifications reflect an outdated picture
+C. The framework lacks clear criteria, so reviewers cannot classify tools consistently
+D. The framework lacks a communication plan, so employees cannot tell what is approved
+
+**The framework lacks a re-review cadence, so classifications reflect an outdated picture**
+Every classification needs an expiration date, because tools change, vendor terms change, and new risks emerge. An approval granted a year ago without re-review is a presumption rather than an approval. Establishing a cadence is what keeps the framework honest, and the immediate action is to re-review the tools whose retention terms changed.
