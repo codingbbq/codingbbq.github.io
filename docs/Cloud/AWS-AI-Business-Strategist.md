@@ -1,4 +1,4 @@
-AWS AI Business Strategist
+- AWS AI Business Strategist
 
 ### Q.1. The CDO's deadline is Friday. A vendor proposal lands in your inbox the same week and contains the following sentence: "Our system runs inference in real time on each new transaction to produce a fraud score." Which two AI concepts does the vendor's sentence reference, and how would you translate them for the CDO?
 
@@ -416,3 +416,59 @@ Retrieval-augmented generation fits when answers need to be grounded in company-
 
 **No; predictability is high, data is structured, and decision variability is low, so rules fit this task**
 All four characteristics point to rules as the right fit. Predictability is high. Data is structured. Decision variability is low. The cost of an unpredictable AI failure is higher than the cost of a predictable rules failure. Replacing a working rules system with AI here adds cost without value. Tell the Director of Operations the vendor is over-claiming and recommend keeping the existing engine.
+
+
+---
+
+
+### Q.31. The vendor's proposal describes a system that, given a customer complaint, decides on its own which steps to take, looks up the order in the CRM, checks return eligibility, processes the return, and emails the customer, all without a person running each step. The marketing team's existing tool only drafts email copy when a writer prompts it. The Director of CX asks which two capabilities make the proposed system an agent and the marketing tool not one. Which pair of core capabilities distinguishes the proposed agent from the marketing tool?
+
+- A. Autonomy and tool use; the proposed system decides its own next step and acts on real systems, not just generating text
+- B. Speed and accuracy; the proposed system processes complaints faster and more correctly than the marketing tool produces its copy
+- C. Personalization and scale; the proposed system serves more customers at once and tailors each response more closely than before
+- D. Training data and model size; the proposed system runs on a larger model trained on much more data than before
+
+**Autonomy and tool use; the proposed system decides its own next step and acts on real systems, not just generating text**
+Autonomy and tool use are the two capabilities that make a system an agent. Autonomy means the system decides its own next step inside the perceive-reason-act loop. Tool use means it reaches into real systems to look things up and take actions. The marketing tool has neither; it generates text on request. Agent-to-agent communication and orchestration are the other two core capabilities, and they show up only when more than one agent is involved.
+
+
+---
+
+
+### Q.32. The vendor's proposal for AnyCompany Retail's customer service describes a supervisor agent that reads each ticket and routes it to one of three specialized agents (billing, returns, escalation) based on ticket content. The vendor wants approval next week. The Director of CX has asked you for a recommendation. Which multi-agent pattern is the vendor proposing, and what is the most important question to ask before approving?
+
+- A. Sequential handoff; ask whether the agents can run in a different order than the vendor proposes
+- B. Supervisor-worker; ask what happens when the supervisor misclassifies a ticket and routes wrongly
+- C. Parallel processing; ask whether the agents can communicate with each other during execution
+- D. Supervisor-worker; ask how fast the system processes each customer service ticket end to end
+
+**Supervisor-worker; ask what happens when the supervisor misclassifies a ticket and routes wrongly**
+The supervisor decides which worker to invoke for each request, which is the supervisor-worker pattern. The most consequential question is what happens at the moment of misclassification, because that error compounds into wrong worker actions that the customer experiences. Approve with conditions: a defined accuracy threshold for the supervisor, a human-review step for high-cost actions like refunds, and a published rollback procedure.
+
+
+---
+
+
+### Q.33. A separate AnyCompany Retail product recommendation engine launched alongside the GenAI pilot with strong click-through rates. Six weeks later, click-through has dropped to pre-AI levels. The data team confirms the model and prompts have not changed. Customer browsing patterns have shifted with a seasonal turn. The Director of Merchandising forwards the metrics to you and asks for a diagnosis before responding to the team. What is the most likely cause, and what should the team do next?
+
+- A. Data drift; investigate input distributions and plan retraining on data that includes the new patterns
+- B. The model has malfunctioned during the seasonal turn; retrain it now on the original training data
+- C. Performance drift only; the issue will self-correct as customers return to their old browsing patterns
+- D. The system was never actually working in production; roll back the AI deployment immediately
+
+**Data drift; investigate input distributions and plan retraining on data that includes the new patterns**
+Customer browsing patterns have shifted, which is data drift. The model is operating on inputs it was not trained on. The visible symptom is the click-through drop, which is performance drift. The cause is upstream. Investigate the inputs first, then plan retraining on data that includes the new patterns. The same diagnosis applies to the marketing GenAI pilot's slipping open rates: the world around the model has moved.
+
+
+---
+
+
+### Q.34. The CISO's findings show that a meaningful share of employees use personal generative AI accounts for work tasks, including drafting customer communications. Some are pasting customer information into prompts. The CISO wants a starting classification for the personal-account use specifically before the framework goes to the CEO on Friday. Which classification is most appropriate for the personal-account use, and what governance action should accompany it?
+
+- A. Approved; communicate that employees can use personal AI accounts as long as they are careful with the content
+- B. Blocked for all generative AI use across the company; revisit the policy decision in six months
+- C. Under evaluation indefinitely; do not communicate to employees until the security review is complete
+- D. Blocked for personal-account use of sensitive data; place the enterprise version under evaluation with alternatives
+
+**Blocked for personal-account use of sensitive data; place the enterprise version under evaluation with alternatives**
+The personal-account pattern is not acceptable for sensitive data, but the underlying use case is real. The framework's job is selectivity: block the unsafe pattern, evaluate the enterprise version that has appropriate data terms, and communicate both with alternatives. Employees comply when they understand what is available. The same logic applies across the rest of the CISO's flagged tools: block what fails review, evaluate what may fit, and name approved alternatives so the workforce does not move to harder-to-monitor tools.
