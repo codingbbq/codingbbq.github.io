@@ -1060,6 +1060,8 @@ Which transition approach is most appropriate given the constraints?
 
 (Phased rollout is the right approach. The top 200 complex accounts have not been tested, deploying the AI on untested account types in the first wave is an unnecessary risk. Starting with the 8,200 standard portfolios validates live performance and builds advisor confidence before the complex accounts are added. The advisory team's skepticism ("does not understand client relationships") is an adoption risk that the phased approach addresses, advisors see the AI's recommendations alongside their own for 60 days on standard portfolios, which either builds confidence or surfaces the gaps before complex accounts are affected. The 5-month deadline is achievable. SEC approval authority is maintained throughout.)
 
+**D**
+
 ---
 
 
@@ -1198,3 +1200,521 @@ Unscheduled maintenance events, where an aircraft is grounded outside its planne
 (Prediction is the highest-impact match here because the business problem is preventing unscheduled events, and prediction is the capability that enables preemption. Sensor telemetry, operating conditions, and component age are the inputs a predictive model needs to forecast component failures before they force an aircraft out of service. Moving components into scheduled maintenance windows converts unscheduled $110K events into planned maintenance activity. This is a direct one-to-one match between the AI capability and the business outcome.)
 
 **D**
+
+---
+
+### Q.63. An AI-powered customer service chatbot has been live for six months at a regional insurance company.
+
+The data shows: average handle time reduced by 40%, quarterly cost savings of $180K, CSAT score up 8 points, and employee satisfaction up 12 points (agents now handle complex cases only). The CFO is asking for the ROI case. The CHRO is asking about workforce impact. The CIO is asking about adoption and integration health. **Which KPIs should the team lead with for the CFO, and which for the CHRO?**
+
+- A. CFO: CSAT up 8 points, employee satisfaction up 12 points. CHRO: $180K quarterly savings, 40% handle time reduction.
+- B. CFO: $180K quarterly savings, 40% handle time reduction. CHRO: Employee satisfaction up 12 points, agents now handling complex cases only.
+- C. CFO: $180K quarterly savings, CSAT up 8 points. CHRO: 40% handle time reduction, employee satisfaction up 12 points.
+- D. Both audiences should receive all four metrics, the CFO and CHRO will each focus on what matters to them.
+
+**CFO: $180K quarterly savings, 40% handle time reduction. CHRO: Employee satisfaction up 12 points, agents now handling complex cases only.**
+The CFO's question is financial: what did this cost, and what did it return? Lead with the $180K quarterly savings and the 40% handle time reduction, both translate directly to cost. The CHRO's question is workforce: what happened to the people? Lead with employee satisfaction up 12 points and the shift to complex-case handling, both speak to workforce quality and engagement. CSAT is a customer metric; it is not the lead for either the CFO or the CHRO.
+
+
+---
+
+
+### Q.64. A regional distribution company launched an AI-powered route optimization system four months ago.
+
+The VP of Operations reports that delivery times have improved by 18%. The CFO asks: "Compared to what?" The team realizes that no formal baseline was established before the system launched. A new warehouse manager was also hired the same month the system went live, and she reorganized the dispatch process. **Which baselines should have been established before the system launched?**
+
+- A. Average delivery time for the 12 months prior to launch, broken down by route type and season
+- B. Average delivery time for the month immediately before launch
+- C. The industry benchmark for delivery time in regional distribution
+- D. The delivery time target set in the original business case
+
+**A. Average delivery time for the 12 months prior to launch, broken down by route type and season**
+The right baseline is 12 months of pre-launch delivery time data, broken down by route type and season. Twelve months captures seasonal variation. Breaking down by route type prevents the average from hiding variation across different route categories. This baseline would also allow the team to separate the AI system's impact from the warehouse manager's dispatch reorganization.
+
+---
+
+### Q.65. Which of the following best represents the right approach for Wei Zhang's board slide?
+
+- Vision QC scrap rate down from 3.2% to 2.1% on three live lines; clean baseline; estimated cost savings $890K annualized; false-positive rate down from 9% to 2.8%.
+- Demand Forecasting forecast accuracy at 78%, target 85%; no pre-launch accuracy baseline; carrying cost baseline $4.2M/year; model running for 4 months. 
+- Predictive Maintenance not yet in production; zero ROI to report; historical baseline 4 failures/year at $180K each. 
+- The board is a PE firm. They care about EBITDA impact, payback period, and portfolio risk. They are not interested in technical metrics. **Which of the following best represents the right approach for Wei Zhang's board slide?**
+
+
+- A. Lead with Vision QC's proven results ($890K annualized savings, clean baseline), acknowledge Demand Forecasting's accuracy gap and the missing baseline as a risk, and frame Predictive Maintenance as a pipeline initiative with a quantified opportunity ($720K/year cost avoidance potential)
+- B. Lead with all three initiatives equally, present the 78% forecast accuracy as a positive result, and note that Predictive Maintenance is on track
+- C. Defer the board presentation until Demand Forecasting reaches its 85% accuracy target and Predictive Maintenance is in production, presenting incomplete results undermines credibility
+- D. Lead with the total AI budget committed ($3M) and the total potential value across all three initiatives ($2.1M+ annualized), without distinguishing between proven and projected results
+
+**A. Lead with Vision QC's proven results ($890K annualized savings, clean baseline), acknowledge Demand Forecasting's accuracy gap and the missing baseline as a risk, and frame Predictive Maintenance as a pipeline initiative with a quantified opportunity ($720K/year cost avoidance potential)**
+
+This is the right approach for a PE board audience. PE firms are sophisticated — they know that not every initiative delivers in the first six months. What they're evaluating is whether the team is measuring the right things and managing risk honestly. Leading with Vision QC's proven results establishes credibility. Acknowledging the Demand Forecasting baseline gap as a risk (rather than hiding it) demonstrates measurement discipline. Framing Predictive Maintenance as a pipeline initiative with a quantified opportunity ($720K/year) gives the board a forward-looking number without overstating current results.
+
+
+---
+
+### Q.66. Predictive Maintenance is now in production on the Indiana extruder lines. 
+
+Mateo Jackson (COO) has asked for the ROI case before the H2 board update. Here is what the team knows.
+**Investment costs:** 
+- Build cost (internal data science team + infrastructure): $1.4M (Year 1) 
+- Annual compute and storage: $65K/year - Data science maintenance (0.5 FTE): $80K/year 
+- Paper log digitization (one-time): $120K (Year 1 only) **Results (first 6 months of production, Indiana lines only):** 
+- Unplanned failures: 0 in 6 months (historical rate: 4/year at $180K each = $720K/year) 
+- Planned maintenance cost reduction: maintenance team now schedules proactively; parts inventory reduced by $85K 
+- Technician time recovered: 6 hours/week per technician, 4 technicians, at $75/hour fully loaded = $93.6K/year Wei Zhang asks for the 2-year ROI and payback period. 
+
+Which calculation is correct?
+
+- A. Year 1 costs $1,665K; Year 1 benefits $898.6K; Net Year 1 −$766.4K; Year 2 net $753.6K; payback approximately 22 months; 2-year ROI −0.8% (near break-even by end of Year 2)
+- B. Year 1 costs $1,400K (build only); Year 1 benefits $720K (failure avoidance only); payback approximately 23 months
+- C. Year 1 costs $1,665K; Year 1 benefits $720K (failure avoidance only); payback 28 months
+- D. Year 1 costs $1,400K; Year 1 benefits $898.6K; payback 19 months
+
+**A. Year 1 costs $1,665K; Year 1 benefits $898.6K; Net Year 1 −$766.4K; Year 2 net $753.6K; payback approximately 22 months; 2-year ROI −0.8% (near break-even by end of Year 2)**
+This is the complete calculation. Year 1 costs include all four cost categories: build ($1.4M), compute/storage ($65K), data science maintenance ($80K), and log digitization ($120K) = $1,665K. Year 1 benefits include all three benefit categories: failure avoidance ($720K), parts inventory reduction ($85K), and technician time recovered ($93.6K) = $898.6K. The 2-year ROI of −0.8% (near break-even by end of Year 2) is correct and expected for a capital-intensive build initiative in Year 1. The payback period of approximately 22 months is the honest answer — Wei Zhang needs this number, not a rosier version.
+
+
+--- 
+
+
+### Q.67. A financial services firm has three AI initiatives at the six-month mark. No initiative has produced measurable ROI yet.
+
+- Initiative A (Churn prediction): 78% adoption. Data pipeline: 98% uptime, freshness under 1 hour. Sponsor (CRO) attending monthly reviews. Model accuracy: 84%, improving 1.5% per month.
+- Initiative B (Contract review automation): 23% adoption. Data pipeline: 94% uptime. Sponsor (General Counsel) has been reassigned; no replacement named. Model accuracy: 91%, flat for 8 weeks. - Initiative C (Demand forecasting for treasury): 51% adoption. Data pipeline: 96% uptime. Sponsor (CFO) engaged. Model accuracy: 79%, improving 0.8% per month. One in five predictions flagged as unreliable. **Which initiative is at highest risk, and what is the primary signal?**
+
+- A. Initiative A, accuracy at 84% is below the typical 90% threshold for production AI systems
+- B. Initiative B, 23% adoption combined with no active sponsor is the highest-risk combination
+- C. Initiative C, one in five predictions flagged as unreliable indicates a fundamental model problem
+- D. All three are equally at risk, none has produced measurable ROI at six months
+
+**B. Initiative B, 23% adoption combined with no active sponsor is the highest-risk combination**
+Initiative A's trajectory (improving 1.5% per month) is the important signal, not the current accuracy number. All other indicators are strong: 78% adoption, healthy pipeline, engaged sponsor. On track.
+
+
+---
+
+
+### Q.68. An AI initiative at a regional bank was budgeted at $500K for the first year.
+
+At the six-month mark, the team has spent $380K. Compute costs are running 3x the estimate because experiments are being run on full production data. Storage costs are climbing because no data retention policy was established. The team has requested a $120K GPU cluster to accelerate model iteration. 
+
+**Which cost controls should be implemented?**
+
+- A. Approve the $120K GPU cluster request, increase the annual budget to $620K, and establish a data retention policy going forward
+- B. Implement data sampling for experiments (run on 15% of production data), establish a 90-day retention policy for superseded model artifacts, and defer the GPU cluster request pending a utilization review
+- C. Pause all model experiments until the budget is back on track, then resume with a revised compute budget
+- D. Terminate the initiative, a 76% budget consumption at six months with no ROI indicates the initiative is not financially viable
+
+**B. Implement data sampling for experiments (run on 15% of production data), establish a 90-day retention policy for superseded model artifacts, and defer the GPU cluster request pending a utilization review**
+
+Option B addresses both root causes. Data sampling directly addresses the 3x compute overrun. A 90-day retention policy addresses the storage cost growth. Deferring the GPU cluster request is the right call — adding a $120K GPU cluster without understanding utilization will likely make the overrun worse.
+
+
+---
+
+
+### Q.69. Wei Zhang has reviewed the portfolio health data. He has asked you to recommend an intervention plan for Demand Forecasting before the H2 board update. 
+
+Here is the full picture. 
+
+- Accuracy plateau: 81% for 6 weeks, target 85%. Akua Mansa believes the plateau is caused by the 8% data drop in the customer demand feed. The model is training on incomplete data. 
+- Compute overrun: $67K/year actual vs. $48K projected. Akua's team has been running full-production-data experiments to diagnose the accuracy plateau; each experiment run costs approximately $800 in compute. 
+- Adoption gap: 39% of Sales and Operations planners are still using manual override. The primary reason: the model's output does not include the customer-specific demand signals that planners know from experience. 
+- Sponsor status: Wei Zhang is engaged. Saanvi Sarkar (CIO) is attending reviews. No sponsor gap. 
+
+**Which intervention plan best addresses the root causes?**
+
+- A. Fix the data pipeline (resolve the 8% record drop), implement data sampling for experiments, and address the adoption gap by adding customer-specific demand signals to the model's input features
+- B. Pause the initiative until accuracy reaches 85%, then restart with a revised data strategy
+- C. Increase the compute budget by 40% to accommodate the experiment volume, and continue diagnosing the accuracy plateau
+- D. Terminate the initiative. 81% accuracy after 8 months with a 40% compute overrun and 39% adoption gap indicates the fundamental case is not working
+
+**A. Fix the data pipeline (resolve the 8% record drop), implement data sampling for experiments, and address the adoption gap by adding customer-specific demand signals to the model's input features**
+
+This is the right intervention because it addresses all three root causes. The data pipeline fix addresses the most likely cause of the accuracy plateau — the model is training on incomplete data. Data sampling for experiments addresses the compute overrun — running experiments on full production data is the specific behavior driving the 40% overrun. Adding customer-specific demand signals addresses the adoption gap — planners are overriding the model because it does not know what they know. All three interventions address root causes rather than symptoms.
+
+
+---
+
+
+### Q.70. It is the day before the PE board meeting. Wei Zhang has asked you to review the final presentation and flag any gaps before he walks in.
+
+The presentation has three parts: financial results, portfolio health, and the next-half recommendation. Financial results: Vision QC: $890K annualized savings, approximately 8-month payback (phased rollout), 2-year ROI 203% (Year 1 investment basis); clean baseline. Demand Forecasting: 81% accuracy against an 85% target; no pre-launch accuracy baseline; carrying cost baseline $4.2M/year; intervention plan in place. Predictive Maintenance: 0 unplanned failures in 6 months against a historical 4 per year at $180K each; 22-month payback. Portfolio health: Vision QC: all leading indicators green; on budget. Demand Forecasting: accuracy plateau (yellow), compute overrun 40% above projection (red); intervention plan in place. Predictive Maintenance: all leading indicators green; on budget. Next-half recommendation: "AnyCompany Packaging will continue investing across all three initiatives." 
+
+**Which gap represents the highest risk to Wei Zhang's credibility with the board, and what should replace it?**
+
+- A. The Predictive Maintenance 22-month payback. Reframe it as a cost avoidance story rather than an ROI story, because the board expects a payback inside 18 months.
+- B. The Demand Forecasting compute overrun. Present the intervention plan before the board asks about it, so the red status arrives with a fix attached.
+- C. The Demand Forecasting missing accuracy baseline. Remove that initiative from the financial results until the baseline has been reconstructed from historical data.
+- D. The next-half recommendation. A board approving spend cannot act on a statement that the company will continue investing in all three. Replace it with a per-initiative call, scale, continue, or intervene, each tied to the evidence already in the deck and to the signal that would change the call.
+
+**D. The next-half recommendation. A board approving spend cannot act on a statement that the company will continue investing in all three. Replace it with a per-initiative call, scale, continue, or intervene, each tied to the evidence already in the deck and to the signal that would change the call.
+This is the gap that matters. The first two parts of the deck are strong, with proven results on one initiative, a diagnosed problem with a plan on another, and clean indicators on the third. The recommendation then asks the board to approve continued spend without saying what the spend buys or what would change the decision. Everything needed is already in the deck. Vision QC has proven results and green indicators, which supports scaling. Demand Forecasting is mid-intervention, which supports continuing at current level with a defined checkpoint. Predictive Maintenance is performing but early, which supports completing the current rollout before expanding. A recommendation that names the call per initiative, ties each to its evidence, and states the signal that would reverse it is what a board can actually act on.
+
+
+---
+
+
+### Q.71. A national consumer electronics retailer has deployed an AI-powered product recommendation engine on its e-commerce site. 
+
+Nine months into deployment, the Chief Digital Officer is preparing an update for the executive team. Three executives will attend and each has a different primary interest:
+
+The CFO wants to know whether to continue the initiative next fiscal year based on financial return.
+The Chief Marketing Officer wants to understand how the recommendation engine is affecting brand perception among younger customers.
+The Chief Human Resources Officer, who owns customer service, wants to know whether recommendation-related customer service inquiries have changed.
+The AI team has proposed four KPI packages, each with a different emphasis:
+
+Package A: One universal KPI set for all three executives, revenue lift, average order value increase, customer satisfaction, customer service inquiry volume, brand perception NPS
+Package B: Audience-specific KPI sets, CFO gets revenue lift and average order value; CMO gets brand perception NPS and younger-customer engagement metrics; CHRO gets customer service inquiry volume and inquiry resolution time
+Package C: Financial KPIs for the CFO only, and a single combined qualitative report for the CMO and CHRO
+Package D: A single scorecard combining all KPIs with the CFO's metrics highlighted, since the CFO is the primary decision-maker on next-year budget
+Which KPI package is the most appropriate for this stakeholder mix?
+
+- A. Package C, the CFO's financial ask is the primary business question; the other executives can share a qualitative view
+
+Prioritizing the CFO's financial ask is defensible in one respect, budget continuation is a real decision, but treating the CMO and CHRO as a single audience with a combined qualitative report ignores the fact that their decisions are different. The CMO evaluates brand and audience effects; the CHRO evaluates operational load. Those are different questions that need different data. Combining them into one qualitative view weakens both.
+
+- B. Package B, audience-specific KPI sets match each executive's decision context; tangibles for the CFO, intangibles for the CMO, mixed operational metrics for the CHRO
+
+Audience-specific KPI packages match the KPI selection to the decision each executive is making. The CFO's decision is financial (continue next fiscal year), so tangibles (revenue lift, average order value) are primary. The CMO's decision is about brand and audience (how the recommendation engine affects younger customers), so intangibles (brand perception NPS, younger-customer engagement) are primary. The CHRO's decision is operational (has customer service load changed?), so operational metrics (inquiry volume, resolution time) are primary. Each executive gets the KPIs that answer their question. This is the correct application of "distinguish appropriate KPIs", the right KPI depends on the audience and the decision, not on the initiative alone.
+
+- C. Package A, a single KPI set is easier to maintain and ensures all executives see the same information
+
+A single universal KPI set is easier to maintain but does not serve any of the three executives well. The CFO does not need brand perception NPS to decide budget continuation. The CMO does not need customer service inquiry volume to assess brand impact. The CHRO does not need revenue lift to evaluate customer service load. Presenting all five KPIs to all three executives forces each of them to filter the report for the metrics that matter to their decision, which reduces the report's usefulness for each audience.
+
+- D. Package D, highlighting the CFO's metrics acknowledges the primary decision-maker while keeping the other executives informed
+
+Highlighting the CFO's metrics on a combined scorecard acknowledges the decision hierarchy but still forces the CMO and CHRO to work with metrics that were not selected for their decisions. Audience-specific KPI packages achieve the same acknowledgment of decision hierarchy (the CFO gets the financial metrics) while also serving the other executives' decisions directly.
+
+**B**
+
+---
+
+
+### Q.72. A Chief Digital Officer at a consumer products company is presenting the company's AI value story to a new board member who has a background in regulatory compliance.
+
+The board member asks three questions in sequence:
+
+Question 1: "Your AI-powered product recommendation engine has a 94% click-through rate. How do you know it is not steering customers toward higher-margin products at the expense of the products that best meet their needs?"
+Question 2: "Your AI-powered supply chain optimization system makes autonomous reorder decisions for 8,000 SKUs. What happens when it makes a wrong decision that results in a stockout or an overstock event?"
+Question 3: "Who is accountable when one of your AI systems causes a customer harm or a business loss?"
+Which benchmark category does each question map to, and which response correctly addresses all three?
+
+- A. Question 1: Fairness. Question 2: Safety. Question 3: Governance. Response: "We assess recommendation equity across product categories quarterly, we have defined error containment thresholds and human review triggers for supply chain decisions, and we have named model owners with documented accountability for each production system."
+
+Each question maps to a specific benchmark category. Question 1 is a Fairness question: the board member is asking whether the recommendation engine produces equitable outcomes for customers, or whether it optimizes for company margin at the customer's expense. This is a fairness concern, not a trust or performance concern. Question 2 is a Safety question: the board member is asking about error containment and what happens when the system makes a wrong decision. Safety benchmarks define the acceptable error rate and the containment mechanism. Question 3 is a Governance question: accountability structures, model ownership, and the audit trail for decisions and errors. Option A correctly maps all three and provides a substantive response to each: quarterly equity assessment (Fairness), defined error containment thresholds and human review triggers (Safety), and named model owners with documented accountability (Governance)
+
+- B. Question 1: Performance. Question 2: Safety. Question 3: Controllability. Response: "Our recommendation engine has a 94% click-through rate confirming customer acceptance, we have guardrails on reorder quantities to prevent extreme decisions, and supply chain managers can override the system at any time."
+
+A 94% click-through rate is a Performance indicator, not a Fairness indicator. High click-through does not confirm that the recommendations are equitable across product categories or that they meet customer needs versus optimize for company margin. Question 1 is asking about equity, not performance. Question 3 is a Governance question about accountability, not a Controllability question about override capability.
+
+- C. Question 1: Fairness. Question 2: Controllability. Question 3: Governance. Response: "We have not yet completed a formal recommendation equity assessment but plan to do so, we allow supply chain managers to override reorder decisions, and we are in the process of naming model owners for each system."
+
+The benchmark category mapping is correct, but the response is inadequate. "Have not yet completed a formal assessment but plan to do so" is not a substantive response to a Fairness question from a board member. "In the process of naming model owners" is not a substantive response to a Governance question. The board member is asking whether the company has these controls in place, not whether they are planned. Option A provides substantive responses; Option D acknowledges gaps without demonstrating that the controls are operational.
+
+- D. Question 1: Trust. Question 2: Controllability. Question 3: Governance. Response: "We provide customers with explanations for each recommendation, we allow supply chain managers to override any autonomous reorder decision, and we have a named model owner accountable for each production system."
+
+Question 1 is a Fairness question, not a Trust question. Trust benchmarks measure whether users can understand and explain the system's recommendations. The board member is asking whether the recommendations are equitable for customers, which is a Fairness question. Question 2 is a Safety question, not a Controllability question. Controllability covers human override capability. Safety covers what happens when the system makes an error and how the error is contained. The board member is asking about error consequences, not override capability.
+
+**A**
+
+---
+
+
+### Q.73. A regional airline is preparing to deploy an AI-powered crew scheduling optimizer, which will replace a decades-old manual scheduling process. 
+
+The VP of Flight Operations wants to prove business value 12 months after deployment. The AI team has 6 weeks before the system goes live and has proposed capturing baseline data during that window. Available operational data includes:
+
+- Crew utilization rate (percent of duty hours flown vs. available duty hours), tracked daily for the past 5 years
+- Overtime cost per pay period, tracked by base and by crew role, past 3 years
+- Trip trade rate (percent of trips crew members voluntarily swap with other crew members), tracked past 2 years
+- Crew satisfaction survey scores, quarterly for past 3 years
+- Regulatory rest-rule violations, tracked as compliance events, past 5 years
+- On-time departure rate influenced by crew availability, tracked but not attributed to scheduling specifically
+- Additional context: The airline's largest crew base is transitioning to a new labor agreement in month 4 after deployment. The current scheduling manager, who has 22 years of tenure and knows the informal rules, is retiring 30 days after deployment.
+
+Which baseline capture approach best positions the airline to prove the AI system's business value 12 months after deployment?
+
+- A. Capture only tangible cost baselines (overtime cost, utilization rate) during the 6-week window before deployment, since intangibles are subjective and hard to defend
+
+Tangible-only baselines answer "did overtime cost drop?" but not "did overtime cost drop because of the AI or because of something else?" Crew scheduling touches multiple dimensions, cost, utilization, compliance, satisfaction. If the airline wants to prove value across the full picture, the baseline must span the same dimensions. Intangibles are harder to measure but not "subjective and hard to defend", crew satisfaction survey scores and trip trade rate are quantifiable, and both correlate with scheduling quality. Omitting them leaves gaps that make the 12-month value story incomplete.
+
+- B. Establish a multi-dimensional baseline during the 6-week window (utilization, overtime, trip trade, satisfaction, rest-rule compliance) AND document the two known confounders (labor agreement change in month 4, scheduling manager retirement at day 30) so post-deployment measurement can control for them
+
+This is the correct baseline approach for three reasons: (1) It is multi-dimensional, spanning the operational KPIs the AI is expected to affect (cost, utilization, compliance, satisfaction). Single-dimension baselines cannot support multi-dimensional value stories. (2) It captures the baseline in the window immediately before deployment, which controls for trend drift and provides a clean "before" state. (3) It documents the two known confounders, the labor agreement change and the scheduling manager retirement. Both events will affect the operational KPIs regardless of whether the AI is deployed. Documenting them upfront allows post-deployment measurement to isolate the AI's effect from the confounding events. Without that documentation, the 12-month value story is exposed to the challenge "how does the team know the improvement came from the AI and not from the labor agreement change?" A baseline that includes both the metrics and the confounders is the defensible approach.
+
+- C. Capture the full 5 years of historical data as the baseline, since more historical data produces a more stable baseline
+
+Five years of historical data is useful context, but historical averages do not always represent the current baseline state accurately. Operations change over time. Fleet composition, route network, and crew size may all have shifted. The baseline that matters is the state of the operation immediately before AI deployment, so that any changes after deployment can be attributed to the AI change, not to trend drift over five years. Historical data supports the baseline; it does not replace it.
+
+- D. Defer baseline capture until 3 months after deployment so the new system's initial performance can serve as its own baseline
+
+Using post-deployment performance as its own baseline eliminates the ability to measure change. If the AI system's month-1 performance is the baseline, then any improvement over that baseline is an improvement over an already-optimized state, not an improvement over the pre-AI operation. This defeats the purpose of baseline measurement, which is to isolate the change the AI produced.
+
+**B**
+
+
+---
+
+
+### Q.74. A Chief Underwriting Officer at a national insurance company is reviewing a 10-month leading indicator report on an AI-powered underwriting recommendation system. The data shows:
+
+ Overall model accuracy: 81% against the target of 88%.
+ Accuracy on standard commercial policies (75% of volume): 89%.
+ Accuracy on complex commercial policies (25% of volume): 54%.
+ Adoption by junior underwriters (58% of the underwriting team): 74%.
+ Adoption by senior underwriters (42% of the underwriting team): 21%.
+ Data pipeline health: 98% uptime. Training data is a 3-year historical claims dataset that a recent audit found has a 12% error rate in the historical loss estimates.
+ Sponsor (VP of Underwriting): engaged, attending weekly reviews.
+ Compute costs: on budget.
+ The Chief Underwriting Officer asks: "What is the most important thing we need to fix before the annual board review in 60 days?"
+
+Which response correctly identifies the highest-priority leading indicator issue?
+
+- A. The 81% accuracy on standard policies is the highest priority. The model is 7 points below target, and the board will ask why the accuracy target has not been met after 10 months.
+
+The 81% accuracy gap (7 points below target) is a concern, but it is a downstream effect of the training data quality problem. Presenting the accuracy gap to the board without identifying the root cause signals that the team does not understand why the model is underperforming. The board will ask "why is it at 81%?" and the honest answer is "because 12% of the training data contained errors." That is the answer that needs to be prepared.
+
+- B. The 12% data quality error in historical claims data is the highest priority. Training data errors are a root cause that affects model accuracy on all policy types and cannot be resolved by any other intervention.
+
+The 12% data quality error in historical claims data is the highest priority because it is a root cause that affects every other leading indicator. A model trained on data with 12% error contamination will have a structural accuracy ceiling that cannot be overcome by retraining on more of the same data. The 81% accuracy on standard policies and the 54% accuracy on complex policies are both downstream effects of the training data problem. Fixing the data quality issue is the prerequisite for improving accuracy, which is the prerequisite for improving adoption among senior underwriters. Addressing the symptoms (accuracy, adoption) without fixing the root cause (training data errors) will produce incremental improvements that plateau. The board review in 60 days is a constraint, but the right answer to "what is the most important thing to fix?" is the root cause, not the most visible symptom.
+
+- C. The adoption gap among senior underwriters is the highest priority. Senior underwriters handle the highest-value policies, and their non-adoption means the initiative is not reaching its highest-impact use cases.
+
+Senior underwriter non-adoption is a real concern, but it is a symptom of the accuracy problem on complex commercial policies, not an independent leading indicator issue. Senior underwriters are not using the system because it performs at 54% on the policy types they handle. Addressing adoption without fixing the accuracy problem will not change their behavior. The root cause is the training data quality issue.
+
+- D. The 54% accuracy on complex commercial policies is the highest priority. A model that performs at 54% on a policy category is producing recommendations that are wrong nearly half the time, which creates underwriting liability.
+
+The 54% accuracy on complex commercial policies is a serious concern, but complex commercial policies were not in the original scope. The model was not designed or trained for that use case. The 54% accuracy is expected for an out-of-scope application. The in-scope accuracy problem (81% on standard policies against an 88% target) is more directly attributable to the training data quality issue and more relevant to the board review.
+
+
+**B**
+
+---
+
+
+### Q.75. A regional credit union deployed an AI-based fraud detection upgrade 18 months ago. The Chief Financial Officer is preparing the annual ROI analysis for the board. The following data has been compiled:
+
+ Implementation cost: $1.2M in Year 1 (already amortized). Annual compute and model retraining: $150K/year.
+ Prevented fraud losses: $1.8M/year (measured as reduction from the 3-year pre-deployment baseline of $2.9M/year in fraud losses, so current annual loss is $1.1M).
+ False positive reduction: 22% fewer false positive alerts. The savings from investigation time recovered are estimated at 2 analyst FTEs at $85K each per year.
+ Customer experience improvement: 34% reduction in false decline events at point of sale. Member satisfaction scores up 6 points. Estimated member retention value: $220K/year.
+ Compliance documentation: additional $65K/year to maintain regulatory documentation for the AI model.
+ The CFO asks the team to calculate the annual net benefit and the payback period on the Year 1 implementation cost.
+
+Which calculation is correct?
+
+- A. Annual net benefit: $1.8M + ($85K × 2) − $150K = $1.82M. Payback period: about 8 months. Member retention value should be excluded because it is not directly attributable to fraud detection.
+
+Excluding member retention value on the grounds that "it is not directly attributable to fraud detection" applies too narrow a definition of attribution. The false decline reduction is directly caused by the AI model's more accurate fraud scoring, and the member retention value is a direct downstream effect of that reduction. When a benefit has a traceable causal chain from the AI investment, it belongs in the ROI. Excluding it understates the actual return and creates an incomplete business case.
+
+- B. Annual net benefit: $1.8M + ($85K × 2) + $220K − $150K − $65K = $1.975M. Payback period: about 7 months. The full multi-source benefit is included and the compliance documentation cost is subtracted.
+
+This is the correct multi-source ROI calculation. Annual benefits: $1.8M (prevented losses) + $170K (analyst FTE savings, 2 × $85K) + $220K (member retention from reduced false declines) = $2.19M. Annual costs: $150K (compute and retraining) + $65K (compliance documentation) = $215K. Annual net benefit: $2.19M − $215K = $1.975M. Payback period on the $1.2M Year 1 implementation cost: $1.2M ÷ $1.975M/year = about 0.61 years, roughly 7.3 months. All three benefit sources have a traceable causal chain to the AI investment (direct fraud detection, false positive reduction, false decline reduction) and both cost sources are ongoing operational costs directly attributable to the AI system. This is the defensible calculation for a board presentation.
+
+- C. Annual net benefit: $1.8M + $220K − $150K − $65K = $1.805M. Payback period: about 8 months. Analyst FTE savings should be excluded because the analysts were reassigned, not eliminated.
+
+Excluding analyst FTE savings because "the analysts were reassigned, not eliminated" misapplies the ROI framework. When labor is freed up from one activity and redeployed to another activity that produces value, the freed labor represents recovered capacity and belongs in the benefit calculation. The FTE cost is a real cost the credit union no longer needs to attribute to fraud investigation. Excluding it understates the operational efficiency gain.
+
+- D. Annual net benefit: $1.8M − $150K = $1.65M. Payback period: about 8 months.
+
+This calculation captures only the direct fraud loss savings and the compute cost. It omits three material items: the analyst time savings from fewer false positives ($170K/year), the member retention value from fewer false declines ($220K/year), and the compliance documentation cost ($65K/year). ROI calculations must include the full picture of benefits and costs. Selective inclusion produces a misleadingly low ROI figure and understates the actual return.
+
+
+**B**
+
+
+---
+
+
+### Q.76. A VP of Operations at a mid-market logistics company is conducting a six-month portfolio review of three AI initiatives.
+
+The company's CFO has asked for a recommendation: which initiative should receive additional investment, which should be placed on a performance improvement plan, and which should be terminated?
+
+Here is the leading indicator data:
+
+Initiative A (Route optimization): 88% adoption by dispatch team. Data pipeline health: 99.1% uptime, GPS data refreshed every 2 minutes. Sponsor (COO) attending monthly reviews. Model accuracy: 89%, improving 0.5% per month. Compute costs: on budget.
+
+Initiative B (Customer churn prediction): 19% adoption by the customer success team. Data pipeline health: 93% uptime, CRM data feed is 48 hours stale. Sponsor (Chief Revenue Officer) has been reassigned; no replacement named. The company's Chief Revenue Officer role is currently in a search process, with a candidate expected to be named within 30 days. Model accuracy: 83%, flat for 12 weeks. Compute costs: 55% over budget due to full-production-data experiments.
+
+Initiative C (Demand forecasting for fleet capacity): 67% adoption by the capacity planning team. Data pipeline health: 96% uptime. Sponsor (VP of Operations) engaged. Model accuracy: 77%, improving 2.1% per month. Compute costs: on budget. Capacity planners report the model does not yet incorporate seasonal demand patterns, which they are adding manually.
+
+Which recommendation is correct?
+
+- A. Invest in Initiative C (highest accuracy improvement trajectory). Place Initiative A on a performance improvement plan (89% accuracy is below the 95% threshold for production logistics systems). Terminate Initiative B.
+
+There is no universal 95% accuracy threshold for production logistics systems. Accuracy thresholds depend on the specific use case, the cost of errors, and the baseline the model is improving from. Initiative A at 89% and improving is in a strong position. Placing it on a performance improvement plan based on an arbitrary threshold ignores the trajectory and the strong leading indicator profile.
+
+- B. Invest in Initiative A (all leading indicators strong). Place Initiative C on a performance improvement plan (seasonal gap is a structural model problem). Place Initiative B on a performance improvement plan (sponsor gap is addressable with a replacement).
+
+Option B is the correct recommendation. Initiative A has all leading indicators in a strong position: high adoption, healthy data pipeline, engaged sponsor, improving accuracy, on budget. Additional investment is justified. Initiative C has a specific, addressable gap (seasonal demand patterns not yet incorporated) but strong fundamentals: 67% adoption, engaged sponsor, improving accuracy trajectory (2.1% per month), on budget. A performance improvement plan with a clear deliverable (incorporate seasonal patterns into the model) is the right intervention, not termination. Initiative B is the most complex case. The combination of 19% adoption, no active sponsor, 48-hour stale data, flat accuracy, and a 55% compute overrun is a serious leading indicator profile. However, termination is premature if the sponsor gap can be resolved quickly. The right recommendation is a performance improvement plan with a 30-day deadline: name a replacement sponsor, fix the data feed, implement data sampling to address the compute overrun. If any of those conditions is not met at 30 days, termination becomes appropriate.
+
+- C. Invest in Initiative A (all leading indicators strong, on trajectory). Place Initiative C on a performance improvement plan (accuracy below threshold, seasonal gap). Terminate Initiative B (low adoption, no sponsor, stale data, compute overrun).
+
+Terminating Initiative B is premature if the sponsor gap can be resolved. The leading indicator problems are serious but diagnosable: the data feed staleness is a technical fix, the compute overrun is addressable with data sampling, and the sponsor gap can be resolved by naming a replacement. Termination is appropriate when the fundamental business case no longer holds. Here, the case is intact; the execution has multiple fixable problems. A performance improvement plan with a hard deadline is the right intervention before termination.
+
+- D. Invest in Initiative A (all leading indicators strong). Place Initiative B on a performance improvement plan (diagnosable problems). Terminate Initiative C (77% accuracy after six months is below acceptable threshold).
+
+Initiative C should not be terminated. A 77% accuracy rate improving at 2.1% per month is a strong trajectory. At that rate, the model reaches 85% accuracy in approximately four months. The seasonal gap is a known, addressable problem that the capacity planning team is already working around manually. Terminating an initiative with an engaged sponsor, improving accuracy, and an addressable gap is a portfolio discipline failure.
+
+**B**
+
+---
+
+
+### Q.77. A regional healthcare system has deployed an AI-powered patient triage assistant in its urgent care clinics.
+
+The system helps intake staff prioritize incoming patients based on symptom descriptions, medical history, and current clinic load. Six months into deployment, the Chief Financial Officer has asked for a KPI report to justify continued investment. The CFO is presenting to the board in three weeks. The board is finance-oriented and has asked for a return-on-capital analysis for all technology investments.
+
+The AI operations team has proposed four KPI mixes for the CFO's board presentation:
+
+- Mix A: Tangibles only, average patient wait time reduction (minutes), staff hours saved per week, revenue per patient encounter
+- Mix B: Intangibles only, patient satisfaction (NPS delta), staff satisfaction, community reputation score
+- Mix C: Both, tangibles primary with intangibles as supporting context, wait time reduction, staff hours saved, revenue per encounter, PLUS patient satisfaction and staff satisfaction as supporting evidence
+- Mix D: Both, intangibles primary with tangibles as supporting context, patient satisfaction and staff satisfaction, PLUS wait time reduction and staff hours saved
+Which KPI mix is the most appropriate for the CFO's board presentation?
+
+- A. Mix C, tangibles align with the board's return-on-capital ask, while intangibles substantiate the case with the qualitative signals that finance-oriented boards increasingly expect
+
+Mix C is the right structure because it maps directly to the audience and the ask. The board asked for return-on-capital, so tangibles lead: wait time reduction converts to throughput capacity, staff hours saved converts to labor cost, revenue per encounter converts to revenue. Those are the numbers the board's model runs on. Intangibles serve as the supporting layer, patient satisfaction and staff satisfaction are the leading indicators that predict whether the tangible results will hold. A finance-oriented board evaluating a technology investment wants both: the numbers, and the qualitative signals that confirm the numbers will persist. Leading with tangibles respects the ask; including intangibles as supporting context strengthens the case.
+
+- B. Mix D, intangibles matter most in healthcare, and board members should be educated on the full value story
+
+Intangibles matter, but leading with them for a board that has explicitly asked for return-on-capital does not answer the question the board asked. The board's framing sets the primary structure of the presentation. Educating the board on the full value story is legitimate, but it must be built on top of the numbers the board asked for, not in place of them.
+
+- C. Mix A, the board asked for return-on-capital, which is a financial measure; intangibles complicate the analysis
+ 
+Tangibles-only aligns with the board's return-on-capital ask on the surface but leaves the story incomplete. Boards evaluating technology investments increasingly ask for the qualitative signals that back up the numbers, because those signals predict whether the tangible results will persist. Wait time reduction is a valid tangible KPI, but a board reviewing it in isolation may ask "will this hold up as adoption changes?" The answer to that question lives in the intangible KPIs: patient satisfaction, staff satisfaction. Without them, the CFO is presenting the numbers without the context that makes them defensible.
+ 
+- D. Mix B, a board that asks for return-on-capital is telling the CFO that intangibles are secondary; tangibles alone answer the question
+
+A board asking for return-on-capital is signaling how it will evaluate the investment, not that intangibles are irrelevant. Leading with intangibles inverts the priority the board set. The CFO's job is to answer the question asked first, then broaden the picture. Mix D is defensible for a different board (one focused on mission or brand), but not this board.
+
+
+**A**
+
+
+---
+
+
+### Q.78. The CFO's question: which cost driver contributes the largest share of the overrun, and what is the appropriate first action?
+
+A regional real estate services firm deployed an AI-powered lease analysis system 10 months ago to extract structured data from tenant lease documents (average 42 pages each, roughly 8,000 leases processed per year). The CFO is reviewing a Q3 budget variance report and has flagged that the initiative is running 72% over budget. The team has provided the following cost breakdown:
+
+ Compute costs (document processing, model inference): $340K/year, budgeted at $180K. Overrun driven by the team running the full document through the model every time a lease is amended, rather than reprocessing only the changed pages.
+ Storage costs: $85K/year, budgeted at $50K. Overrun driven by retaining full-resolution document images for every version of every lease indefinitely, with no retention policy in place.
+ Model retraining: $110K/year, budgeted at $80K. Team has been retraining the model monthly to incorporate new lease types.
+ Human review of low-confidence extractions: $180K/year, budgeted at $200K. Slightly under budget.
+ Compliance documentation: $45K/year, budgeted at $40K. Slightly over budget.
+ Vendor licensing: $120K/year, budgeted at $120K. On budget.
+ Total actual: $880K/year.
+ Total budgeted: $670K/year.
+ Variance: $210K over (31% over-budget).
+ The CFO's question: which cost driver contributes the largest share of the overrun, and what is the appropriate first action?
+
+- A. Compute costs, the $160K overrun is the largest single driver. Action: implement incremental processing so only changed pages are reprocessed on lease amendments.
+
+Compute costs are the largest single overrun ($160K over on a budget of $180K, nearly a doubling of the compute line). The specific cause is documented: the team is reprocessing the full 42-page lease every time a single page is amended, rather than reprocessing only the changed pages. Incremental processing is the direct fix and would return compute costs close to budget. This is the correct first action because it targets the biggest driver with a specific, actionable fix. The storage overrun ($35K) is the second-largest driver and should be addressed next by establishing a document retention policy, but that fix is less mature and lower-magnitude than the compute fix. Cost optimization discipline prioritizes the largest overrun with the clearest fix, which is compute.
+
+- B. Human review costs, reassign review to junior staff to reduce labor cost. Action: renegotiate reviewer rates.
+
+Human review is under budget, not over. Reassigning review to junior staff addresses a cost that is already performing better than expected and does not touch the actual overrun. The variance drivers are elsewhere.
+
+- C. Vendor licensing, although currently on budget, licensing is the largest absolute line item and offers the biggest optimization target. Action: renegotiate the vendor contract.
+
+Vendor licensing is on budget, not over. It is the largest absolute line item ($120K), but absolute size is not what matters for a variance analysis, variance is. Renegotiating a contract that is meeting its budget target does not address the $210K overrun and consumes leadership attention that should be focused on the actual variance drivers.
+
+
+- D. Model retraining costs, the $30K overrun signals over-frequent retraining. Action: reduce retraining cadence to quarterly.
+
+Model retraining costs are $30K over budget, a real overrun but not the largest driver. Reducing retraining cadence to quarterly is a defensible action but addresses roughly $30K of the $210K total overrun. The compute overrun ($160K) is over five times larger. Prioritizing retraining before compute misaligns the fix with the magnitude of the problem.
+
+
+**A**
+
+---
+
+
+### Q.79. A VP of Digital Strategy at a mid-market insurance company is preparing a board presentation on the company's AI portfolio.
+
+The company has two production AI systems: a claims processing automation system (live 18 months) and a customer risk scoring system (live 9 months). The board has asked for a responsible AI update alongside the financial results. Here is the benchmark status for each system:
+
+#### Claims processing automation:
+
+	Performance: 96% straight-through processing rate. Average claims cycle time reduced from 14 days to 3 days.
+	Fairness: Assessed. No statistically significant difference in processing time or approval rates across demographic groups.
+	Safety: Error containment defined. All claims above $50K reviewed by a human adjuster before payment.
+	Trust: Claimants receive an automated explanation of their claim status. Adjusters can see the top 5 factors driving each recommendation.
+	Controllability: Adjusters can override any recommendation. Override rate: 4%.
+	Privacy and Security: Claimant data encrypted. Access restricted to claims and data science teams.
+	Governance: Model owner named (VP of Claims). Quarterly review cadence. Audit trail for all model updates.
+	Customer risk scoring:
+
+#### Performance: 84% concordance with manual underwriter assessments.
+	Fairness: Not assessed. No demographic analysis of risk score distributions.
+	Safety: Score floor and ceiling guardrails in place.
+	Trust: Underwriters see a risk tier (1 to 5) but no explanation of which factors drove the score.
+	Controllability: Underwriters can override the score. Override rate: 31%.
+	Privacy and Security: Customer data encrypted. Access controls in place.
+	Governance: No formal model owner. No documented review cadence.
+	
+	
+The board asks: "Which system is better managed from a responsible AI perspective, and what is the most important gap to close in the weaker system?"
+
+Which response is correct?
+
+- A. The claims processing system is better managed. The most important gap in the customer risk scoring system is the Fairness benchmark, because an unassessed risk scoring system in insurance has direct regulatory exposure under fair lending and anti-discrimination requirements.
+
+The claims processing system is clearly better managed across all seven benchmark categories: Fairness is assessed, Governance is formalized, Trust is supported by explainability, and Controllability shows a healthy 4% override rate. The customer risk scoring system has gaps in Fairness, Trust, and Governance. The most important gap is Fairness. An insurance risk scoring system that has never analyzed whether its scores are distributed equitably across demographic groups is exposed to fair lending and anti-discrimination regulatory requirements. Insurance is a heavily regulated industry, and risk scoring systems that produce disparate outcomes for protected classes can result in regulatory action, fines, and license risk. The Fairness gap is the highest-risk unmeasured benchmark because the exposure is unknown and potentially material. The Trust gap (31% override rate, no explainability) is a real concern but is downstream of the Fairness gap in terms of regulatory risk.
+
+
+- B. The customer risk scoring system is better managed because its 84% concordance rate is more conservative and appropriate for a risk-sensitive application than the claims system's 96% automation rate, which may be moving too fast for a high-stakes insurance context.
+
+An 84% concordance rate is not evidence of better management. It means the system agrees with manual underwriters 84% of the time, which is a Performance benchmark, not a responsible AI benchmark. The claims system's 96% straight-through processing rate reflects strong performance on a well-governed, fully benchmarked system. Comparing automation rates across different use cases does not indicate which system is better managed from a responsible AI perspective.
+
+
+- C. Both systems are equally well managed. The claims system has stronger governance and explainability; the risk scoring system has stronger safety guardrails and a more conservative automation posture. The gaps in each system offset the strengths of the other.
+
+The two systems are not equally well managed. The claims system has been assessed across all seven benchmark categories and has formal governance in place. The customer risk scoring system has three unaddressed gaps (Fairness, Trust, Governance) and a 31% override rate that signals a structural trust problem. These are not equivalent profiles.
+
+- D. The claims processing system is better managed. The most important gap in the customer risk scoring system is the Trust benchmark, because a 31% override rate indicates underwriters do not trust the system's output and are reverting to manual judgment on nearly one in three decisions.
+
+The Trust gap is a real concern. A 31% override rate is significantly higher than the 4% rate on the claims system, and it likely reflects underwriters' inability to understand or validate the risk score. However, the Trust gap is a business efficiency problem, not a regulatory exposure. The Fairness gap is a regulatory exposure. In insurance, an unassessed risk scoring system is a higher-priority gap than an unexplained one.
+
+**A**
+
+---
+
+
+### Q.80. A specialty foods manufacturer deployed an AI demand forecasting system 24 months ago to reduce waste in a highly perishable product line. The CFO is preparing a two-year retrospective for the executive team. The following data has been compiled:
+
+	Implementation cost: $850K in Year 1 (fully amortized). Ongoing compute and data pipeline costs: $95K/year.
+	Waste reduction: 38% reduction in perishable product waste. Baseline waste was $3.6M/year; current waste is $2.23M/year. Annual savings: $1.37M/year.
+	Stockout reduction: 41% reduction in retailer stockout events. Value of recovered sales (products that would have stocked out): $480K/year.
+	Retailer relationship value: The two largest retail customers (representing 34% of revenue) have cited the improved fill rate in renewing their supply agreements. The CFO estimates that retaining these accounts is worth $2.4M/year in preserved revenue, but the AI system is one of several factors those retailers considered.
+	Workforce impact: Two demand planners were promoted into new strategic roles when their forecasting workload dropped. Their prior salary cost of $95K each per year continues as they remain on payroll in the new roles.
+
+The CFO asks whether the retailer relationship value should be included in the ROI calculation and, if so, at what value.
+
+Which ROI approach is the most defensible for the executive team presentation?
+
+- A. Include a partial, defensible share of the retailer relationship value (for example, 30–50 percent) as a supporting intangible with the range disclosed, and present the tangible benefits as the primary ROI figure. Annual tangible net benefit: $1.37M + $480K − $95K = $1.755M. With disclosed partial retention value ($720K to $1.2M/year), total range: $2.475M to $2.955M/year.
+
+This is the correct approach for two reasons: (1) It separates the tangible ROI (waste reduction, stockout recovery) from the intangible retention value, and presents the tangible figure as the primary ROI. The executive team can act on the tangible number without depending on the harder-to-verify retention estimate. (2) It includes the retention value as a disclosed range (30–50 percent of the retailer-cited value) with the range shown to the audience. This is honest attribution: the AI contributed to retention but was not the sole factor. Presenting the range invites the executive team to weigh the assumption. This is the defensible ROI structure for a mixed-source benefit story. The demand planner salaries are correctly excluded because the salary cost continues (the planners were promoted, not eliminated), so there is no cost savings to attribute.
+
+- B. Include the full retailer relationship value AND the demand planner salary savings ($190K/year), since both are documented effects of the AI initiative. Annual net benefit: $1.37M + $480K + $2.4M + $190K − $95K = $4.345M.
+
+This calculation makes two errors: it claims the full retailer retention value (over-attributing to the AI), and it also claims $190K in demand planner salary savings. The planners were promoted, not eliminated, their salary continues on the books. The freed workforce capacity has real value, but it is not a salary saving. Combining an over-attributed retention figure with a non-existent salary saving compounds the overstatement.
+
+- C. Include full retailer relationship value ($2.4M/year) because the retailers explicitly cited the improved fill rate. Annual net benefit: $1.37M + $480K + $2.4M − $95K = $4.155M.
+
+Attributing the full $2.4M retailer relationship value to the AI initiative overstates the case. The retailers cited the improved fill rate as one of several factors in renewing the supply agreements. Product quality, pricing, service levels, and existing relationships also contributed. Claiming the full retention value overstates the AI's causal contribution and exposes the CFO to a valid challenge from the executive team ("would we have retained those retailers anyway?"). ROI figures are most defensible when they claim what the initiative caused, not what it correlates with.
+
+
+- D. Exclude retailer relationship value entirely because it is not directly attributable and cannot be measured cleanly. Annual net benefit: $1.37M + $480K − $95K = $1.755M.
+
+Excluding retailer relationship value entirely understates the case in the other direction. The retailers explicitly cited the improved fill rate, that is direct evidence that the AI system contributed to retention. Ignoring documented evidence produces a conservative but incomplete picture. The right approach is to include a defensible partial share, not to exclude the whole thing.
+
+**A**
+
