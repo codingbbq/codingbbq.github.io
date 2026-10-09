@@ -2494,3 +2494,327 @@ This protects vulnerable riders while preserving the business model. It addresse
 ---
 
 
+### Q.124. What is governance in the context of AI?
+
+- A. A set of coding standards that developers follow when building machine learning models
+- B. A government regulatory body that approves AI systems before they can be deployed
+- C. The process of selecting which AI vendor or foundation model to use for a project
+- D. The system of rules, practices, and oversight mechanisms through which an organization directs, controls, and is held accountable for its AI activities
+
+**D**
+AI governance is an organizational capability, not just technical standards or external regulation. It encompasses the full system of direction, control, and accountability across the AI lifecycle.
+
+
+---
+
+
+### Q.125. Your organization has formed an AI governance committee to oversee a new customer-facing AI system that processes health data.
+
+The committee includes representatives from engineering, product management, legal, and business leadership. After launch, the system is found to be collecting more patient data than necessary and storing it without proper encryption. Which critical cross-functional representation was missing from the governance committee?
+
+- A. Marketing and communications
+- B. Finance and procurement
+- C. Ethics and responsible AI
+- D. Security and privacy
+
+**D**
+A security and privacy representative would have identified the data minimization violation and encryption gap before launch, as these fall squarely within their expertise in data protection controls and threat assessment.
+
+
+---
+
+
+### Q.126. You are the AI Strategist at a European insurance company.
+
+Your company's Chief Risk Officer has discovered that their AI-powered claims system automatically denies certain claims without any human review, and there is no designated team or individual responsible for the system's decisions — representing a failure to maintain proper human oversight and organizational responsibility. Which regulatory theme has your organization violated?
+
+- A. Risk Classification
+- B. Transparency & Explainability
+- C. Safety & Reliability
+- D. Accountability & Oversight
+
+**D**
+The scenario describes two specific failures: no human oversight of automated decisions and no organizational responsibility assigned for the system's behavior. This maps directly to the Accountability & Oversight theme, which requires human oversight, clear liability, and organizational responsibility — as reflected in EU AI Act Article 14.
+
+
+---
+
+
+### Q.127. Which regulatory framework provides guidance specifically for managing risks associated with artificial intelligence systems?
+
+- A. NIST AI Risk Management Framework
+- B. ISO 27001
+- C. HIPAA Security Rule
+- D. PCI DSS
+
+**A**
+The NIST AI Risk Management Framework is specifically designed to help organizations manage risks unique to AI systems, including issues like bias, transparency, and accountability in AI decision-making.
+
+
+---
+
+
+### Q.128. Your internal AI assistant has started responding to employee questions about salary negotiation tactics, which violates your acceptable use policy. Which AWS service addresses this issue?
+
+- A. Amazon Bedrock Guardrails
+- B. Amazon SageMaker Ground Truth
+- C. Amazon SageMaker Model Monitor
+- D. Amazon SageMaker Clarify
+
+**A**
+Bedrock Guardrails enforces topic restrictions in real time, blocking the model from engaging with prohibited subjects like salary negotiation before the response reaches the user.
+Knowledge Check
+
+
+---
+
+
+### Q.129. Your team deployed a loan default prediction model six months ago.
+
+Recently, the business team reports that prediction accuracy seems to be declining. You suspect that customer demographic and financial data patterns have shifted since the model was trained, and you need an automated way to detect when input data deviates from the training baseline so you can trigger retraining. Which AWS service should you use?
+
+- A. Amazon SageMaker Ground Truth
+- B. Amazon SageMaker Model Monitor
+- C. Amazon SageMaker Clarify
+- D. Amazon Bedrock Guardrails
+
+**B**
+That is correct—Model Monitor continuously compares incoming inference data against your training baseline and alerts you when data quality or model performance degrades.
+
+
+---
+
+
+### Q.130. A European bank is deploying an AI model to automate consumer credit approval decisions.
+
+The system processes applicants' financial history, demographic information, and behavioral data to determine loan eligibility. Multiple regulatory frameworks may apply. Which combination of regulatory categories is most relevant?
+
+- A. Financial services + AI-specific + Data privacy
+- B. Sector-specific + Employment
+- C. AI-specific + Consumer protection
+- D. Data privacy + Cross-border
+
+**A**
+Credit decisioning triggers financial regulations (ECOA, FCRA), the EU AI Act classifies credit scoring as high-risk AI, and processing personal financial data invokes GDPR obligations.
+
+
+---
+
+
+### Q.131. A junior data analyst was able to retrain and redeploy a production fraud detection model because their role was never scoped down from the broad permissions granted during onboarding. Is this an access control issue, a data security issue, both, or neither?
+
+- A. Data security issue
+- B. Neither—this is a training process issue
+- C. Both an access control and data security issue
+- D. Access control issue
+
+**D**
+This is an access control failure. The analyst had excessive privileges that violated least-privilege principles, allowing them to modify production AI assets beyond what their role required.
+
+
+---
+
+
+### Q.132. Your team discovers that the training dataset for a customer churn prediction model was stored in an unencrypted S3 bucket with no access logging enabled. The dataset contains customer names, email addresses, and purchase history. A recent audit revealed the bucket was publicly accessible for two weeks before being discovered. Is this an access control issue, a data security issue, both, or neither?
+
+- A. Neither—this is a compliance issue
+- B. Access control issue
+- C. Data security issue
+- D. Both an access control and data security issue
+
+**B**
+This is both an access control issue and a data security issue. The bucket being publicly accessible for two weeks reflects a permissions failure, while the missing encryption and logging reflect a data security failure. Fixing one does not fix the other, both sets of controls were needed to protect this data.
+
+
+---
+
+
+### Q.133. Your organization is preparing to deploy an AI-powered loan approval system for consumer credit decisions. The governance team's risk assessment produces the following scores:
+
+Likelihood: 4 (Likely) — The model was trained on historical lending data with known demographic imbalances, and fairness testing shows unresolved disparate impact on two protected groups.
+Severity: 5 (Critical) — The system will make autonomous credit decisions affecting consumers' financial access, subject to ECOA, FCRA, and state fair lending laws.
+Composite risk score: 20 (Critical tier)
+The business unit is pressuring for immediate deployment to meet a quarterly revenue target and proposes adding a consumer-facing disclaimer that AI is used in the decision. Choose the correct response.
+
+Based on the risk matrix result, what is the appropriate governance decision?
+
+- A. Defer the decision to the business unit since they own the revenue target.
+- B. Approve deployment with the consumer disclaimer, since transparency satisfies regulatory requirements.
+- C. Deny deployment until the fairness gaps are remediated, validated, and the system is re-scored below the Critical tier threshold.
+- D. Approve deployment but limit it to a single geographic region to reduce blast radius.
+
+**C**
+A Critical-tier score (20/25) with a known, unresolved fairness deficiency in a regulated domain is a hard stop, requiring remediation and re-validation before deployment regardless of business timelines.
+
+
+---
+
+
+### Q.134. Your organization deployed an AI-powered hiring tool six months ago.
+
+Internal testing reveals the model consistently scores female candidates lower than equally qualified male candidates for technical roles. Given that bias in hiring decisions is well-documented in AI systems, and that a discrimination finding could result in regulatory penalties, lawsuits, and public reputational damage. How would you classify this risk using the risk assessment matrix, and what action level does it require?
+
+- A. Likelihood: Almost Certain (5) × Impact: Critical (5) = Score 25 — Shut down the system entirely
+- B. Likelihood: Unlikely (2) × Impact: Minor (2) = Score 4 — Monitor passively
+- C. Likelihood: Possible (3) × Impact: Moderate (3) = Score 9 — Review at next governance cycle
+- D. Likelihood: Likely (4) × Impact: Major (4) = Score 16 — Escalate and implement mitigation controls immediately
+
+**D. Likelihood: Likely (4) × Impact: Major (4) = Score 16 — Escalate and implement mitigation controls immediately**
+The bias is already showing in test results (likely to manifest in production), and the consequences include regulatory action, legal liability, and reputational harm (major impact), warranting immediate escalation and remediation.
+
+
+---
+
+
+### Q.135. A healthcare company has deployed an AI diagnostic tool that occasionally misidentifies benign tumors as malignant, leading to unnecessary invasive procedures.
+
+The system has no fallback mechanism when confidence scores are low, and there is no process to validate outputs before they reach physicians. Which regulatory theme is best described in this situation?
+
+- A. Fairness & Non-Discrimination — Preventing bias and ensuring equitable outcomes across protected groups
+- B. Safety & Reliability — Ensuring AI systems function as intended without causing harm
+- C. Transparency & Explainability — Disclosure that AI is being used and the ability to explain decisions to affected individuals
+- D. Accountability & Oversight — Human oversight, clear liability, and organizational responsibility
+
+
+**B**
+This scenario describes an AI system that is not functioning reliably (misdiagnoses) and causing direct harm (unnecessary invasive procedures). The absence of fallback mechanisms and output validation represents a failure to ensure the system operates safely and as intended.
+
+
+---
+
+
+### Q.136. Which stakeholder group is MOST essential to include in a cross-functional collaboration team for cloud migration planning?
+
+- A. Marketing team, sales representatives, and customer support
+- B. Facilities management, office administrators, and travel coordinators
+- C. Network engineers, cloud architects, and security experts
+- D. Human resources, legal counsel, and procurement specialists
+
+**C**
+This is correct because these technical stakeholders possess the specialized expertise required for cloud migration planning, including network design, cloud architecture decisions, and security implementation, which are fundamental to successful cross-functional collaboration.
+
+
+---
+
+
+### Q.137. Which of the following best represents the components of an AI governance structure?
+
+- A. Risk register, incident log, audit report, and compliance certificate
+- B. Policies & standards, organizational structure, processes, and technical controls
+- C. Data scientists, ML engineers, product managers, and legal counsel
+- D. Training data, model architecture, hyperparameters, and evaluation metrics
+
+**B**
+That is correct. These four pillars form the durable structural foundation of AI governance. They work together: policies define the rules, organizational structure assigns ownership, processes operationalize oversight, and technical controls automate enforcement.
+
+---
+
+
+### Q.138. Which regulatory framework provides guidance specifically for managing risks in artificial intelligence systems?
+
+- A. NIST AI Risk Management Framework
+- B. HIPAA Privacy Rule
+- C. SOC 2 Type II
+- D. ISO 27001
+
+**A**
+The NIST AI Risk Management Framework is specifically designed to help organizations manage risks associated with artificial intelligence systems. It provides structured guidance for identifying, assessing, and mitigating AI-specific risks across technical, operational, and governance dimensions.
+
+
+---
+
+
+### Q.139. Your AI chatbot for insurance claims has a 12% hallucination rate on complex coverage questions.
+
+Using the AI Classification Risk Matrix, you calculate the risk score: Likelihood 3, Impact 4, Composite 12 (High tier). The product team wants immediate launch with a disclaimer: "AI responses may contain errors."
+
+Based on the risk matrix result, what is the appropriate governance decision?
+
+- A. Approve with the disclaimer from the product team.
+- B. Deny deployment until zero hallucinations are achieved.
+- C. Defer to the product team since they own the efficiency target.
+- D. Approve but restrict to general FAQs only, blocking coverage-specific questions until hallucination rates meet thresholds.
+
+**D**
+That is correct. This removes the high-impact failure mode while delivering value, with a clear path to full deployment after remediation.
+
+
+---
+
+
+### Q.140. A contract data scientist was granted temporary admin-level access to the company's ML platform during a proof-of-concept project six months ago.
+
+The project ended, but the permissions were never revoked. Using those stale credentials, the data scientist accessed a production training dataset containing unmasked customer Social Security numbers and medical records that should have been tokenized before being stored in the ML environment. Which type of issue(s) does this describe?
+
+- A. Data Security
+- B. Access Control
+- C. Both access control and data security
+- D. Neither access control nor data security
+
+**C**
+Two independent control failures occurred. First, access control failed because stale admin permissions were never revoked, violating least-privilege principles. Second, data security failed because sensitive PII (SSNs, medical records) was stored unmasked in the training environment, violating data minimization and confidentiality requirements. Either control, functioning properly, would have reduced the impact — but both failed, compounding the exposure. Remediation requires addressing both dimensions independently.
+
+
+---
+
+
+### Q.141. Which factor is MOST important when classifying an AI system's risk tier?
+
+- A. The number of users who will interact with the system
+- B. The complexity of the machine learning algorithms used
+- C. The cost of developing the AI system
+- D. The potential impact and severity of harm to stakeholders
+
+**D**
+Risk classification frameworks prioritize the assessment of potential harm across technical, operational, reputational, and legal dimensions, making impact and severity the primary factors in determining risk tier.
+
+
+---
+
+
+### Q.142. Your AI-powered loan approval system was trained on historical lending data with known demographic imbalances.
+
+Fairness testing shows unresolved disparate impact on two protected groups. AI Classification Risk Matrix score: Likelihood 4, Impact 5, Composite 20 (Critical tier). The business unit is pressuring for immediate deployment to meet a quarterly revenue target and proposes adding a consumer-facing disclaimer that AI is used in the decision. What is the appropriate governance decision?
+
+- A. Approve deployment with the consumer disclaimer, since transparency satisfies regulatory requirements.
+- B. Defer the decision to the business unit since they own the revenue target.
+- C. Approve deployment but limit it to a single geographic region to reduce blast radius.
+- D. Deny deployment until fairness gaps are remediated, validated through retesting, and the system is re-scored below the Critical tier threshold.
+
+**D**
+That is correct. A critical-tier score with confirmed bias on protected groups requires remediation before deployment. The system must demonstrate equitable outcomes through validated retesting and be re-scored to an acceptable risk level before any launch decision is revisited.
+
+
+---
+
+
+### Q.143. Marketing intern used a company chatbot powered by a large language model to summarize customer complaints.
+
+During the conversation, the model returned verbatim credit card numbers and home addresses from its training data that had been inadvertently included in the fine-tuning dataset. Which type of issue does this describe?
+
+- A. Access Control
+- B. Neither access control nor data security
+- C. Data Security
+- D. Both access control and data security
+
+**C**
+That is correct. This is a data security failure. Sensitive PII (credit card numbers, home addresses) was included in the training data without proper sanitization. This is a data confidentiality breach — protected information was exposed through the model's outputs. The intern had legitimate access; the failure was in how data was handled during the model development lifecycle (lack of data masking, scrubbing, or controls on training pipelines).
+
+
+---
+
+
+### Q.144. Your customer-facing generative AI assistant has begun generating responses that include customers' personal phone numbers and email addresses pulled from its knowledge base, violating your organization's data protection policy. Which AWS service addresses this issue?
+
+- A. Amazon SageMaker Ground Truth
+- B. Amazon Bedrock Guardrails
+- C. Amazon SageMaker Model Monitor
+- D. Amazon SageMaker ML Lineage Tracking
+
+**B**
+That is correct. Bedrock Guardrails can be configured to automatically detect and redact sensitive information (PII such as phone numbers and email addresses) from model outputs before they reach the user. This is a real-time enforcement mechanism that applies content filtering and sensitive information redaction at inference time, directly addressing the data protection policy violation.
+
+
+---
+
+
