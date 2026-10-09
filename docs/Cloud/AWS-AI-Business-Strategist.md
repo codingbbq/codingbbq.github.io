@@ -2317,3 +2317,180 @@ Which type of safeguard does the AI strategist need to recommend in this scenari
 
 **D**
 That is correct. Escalation criteria are predefined rules that determine when an AI output must be flagged for human review. In this scenario, the system uses three clear, predefined rules—payout amount above $50,000, policyholder under 18, or disputed policy type—to automatically route claims to a senior adjuster. These are textbook escalation criteria that ensure high-risk or sensitive cases receive human oversight before a final decision is made.
+
+
+---
+
+
+### Q.114. Your organization is building an AI system to flag fraudulent insurance claims. 
+
+The project lead's plan: spend months 1–5 optimizing for fraud detection accuracy, then conduct a responsible AI review in month 6 before launch. Which response best applies governance-by-design principles?
+
+- A. Add a dedicated RAI team member who attends standups and reviews code, but keep the plan unchanged.
+- B. Define RAI requirements—fairness criteria, explainability standards, oversight triggers—in month 1 alongside technical requirements, and integrate them into every milestone.
+- C. The plan is sound—a thorough pre-launch review in month 6 will catch issues before customers are affected.
+- D. Conduct two RAI reviews—one in month 3 and one in month 6—instead of just one at the end.
+
+**B**
+Governance-by-design means RAI principles are planning inputs, not pre-launch checkboxes. Defining them in month 1 surfaces issues early when they are inexpensive to fix.
+
+---
+
+
+### Q.115. Your company launched an AI-powered loan approval system that consistently denies applications from applicants in certain zip codes.
+
+These zip codes correlate strongly with predominantly minority communities. The model was trained on 10 years of historical lending data, and no one reviewed the training data for demographic patterns before deployment. Which Responsible AI dimension is most at risk in this scenario?
+
+- A. Fairness
+- B. Controllability
+- C. Safety
+- D. Transparency
+
+**A**
+The AI system is producing disparate outcomes that correlate with race and ethnicity, driven by biased historical data that was never reviewed. Fairness requires that you evaluate training data and model outputs for discriminatory patterns and ensure the system does not systematically disadvantage any group.
+
+
+---
+
+
+### Q.116. What responsible AI dimension should be considered when deploying an AI chatbot that interacts with customers without disclosing that it is not a human agent?
+
+- A. Safety
+- B. Transparency
+- C. Privacy & Security
+- D. Controllability
+
+**B**
+Transparency requires that you openly communicate to users when they are interacting with an AI system, what its capabilities and limitations are, and how it makes decisions. Failing to disclose the system's nature misleads customers, undermines trust, and may violate emerging regulations that require clear identification of AI-generated interactions.
+
+---
+
+
+### Q.117. A VP of Engineering tells the AI governance team: 
+
+"We already have great engineers who test their models thoroughly. We don't need a separate responsible AI (RAI) function—our existing QA and model validation processes are sufficient to catch any issues before they reach customers." Which best explains why standard model validation alone does not fulfill the role of Responsible AI practices?
+
+- A. RAI addresses dimensions that standard validation does not: embedding fairness and explainability into design from the start, structured auditing for unintended harms, organizational governance for managing AI at scale, and proactive mitigation of reputational and legal risk.
+
+- B. Standard validation already covers RAI concerns—fairness and explainability are just subcategories of model accuracy.
+
+- C. RAI is only needed because regulators require it—without regulatory pressure, strong engineering teams would be sufficient.
+
+- D. RAI is essentially a project management function that assigns ownership and creates documentation engineers typically skip.
+
+**A**
+Standard validation focuses on performance metrics like accuracy and latency but does not systematically address fairness as a design input, audit for bias or unsafe outputs, establish cross-team governance, or manage reputational risk. A talented engineering team can build high-performing models while missing all four of these dimensions.
+
+
+---
+
+
+### Q.118. Which AI application scenario requires MOST human oversight due to risk level?
+
+- A. Generating marketing content for social media posts
+
+- B. Creating automated email responses for customer inquiries
+
+- C. Summarizing internal company meeting notes
+
+- D. Providing medical diagnosis recommendations to healthcare professionals
+
+**D**
+Medical diagnosis scenarios are high-risk applications that directly impact human health and safety, requiring extensive human oversight, hallucination detection, strict guardrails, and clear escalation criteria to prevent harmful outcomes.
+
+---
+
+
+### Q.119. A legal tech company's AI contract review tool summarizes key clauses for attorneys.
+
+Lawyers report that the system occasionally fabricates contract terms that don't exist in the source document—citing non-existent penalty clauses or inventing renewal dates that appear nowhere in the original agreement. What type of safeguard is most appropriate?
+
+- A. Audit trails documenting each summary generated.
+
+- B. Hallucination detection that cross-references generated outputs against the source document to verify factual grounding.
+
+- C. Escalation criteria routing outputs involving protected categories to human review.
+
+- D. Guardrails that block offensive or biased language in summaries.
+
+**B**
+Hallucination detection uses consistency checks and source verification to identify when the model generates outputs unsupported by the input data. Cross-referencing each summarized clause against the actual contract catches fabricated terms before they mislead an attorney.
+
+
+---
+
+### Q.120. A court uses an AI tool to predict whether defendants will skip trial.
+
+Judges see the risk score and a "detain" or "release" recommendation before setting bail. The court administrator proposes that defendants scoring above 90% risk should be automatically detained without a judge reviewing the case. Does this AI solution require human oversight?
+
+- A. Yes, human oversight is required.
+
+- B. Maybe, it depends on how accurate the model is and whether bias testing was done.
+
+- C. No, human oversight is not required.
+
+- D. More information is needed to determine if human oversight is required.
+
+**A**
+Detention removes a person's freedom—one of the most serious decisions in the justice system. A 90% score still means 1 in 10 people would be wrongly detained. These models often reflect historical biases in policing. A judge must make the final call—no efficiency gain justifies letting an algorithm lock someone up without human review.
+
+
+---
+
+
+### Q.121. A telecom company uses an AI chatbot to handle customer billing disputes.
+
+During peak hours, the chatbot operates autonomously without live agent supervision. Support managers have discovered that when customers express frustration, the chatbot occasionally offers unauthorized refunds up to $500, promises service upgrades it cannot fulfill, and in rare cases responds with hostile language when customers use profanity. What type of safeguard is most appropriate?
+
+- A. Guardrails that block outputs containing unauthorized financial commitments, unfulfillable promises, or hostile language before delivery to the customer.
+
+- B. Hallucination detection that verifies claims against company policy documents.
+
+- C. Audit trails documenting each conversation for post-incident review.
+
+- D. Confidence thresholds that trigger human review when the model is uncertain.
+
+**A**
+Guardrails are automated filters that intercept harmful or policy-violating outputs in real time before they reach the end user. In this case, rules that block responses exceeding authorized refund limits, promising undeliverable services, or containing hostile language address all three identified problems. Blocked responses can be replaced with a safe default or routed to a live agent.
+
+---
+
+
+### Q.122. Your marketing team wants to launch an AI segmentation tool that infers customer ethnicity and religion from names and purchasing patterns to target cultural holiday ads.
+
+Testing shows a 23% click-through lift. The governance team flagged that inferring sensitive attributes without consent violates fairness and privacy principles. The marketing VP argues revenue justifies deployment. What is the most appropriate approach for the AI Strategist?
+
+- A. Deploy as planned—the 23% lift proves customers find the targeting valuable.
+
+- B. Surface the tension with stakeholders, evaluate short-term gains against long-term risks, and seek a creative alternative—such as explicit customer opt-in for cultural preferences instead of inferred attributes.
+
+- C. Halt the project entirely—any RAI conflict means the initiative should be abandoned.
+
+- D. Defer entirely to the legal team—RAI conflicts are compliance questions.
+
+**B**
+This applies the three-part framework: transparent stakeholder dialogue, short-term vs. long-term risk evaluation, and a creative solution that preserves business value while respecting RAI principles. Voluntary preference sharing delivers relevant targeting without inferring sensitive data.
+
+
+---
+
+
+### Q.123. A ride-sharing company's AI surge pricing model generates 30% of total revenue.
+
+Analysis reveals it consistently applies the highest surge multipliers (up to 4x) in low-income neighborhoods where riders have fewer transportation alternatives. The CFO wants to expand the model to additional cities next quarter. What should the AI strategist recommend?
+
+- A. Eliminate surge pricing entirely.
+
+- B. Expand to new cities but turn off surge pricing in low-income areas only.
+
+- C. Expand as planned—this is just supply and demand working as intended.
+
+- D. Cap surge rates in underserved areas, explore fairer pricing options, and only expand after confirming the changes reduce harm.
+
+**D**
+This protects vulnerable riders while preserving the business model. It addresses the specific harm without abandoning a legitimate revenue mechanism.
+
+
+---
+
+
