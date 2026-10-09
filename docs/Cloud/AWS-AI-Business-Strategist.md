@@ -1719,7 +1719,6 @@ Excluding retailer relationship value entirely understates the case in the other
 **A**
 
 
-
 ---
 
 
@@ -2084,3 +2083,237 @@ This is the correct classification. Proposal 2 changes three structural elements
 ---
 
 
+### Q.99. A product team argues that Responsible AI practices are primarily a compliance obligation — something imposed by legal and regulatory teams that adds overhead without improving the product itself.
+
+They want to defer RAI activities until regulators require them. Which of the following best describes why this view is incomplete?
+
+- A. RAI is primarily about avoiding lawsuits — the main value is legal protection, and product quality benefits are incidental side effects of compliance work.
+- B. RAI practices create value across four dimensions: building better products through principles like fairness and robustness, enabling structured auditing to catch unintended harms before they reach users, providing governance to manage AI systems at organizational scale, and proactively mitigating reputational and legal risk.
+- C. RAI is primarily about operational efficiency — it standardizes AI development processes so teams can ship faster with less coordination overhead.
+- D. RAI is primarily about public relations — it provides language and frameworks to communicate trustworthiness to customers, which drives adoption regardless of whether the underlying systems are actually improved.
+
+**B**
+
+RAI practices create value across four dimensions: building better products through principles like fairness and robustness, enabling structured auditing to catch unintended harms before they reach users, providing governance to manage AI systems at organizational scale, and proactively mitigating reputational and legal risk.
+Responsible AI delivers value across four distinct dimensions that go well beyond compliance. It improves product quality by embedding fairness, explainability, and robustness from the start. It provides audit and mitigation tools to detect biased, inaccurate, or unsafe outputs before they affect real people. It establishes governance structures, ownership, and repeatable processes for managing AI at organizational scale. And it proactively mitigates reputational damage and legal exposure, particularly for user-facing applications. Treating RAI as purely a compliance exercise misses three of these four value drivers.
+
+
+---
+
+
+### Q.100. Which responsible AI dimension focuses on ensuring that an AI system treats all user groups equitably?
+
+- A. Fairness
+- B. Transparency
+- C. Robustness
+- D. Privacy
+
+**A**
+Fairness is the responsible AI dimension that ensures AI systems provide equitable treatment and outcomes across different user groups, avoiding bias and discrimination.
+
+
+---
+
+
+### Q.101. What is the primary purpose of explainability in responsible AI systems?
+
+- A. To make AI decisions understandable to users
+- B. To protect user data from unauthorized access
+- C. To ensure consistent performance across environments
+- D. To prevent malicious attacks on the system
+
+**A**
+Explainability in responsible AI ensures that users can understand how and why an AI system makes specific decisions, enabling trust and accountability.
+
+
+---
+
+
+### Q.102. Which responsible AI dimension addresses protecting sensitive user information in machine learning models?
+
+- A. Privacy
+- B. Safety
+- C. Explainability
+- D. Fairness
+
+**A**
+Privacy is the responsible AI dimension that focuses on protecting sensitive user information, ensuring data confidentiality, and preventing unauthorized access to personal data in AI systems.
+
+
+---
+
+
+### Q.103. Your company launched an AI-powered loan approval system that consistently denies applications from applicants in certain zip codes. These zip codes correlate strongly with predominantly minority communities. The model was trained on 10 years of historical lending data, and no one reviewed the training data for demographic patterns before deployment. Which Responsible AI dimension is most at risk in this scenario?
+
+- A. Transparency
+- B. Fairness
+- C. Safety
+- D. Controllability
+
+**B**
+The AI system is producing disparate outcomes that correlate with race and ethnicity, driven by biased historical data that was never reviewed. Fairness requires that you evaluate training data and model outputs for discriminatory patterns and ensure the system does not systematically disadvantage any group.
+
+
+---
+
+
+### Q.104. Your healthcare organization deployed an AI triage system in its emergency department that prioritizes patients based on symptom severity.
+
+After one week, nurses report that the system consistently assigns lower urgency scores to patients who describe symptoms in non-English languages (processed through a built-in translation layer). Two patients with serious cardiac symptoms were triaged as low-priority because the translation layer misinterpreted their symptom descriptions. Both patients experienced delayed treatment. What should the AI strategist recommend?
+
+- A. Halt deployment
+- B. Escalate to a governance body
+- C. Implement additional oversight controls
+- D. No action needed
+
+**A**
+This is correct because the system is actively causing life-threatening patient harm through misclassification of serious cardiac symptoms, and no amount of monitoring can acceptably mitigate the risk of death or permanent injury while the flawed system remains live.
+
+---
+
+
+### Q.105. A national insurance company uses an AI system to estimate home repair costs for property damage claims.
+
+A claims manager notices that for hurricane damage claims in coastal regions, the system's repair estimates are consistently 15–20% lower than what licensed contractors actually quote. The system was trained primarily on inland property damage data. No claims have been finalized yet—all estimates are reviewed by a human adjuster before a payout is issued, but adjusters report feeling pressure to stay close to the AI's figures. What should the AI strategist recommend?
+
+
+- A. Halt deployment
+- B. Escalate to a governance body
+- C. Implement additional oversight controls
+- D. No action is needed
+
+**C**
+This is correct because the system has a known accuracy gap for coastal hurricane claims but existing human review has prevented customer harm, so the appropriate response is to strengthen controls by flagging affected claims for independent contractor verification, adding training-data disclaimers, and explicitly empowering adjusters to override the AI.
+
+---
+
+### Q.106. A healthcare organization has deployed an AI model that recommends treatment pathways for patients.
+
+Three months after launch, the clinical AI team is reviewing whether the model's recommendations have shifted from its validated baseline, tracking output quality across different patient demographics, and verifying that the model is only being used for the patient population and clinical conditions it was originally trained to support. Which stage of the AI project lifecycle does this represent?
+
+- A. Design
+- B. Build
+- C. Operate
+- D. Not a stage of the AI project lifecycle
+
+**C**
+The Operate stage is where you deploy and monitor the AI system in production. This includes checking for model drift, ensuring outputs remain aligned with responsible AI standards over time, and confirming the model is used within its intended context — for example, a model trained on adult patients should not be applied to pediatric populations without revalidation.
+
+
+---
+
+
+### Q.107. An online streaming platform uses an AI recommendation engine to suggest movies and TV shows to subscribers based on their viewing history and preferences. The system updates recommendations on each user's homepage every time they log in. Does this AI solution require human oversight?
+
+- A. Yes, human oversight is required.
+- B. No, human oversight is not required.
+- C. Maybe, human oversight depends on the type of viewing history and preferences are needed.
+- D. More information required to determine if human oversight is required.
+
+**B**
+This is a low-stakes scenario where the AI system's output—a movie or show suggestion—does not directly impact an individual's rights or safety. The consequences of an incorrect recommendation are minimal. Standard automated monitoring for content quality, recommendation diversity, and potential bias is sufficient. Human oversight of individual outputs is not required for this use case.
+---
+
+
+### Q.108. A hospital is deploying an AI system that analyzes radiology images and generates preliminary diagnoses for patients. The system flags potential tumors and recommends whether a biopsy is needed. The hospital plans to send the AI-generated recommendations directly to patients through their online health portal without a radiologist reviewing the results first. Does this AI solution require human oversight?
+
+- A. Yes, human oversight is required.
+- B. No, human oversight is not required.
+- C. Maybe, human oversight depends on the type of medical diagnoses.
+- D. More information required to determine if human oversight is required.
+
+**A**
+This is a high-stakes healthcare scenario where the AI system's output directly impacts patient safety and medical decisions. A misidentified tumor—whether a false positive or a false negative—can lead to unnecessary invasive procedures or delayed treatment for a life-threatening condition. A qualified radiologist must review and validate the AI-generated diagnosis before it reaches the patient. AI should assist clinical decision-making, not replace it.
+
+
+---
+
+
+### Q.109. A government agency uses an AI chatbot to help citizens complete benefit applications.
+
+The system is configured to automatically block any response that includes language recommending a citizen waive their legal rights, that contains personally identifiable information of other applicants, or that provides guidance outside the scope of the benefits program. Blocked responses are replaced with a standard message directing the citizen to a human caseworker. Which type of safeguard is being used in this scenario?
+
+- A. Confidence thresholds
+- B. Hallucination detection
+- C. Guardrails
+- D. Escalation criteria
+
+**C**
+Guardrails are automated filters that block harmful, biased, or policy-violating outputs before they are delivered to the end user. In this scenario, the system automatically blocks responses that could cause harm—such as advising citizens to waive legal rights, exposing other applicants' personal data, or providing out-of-scope guidance—and replaces them with a safe default response.
+
+
+### Q.110. A financial services company uses an AI system to generate investment summaries for clients.
+
+Before any summary is delivered, the system cross-references its generated output against three independent market data sources. If the AI-generated summary contains claims that cannot be verified by at least two of the three sources, the summary is held back and flagged for analyst review. Which type of safeguard is being used in this scenario?
+
+- A. Confidence thresholds
+- B. Hallucination detection
+- C. Guardrails
+- D. Audit trails
+
+**B**
+Hallucination detection uses multi-source verification or consistency checks to identify when an AI system generates outputs that are fabricated or unsupported by source data. In this scenario, the system cross-references its output against three independent market data sources—a classic multi-source verification approach—and flags outputs that cannot be corroborated.
+
+---
+
+
+### Q.111. Your team has deployed a credit scoring model to production.
+
+After three months, you notice approval rates have shifted significantly, and you suspect the input data distribution has drifted from what the model was trained on. You need to detect and alert on these changes automatically. Which AWS service should you use?
+
+
+- A. Amazon SageMaker Clarify
+- B. Amazon SageMaker Model Monitor
+- C. Amazon Bedrock Guardrails
+- D. AWS CloudTrail
+
+**B**
+Model Monitor continuously tracks data quality, drift, and model performance in real time against baselines you define.
+
+
+---
+
+
+### Q.112. As an AI strategist at Meridian Financial Services, you are responsible for ensuring the company's customer-facing AI systems deliver accurate, compliant, and trustworthy information about its lending products. 
+
+Your company, Meridian Financial Services, offers two personal loan products:
+
+Standard Loan: 7.9% APR, up to $25,000, 3–5 year terms
+Preferred Loan: 5.4% APR, up to $50,000, 3–7 year terms, requires credit score of 720+
+
+A customer asked your AI chatbot: "What's the interest rate on your Preferred Loan?" 
+
+The chatbot response, "Our Preferred Loan offers a competitive 4.9% APR for amounts up to $50,000 with flexible terms of 3–7 years. A credit score of 720 or higher is required to qualify."
+
+Which element of the chatbot's response is a hallucinations?
+
+- A. $50,000 maximum
+- B. 4.9% APR
+- C. 3–7 year terms
+- D. 720 credit score
+
+**B**
+The verified rate is 5.4% APR. The AI generated a lower, more attractive rate that sounds plausible but is factually wrong. Delivering incorrect pricing to a customer creates legal and trust risks.
+
+
+---
+
+
+### Q.113. As an AI strategist at this insurance company, your team will use an AI system to process claims and recommend payout amounts.
+
+You want to ensure that complex or sensitive decisions never bypass professional oversight. 
+
+You need the claims processing system to have built-in checks that automatically route high-value, minor-filed, or disputed claims to senior adjusters for human review—ensuring that complex or sensitive decisions never bypass professional oversight. 
+
+
+The system will be configured so that any claim involving a payout recommendation above $50,000, any claim filed by a policyholder under the age of 18, or any claim categorized under a disputed policy type will be automatically routed to a senior claims adjuster for manual review before a decision is issued.
+
+Which type of safeguard does the AI strategist need to recommend in this scenario?
+
+- A. Confidence thresholds
+- B. Hallucination detection
+- C. Guardrails
+- D. Escalation criteria
+
+**D**
+That is correct. Escalation criteria are predefined rules that determine when an AI output must be flagged for human review. In this scenario, the system uses three clear, predefined rules—payout amount above $50,000, policyholder under 18, or disputed policy type—to automatically route claims to a senior adjuster. These are textbook escalation criteria that ensure high-risk or sensitive cases receive human oversight before a final decision is made.
